@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3863.727 137.812 28.545 28.545">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        filter: url(#path);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1.243" y1="0.172" x2="0.623" y2="0.455" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2eaff"/>
+      <stop offset="1" stop-color="#488caa"/>
+    </linearGradient>
+    <filter id="path" x="3863.727" y="137.812" width="28.545" height="28.545" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="data_usage" transform="translate(3864.473 138.557)">
+    <rect id="rectangle" class="cls-1" width="27.055" height="27.055"/>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -3864.47, -138.56)">
+      <path id="path-2" data-name="path" class="cls-2" d="M14.4,2V5.406a7.982,7.982,0,0,1,6.563,7.834,8.031,8.031,0,0,1-.955,2.838l2.983,1.7a10.344,10.344,0,0,0,1.551-4.655A10.928,10.928,0,0,0,14.4,2ZM12.829,21.147c-4.446,0-7.41-3.512-7.41-7.931,0-3.965,2.85-7.251,7.41-7.817V2C7.13,2.453,2,7.325,2,13.216A11.132,11.132,0,0,0,13.171,24.545a11.357,11.357,0,0,0,9.12-4.645l-3.078-1.7a8.324,8.324,0,0,1-6.384,2.946Z" transform="translate(3864.73 138.81)"/>
+    </g>
+  </g>
+</svg>

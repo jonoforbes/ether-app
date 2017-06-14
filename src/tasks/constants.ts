@@ -1,0 +1,10 @@
+export const VIEW_MODE = {
+    TODAY: 'TODAY',
+    WEEK: 'WEEK',
+    ASSIGNEDTOME: 'ASSIGNEDTOME',
+    ASSIGNEDBYME: 'ASSIGNEDBYME',
+    ALL: 'ALL',
+    ACCOUNT: 'ACCOUNT',
+    CONTACT: 'CONTACT',
+    SALE: 'SALE'
+}

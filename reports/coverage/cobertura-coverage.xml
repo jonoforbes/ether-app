@@ -1,0 +1,364 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="151"  lines-covered="150"  line-rate="0.9934000000000001"  branches-valid="51"  branches-covered="42"  branch-rate="0.8234999999999999"  timestamp="1489852994708" complexity="0" version="0.1">
+<sources>
+	<source>/Users/jonoforbes/Developer/Ether/winecellar</source>
+</sources>
+<packages>
+	<package name="statemanagement.actions.containers"  line-rate="1"  branch-rate="1" >
+	<classes>
+		<class name="application.ts"  filename="src/statemanagement/actions/containers/application.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="(anonymous_1)"  hits="1"  signature="()V" >
+				<lines><line number="7"  hits="1" /></lines>
+			</method>
+			<method name="EnableBusyFlag"  hits="1"  signature="()V" >
+				<lines><line number="8"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="1"  signature="()V" >
+				<lines><line number="14"  hits="1" /></lines>
+			</method>
+			<method name="DisableBusyFlag"  hits="1"  signature="()V" >
+				<lines><line number="15"  hits="1" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="7"  hits="1"  branch="false" />
+			<line number="8"  hits="1"  branch="false" />
+			<line number="9"  hits="1"  branch="false" />
+			<line number="11"  hits="1"  branch="false" />
+			<line number="13"  hits="1"  branch="false" />
+			<line number="14"  hits="1"  branch="false" />
+			<line number="15"  hits="1"  branch="false" />
+			<line number="16"  hits="1"  branch="false" />
+			<line number="18"  hits="1"  branch="false" />
+			<line number="20"  hits="1"  branch="false" />
+		</lines>
+		</class>
+		<class name="notifications-bar.ts"  filename="src/statemanagement/actions/containers/notifications-bar.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="(anonymous_1)"  hits="1"  signature="()V" >
+				<lines><line number="6"  hits="1" /></lines>
+			</method>
+			<method name="ToggleNotificationsBar"  hits="2"  signature="()V" >
+				<lines><line number="7"  hits="2" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="6"  hits="1"  branch="false" />
+			<line number="7"  hits="1"  branch="false" />
+			<line number="8"  hits="2"  branch="false" />
+			<line number="10"  hits="1"  branch="false" />
+			<line number="12"  hits="1"  branch="false" />
+		</lines>
+		</class>
+		<class name="sidebar.ts"  filename="src/statemanagement/actions/containers/sidebar.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="(anonymous_1)"  hits="1"  signature="()V" >
+				<lines><line number="6"  hits="1" /></lines>
+			</method>
+			<method name="ToggleSidebar"  hits="2"  signature="()V" >
+				<lines><line number="7"  hits="2" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="6"  hits="1"  branch="false" />
+			<line number="7"  hits="1"  branch="false" />
+			<line number="8"  hits="2"  branch="false" />
+			<line number="10"  hits="1"  branch="false" />
+			<line number="12"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+	<package name="statemanagement.actions.data"  line-rate="1"  branch-rate="1" >
+	<classes>
+		<class name="autentication.ts"  filename="src/statemanagement/actions/data/autentication.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="(anonymous_1)"  hits="1"  signature="()V" >
+				<lines><line number="7"  hits="1" /></lines>
+			</method>
+			<method name="SetAuthentication"  hits="1"  signature="()V" >
+				<lines><line number="8"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="1"  signature="()V" >
+				<lines><line number="15"  hits="1" /></lines>
+			</method>
+			<method name="ClearAuthentication"  hits="1"  signature="()V" >
+				<lines><line number="16"  hits="1" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="7"  hits="1"  branch="false" />
+			<line number="8"  hits="1"  branch="false" />
+			<line number="9"  hits="1"  branch="false" />
+			<line number="10"  hits="1"  branch="false" />
+			<line number="12"  hits="1"  branch="false" />
+			<line number="14"  hits="1"  branch="false" />
+			<line number="15"  hits="1"  branch="false" />
+			<line number="16"  hits="1"  branch="false" />
+			<line number="17"  hits="1"  branch="false" />
+			<line number="19"  hits="1"  branch="false" />
+			<line number="21"  hits="1"  branch="false" />
+		</lines>
+		</class>
+		<class name="wine.ts"  filename="src/statemanagement/actions/data/wine.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="(anonymous_1)"  hits="1"  signature="()V" >
+				<lines><line number="11"  hits="1" /></lines>
+			</method>
+			<method name="AddWine"  hits="1"  signature="()V" >
+				<lines><line number="12"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="1"  signature="()V" >
+				<lines><line number="19"  hits="1" /></lines>
+			</method>
+			<method name="RemoveWine"  hits="1"  signature="()V" >
+				<lines><line number="20"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_5)"  hits="1"  signature="()V" >
+				<lines><line number="27"  hits="1" /></lines>
+			</method>
+			<method name="UpdateWine"  hits="1"  signature="()V" >
+				<lines><line number="28"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_7)"  hits="1"  signature="()V" >
+				<lines><line number="35"  hits="1" /></lines>
+			</method>
+			<method name="UpdateRate"  hits="1"  signature="()V" >
+				<lines><line number="36"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_9)"  hits="1"  signature="()V" >
+				<lines><line number="43"  hits="1" /></lines>
+			</method>
+			<method name="UpdateStock"  hits="1"  signature="()V" >
+				<lines><line number="44"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_11)"  hits="1"  signature="()V" >
+				<lines><line number="51"  hits="1" /></lines>
+			</method>
+			<method name="SetAllWines"  hits="1"  signature="()V" >
+				<lines><line number="52"  hits="1" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="11"  hits="1"  branch="false" />
+			<line number="12"  hits="1"  branch="false" />
+			<line number="13"  hits="1"  branch="false" />
+			<line number="14"  hits="1"  branch="false" />
+			<line number="16"  hits="1"  branch="false" />
+			<line number="18"  hits="1"  branch="false" />
+			<line number="19"  hits="1"  branch="false" />
+			<line number="20"  hits="1"  branch="false" />
+			<line number="21"  hits="1"  branch="false" />
+			<line number="22"  hits="1"  branch="false" />
+			<line number="24"  hits="1"  branch="false" />
+			<line number="26"  hits="1"  branch="false" />
+			<line number="27"  hits="1"  branch="false" />
+			<line number="28"  hits="1"  branch="false" />
+			<line number="29"  hits="1"  branch="false" />
+			<line number="30"  hits="1"  branch="false" />
+			<line number="32"  hits="1"  branch="false" />
+			<line number="34"  hits="1"  branch="false" />
+			<line number="35"  hits="1"  branch="false" />
+			<line number="36"  hits="1"  branch="false" />
+			<line number="37"  hits="1"  branch="false" />
+			<line number="38"  hits="1"  branch="false" />
+			<line number="40"  hits="1"  branch="false" />
+			<line number="42"  hits="1"  branch="false" />
+			<line number="43"  hits="1"  branch="false" />
+			<line number="44"  hits="1"  branch="false" />
+			<line number="45"  hits="1"  branch="false" />
+			<line number="46"  hits="1"  branch="false" />
+			<line number="48"  hits="1"  branch="false" />
+			<line number="50"  hits="1"  branch="false" />
+			<line number="51"  hits="1"  branch="false" />
+			<line number="52"  hits="1"  branch="false" />
+			<line number="53"  hits="1"  branch="false" />
+			<line number="54"  hits="1"  branch="false" />
+			<line number="56"  hits="1"  branch="false" />
+			<line number="58"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+	<package name="statemanagement.reducers.containers"  line-rate="1"  branch-rate="1" >
+	<classes>
+		<class name="application.reducer.ts"  filename="src/statemanagement/reducers/containers/application.reducer.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="applicationReducer"  hits="4"  signature="()V" >
+				<lines><line number="6"  hits="4" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="6"  hits="1"  branch="false" />
+			<line number="7"  hits="4"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="8"  hits="4"  branch="true"  condition-coverage="100% (3/3)" />
+			<line number="10"  hits="1"  branch="false" />
+			<line number="14"  hits="1"  branch="false" />
+			<line number="18"  hits="2"  branch="false" />
+			<line number="21"  hits="1"  branch="false" />
+		</lines>
+		</class>
+		<class name="collapsable-sidebar.reducer.ts"  filename="src/statemanagement/reducers/containers/collapsable-sidebar.reducer.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="collapsableSidebarReducer"  hits="4"  signature="()V" >
+				<lines><line number="6"  hits="4" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="6"  hits="1"  branch="false" />
+			<line number="7"  hits="4"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="8"  hits="4"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="10"  hits="2"  branch="false" />
+			<line number="14"  hits="2"  branch="false" />
+			<line number="17"  hits="1"  branch="false" />
+		</lines>
+		</class>
+		<class name="notifications-bar.reducer.ts"  filename="src/statemanagement/reducers/containers/notifications-bar.reducer.ts"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="notificationsBarReducer"  hits="4"  signature="()V" >
+				<lines><line number="6"  hits="4" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="6"  hits="1"  branch="false" />
+			<line number="7"  hits="4"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="8"  hits="4"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="10"  hits="2"  branch="false" />
+			<line number="14"  hits="2"  branch="false" />
+			<line number="17"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+	<package name="statemanagement.reducers.data"  line-rate="1"  branch-rate="0.9" >
+	<classes>
+		<class name="authentication.reducer.ts"  filename="src/statemanagement/reducers/data/authentication.reducer.ts"  line-rate="1"  branch-rate="0.8" >
+		<methods>
+			<method name="authenticationReducer"  hits="3"  signature="()V" >
+				<lines><line number="8"  hits="3" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="8"  hits="1"  branch="false" />
+			<line number="9"  hits="3"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="10"  hits="3"  branch="true"  condition-coverage="100% (3/3)" />
+			<line number="12"  hits="1"  branch="false" />
+			<line number="13"  hits="1"  branch="false" />
+			<line number="23"  hits="1"  branch="false" />
+			<line number="29"  hits="1"  branch="false" />
+			<line number="32"  hits="1"  branch="false" />
+		</lines>
+		</class>
+		<class name="wines.reducer.ts"  filename="src/statemanagement/reducers/data/wines.reducer.ts"  line-rate="1"  branch-rate="0.9333" >
+		<methods>
+			<method name="winesReducer"  hits="7"  signature="()V" >
+				<lines><line number="3"  hits="7" /></lines>
+			</method>
+			<method name="(anonymous_2)"  hits="3"  signature="()V" >
+				<lines><line number="11"  hits="3" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="3"  signature="()V" >
+				<lines><line number="13"  hits="3" /></lines>
+			</method>
+			<method name="(anonymous_4)"  hits="3"  signature="()V" >
+				<lines><line number="15"  hits="3" /></lines>
+			</method>
+			<method name="(anonymous_5)"  hits="3"  signature="()V" >
+				<lines><line number="17"  hits="3" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="4"  hits="7"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="5"  hits="7"  branch="true"  condition-coverage="100% (7/7)" />
+			<line number="7"  hits="1"  branch="false" />
+			<line number="9"  hits="1"  branch="false" />
+			<line number="11"  hits="3"  branch="false" />
+			<line number="13"  hits="3"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="15"  hits="3"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="17"  hits="3"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="19"  hits="1"  branch="false" />
+			<line number="22"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+	<package name="statemanagement.util"  line-rate="0.8571"  branch-rate="0.5" >
+	<classes>
+		<class name="util.ts"  filename="src/statemanagement/util/util.ts"  line-rate="0.8571"  branch-rate="0.5" >
+		<methods>
+			<method name="type"  hits="12"  signature="()V" >
+				<lines><line number="3"  hits="12" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="4"  hits="12"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="5"  hits="0"  branch="false" />
+			<line number="7"  hits="12"  branch="false" />
+			<line number="8"  hits="12"  branch="false" />
+			<line number="10"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+	<package name="stock.entities"  line-rate="1"  branch-rate="0.625" >
+	<classes>
+		<class name="Wine.ts"  filename="src/stock/entities/Wine.ts"  line-rate="1"  branch-rate="0.625" >
+		<methods>
+			<method name="(anonymous_1)"  hits="1"  signature="()V" >
+				<lines><line number="2"  hits="1" /></lines>
+			</method>
+			<method name="Wine"  hits="20"  signature="()V" >
+				<lines><line number="3"  hits="20" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="2"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="false" />
+			<line number="4"  hits="20"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="5"  hits="20"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="6"  hits="20"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="7"  hits="20"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="8"  hits="20"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="9"  hits="20"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="10"  hits="20"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="11"  hits="20"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="12"  hits="20"  branch="false" />
+			<line number="13"  hits="20"  branch="false" />
+			<line number="14"  hits="20"  branch="false" />
+			<line number="15"  hits="20"  branch="false" />
+			<line number="16"  hits="20"  branch="false" />
+			<line number="17"  hits="20"  branch="false" />
+			<line number="18"  hits="20"  branch="false" />
+			<line number="19"  hits="20"  branch="false" />
+			<line number="21"  hits="1"  branch="false" />
+			<line number="23"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+</packages>
+</coverage>

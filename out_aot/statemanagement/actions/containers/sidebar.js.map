@@ -1,0 +1,1 @@
+{"version":3,"file":"sidebar.js","sourceRoot":"","sources":["../../../../src/statemanagement/actions/containers/sidebar.ts"],"names":[],"mappings":"OAAO,EAAC,IAAI,EAAC,MAAM,iBAAiB;AAEpC,OAAO,MAAM,WAAW,GAAG;IACvB,cAAc,EAAE,IAAI,CAAC,qCAAqC,CAAC;CAC9D,CAAA;AAED;IAGI;QAFA,SAAI,GAAG,WAAW,CAAC,cAAc,CAAC;IAEZ,CAAC;AAC3B,CAAC;AAAA"}

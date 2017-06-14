@@ -1,0 +1,82 @@
+.dp-picker-input {
+      box-sizing: border-box;
+
+      font-size: 13px;
+      outline: none;
+    }
+
+    .dp-current-location-btn {
+      right: 5px;
+      height: 18px;
+      width: 18px;
+      border: 2px solid fade(black, 60);
+    }
+
+  .dp-input-container {
+    position: relative;
+  }
+
+  .dp-popup {
+    position: relative;
+    background: white;
+    box-shadow: 10px 10px 10px 0 fade(black, 30) !important;
+    border: none !important;
+    border-radius: 10px;
+    z-index: 9999;
+    white-space: nowrap;
+  }
+  .dp-calendar-weekday {
+      font-size: 10px;
+      font-family: "Lato";
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none !important;
+  }
+  .dp-calendar-nav-container {
+      border: none !important;
+  }
+  .dp-calendar-wrapper {
+      border: none !important;
+  }
+  .dp-calendar-day {
+      border: none !important;
+      background-color: #fff !important;
+      font-family: "Lato";
+  }
+    .dp-calendar-month {
+      border: none !important;
+      background-color: #fff !important;
+      font-family: "Lato";
+  }
+  .dp-calendar-nav-left {
+      border: none !important;
+      background-color: #fff !important;
+  }
+   .dp-calendar-nav-right {
+      border: none !important;
+      background-color: #fff !important;
+  }
+  .dp-nav-header {
+      border: none !important;
+      font-family: 'Lato' !important;
+      background-color: #fff !important;
+  }
+ 
+
+  .dp-selected {
+    background: #f7f7f7 !important;
+    color: #7BACC9 !important;
+  }
+
+  .dp-current-location-btn {
+    position: absolute;
+    right: 5px;
+    height: 14px;
+    width: 13px;
+    background: fade(black, 60);
+    border: 1px solid fade(black, 60);
+    outline: none;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px white;
+    cursor: pointer;
+  }

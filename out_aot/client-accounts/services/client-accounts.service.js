@@ -1,0 +1,64 @@
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+import { Store } from "@ngrx/store";
+import { Injectable } from "@angular/core";
+import { Headers, RequestOptions, Http } from "@angular/http";
+import { API_URL } from "../../configuration";
+import { Subject } from "rxjs/Subject";
+export let ClientAccountsService = class ClientAccountsService {
+    constructor(store, http) {
+        this.store = store;
+        this.http = http;
+        this.ngUnsubscribe = new Subject();
+        this.store.select((state) => state.data.authentication.jwtToken)
+            .takeUntil(this.ngUnsubscribe)
+            .subscribe((jwtToken) => this.jwtToken = jwtToken);
+    }
+    ngOnDestroy() {
+        this.ngUnsubscribe.next();
+        this.ngUnsubscribe.complete();
+    }
+    add(clientAccount) {
+        return this.http.post(`${API_URL}/clientaccounts`, clientAccount, this.authorizedHttpOptions())
+            .take(1)
+            .map((res) => res.json());
+    }
+    update(id, clientAccount) {
+        return this.http.put(`${API_URL}/clientaccounts/${id}`, clientAccount, this.authorizedHttpOptions());
+    }
+    remove(clientAccount) {
+        return this.http.delete(`${API_URL}/clientaccounts/${clientAccount._id}`, this.authorizedHttpOptions());
+    }
+    load() {
+        return this.http.get(`${API_URL}/clientaccounts`, this.authorizedHttpOptions())
+            .take(1)
+            .map((res) => res.json());
+    }
+    fetchClientAccount(id) {
+        return this.http.get(`${API_URL}/clientaccounts/${id}`, this.authorizedHttpOptions())
+            .map((res) => res.json());
+    }
+    updateStatus(clientAccount, accountStatus) {
+        let newClientAccount = Object.assign({}, clientAccount, { accountStatus: accountStatus });
+        console.log('status', accountStatus);
+        return this.http.put(`${API_URL}/clientaccounts/${clientAccount._id}`, newClientAccount, this.authorizedHttpOptions());
+    }
+    authorizedHttpOptions() {
+        let headers = new Headers({
+            authorization: `Bearer ${this.jwtToken}`
+        });
+        return new RequestOptions({ headers: headers });
+    }
+};
+ClientAccountsService = __decorate([
+    Injectable(), 
+    __metadata('design:paramtypes', [Store, Http])
+], ClientAccountsService);
+//# sourceMappingURL=client-accounts.service.js.map

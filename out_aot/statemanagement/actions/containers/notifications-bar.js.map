@@ -1,0 +1,1 @@
+{"version":3,"file":"notifications-bar.js","sourceRoot":"","sources":["../../../../src/statemanagement/actions/containers/notifications-bar.ts"],"names":[],"mappings":"OAAO,EAAE,IAAI,EAAE,MAAM,iBAAiB;AAEtC,OAAO,MAAM,WAAW,GAAG;IACvB,wBAAwB,EAAE,IAAI,CAAC,oCAAoC,CAAC;CACvE,CAAA;AAED;IAGI;QAFA,SAAI,GAAG,WAAW,CAAC,wBAAwB,CAAC;IAEtB,CAAC;AAC3B,CAAC;AAAA"}

@@ -1,0 +1,1 @@
+{"summaries":[{"symbol":{"__symbol":0},"metadata":{"__symbolic":"class"},"type":{"summaryKind":0,"type":{"reference":{"__symbol":0},"diDeps":[],"lifecycleHooks":[]},"name":"orderByPipe","pure":true}}],"symbols":[{"__symbol":0,"name":"OrderByPipe","filePath":"/Users/jonoforbes/Developer/Ether/winecellar/src/common/pipes/order-by.pipe.d.ts"}]}

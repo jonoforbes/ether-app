@@ -1,0 +1,216 @@
+.navbar.navbar-inverse {
+  background-color: $color-purple;
+  .navbar-nav li a {
+    color: $color-white;
+    &:hover {
+      background: $color-purple-light;
+    }
+  }
+  .navbar-brand {
+    color: $color-white;
+  }
+  .navbar-text {
+    color: $color-white;
+  }
+  .navbar-nav li a.router-link-active {
+    background: $color-purple-dark;
+    color: $color-white;
+  }
+}
+
+
+.app-container {
+	height: 100%;
+}
+
+// .example-fab {
+//   position: absolute;
+//   right: 20px;
+//   bottom: 10px;
+// }
+
+// .example-card {
+//   width: 400px;
+// }
+
+.right-sidenav {
+  width: 320px;
+  background-color: #ffffff !important;
+  border-left-style: solid;
+  border-left-color: #e2e2e4;
+  border-left-width: 1px;
+}
+
+.top-buttons {
+  margin: 2px 0px 2px 14px !important;
+  height: 38px !important;
+  width: 38px !important;
+
+  md-icon {
+    color: #838383;
+    font-size: 22px;
+    margin-top: -4.5px;
+  }
+}
+
+.mat-spinner {
+  margin: 10px -20px 10px 0px !important;
+  height: 25px !important;
+  stroke: #838383 !important;
+  svg {
+    path {
+      stroke: #838383 !important;
+    }
+  }
+  
+}
+
+.top-left-buttons {
+  margin: 2px 0px 2px 0px !important;
+  height: 38px !important;
+  width: 38px !important;
+
+  md-icon {
+    color: #838383;
+    font-size: 22px;
+    margin-top: -4.5px;
+  }
+}
+
+.profileMenu {
+  img {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    margin-top: 7px;
+    margin-left: 15px;
+  }
+  h1 {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #6a6a6a;
+    text-align: left;
+    margin-top: 10px;
+  }
+  h2 {
+    margin-top: -2px;
+    font-family: 'Lato';
+    font-size: 9px;
+    color: #6a6a6a;
+    text-align: left;
+  }
+  h3 {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #6a6a6a;
+    margin-top: -7px;
+    text-align: left;
+  }
+}
+
+.mainMenu {
+
+  h1 {
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #838383;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  h2 {
+    margin-top: -15px;
+    font-family: 'Lato';
+    font-size: 9px;
+    color: #838383;
+    text-align: left;
+  }
+  h3 {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #838383;
+    margin-top: -6px;
+    text-align: left;
+  }
+}
+
+.mainMenuContainer {
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  button {
+    min-height: 78px !important;
+    margin-top: 10px;
+  }
+  img {
+    height: 52px;
+    width: 52px;
+  }
+  h1 {
+    font-family: 'Lato';
+    font-size: 12px;
+    color: #5a5a5a;
+    text-align: center;
+    margin-top: 5px;
+    max-width: 52px;
+    text-overflow: ellipsis;
+  }
+
+}
+
+.mat-menu-panel {
+  max-width: 1000px !important;
+  margin-top: 42px;
+  background-color: $color-white-100;
+}
+
+
+h1 {
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 17px;
+  color: #5a5a5a;
+  display: block;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 12px;
+  font-family: 'Lato';
+  // margin-left: 20px;
+  color: #838383;
+}
+h3 {
+  padding-top: 14.5px;
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  color: #5a5a5a;
+  display: block;
+  margin-bottom: 0px;
+}
+h5 {
+  color: #f7f7f7;
+}
+h4 {
+  font-family: 'Lato';
+  color: #ffffff;
+  position: relative;
+  top: 20px;
+  font-size: 35px;
+  left: 15px;
+}
+p {
+  margin-top: 0px;
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 17px;
+  color: #838383;
+  display: block;
+}
+
+md-list-item {
+	height: 300px
+}
+
+md-sidenav.md-sidenav-opened, md-sidenav.md-sidenav-opening{
+  box-shadow: 0 0 0 0 !important;
+}

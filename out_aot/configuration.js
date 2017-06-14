@@ -1,0 +1,10 @@
+export const BACKEND = "https://ether-templar.herokuapp.com/";
+export const API_URL = BACKEND + "api";
+export const LOCALSTORAGE_AUTH = "authentication";
+export const WINE_COM_API_URL = "http://services.wine.com/api/beta2/service.svc/json/";
+export const WINE_COM_API_KEY = "%API_KEY%";
+export const GOOGLE_MAPS_API_KEY = "AIzaSyAgDMc0bh3So9wHU2hzoOjU8IxnVl6LZh8";
+export const GOOGLE_MAPS_API_URL = "https://maps.googleapis.com/maps/api/geocode/json?";
+export const BOX_API_URL = "https://api.box.com/2.0/";
+export const BOX_UPLOAD_API_URL = "https://upload.box.com/api/2.0/";
+//# sourceMappingURL=configuration.js.map

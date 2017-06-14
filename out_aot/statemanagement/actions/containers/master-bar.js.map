@@ -1,0 +1,1 @@
+{"version":3,"file":"master-bar.js","sourceRoot":"","sources":["../../../../src/statemanagement/actions/containers/master-bar.ts"],"names":[],"mappings":"OAAO,EAAE,IAAI,EAAE,MAAM,iBAAiB;AAGtC,OAAO,MAAM,WAAW,GAAG;IACvB,iBAAiB,EAAE,IAAI,CAAC,6BAA6B,CAAC;CACzD,CAAA;AAED;IAGI;QAFA,SAAI,GAAG,WAAW,CAAC,iBAAiB,CAAC;IAEf,CAAC;AAC3B,CAAC;AAAA"}
