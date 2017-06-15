@@ -227,7 +227,7 @@ const nodeDebugInfos_EditTaskComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_EditTaskComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/components/edit-task/edit-task.component.ts class EditTaskComponent - inline template',0,import6.ViewEncapsulation.None,styles_EditTaskComponent,{});
+var renderType_EditTaskComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/components/edit-task/edit-task.component.ts class EditTaskComponent - inline template',0,import6.ViewEncapsulation.None,styles_EditTaskComponent,{});
 export class View_EditTaskComponent0 extends import2.DebugAppView<import0.EditTaskComponent> {
   _viewQuery_myPopover_0:import32.QueryList<any>;
   _text_0:any;

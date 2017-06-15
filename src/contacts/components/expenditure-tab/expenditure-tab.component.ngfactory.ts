@@ -372,7 +372,7 @@ const nodeDebugInfos_ExpenditureTabComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ExpenditureTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/expenditure-tab/expenditure-tab.component.ts class ExpenditureTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_ExpenditureTabComponent,{});
+var renderType_ExpenditureTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/expenditure-tab/expenditure-tab.component.ts class ExpenditureTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_ExpenditureTabComponent,{});
 export class View_ExpenditureTabComponent0 extends import2.DebugAppView<import0.ExpenditureTabComponent> {
   _text_0:any;
   _el_1:any;

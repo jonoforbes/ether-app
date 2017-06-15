@@ -134,7 +134,7 @@ const nodeDebugInfos_ContactsMasterContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/contacts-master/contacts-master.container.ts class ContactsMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsMasterContainer,{});
+var renderType_ContactsMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/contacts-master/contacts-master.container.ts class ContactsMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsMasterContainer,{});
 export class View_ContactsMasterContainer0 extends import1.DebugAppView<import0.ContactsMasterContainer> {
   _text_0:any;
   _el_1:any;

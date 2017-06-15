@@ -23,6 +23,7 @@ import { xLiabilitiesReducer } from "./reducers/data/xliabilities.reducer";
 import { xPensionsReducer } from "./reducers/data/xpensions.reducer";
 import { xProtectionsReducer } from "./reducers/data/xprotections.reducer";
 import { bankAccountsReducer } from "./reducers/data/bank-accounts.reducer";
+import { commentsReducer } from "./reducers/data/comments.reducer";
 
 
 import { combineReducers } from "@ngrx/store";
@@ -46,7 +47,8 @@ let dataReducers = combineReducers({
     xLiabilities: xLiabilitiesReducer,
     xPensions: xPensionsReducer,
     xProtections: xProtectionsReducer,
-    bankAccounts: bankAccountsReducer
+    bankAccounts: bankAccountsReducer,
+    comments: commentsReducer
 });
 let containersReducers = combineReducers({
     collapsableSidebar: collapsableSidebarReducer,

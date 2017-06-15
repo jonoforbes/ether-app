@@ -98,7 +98,7 @@ const nodeDebugInfos_SpinnerComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_SpinnerComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/common/components/spinner/spinner.component.ts class SpinnerComponent - inline template',0,import6.ViewEncapsulation.None,styles_SpinnerComponent,{});
+var renderType_SpinnerComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/common/components/spinner/spinner.component.ts class SpinnerComponent - inline template',0,import6.ViewEncapsulation.None,styles_SpinnerComponent,{});
 export class View_SpinnerComponent0 extends import2.DebugAppView<import0.SpinnerComponent> {
   _text_0:any;
   _el_1:any;

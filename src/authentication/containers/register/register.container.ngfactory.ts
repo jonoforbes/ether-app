@@ -99,7 +99,7 @@ const nodeDebugInfos_RegisterContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_RegisterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/authentication/containers/register/register.container.ts class RegisterContainer - inline template',0,import5.ViewEncapsulation.None,styles_RegisterContainer,{});
+var renderType_RegisterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/authentication/containers/register/register.container.ts class RegisterContainer - inline template',0,import5.ViewEncapsulation.None,styles_RegisterContainer,{});
 export class View_RegisterContainer0 extends import1.DebugAppView<import0.RegisterContainer> {
   _text_0:any;
   _el_1:any;

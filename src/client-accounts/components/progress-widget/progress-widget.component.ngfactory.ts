@@ -891,7 +891,7 @@ const nodeDebugInfos_ClientAccountsProgressWidgetComponent0:import4.StaticNodeDe
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountsProgressWidgetComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/components/progress-widget/progress-widget.component.ts class ClientAccountsProgressWidgetComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsProgressWidgetComponent,{});
+var renderType_ClientAccountsProgressWidgetComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/components/progress-widget/progress-widget.component.ts class ClientAccountsProgressWidgetComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsProgressWidgetComponent,{});
 export class View_ClientAccountsProgressWidgetComponent0 extends import2.DebugAppView<import0.ClientAccountsProgressWidgetComponent> {
   _text_0:any;
   _el_1:any;

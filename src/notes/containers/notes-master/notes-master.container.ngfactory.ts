@@ -133,7 +133,7 @@ const nodeDebugInfos_NotesMasterContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_NotesMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/notes/containers/notes-master/notes-master.container.ts class NotesMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_NotesMasterContainer,{});
+var renderType_NotesMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/notes/containers/notes-master/notes-master.container.ts class NotesMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_NotesMasterContainer,{});
 export class View_NotesMasterContainer0 extends import1.DebugAppView<import0.NotesMasterContainer> {
   _text_0:any;
   _el_1:any;

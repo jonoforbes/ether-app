@@ -134,7 +134,7 @@ const nodeDebugInfos_NotesDetailEditorComponent0:import4.StaticNodeDebugInfo[] =
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_NotesDetailEditorComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/notes/components/detail-editor/detail-editor.component.ts class NotesDetailEditorComponent - inline template',0,import6.ViewEncapsulation.None,styles_NotesDetailEditorComponent,{});
+var renderType_NotesDetailEditorComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/notes/components/detail-editor/detail-editor.component.ts class NotesDetailEditorComponent - inline template',0,import6.ViewEncapsulation.None,styles_NotesDetailEditorComponent,{});
 export class View_NotesDetailEditorComponent0 extends import2.DebugAppView<import0.NotesDetailEditorComponent> {
   _text_0:any;
   _el_1:any;

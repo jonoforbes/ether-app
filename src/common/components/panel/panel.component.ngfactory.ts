@@ -106,7 +106,7 @@ const nodeDebugInfos_PanelComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_PanelComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/common/components/panel/panel.component.ts class PanelComponent - inline template',1,import6.ViewEncapsulation.None,styles_PanelComponent,{});
+var renderType_PanelComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/common/components/panel/panel.component.ts class PanelComponent - inline template',1,import6.ViewEncapsulation.None,styles_PanelComponent,{});
 export class View_PanelComponent0 extends import2.DebugAppView<import0.PanelComponent> {
   _text_0:any;
   _el_1:any;

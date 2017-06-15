@@ -133,7 +133,7 @@ const nodeDebugInfos_MessagesMasterContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_MessagesMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/messages/containers/messages-master/messages-master.container.ts class MessagesMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_MessagesMasterContainer,{});
+var renderType_MessagesMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/messages/containers/messages-master/messages-master.container.ts class MessagesMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_MessagesMasterContainer,{});
 export class View_MessagesMasterContainer0 extends import1.DebugAppView<import0.MessagesMasterContainer> {
   _text_0:any;
   _el_1:any;

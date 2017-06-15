@@ -301,7 +301,7 @@ const nodeDebugInfos_ContactsDetailFormComponent0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsDetailFormComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/detail-form/detail-form.component.ts class ContactsDetailFormComponent - inline template',0,import6.ViewEncapsulation.None,styles_ContactsDetailFormComponent,{});
+var renderType_ContactsDetailFormComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/detail-form/detail-form.component.ts class ContactsDetailFormComponent - inline template',0,import6.ViewEncapsulation.None,styles_ContactsDetailFormComponent,{});
 export class View_ContactsDetailFormComponent0 extends import2.DebugAppView<import0.ContactsDetailFormComponent> {
   _text_0:any;
   _el_1:any;

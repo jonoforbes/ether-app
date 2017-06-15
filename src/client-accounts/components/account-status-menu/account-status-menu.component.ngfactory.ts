@@ -138,7 +138,7 @@ const nodeDebugInfos_ClientAccountStatusMenuComponent0:import2.StaticNodeDebugIn
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountStatusMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/components/account-status-menu/account-status-menu.component.ts class ClientAccountStatusMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_ClientAccountStatusMenuComponent,{});
+var renderType_ClientAccountStatusMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/components/account-status-menu/account-status-menu.component.ts class ClientAccountStatusMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_ClientAccountStatusMenuComponent,{});
 export class View_ClientAccountStatusMenuComponent0 extends import1.DebugAppView<import0.ClientAccountStatusMenuComponent> {
   _text_0:any;
   _el_1:any;

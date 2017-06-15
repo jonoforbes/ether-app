@@ -121,7 +121,7 @@ const nodeDebugInfos_CollapsableSidebarContainer0:import2.StaticNodeDebugInfo[] 
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_CollapsableSidebarContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/common/containers/collapsable-sidebar/collapsable-sidebar.container.ts class CollapsableSidebarContainer - inline template',1,import5.ViewEncapsulation.None,styles_CollapsableSidebarContainer,{});
+var renderType_CollapsableSidebarContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/common/containers/collapsable-sidebar/collapsable-sidebar.container.ts class CollapsableSidebarContainer - inline template',1,import5.ViewEncapsulation.None,styles_CollapsableSidebarContainer,{});
 export class View_CollapsableSidebarContainer0 extends import1.DebugAppView<import0.CollapsableSidebarContainer> {
   _text_0:any;
   _el_1:any;

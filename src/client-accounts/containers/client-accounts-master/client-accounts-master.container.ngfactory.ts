@@ -133,7 +133,7 @@ const nodeDebugInfos_ClientAccountsMasterContainer0:import2.StaticNodeDebugInfo[
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountsMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/containers/client-accounts-master/client-accounts-master.container.ts class ClientAccountsMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientAccountsMasterContainer,{});
+var renderType_ClientAccountsMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/containers/client-accounts-master/client-accounts-master.container.ts class ClientAccountsMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientAccountsMasterContainer,{});
 export class View_ClientAccountsMasterContainer0 extends import1.DebugAppView<import0.ClientAccountsMasterContainer> {
   _text_0:any;
   _el_1:any;

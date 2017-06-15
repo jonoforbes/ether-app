@@ -80,7 +80,7 @@ class View_MainComponent_Host0 extends import1.DebugAppView<any> {
 export const MainComponentNgFactory:import8.ComponentFactory<import0.MainComponent> = new import8.ComponentFactory<import0.MainComponent>('main',View_MainComponent_Host0,import0.MainComponent);
 const styles_MainComponent:any[] = ([] as any[]);
 const nodeDebugInfos_MainComponent0:import2.StaticNodeDebugInfo[] = ([] as any[]);
-var renderType_MainComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/common/components/main/main.component.ts class MainComponent - inline template',1,import5.ViewEncapsulation.None,styles_MainComponent,{});
+var renderType_MainComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/common/components/main/main.component.ts class MainComponent - inline template',1,import5.ViewEncapsulation.None,styles_MainComponent,{});
 export class View_MainComponent0 extends import1.DebugAppView<import0.MainComponent> {
   constructor(viewUtils:import4.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_MainComponent0,renderType_MainComponent,import6.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import7.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_MainComponent0);

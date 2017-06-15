@@ -181,7 +181,7 @@ const nodeDebugInfos_LoginComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_LoginComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/authentication/components/login/login.component.ts class LoginComponent - inline template',0,import6.ViewEncapsulation.None,styles_LoginComponent,{});
+var renderType_LoginComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/authentication/components/login/login.component.ts class LoginComponent - inline template',0,import6.ViewEncapsulation.None,styles_LoginComponent,{});
 export class View_LoginComponent0 extends import2.DebugAppView<import0.LoginComponent> {
   _text_0:any;
   _el_1:any;

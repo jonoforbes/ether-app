@@ -104,7 +104,7 @@ const nodeDebugInfos_TasksNextWeekContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TasksNextWeekContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/containers/tasks-next-week/tasks-next-week.container.ts class TasksNextWeekContainer - inline template',0,import5.ViewEncapsulation.None,styles_TasksNextWeekContainer,{});
+var renderType_TasksNextWeekContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/containers/tasks-next-week/tasks-next-week.container.ts class TasksNextWeekContainer - inline template',0,import5.ViewEncapsulation.None,styles_TasksNextWeekContainer,{});
 export class View_TasksNextWeekContainer0 extends import1.DebugAppView<import0.TasksNextWeekContainer> {
   _text_0:any;
   _el_1:any;

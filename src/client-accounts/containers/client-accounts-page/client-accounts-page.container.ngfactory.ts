@@ -129,7 +129,7 @@ const nodeDebugInfos_ClientAccountsPageContainer0:import2.StaticNodeDebugInfo[] 
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountsPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/containers/client-accounts-page/client-accounts-page.container.ts class ClientAccountsPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientAccountsPageContainer,{});
+var renderType_ClientAccountsPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/containers/client-accounts-page/client-accounts-page.container.ts class ClientAccountsPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientAccountsPageContainer,{});
 export class View_ClientAccountsPageContainer0 extends import1.DebugAppView<import0.ClientAccountsPageContainer> {
   _viewQuery_sidenav_0:import13.QueryList<any>;
   _text_0:any;

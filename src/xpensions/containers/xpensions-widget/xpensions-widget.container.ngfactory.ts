@@ -454,7 +454,7 @@ const nodeDebugInfos_XPensionsWidgetContainer0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_XPensionsWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/xpensions/containers/xpensions-widget/xpensions-widget.container.ts class XPensionsWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_XPensionsWidgetContainer,{});
+var renderType_XPensionsWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/xpensions/containers/xpensions-widget/xpensions-widget.container.ts class XPensionsWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_XPensionsWidgetContainer,{});
 export class View_XPensionsWidgetContainer0 extends import2.DebugAppView<import0.XPensionsWidgetContainer> {
   _text_0:any;
   _anchor_1:any;

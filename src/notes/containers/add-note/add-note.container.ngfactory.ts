@@ -89,7 +89,7 @@ const nodeDebugInfos_AddNoteContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddNoteContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/notes/containers/add-note/add-note.container.ts class AddNoteContainer - inline template',0,import5.ViewEncapsulation.None,styles_AddNoteContainer,{});
+var renderType_AddNoteContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/notes/containers/add-note/add-note.container.ts class AddNoteContainer - inline template',0,import5.ViewEncapsulation.None,styles_AddNoteContainer,{});
 export class View_AddNoteContainer0 extends import1.DebugAppView<import0.AddNoteContainer> {
   _text_0:any;
   _el_1:any;

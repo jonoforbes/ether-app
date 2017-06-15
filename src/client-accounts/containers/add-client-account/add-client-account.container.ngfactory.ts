@@ -237,7 +237,7 @@ const nodeDebugInfos_AddClientAccountContainer0:import2.StaticNodeDebugInfo[] = 
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddClientAccountContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/containers/add-client-account/add-client-account.container.ts class AddClientAccountContainer - inline template',0,import5.ViewEncapsulation.None,styles_AddClientAccountContainer,{});
+var renderType_AddClientAccountContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/containers/add-client-account/add-client-account.container.ts class AddClientAccountContainer - inline template',0,import5.ViewEncapsulation.None,styles_AddClientAccountContainer,{});
 export class View_AddClientAccountContainer0 extends import1.DebugAppView<import0.AddClientAccountContainer> {
   _viewQuery_myPopover_0:import29.QueryList<any>;
   _text_0:any;

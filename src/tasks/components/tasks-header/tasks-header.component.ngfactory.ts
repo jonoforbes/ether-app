@@ -135,7 +135,7 @@ const nodeDebugInfos_TasksHeaderComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TasksHeaderComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/components/tasks-header/tasks-header.component.ts class TasksHeaderComponent - inline template',0,import6.ViewEncapsulation.None,styles_TasksHeaderComponent,{});
+var renderType_TasksHeaderComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/components/tasks-header/tasks-header.component.ts class TasksHeaderComponent - inline template',0,import6.ViewEncapsulation.None,styles_TasksHeaderComponent,{});
 export class View_TasksHeaderComponent0 extends import2.DebugAppView<import0.TasksHeaderComponent> {
   _text_0:any;
   _el_1:any;

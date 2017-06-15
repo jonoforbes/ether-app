@@ -1851,7 +1851,7 @@ const nodeDebugInfos_ClientAccountsMasterListComponent0:import4.StaticNodeDebugI
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountsMasterListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/components/master-list/master-list.component.ts class ClientAccountsMasterListComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsMasterListComponent,{});
+var renderType_ClientAccountsMasterListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/components/master-list/master-list.component.ts class ClientAccountsMasterListComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsMasterListComponent,{});
 export class View_ClientAccountsMasterListComponent0 extends import2.DebugAppView<import0.ClientAccountsMasterListComponent> {
   _text_0:any;
   _el_1:any;

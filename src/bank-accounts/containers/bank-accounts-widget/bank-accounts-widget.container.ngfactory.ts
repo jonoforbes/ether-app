@@ -272,7 +272,7 @@ const nodeDebugInfos_BankAccountsWidgetContainer0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_BankAccountsWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/bank-accounts/containers/bank-accounts-widget/bank-accounts-widget.container.ts class BankAccountsWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_BankAccountsWidgetContainer,{});
+var renderType_BankAccountsWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/bank-accounts/containers/bank-accounts-widget/bank-accounts-widget.container.ts class BankAccountsWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_BankAccountsWidgetContainer,{});
 export class View_BankAccountsWidgetContainer0 extends import2.DebugAppView<import0.BankAccountsWidgetContainer> {
   _text_0:any;
   _el_1:any;

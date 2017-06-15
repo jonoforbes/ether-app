@@ -260,7 +260,7 @@ const nodeDebugInfos_AddressesWidgetContainer0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddressesWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/addresses/containers/addresses-widget/addresses-widget.container.ts class AddressesWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_AddressesWidgetContainer,{});
+var renderType_AddressesWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/addresses/containers/addresses-widget/addresses-widget.container.ts class AddressesWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_AddressesWidgetContainer,{});
 export class View_AddressesWidgetContainer0 extends import2.DebugAppView<import0.AddressesWidgetContainer> {
   _text_0:any;
   _el_1:any;

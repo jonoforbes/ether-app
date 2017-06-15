@@ -194,7 +194,7 @@ const nodeDebugInfos_TasksMasterContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TasksMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/containers/tasks-master/tasks-master.container.ts class TasksMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_TasksMasterContainer,{});
+var renderType_TasksMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/containers/tasks-master/tasks-master.container.ts class TasksMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_TasksMasterContainer,{});
 export class View_TasksMasterContainer0 extends import1.DebugAppView<import0.TasksMasterContainer> {
   _text_0:any;
   _el_1:any;

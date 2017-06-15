@@ -194,7 +194,7 @@ const nodeDebugInfos_AddressesSearchComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddressesSearchComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/addresses/components/addresses-search/addresses-search.component.ts class AddressesSearchComponent - inline template',0,import6.ViewEncapsulation.None,styles_AddressesSearchComponent,{});
+var renderType_AddressesSearchComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/addresses/components/addresses-search/addresses-search.component.ts class AddressesSearchComponent - inline template',0,import6.ViewEncapsulation.None,styles_AddressesSearchComponent,{});
 export class View_AddressesSearchComponent0 extends import2.DebugAppView<import0.AddressesSearchComponent> {
   _text_0:any;
   _el_1:any;

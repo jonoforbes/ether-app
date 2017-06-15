@@ -89,7 +89,7 @@ const nodeDebugInfos_AddContactContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddContactContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/add-contact/add-contact.container.ts class AddContactContainer - inline template',0,import5.ViewEncapsulation.None,styles_AddContactContainer,{});
+var renderType_AddContactContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/add-contact/add-contact.container.ts class AddContactContainer - inline template',0,import5.ViewEncapsulation.None,styles_AddContactContainer,{});
 export class View_AddContactContainer0 extends import1.DebugAppView<import0.AddContactContainer> {
   _text_0:any;
   _el_1:any;

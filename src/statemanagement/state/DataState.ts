@@ -16,6 +16,7 @@ import { XLiability } from "../../xliabilities/entities/XLiability";
 import { XPension } from "../../xpensions/entities/XPension";
 import { XProtection } from "../../xprotections/entities/XProtection";
 import { BankAccount } from "../../bank-accounts/entities/BankAccount";
+import { Comment } from "../../comments/entities/Comment";
 
 export interface DataState {
     authentication: AuthenticationDataState;
@@ -36,6 +37,7 @@ export interface DataState {
     xPensions: Array<XPension>;
     xProtections: Array<XProtection>;
     bankAccounts: Array<BankAccount>;
+    comments: Array<Comment>;
 }
 
 export interface AuthenticationDataState {

@@ -335,7 +335,7 @@ const nodeDebugInfos_HealthOccupationTabComponent0:import4.StaticNodeDebugInfo[]
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_HealthOccupationTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/health-occupation-tab/health-occupation-tab.component.ts class HealthOccupationTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_HealthOccupationTabComponent,{});
+var renderType_HealthOccupationTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/health-occupation-tab/health-occupation-tab.component.ts class HealthOccupationTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_HealthOccupationTabComponent,{});
 export class View_HealthOccupationTabComponent0 extends import2.DebugAppView<import0.HealthOccupationTabComponent> {
   _text_0:any;
   _el_1:any;

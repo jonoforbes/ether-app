@@ -258,7 +258,7 @@ const nodeDebugInfos_ContactsWidgetContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/contacts-widget/contacts-widget.container.ts class ContactsWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsWidgetContainer,{});
+var renderType_ContactsWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/contacts-widget/contacts-widget.container.ts class ContactsWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsWidgetContainer,{});
 export class View_ContactsWidgetContainer0 extends import1.DebugAppView<import0.ContactsWidgetContainer> {
   _text_0:any;
   _el_1:any;

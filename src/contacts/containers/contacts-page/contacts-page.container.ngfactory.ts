@@ -117,7 +117,7 @@ const nodeDebugInfos_ContactsPageContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/contacts-page/contacts-page.container.ts class ContactsPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsPageContainer,{});
+var renderType_ContactsPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/contacts-page/contacts-page.container.ts class ContactsPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsPageContainer,{});
 export class View_ContactsPageContainer0 extends import1.DebugAppView<import0.ContactsPageContainer> {
   _text_0:any;
   _el_1:any;

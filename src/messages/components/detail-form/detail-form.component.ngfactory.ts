@@ -142,7 +142,7 @@ const nodeDebugInfos_MessagesDetailFormComponent0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_MessagesDetailFormComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/messages/components/detail-form/detail-form.component.ts class MessagesDetailFormComponent - inline template',0,import6.ViewEncapsulation.None,styles_MessagesDetailFormComponent,{});
+var renderType_MessagesDetailFormComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/messages/components/detail-form/detail-form.component.ts class MessagesDetailFormComponent - inline template',0,import6.ViewEncapsulation.None,styles_MessagesDetailFormComponent,{});
 export class View_MessagesDetailFormComponent0 extends import2.DebugAppView<import0.MessagesDetailFormComponent> {
   _text_0:any;
   _el_1:any;

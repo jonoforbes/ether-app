@@ -248,7 +248,7 @@ const nodeDebugInfos_ClientAccountsStatusWidgetComponent0:import4.StaticNodeDebu
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountsStatusWidgetComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/components/status-widget/status-widget.component.ts class ClientAccountsStatusWidgetComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsStatusWidgetComponent,{});
+var renderType_ClientAccountsStatusWidgetComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/components/status-widget/status-widget.component.ts class ClientAccountsStatusWidgetComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsStatusWidgetComponent,{});
 export class View_ClientAccountsStatusWidgetComponent0 extends import2.DebugAppView<import0.ClientAccountsStatusWidgetComponent> {
   _text_0:any;
   _el_1:any;

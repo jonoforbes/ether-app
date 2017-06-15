@@ -117,7 +117,7 @@ const nodeDebugInfos_TeamPageContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TeamPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/team/containers/team-page/team-page.container.ts class TeamPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_TeamPageContainer,{});
+var renderType_TeamPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/team/containers/team-page/team-page.container.ts class TeamPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_TeamPageContainer,{});
 export class View_TeamPageContainer0 extends import1.DebugAppView<import0.TeamPageContainer> {
   _text_0:any;
   _el_1:any;

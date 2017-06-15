@@ -117,7 +117,7 @@ const nodeDebugInfos_NotesPageContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_NotesPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/notes/containers/notes-page/notes-page.container.ts class NotesPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_NotesPageContainer,{});
+var renderType_NotesPageContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/notes/containers/notes-page/notes-page.container.ts class NotesPageContainer - inline template',0,import5.ViewEncapsulation.None,styles_NotesPageContainer,{});
 export class View_NotesPageContainer0 extends import1.DebugAppView<import0.NotesPageContainer> {
   _text_0:any;
   _el_1:any;

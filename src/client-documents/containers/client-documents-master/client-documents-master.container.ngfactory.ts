@@ -163,7 +163,7 @@ const nodeDebugInfos_ClientDocumentsMasterContainer0:import2.StaticNodeDebugInfo
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientDocumentsMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-documents/containers/client-documents-master/client-documents-master.container.ts class ClientDocumentsMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentsMasterContainer,{});
+var renderType_ClientDocumentsMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-documents/containers/client-documents-master/client-documents-master.container.ts class ClientDocumentsMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentsMasterContainer,{});
 export class View_ClientDocumentsMasterContainer0 extends import1.DebugAppView<import0.ClientDocumentsMasterContainer> {
   _text_0:any;
   _el_1:any;

@@ -920,7 +920,7 @@ const nodeDebugInfos_AddBankAccountTabComponent0:import2.StaticNodeDebugInfo[] =
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddBankAccountTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/bank-accounts/components/add-bank-account-tab/add-bank-account-tab.component.ts class AddBankAccountTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddBankAccountTabComponent,{});
+var renderType_AddBankAccountTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/bank-accounts/components/add-bank-account-tab/add-bank-account-tab.component.ts class AddBankAccountTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddBankAccountTabComponent,{});
 export class View_AddBankAccountTabComponent0 extends import1.DebugAppView<import0.AddBankAccountTabComponent> {
   _text_0:any;
   _el_1:any;

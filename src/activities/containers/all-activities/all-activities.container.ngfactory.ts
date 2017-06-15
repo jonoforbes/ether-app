@@ -90,7 +90,7 @@ const nodeDebugInfos_AllActivitiesContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AllActivitiesContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/activities/containers/all-activities/all-activities.container.ts class AllActivitiesContainer - inline template',0,import5.ViewEncapsulation.None,styles_AllActivitiesContainer,{});
+var renderType_AllActivitiesContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/activities/containers/all-activities/all-activities.container.ts class AllActivitiesContainer - inline template',0,import5.ViewEncapsulation.None,styles_AllActivitiesContainer,{});
 export class View_AllActivitiesContainer0 extends import1.DebugAppView<import0.AllActivitiesContainer> {
   _text_0:any;
   _el_1:any;

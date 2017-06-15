@@ -199,7 +199,7 @@ const nodeDebugInfos_ClientDocumentAssignmentSelectorComponent0:import2.StaticNo
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientDocumentAssignmentSelectorComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-documents/components/assignment-selector/assignment-selector.component.ts class ClientDocumentAssignmentSelectorComponent - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentAssignmentSelectorComponent,{});
+var renderType_ClientDocumentAssignmentSelectorComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-documents/components/assignment-selector/assignment-selector.component.ts class ClientDocumentAssignmentSelectorComponent - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentAssignmentSelectorComponent,{});
 export class View_ClientDocumentAssignmentSelectorComponent0 extends import1.DebugAppView<import0.ClientDocumentAssignmentSelectorComponent> {
   _text_0:any;
   _el_1:any;

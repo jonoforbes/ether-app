@@ -204,7 +204,7 @@ const nodeDebugInfos_ContactAssignmentSelectorComponent0:import2.StaticNodeDebug
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactAssignmentSelectorComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/assignment-selector/assignment-selector.component.ts class ContactAssignmentSelectorComponent - inline template',0,import5.ViewEncapsulation.None,styles_ContactAssignmentSelectorComponent,{});
+var renderType_ContactAssignmentSelectorComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/assignment-selector/assignment-selector.component.ts class ContactAssignmentSelectorComponent - inline template',0,import5.ViewEncapsulation.None,styles_ContactAssignmentSelectorComponent,{});
 export class View_ContactAssignmentSelectorComponent0 extends import1.DebugAppView<import0.ContactAssignmentSelectorComponent> {
   _text_0:any;
   _el_1:any;

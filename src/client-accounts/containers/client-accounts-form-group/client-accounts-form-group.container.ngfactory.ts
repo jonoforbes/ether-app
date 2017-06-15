@@ -131,7 +131,7 @@ const nodeDebugInfos_ClientAccountsFormGroupContainer0:import4.StaticNodeDebugIn
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountsFormGroupContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/containers/client-accounts-form-group/client-accounts-form-group.container.ts class ClientAccountsFormGroupContainer - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsFormGroupContainer,{});
+var renderType_ClientAccountsFormGroupContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/containers/client-accounts-form-group/client-accounts-form-group.container.ts class ClientAccountsFormGroupContainer - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsFormGroupContainer,{});
 export class View_ClientAccountsFormGroupContainer0 extends import2.DebugAppView<import0.ClientAccountsFormGroupContainer> {
   _text_0:any;
   _el_1:any;

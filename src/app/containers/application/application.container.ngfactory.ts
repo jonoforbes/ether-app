@@ -292,7 +292,7 @@ const nodeDebugInfos_ApplicationContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ApplicationContainer:import4.RenderComponentType = import5.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/app/containers/application/application.container.ts class ApplicationContainer - inline template',0,import6.ViewEncapsulation.None,styles_ApplicationContainer,{});
+var renderType_ApplicationContainer:import4.RenderComponentType = import5.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/app/containers/application/application.container.ts class ApplicationContainer - inline template',0,import6.ViewEncapsulation.None,styles_ApplicationContainer,{});
 export class View_ApplicationContainer0 extends import1.DebugAppView<import0.ApplicationContainer> {
   _viewQuery_rightsidenav_0:import26.QueryList<any>;
   _text_0:any;

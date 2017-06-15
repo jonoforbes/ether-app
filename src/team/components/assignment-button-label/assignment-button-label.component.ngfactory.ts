@@ -94,7 +94,7 @@ const nodeDebugInfos_AssignmentButtonLabelComponent0:import4.StaticNodeDebugInfo
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AssignmentButtonLabelComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/team/components/assignment-button-label/assignment-button-label.component.ts class AssignmentButtonLabelComponent - inline template',0,import6.ViewEncapsulation.None,styles_AssignmentButtonLabelComponent,{});
+var renderType_AssignmentButtonLabelComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/team/components/assignment-button-label/assignment-button-label.component.ts class AssignmentButtonLabelComponent - inline template',0,import6.ViewEncapsulation.None,styles_AssignmentButtonLabelComponent,{});
 export class View_AssignmentButtonLabelComponent0 extends import2.DebugAppView<import0.AssignmentButtonLabelComponent> {
   _text_0:any;
   _el_1:any;

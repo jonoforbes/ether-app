@@ -247,7 +247,7 @@ const nodeDebugInfos_ContactsDetailContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsDetailContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/contacts-detail/contacts-detail.container.ts class ContactsDetailContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsDetailContainer,{});
+var renderType_ContactsDetailContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/contacts-detail/contacts-detail.container.ts class ContactsDetailContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsDetailContainer,{});
 export class View_ContactsDetailContainer0 extends import1.DebugAppView<import0.ContactsDetailContainer> {
   _text_0:any;
   _el_1:any;

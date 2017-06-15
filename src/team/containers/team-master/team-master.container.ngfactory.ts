@@ -133,7 +133,7 @@ const nodeDebugInfos_TeamMasterContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TeamMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/team/containers/team-master/team-master.container.ts class TeamMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_TeamMasterContainer,{});
+var renderType_TeamMasterContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/team/containers/team-master/team-master.container.ts class TeamMasterContainer - inline template',0,import5.ViewEncapsulation.None,styles_TeamMasterContainer,{});
 export class View_TeamMasterContainer0 extends import1.DebugAppView<import0.TeamMasterContainer> {
   _text_0:any;
   _el_1:any;

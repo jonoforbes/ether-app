@@ -162,7 +162,7 @@ const nodeDebugInfos_TaskMenuComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TaskMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/components/task-menu/task-menu.component.ts class TaskMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_TaskMenuComponent,{});
+var renderType_TaskMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/components/task-menu/task-menu.component.ts class TaskMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_TaskMenuComponent,{});
 export class View_TaskMenuComponent0 extends import1.DebugAppView<import0.TaskMenuComponent> {
   _text_0:any;
   _el_1:any;

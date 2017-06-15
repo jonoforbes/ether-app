@@ -201,7 +201,7 @@ const nodeDebugInfos_TeamAssignmentSelectorComponent0:import2.StaticNodeDebugInf
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TeamAssignmentSelectorComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/team/components/assignment-selector/assignment-selector.component.ts class TeamAssignmentSelectorComponent - inline template',0,import5.ViewEncapsulation.None,styles_TeamAssignmentSelectorComponent,{});
+var renderType_TeamAssignmentSelectorComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/team/components/assignment-selector/assignment-selector.component.ts class TeamAssignmentSelectorComponent - inline template',0,import5.ViewEncapsulation.None,styles_TeamAssignmentSelectorComponent,{});
 export class View_TeamAssignmentSelectorComponent0 extends import1.DebugAppView<import0.TeamAssignmentSelectorComponent> {
   _text_0:any;
   _el_1:any;

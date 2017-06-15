@@ -232,7 +232,7 @@ const nodeDebugInfos_NotesDetailHeaderComponent0:import4.StaticNodeDebugInfo[] =
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_NotesDetailHeaderComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/notes/components/detail-header/detail-header.component.ts class NotesDetailHeaderComponent - inline template',0,import6.ViewEncapsulation.None,styles_NotesDetailHeaderComponent,{});
+var renderType_NotesDetailHeaderComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/notes/components/detail-header/detail-header.component.ts class NotesDetailHeaderComponent - inline template',0,import6.ViewEncapsulation.None,styles_NotesDetailHeaderComponent,{});
 export class View_NotesDetailHeaderComponent0 extends import2.DebugAppView<import0.NotesDetailHeaderComponent> {
   _text_0:any;
   _el_1:any;

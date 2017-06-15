@@ -3907,7 +3907,7 @@ const nodeDebugInfos_AddXPensionTabComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddXPensionTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/xpensions/components/add-xpension-tab/add-xpension-tab.component.ts class AddXPensionTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXPensionTabComponent,{});
+var renderType_AddXPensionTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/xpensions/components/add-xpension-tab/add-xpension-tab.component.ts class AddXPensionTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXPensionTabComponent,{});
 export class View_AddXPensionTabComponent0 extends import1.DebugAppView<import0.AddXPensionTabComponent> {
   _text_0:any;
   _el_1:any;

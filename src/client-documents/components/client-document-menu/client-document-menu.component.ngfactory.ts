@@ -146,7 +146,7 @@ const nodeDebugInfos_ClientDocumentMenuComponent0:import2.StaticNodeDebugInfo[] 
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientDocumentMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-documents/components/client-document-menu/client-document-menu.component.ts class ClientDocumentMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentMenuComponent,{});
+var renderType_ClientDocumentMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-documents/components/client-document-menu/client-document-menu.component.ts class ClientDocumentMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentMenuComponent,{});
 export class View_ClientDocumentMenuComponent0 extends import1.DebugAppView<import0.ClientDocumentMenuComponent> {
   _text_0:any;
   _el_1:any;

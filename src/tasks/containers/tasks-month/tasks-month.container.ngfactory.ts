@@ -104,7 +104,7 @@ const nodeDebugInfos_TasksMonthContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TasksMonthContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/containers/tasks-month/tasks-month.container.ts class TasksMonthContainer - inline template',0,import5.ViewEncapsulation.None,styles_TasksMonthContainer,{});
+var renderType_TasksMonthContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/containers/tasks-month/tasks-month.container.ts class TasksMonthContainer - inline template',0,import5.ViewEncapsulation.None,styles_TasksMonthContainer,{});
 export class View_TasksMonthContainer0 extends import1.DebugAppView<import0.TasksMonthContainer> {
   _text_0:any;
   _el_1:any;

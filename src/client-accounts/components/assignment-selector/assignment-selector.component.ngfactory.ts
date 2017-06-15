@@ -461,7 +461,7 @@ const nodeDebugInfos_ClientAccountAssignmentSelectorComponent0:import4.StaticNod
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountAssignmentSelectorComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/components/assignment-selector/assignment-selector.component.ts class ClientAccountAssignmentSelectorComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountAssignmentSelectorComponent,{});
+var renderType_ClientAccountAssignmentSelectorComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/components/assignment-selector/assignment-selector.component.ts class ClientAccountAssignmentSelectorComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountAssignmentSelectorComponent,{});
 export class View_ClientAccountAssignmentSelectorComponent0 extends import2.DebugAppView<import0.ClientAccountAssignmentSelectorComponent> {
   _text_0:any;
   _anchor_1:any;

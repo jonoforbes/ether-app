@@ -222,7 +222,7 @@ const nodeDebugInfos_TasksListComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TasksListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/components/tasks-list/tasks-list.component.ts class TasksListComponent - inline template',0,import6.ViewEncapsulation.None,styles_TasksListComponent,{});
+var renderType_TasksListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/components/tasks-list/tasks-list.component.ts class TasksListComponent - inline template',0,import6.ViewEncapsulation.None,styles_TasksListComponent,{});
 export class View_TasksListComponent0 extends import2.DebugAppView<import0.TasksListComponent> {
   _text_0:any;
   _anchor_1:any;

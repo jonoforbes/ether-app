@@ -422,7 +422,7 @@ const nodeDebugInfos_MessagesDetailListComponent0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_MessagesDetailListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/messages/components/detail-list/detail-list.component.ts class MessagesDetailListComponent - inline template',0,import6.ViewEncapsulation.None,styles_MessagesDetailListComponent,{});
+var renderType_MessagesDetailListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/messages/components/detail-list/detail-list.component.ts class MessagesDetailListComponent - inline template',0,import6.ViewEncapsulation.None,styles_MessagesDetailListComponent,{});
 export class View_MessagesDetailListComponent0 extends import2.DebugAppView<import0.MessagesDetailListComponent> {
   _text_0:any;
   _anchor_1:any;

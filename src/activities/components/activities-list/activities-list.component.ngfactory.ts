@@ -220,7 +220,7 @@ const nodeDebugInfos_ActivitiesListComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ActivitiesListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/activities/components/activities-list/activities-list.component.ts class ActivitiesListComponent - inline template',0,import6.ViewEncapsulation.None,styles_ActivitiesListComponent,{});
+var renderType_ActivitiesListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/activities/components/activities-list/activities-list.component.ts class ActivitiesListComponent - inline template',0,import6.ViewEncapsulation.None,styles_ActivitiesListComponent,{});
 export class View_ActivitiesListComponent0 extends import2.DebugAppView<import0.ActivitiesListComponent> {
   _text_0:any;
   _anchor_1:any;

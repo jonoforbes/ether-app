@@ -276,7 +276,7 @@ const nodeDebugInfos_MessagesMasterListComponent0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_MessagesMasterListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/messages/components/master-list/master-list.component.ts class MessagesMasterListComponent - inline template',0,import6.ViewEncapsulation.None,styles_MessagesMasterListComponent,{});
+var renderType_MessagesMasterListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/messages/components/master-list/master-list.component.ts class MessagesMasterListComponent - inline template',0,import6.ViewEncapsulation.None,styles_MessagesMasterListComponent,{});
 export class View_MessagesMasterListComponent0 extends import2.DebugAppView<import0.MessagesMasterListComponent> {
   _text_0:any;
   _el_1:any;

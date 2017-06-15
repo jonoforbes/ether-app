@@ -1535,7 +1535,7 @@ const nodeDebugInfos_ApplicationWrapperContainer0:import244.StaticNodeDebugInfo[
   new import244.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ApplicationWrapperContainer:import235.RenderComponentType = import87.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/setup/prod.module.ts class ApplicationWrapperContainer - inline template',0,import245.ViewEncapsulation.None,styles_ApplicationWrapperContainer,{});
+var renderType_ApplicationWrapperContainer:import235.RenderComponentType = import87.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/setup/prod.module.ts class ApplicationWrapperContainer - inline template',0,import245.ViewEncapsulation.None,styles_ApplicationWrapperContainer,{});
 export class View_ApplicationWrapperContainer0 extends import243.DebugAppView<import1.ApplicationWrapperContainer> {
   _text_0:any;
   _el_1:any;

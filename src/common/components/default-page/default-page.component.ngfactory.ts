@@ -87,7 +87,7 @@ const nodeDebugInfos_DefaultPageComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_DefaultPageComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/common/components/default-page/default-page.component.ts class DefaultPageComponent - inline template',0,import5.ViewEncapsulation.None,styles_DefaultPageComponent,{});
+var renderType_DefaultPageComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/common/components/default-page/default-page.component.ts class DefaultPageComponent - inline template',0,import5.ViewEncapsulation.None,styles_DefaultPageComponent,{});
 export class View_DefaultPageComponent0 extends import1.DebugAppView<import0.DefaultPageComponent> {
   _text_0:any;
   _el_1:any;

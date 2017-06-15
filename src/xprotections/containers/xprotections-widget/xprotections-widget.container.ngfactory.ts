@@ -261,7 +261,7 @@ const nodeDebugInfos_XProtectionsWidgetContainer0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_XProtectionsWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/xprotections/containers/xprotections-widget/xprotections-widget.container.ts class XProtectionsWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_XProtectionsWidgetContainer,{});
+var renderType_XProtectionsWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/xprotections/containers/xprotections-widget/xprotections-widget.container.ts class XProtectionsWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_XProtectionsWidgetContainer,{});
 export class View_XProtectionsWidgetContainer0 extends import2.DebugAppView<import0.XProtectionsWidgetContainer> {
   _text_0:any;
   _el_1:any;

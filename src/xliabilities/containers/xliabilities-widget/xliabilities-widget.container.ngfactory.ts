@@ -261,7 +261,7 @@ const nodeDebugInfos_XLiabilitiesWidgetContainer0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_XLiabilitiesWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/xliabilities/containers/xliabilities-widget/xliabilities-widget.container.ts class XLiabilitiesWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_XLiabilitiesWidgetContainer,{});
+var renderType_XLiabilitiesWidgetContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/xliabilities/containers/xliabilities-widget/xliabilities-widget.container.ts class XLiabilitiesWidgetContainer - inline template',0,import6.ViewEncapsulation.None,styles_XLiabilitiesWidgetContainer,{});
 export class View_XLiabilitiesWidgetContainer0 extends import2.DebugAppView<import0.XLiabilitiesWidgetContainer> {
   _text_0:any;
   _el_1:any;

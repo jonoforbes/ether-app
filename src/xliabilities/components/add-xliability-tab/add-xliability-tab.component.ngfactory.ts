@@ -440,7 +440,7 @@ const nodeDebugInfos_AddXLiabilityTabComponent0:import2.StaticNodeDebugInfo[] = 
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddXLiabilityTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/xliabilities/components/add-xliability-tab/add-xliability-tab.component.ts class AddXLiabilityTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXLiabilityTabComponent,{});
+var renderType_AddXLiabilityTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/xliabilities/components/add-xliability-tab/add-xliability-tab.component.ts class AddXLiabilityTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXLiabilityTabComponent,{});
 export class View_AddXLiabilityTabComponent0 extends import1.DebugAppView<import0.AddXLiabilityTabComponent> {
   _text_0:any;
   _el_1:any;

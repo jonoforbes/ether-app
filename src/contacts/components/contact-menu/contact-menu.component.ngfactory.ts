@@ -131,7 +131,7 @@ const nodeDebugInfos_ContactMenuComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/contact-menu/contact-menu.component.ts class ContactMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_ContactMenuComponent,{});
+var renderType_ContactMenuComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/contact-menu/contact-menu.component.ts class ContactMenuComponent - inline template',0,import5.ViewEncapsulation.None,styles_ContactMenuComponent,{});
 export class View_ContactMenuComponent0 extends import1.DebugAppView<import0.ContactMenuComponent> {
   _text_0:any;
   _el_1:any;

@@ -701,7 +701,7 @@ const nodeDebugInfos_ClientAccountsDetailHeaderComponent0:import4.StaticNodeDebu
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientAccountsDetailHeaderComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-accounts/components/detail-header/detail-header.component.ts class ClientAccountsDetailHeaderComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsDetailHeaderComponent,{});
+var renderType_ClientAccountsDetailHeaderComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-accounts/components/detail-header/detail-header.component.ts class ClientAccountsDetailHeaderComponent - inline template',0,import6.ViewEncapsulation.None,styles_ClientAccountsDetailHeaderComponent,{});
 export class View_ClientAccountsDetailHeaderComponent0 extends import2.DebugAppView<import0.ClientAccountsDetailHeaderComponent> {
   _text_0:any;
   _el_1:any;

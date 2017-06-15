@@ -496,7 +496,7 @@ const nodeDebugInfos_ContactTabComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/contact-tab/contact-tab.component.ts class ContactTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_ContactTabComponent,{});
+var renderType_ContactTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/contact-tab/contact-tab.component.ts class ContactTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_ContactTabComponent,{});
 export class View_ContactTabComponent0 extends import2.DebugAppView<import0.ContactTabComponent> {
   _text_0:any;
   _el_1:any;

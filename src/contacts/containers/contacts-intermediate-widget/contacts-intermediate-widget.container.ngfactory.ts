@@ -1379,7 +1379,7 @@ const nodeDebugInfos_ContactsIntermediateWidgetContainer0:import2.StaticNodeDebu
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsIntermediateWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/contacts-intermediate-widget/contacts-intermediate-widget.container.ts class ContactsIntermediateWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsIntermediateWidgetContainer,{});
+var renderType_ContactsIntermediateWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/contacts-intermediate-widget/contacts-intermediate-widget.container.ts class ContactsIntermediateWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_ContactsIntermediateWidgetContainer,{});
 export class View_ContactsIntermediateWidgetContainer0 extends import1.DebugAppView<import0.ContactsIntermediateWidgetContainer> {
   _text_0:any;
   _el_1:any;

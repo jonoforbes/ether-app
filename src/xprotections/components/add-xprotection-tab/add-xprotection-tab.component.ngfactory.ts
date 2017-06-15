@@ -651,7 +651,7 @@ const nodeDebugInfos_AddXProtectionTabComponent0:import2.StaticNodeDebugInfo[] =
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddXProtectionTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/xprotections/components/add-xprotection-tab/add-xprotection-tab.component.ts class AddXProtectionTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXProtectionTabComponent,{});
+var renderType_AddXProtectionTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/xprotections/components/add-xprotection-tab/add-xprotection-tab.component.ts class AddXProtectionTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXProtectionTabComponent,{});
 export class View_AddXProtectionTabComponent0 extends import1.DebugAppView<import0.AddXProtectionTabComponent> {
   _text_0:any;
   _el_1:any;

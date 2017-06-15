@@ -353,7 +353,7 @@ const nodeDebugInfos_TaxTabComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TaxTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/tax-tab/tax-tab.component.ts class TaxTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_TaxTabComponent,{});
+var renderType_TaxTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/tax-tab/tax-tab.component.ts class TaxTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_TaxTabComponent,{});
 export class View_TaxTabComponent0 extends import2.DebugAppView<import0.TaxTabComponent> {
   _text_0:any;
   _el_1:any;

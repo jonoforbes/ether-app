@@ -509,7 +509,7 @@ const nodeDebugInfos_IncomeWidgetContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_IncomeWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/income-widget/income-widget.container.ts class IncomeWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_IncomeWidgetContainer,{});
+var renderType_IncomeWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/income-widget/income-widget.container.ts class IncomeWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_IncomeWidgetContainer,{});
 export class View_IncomeWidgetContainer0 extends import1.DebugAppView<import0.IncomeWidgetContainer> {
   _text_0:any;
   _el_1:any;

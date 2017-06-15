@@ -142,7 +142,7 @@ const nodeDebugInfos_ClientDocumentsDetailContainer0:import2.StaticNodeDebugInfo
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ClientDocumentsDetailContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/client-documents/containers/client-documents-detail/client-documents-detail.container.ts class ClientDocumentsDetailContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentsDetailContainer,{});
+var renderType_ClientDocumentsDetailContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/client-documents/containers/client-documents-detail/client-documents-detail.container.ts class ClientDocumentsDetailContainer - inline template',0,import5.ViewEncapsulation.None,styles_ClientDocumentsDetailContainer,{});
 export class View_ClientDocumentsDetailContainer0 extends import1.DebugAppView<import0.ClientDocumentsDetailContainer> {
   _text_0:any;
   _el_1:any;

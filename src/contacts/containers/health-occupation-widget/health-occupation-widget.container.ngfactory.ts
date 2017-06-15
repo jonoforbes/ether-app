@@ -243,7 +243,7 @@ const nodeDebugInfos_HealthOccupationWidgetContainer0:import2.StaticNodeDebugInf
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_HealthOccupationWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/health-occupation-widget/health-occupation-widget.container.ts class HealthOccupationWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_HealthOccupationWidgetContainer,{});
+var renderType_HealthOccupationWidgetContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/health-occupation-widget/health-occupation-widget.container.ts class HealthOccupationWidgetContainer - inline template',0,import5.ViewEncapsulation.None,styles_HealthOccupationWidgetContainer,{});
 export class View_HealthOccupationWidgetContainer0 extends import1.DebugAppView<import0.HealthOccupationWidgetContainer> {
   _text_0:any;
   _el_1:any;

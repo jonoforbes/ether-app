@@ -496,7 +496,7 @@ const nodeDebugInfos_NavbarComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_NavbarComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/common/components/navbar/navbar.component.ts class NavbarComponent - inline template',0,import6.ViewEncapsulation.None,styles_NavbarComponent,{});
+var renderType_NavbarComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/common/components/navbar/navbar.component.ts class NavbarComponent - inline template',0,import6.ViewEncapsulation.None,styles_NavbarComponent,{});
 export class View_NavbarComponent0 extends import2.DebugAppView<import0.NavbarComponent> {
   _text_0:any;
   _el_1:any;

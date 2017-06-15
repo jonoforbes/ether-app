@@ -123,7 +123,7 @@ const nodeDebugInfos_ContactsFormGroupContainer0:import4.StaticNodeDebugInfo[] =
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsFormGroupContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/containers/contacts-form-group/contacts-form-group.container.ts class ContactsFormGroupContainer - inline template',0,import6.ViewEncapsulation.None,styles_ContactsFormGroupContainer,{});
+var renderType_ContactsFormGroupContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/containers/contacts-form-group/contacts-form-group.container.ts class ContactsFormGroupContainer - inline template',0,import6.ViewEncapsulation.None,styles_ContactsFormGroupContainer,{});
 export class View_ContactsFormGroupContainer0 extends import2.DebugAppView<import0.ContactsFormGroupContainer> {
   _text_0:any;
   _el_1:any;

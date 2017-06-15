@@ -99,7 +99,7 @@ const nodeDebugInfos_MessagesDetailHeaderComponent0:import2.StaticNodeDebugInfo[
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_MessagesDetailHeaderComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/messages/components/detail-header/detail-header.component.ts class MessagesDetailHeaderComponent - inline template',0,import5.ViewEncapsulation.None,styles_MessagesDetailHeaderComponent,{});
+var renderType_MessagesDetailHeaderComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/messages/components/detail-header/detail-header.component.ts class MessagesDetailHeaderComponent - inline template',0,import5.ViewEncapsulation.None,styles_MessagesDetailHeaderComponent,{});
 export class View_MessagesDetailHeaderComponent0 extends import1.DebugAppView<import0.MessagesDetailHeaderComponent> {
   _text_0:any;
   _el_1:any;

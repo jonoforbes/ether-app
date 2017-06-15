@@ -351,7 +351,7 @@ const nodeDebugInfos_ContactsMasterListComponent0:import4.StaticNodeDebugInfo[] 
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_ContactsMasterListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/contacts/components/master-list/master-list.component.ts class ContactsMasterListComponent - inline template',0,import6.ViewEncapsulation.None,styles_ContactsMasterListComponent,{});
+var renderType_ContactsMasterListComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/contacts/components/master-list/master-list.component.ts class ContactsMasterListComponent - inline template',0,import6.ViewEncapsulation.None,styles_ContactsMasterListComponent,{});
 export class View_ContactsMasterListComponent0 extends import2.DebugAppView<import0.ContactsMasterListComponent> {
   _text_0:any;
   _el_1:any;

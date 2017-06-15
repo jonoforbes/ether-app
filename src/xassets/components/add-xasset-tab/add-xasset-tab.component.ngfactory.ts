@@ -728,7 +728,7 @@ const nodeDebugInfos_AddXAssetTabComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddXAssetTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/xassets/components/add-xasset-tab/add-xasset-tab.component.ts class AddXAssetTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXAssetTabComponent,{});
+var renderType_AddXAssetTabComponent:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/xassets/components/add-xasset-tab/add-xasset-tab.component.ts class AddXAssetTabComponent - inline template',0,import5.ViewEncapsulation.None,styles_AddXAssetTabComponent,{});
 export class View_AddXAssetTabComponent0 extends import1.DebugAppView<import0.AddXAssetTabComponent> {
   _text_0:any;
   _el_1:any;

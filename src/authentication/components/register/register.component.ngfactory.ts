@@ -133,7 +133,7 @@ const nodeDebugInfos_RegisterComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_RegisterComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/authentication/components/register/register.component.ts class RegisterComponent - inline template',0,import6.ViewEncapsulation.None,styles_RegisterComponent,{});
+var renderType_RegisterComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/authentication/components/register/register.component.ts class RegisterComponent - inline template',0,import6.ViewEncapsulation.None,styles_RegisterComponent,{});
 export class View_RegisterComponent0 extends import2.DebugAppView<import0.RegisterComponent> {
   _text_0:any;
   _el_1:any;

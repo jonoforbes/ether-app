@@ -128,7 +128,7 @@ const nodeDebugInfos_MessagesFormGroupContainer0:import4.StaticNodeDebugInfo[] =
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_MessagesFormGroupContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/messages/containers/messages-form-group/messages-form-group.container.ts class MessagesFormGroupContainer - inline template',0,import6.ViewEncapsulation.None,styles_MessagesFormGroupContainer,{});
+var renderType_MessagesFormGroupContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/messages/containers/messages-form-group/messages-form-group.container.ts class MessagesFormGroupContainer - inline template',0,import6.ViewEncapsulation.None,styles_MessagesFormGroupContainer,{});
 export class View_MessagesFormGroupContainer0 extends import2.DebugAppView<import0.MessagesFormGroupContainer> {
   _text_0:any;
   _el_1:any;

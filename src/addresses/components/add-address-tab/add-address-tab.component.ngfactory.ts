@@ -231,7 +231,7 @@ const nodeDebugInfos_AddAddressTabComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_AddAddressTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/addresses/components/add-address-tab/add-address-tab.component.ts class AddAddressTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_AddAddressTabComponent,{});
+var renderType_AddAddressTabComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/addresses/components/add-address-tab/add-address-tab.component.ts class AddAddressTabComponent - inline template',0,import6.ViewEncapsulation.None,styles_AddAddressTabComponent,{});
 export class View_AddAddressTabComponent0 extends import2.DebugAppView<import0.AddAddressTabComponent> {
   _text_0:any;
   _el_1:any;

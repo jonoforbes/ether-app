@@ -161,7 +161,7 @@ const nodeDebugInfos_TaskItemComponent0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TaskItemComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/tasks/components/task-item/task-item.component.ts class TaskItemComponent - inline template',0,import6.ViewEncapsulation.None,styles_TaskItemComponent,{});
+var renderType_TaskItemComponent:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/tasks/components/task-item/task-item.component.ts class TaskItemComponent - inline template',0,import6.ViewEncapsulation.None,styles_TaskItemComponent,{});
 export class View_TaskItemComponent0 extends import2.DebugAppView<import0.TaskItemComponent> {
   _text_0:any;
   _el_1:any;

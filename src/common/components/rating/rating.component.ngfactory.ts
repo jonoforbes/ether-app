@@ -174,7 +174,7 @@ const nodeDebugInfos_Rating0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_Rating:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/common/components/rating/rating.component.ts class Rating - inline template',0,import6.ViewEncapsulation.None,styles_Rating,{});
+var renderType_Rating:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/common/components/rating/rating.component.ts class Rating - inline template',0,import6.ViewEncapsulation.None,styles_Rating,{});
 export class View_Rating0 extends import2.DebugAppView<import0.Rating> {
   _text_0:any;
   _anchor_1:any;

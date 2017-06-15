@@ -105,7 +105,7 @@ const nodeDebugInfos_MessagesDetailContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_MessagesDetailContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/winecellar/src/messages/containers/messages-detail/messages-detail.container.ts class MessagesDetailContainer - inline template',0,import5.ViewEncapsulation.None,styles_MessagesDetailContainer,{});
+var renderType_MessagesDetailContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/messages/containers/messages-detail/messages-detail.container.ts class MessagesDetailContainer - inline template',0,import5.ViewEncapsulation.None,styles_MessagesDetailContainer,{});
 export class View_MessagesDetailContainer0 extends import1.DebugAppView<import0.MessagesDetailContainer> {
   _text_0:any;
   _el_1:any;
