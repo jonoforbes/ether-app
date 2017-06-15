@@ -21,9 +21,10 @@ import { XLiabilitiesService } from "../xliabilities/services/xliabilities.servi
 import { XPensionsService } from "../xpensions/services/xpensions.service";
 import { XProtectionsService } from "../xprotections/services/xprotections.service";
 import { BankAccountsService } from "../bank-accounts/services/bank-accounts.service";
+import { CommentsService } from "../comments/services/comments.service";
 import { RealTime } from "../common/realtime";
 
-// import { Wine } from "../stock/entities/Wine";
+
 import { Contact } from "../contacts/entities/Contact";
 import { Note } from "../notes/entities/Note";
 import { Message } from "../messages/entities/Message";
@@ -41,11 +42,11 @@ import { XLiability } from "../xliabilities/entities/XLiability";
 import { XPension } from "../xpensions/entities/XPension";
 import { XProtection } from "../xprotections/entities/XProtection";
 import { BankAccount } from "../bank-accounts/entities/BankAccount";
+import { Comment } from "../comments/entities/Comment";
 
 import { LOCALSTORAGE_AUTH } from "../configuration";
 
 import { ClearAuthentication, SetAuthentication } from "../statemanagement/actions/data/autentication";
-// import { SetAllWines } from "../statemanagement/actions/data/wine";
 import { SetAllContacts } from "../statemanagement/actions/data/contact";
 import { SetAllNotes } from "../statemanagement/actions/data/note";
 import { SetAllUserData } from "../statemanagement/actions/data/user-data";
@@ -63,6 +64,7 @@ import { SetAllXLiabilities } from "../statemanagement/actions/data/xliability";
 import { SetAllXPensions } from "../statemanagement/actions/data/xpension";
 import { SetAllXProtections } from "../statemanagement/actions/data/xprotection";
 import { SetAllBankAccounts } from "../statemanagement/actions/data/bank-account";
+import { SetAllComments } from "../statemanagement/actions/data/comment";
 import { ToggleActivitiesBar } from "../statemanagement/actions/containers/activities-bar";
 
 
@@ -94,6 +96,7 @@ export class AppSandbox {
                 private xPensionsService: XPensionsService,
                 private xProtectionsService: XProtectionsService,
                 private bankAccountsService: BankAccountsService,
+                private commentsService: CommentsService,
                 private realTime: RealTime) {
     }
 
@@ -188,6 +191,10 @@ export class AppSandbox {
         this.bankAccountsService.load().subscribe((bankAccounts: Array<BankAccount>) => {
             this.store.dispatch(new SetAllBankAccounts(bankAccounts));
             console.log('setting bank accounts');
+        });
+        this.commentsService.load().subscribe((comments: Array<Comment>) => {
+            this.store.dispatch(new SetAllComments(comments));
+            console.log('setting comments');
         });
 
     }

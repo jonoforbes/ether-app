@@ -31,14 +31,12 @@ export class Wrapper_MessagesFormGroupContainer {
   context:import0.MessagesFormGroupContainer;
   /*private*/ _changed:boolean;
   /*private*/ _expr_0:any;
-  /*private*/ _expr_1:any;
   subscription0:any;
   subscription1:any;
   constructor(p0:any,p1:any,p2:any) {
     this._changed = false;
     this.context = new import0.MessagesFormGroupContainer(p0,p1,p2);
     this._expr_0 = import1.UNINITIALIZED;
-    this._expr_1 = import1.UNINITIALIZED;
   }
   ngOnDetach(view:import2.AppView<any>,componentView:import2.AppView<any>,el:any):void {
   }
@@ -46,18 +44,11 @@ export class Wrapper_MessagesFormGroupContainer {
     (this.subscription0 && this.subscription0.unsubscribe());
     (this.subscription1 && this.subscription1.unsubscribe());
   }
-  check_messages(currValue:any,throwOnChange:boolean,forceUpdate:boolean):void {
+  check_recipientId(currValue:any,throwOnChange:boolean,forceUpdate:boolean):void {
     if ((forceUpdate || import3.checkBinding(throwOnChange,this._expr_0,currValue))) {
       this._changed = true;
-      this.context.messages = currValue;
-      this._expr_0 = currValue;
-    }
-  }
-  check_recipientId(currValue:any,throwOnChange:boolean,forceUpdate:boolean):void {
-    if ((forceUpdate || import3.checkBinding(throwOnChange,this._expr_1,currValue))) {
-      this._changed = true;
       this.context.recipientId = currValue;
-      this._expr_1 = currValue;
+      this._expr_0 = currValue;
     }
   }
   ngDoCheck(view:import2.AppView<any>,el:any,throwOnChange:boolean):boolean {

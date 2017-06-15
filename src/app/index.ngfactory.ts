@@ -121,125 +121,127 @@ import * as import112 from '../xliabilities/services/xliabilities.service';
 import * as import113 from '../xpensions/services/xpensions.service';
 import * as import114 from '../xprotections/services/xprotections.service';
 import * as import115 from '../bank-accounts/services/bank-accounts.service';
-import * as import116 from './app.sandbox';
-import * as import117 from '../addresses/services/googlemaps.service';
-import * as import118 from '../addresses/addresses.sandbox';
-import * as import119 from '../client-accounts/client-accounts.sandbox';
-import * as import120 from '../client-documents/services/box-api.service';
-import * as import121 from '../client-documents/client-documents.sandbox';
-import * as import122 from '../contacts/contacts.sandbox';
-import * as import123 from '../messages/messages.sandbox';
-import * as import124 from '../notes/notes.sandbox';
-import * as import125 from '../activities/activities.sandbox';
-import * as import126 from '../sales/sales.sandbox';
-import * as import127 from '../tasks/tasks.sandbox';
-import * as import128 from '../team/team.sandbox';
-import * as import129 from '../xassets/xassets.sandbox';
-import * as import130 from '../xliabilities/xliabilities.sandbox';
-import * as import131 from '../xpensions/xpensions.sandbox';
-import * as import132 from '../xprotections/xprotections.sandbox';
-import * as import133 from '../bank-accounts/bank-accounts.sandbox';
-import * as import134 from '@angular/core/src/di/injector';
-import * as import135 from '../../node_modules/@angular/material/dialog/dialog-container.ngfactory';
-import * as import136 from '../../node_modules/@angular/material/snack-bar/snack-bar-container.ngfactory';
-import * as import137 from '../../node_modules/@angular/material/snack-bar/simple-snack-bar.ngfactory';
-import * as import138 from '../../node_modules/@angular/material/tooltip/tooltip.ngfactory';
-import * as import139 from '../../node_modules/ngx-popover/PopoverContent.ngfactory';
-import * as import140 from '../authentication/containers/authentication/authentication.container.ngfactory';
-import * as import141 from '../authentication/containers/register/register.container.ngfactory';
-import * as import142 from '../contacts/containers/contacts-page/contacts-page.container.ngfactory';
-import * as import143 from '../contacts/containers/contacts-master/contacts-master.container.ngfactory';
-import * as import144 from '../contacts/containers/add-contact/add-contact.container.ngfactory';
-import * as import145 from '../contacts/containers/contacts-detail/contacts-detail.container.ngfactory';
-import * as import146 from '../client-accounts/containers/client-accounts-page/client-accounts-page.container.ngfactory';
-import * as import147 from '../client-accounts/containers/client-accounts-master/client-accounts-master.container.ngfactory';
-import * as import148 from '../client-accounts/containers/client-accounts-overview/client-accounts-overview.container.ngfactory';
-import * as import149 from '../client-accounts/containers/client-accounts-detail/client-accounts-detail.container.ngfactory';
-import * as import150 from '../notes/containers/notes-page/notes-page.container.ngfactory';
-import * as import151 from '../notes/containers/notes-master/notes-master.container.ngfactory';
-import * as import152 from '../notes/containers/add-note/add-note.container.ngfactory';
-import * as import153 from '../notes/containers/notes-detail/notes-detail.container.ngfactory';
-import * as import154 from '../messages/containers/messages-page/messages-page.container.ngfactory';
-import * as import155 from '../messages/containers/messages-master/messages-master.container.ngfactory';
-import * as import156 from '../messages/containers/messages-detail/messages-detail.container.ngfactory';
-import * as import157 from '../team/containers/team-page/team-page.container.ngfactory';
-import * as import158 from '../team/containers/team-master/team-master.container.ngfactory';
-import * as import159 from '../common/components/default-page/default-page.component.ngfactory';
-import * as import160 from '../client-documents/containers/client-documents-page/client-documents-page.container.ngfactory';
-import * as import161 from '../client-documents/containers/client-documents-master/client-documents-master.container.ngfactory';
-import * as import162 from '../client-documents/containers/client-documents-detail/client-documents-detail.container.ngfactory';
-import * as import163 from '../tasks/containers/tasks-page/tasks-page.container.ngfactory';
-import * as import164 from '../tasks/containers/tasks-master/tasks-master.container.ngfactory';
-import * as import165 from '../tasks/containers/tasks-today/tasks-today.container.ngfactory';
-import * as import166 from '../tasks/containers/tasks-week/tasks-week.container.ngfactory';
-import * as import167 from '../tasks/containers/tasks-next-week/tasks-next-week.container.ngfactory';
-import * as import168 from '../tasks/containers/tasks-month/tasks-month.container.ngfactory';
-import * as import169 from '../tasks/containers/tasks-all/tasks-all.container.ngfactory';
-import * as import170 from '@angular/material/core/overlay/scroll/scroll-dispatcher';
-import * as import171 from '@angular/material/core/overlay/position/viewport-ruler';
-import * as import172 from '@angular/core/src/i18n/tokens';
-import * as import173 from '@angular/material/core/overlay/overlay-container';
-import * as import174 from '@angular/core/src/zone/ng_zone';
-import * as import175 from '@angular/material/core/coordination/unique-selection-dispatcher';
-import * as import176 from '@angular/material/core/a11y/live-announcer';
-import * as import177 from './customHttp';
-import * as import178 from '@ngrx/store/src/store';
-import * as import179 from '@angular/material/icon/icon-registry';
-import * as import180 from '@angular/material/core/style/focus-classes';
-import * as import181 from '@angular/core/src/application_tokens';
-import * as import182 from '@angular/platform-browser/src/dom/events/dom_events';
-import * as import183 from '@angular/platform-browser/src/dom/events/key_events';
-import * as import184 from '@angular/platform-browser/src/dom/debug/ng_probe';
-import * as import185 from '@angular/common/src/location/platform_location';
-import * as import186 from '@angular/common/src/location/location_strategy';
-import * as import187 from '../authentication/containers/authentication/authentication.container';
-import * as import188 from '../authentication/containers/register/register.container';
-import * as import189 from '../contacts/containers/contacts-page/contacts-page.container';
-import * as import190 from '../contacts/containers/contacts-master/contacts-master.container';
-import * as import191 from '../contacts/containers/add-contact/add-contact.container';
-import * as import192 from '../contacts/containers/contacts-detail/contacts-detail.container';
-import * as import193 from '../client-accounts/containers/client-accounts-page/client-accounts-page.container';
-import * as import194 from '../client-accounts/containers/client-accounts-master/client-accounts-master.container';
-import * as import195 from '../client-accounts/containers/client-accounts-overview/client-accounts-overview.container';
-import * as import196 from '../client-accounts/containers/client-accounts-detail/client-accounts-detail.container';
-import * as import197 from '../notes/containers/notes-page/notes-page.container';
-import * as import198 from '../notes/containers/notes-master/notes-master.container';
-import * as import199 from '../notes/containers/add-note/add-note.container';
-import * as import200 from '../notes/containers/notes-detail/notes-detail.container';
-import * as import201 from '../messages/containers/messages-page/messages-page.container';
-import * as import202 from '../messages/containers/messages-master/messages-master.container';
-import * as import203 from '../messages/containers/messages-detail/messages-detail.container';
-import * as import204 from '../team/containers/team-page/team-page.container';
-import * as import205 from '../team/containers/team-master/team-master.container';
-import * as import206 from '../common/components/default-page/default-page.component';
-import * as import207 from '../client-documents/containers/client-documents-page/client-documents-page.container';
-import * as import208 from '../client-documents/containers/client-documents-master/client-documents-master.container';
-import * as import209 from '../client-documents/containers/client-documents-detail/client-documents-detail.container';
-import * as import210 from '../tasks/containers/tasks-page/tasks-page.container';
-import * as import211 from '../tasks/containers/tasks-master/tasks-master.container';
-import * as import212 from '../tasks/containers/tasks-today/tasks-today.container';
-import * as import213 from '../tasks/containers/tasks-week/tasks-week.container';
-import * as import214 from '../tasks/containers/tasks-next-week/tasks-next-week.container';
-import * as import215 from '../tasks/containers/tasks-month/tasks-month.container';
-import * as import216 from '../tasks/containers/tasks-all/tasks-all.container';
-import * as import217 from '@angular/router/src/url_handling_strategy';
-import * as import218 from '@angular/router/src/route_reuse_strategy';
-import * as import219 from '@angular/router/src/router';
-import * as import220 from '@angular/core/src/console';
-import * as import221 from '@angular/core/src/error_handler';
-import * as import222 from '@angular/http/src/interfaces';
-import * as import223 from '@angular/http/src/http';
-import * as import224 from '@angular/flex-layout/media-query/breakpoints/break-points';
-import * as import225 from '@angular/platform-browser/src/dom/dom_tokens';
-import * as import226 from '@angular/platform-browser/src/dom/animation_driver';
-import * as import227 from '@angular/core/src/render/api';
-import * as import228 from '@angular/core/src/security';
-import * as import229 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import230 from '@angular/core/src/change_detection/differs/keyvalue_differs';
-import * as import231 from '@angular/core/src/linker/ng_module_factory_loader';
-import * as import232 from '@angular/router/src/router_config_loader';
-import * as import233 from '@agm/core/services/maps-api-loader/maps-api-loader';
-import * as import234 from '@angular/router/src/router_state';
+import * as import116 from '../comments/services/comments.service';
+import * as import117 from './app.sandbox';
+import * as import118 from '../addresses/services/googlemaps.service';
+import * as import119 from '../addresses/addresses.sandbox';
+import * as import120 from '../client-accounts/client-accounts.sandbox';
+import * as import121 from '../client-documents/services/box-api.service';
+import * as import122 from '../client-documents/client-documents.sandbox';
+import * as import123 from '../contacts/contacts.sandbox';
+import * as import124 from '../messages/messages.sandbox';
+import * as import125 from '../notes/notes.sandbox';
+import * as import126 from '../activities/activities.sandbox';
+import * as import127 from '../sales/sales.sandbox';
+import * as import128 from '../tasks/tasks.sandbox';
+import * as import129 from '../team/team.sandbox';
+import * as import130 from '../xassets/xassets.sandbox';
+import * as import131 from '../xliabilities/xliabilities.sandbox';
+import * as import132 from '../xpensions/xpensions.sandbox';
+import * as import133 from '../xprotections/xprotections.sandbox';
+import * as import134 from '../bank-accounts/bank-accounts.sandbox';
+import * as import135 from '../comments/comments.sandbox';
+import * as import136 from '@angular/core/src/di/injector';
+import * as import137 from '../../node_modules/@angular/material/dialog/dialog-container.ngfactory';
+import * as import138 from '../../node_modules/@angular/material/snack-bar/snack-bar-container.ngfactory';
+import * as import139 from '../../node_modules/@angular/material/snack-bar/simple-snack-bar.ngfactory';
+import * as import140 from '../../node_modules/@angular/material/tooltip/tooltip.ngfactory';
+import * as import141 from '../../node_modules/ngx-popover/PopoverContent.ngfactory';
+import * as import142 from '../authentication/containers/authentication/authentication.container.ngfactory';
+import * as import143 from '../authentication/containers/register/register.container.ngfactory';
+import * as import144 from '../contacts/containers/contacts-page/contacts-page.container.ngfactory';
+import * as import145 from '../contacts/containers/contacts-master/contacts-master.container.ngfactory';
+import * as import146 from '../contacts/containers/add-contact/add-contact.container.ngfactory';
+import * as import147 from '../contacts/containers/contacts-detail/contacts-detail.container.ngfactory';
+import * as import148 from '../client-accounts/containers/client-accounts-page/client-accounts-page.container.ngfactory';
+import * as import149 from '../client-accounts/containers/client-accounts-master/client-accounts-master.container.ngfactory';
+import * as import150 from '../client-accounts/containers/client-accounts-overview/client-accounts-overview.container.ngfactory';
+import * as import151 from '../client-accounts/containers/client-accounts-detail/client-accounts-detail.container.ngfactory';
+import * as import152 from '../notes/containers/notes-page/notes-page.container.ngfactory';
+import * as import153 from '../notes/containers/notes-master/notes-master.container.ngfactory';
+import * as import154 from '../notes/containers/add-note/add-note.container.ngfactory';
+import * as import155 from '../notes/containers/notes-detail/notes-detail.container.ngfactory';
+import * as import156 from '../messages/containers/messages-page/messages-page.container.ngfactory';
+import * as import157 from '../messages/containers/messages-master/messages-master.container.ngfactory';
+import * as import158 from '../messages/containers/messages-detail/messages-detail.container.ngfactory';
+import * as import159 from '../team/containers/team-page/team-page.container.ngfactory';
+import * as import160 from '../team/containers/team-master/team-master.container.ngfactory';
+import * as import161 from '../common/components/default-page/default-page.component.ngfactory';
+import * as import162 from '../client-documents/containers/client-documents-page/client-documents-page.container.ngfactory';
+import * as import163 from '../client-documents/containers/client-documents-master/client-documents-master.container.ngfactory';
+import * as import164 from '../client-documents/containers/client-documents-detail/client-documents-detail.container.ngfactory';
+import * as import165 from '../tasks/containers/tasks-page/tasks-page.container.ngfactory';
+import * as import166 from '../tasks/containers/tasks-master/tasks-master.container.ngfactory';
+import * as import167 from '../tasks/containers/tasks-today/tasks-today.container.ngfactory';
+import * as import168 from '../tasks/containers/tasks-week/tasks-week.container.ngfactory';
+import * as import169 from '../tasks/containers/tasks-next-week/tasks-next-week.container.ngfactory';
+import * as import170 from '../tasks/containers/tasks-month/tasks-month.container.ngfactory';
+import * as import171 from '../tasks/containers/tasks-all/tasks-all.container.ngfactory';
+import * as import172 from '@angular/material/core/overlay/scroll/scroll-dispatcher';
+import * as import173 from '@angular/material/core/overlay/position/viewport-ruler';
+import * as import174 from '@angular/core/src/i18n/tokens';
+import * as import175 from '@angular/material/core/overlay/overlay-container';
+import * as import176 from '@angular/core/src/zone/ng_zone';
+import * as import177 from '@angular/material/core/coordination/unique-selection-dispatcher';
+import * as import178 from '@angular/material/core/a11y/live-announcer';
+import * as import179 from './customHttp';
+import * as import180 from '@ngrx/store/src/store';
+import * as import181 from '@angular/material/icon/icon-registry';
+import * as import182 from '@angular/material/core/style/focus-classes';
+import * as import183 from '@angular/core/src/application_tokens';
+import * as import184 from '@angular/platform-browser/src/dom/events/dom_events';
+import * as import185 from '@angular/platform-browser/src/dom/events/key_events';
+import * as import186 from '@angular/platform-browser/src/dom/debug/ng_probe';
+import * as import187 from '@angular/common/src/location/platform_location';
+import * as import188 from '@angular/common/src/location/location_strategy';
+import * as import189 from '../authentication/containers/authentication/authentication.container';
+import * as import190 from '../authentication/containers/register/register.container';
+import * as import191 from '../contacts/containers/contacts-page/contacts-page.container';
+import * as import192 from '../contacts/containers/contacts-master/contacts-master.container';
+import * as import193 from '../contacts/containers/add-contact/add-contact.container';
+import * as import194 from '../contacts/containers/contacts-detail/contacts-detail.container';
+import * as import195 from '../client-accounts/containers/client-accounts-page/client-accounts-page.container';
+import * as import196 from '../client-accounts/containers/client-accounts-master/client-accounts-master.container';
+import * as import197 from '../client-accounts/containers/client-accounts-overview/client-accounts-overview.container';
+import * as import198 from '../client-accounts/containers/client-accounts-detail/client-accounts-detail.container';
+import * as import199 from '../notes/containers/notes-page/notes-page.container';
+import * as import200 from '../notes/containers/notes-master/notes-master.container';
+import * as import201 from '../notes/containers/add-note/add-note.container';
+import * as import202 from '../notes/containers/notes-detail/notes-detail.container';
+import * as import203 from '../messages/containers/messages-page/messages-page.container';
+import * as import204 from '../messages/containers/messages-master/messages-master.container';
+import * as import205 from '../messages/containers/messages-detail/messages-detail.container';
+import * as import206 from '../team/containers/team-page/team-page.container';
+import * as import207 from '../team/containers/team-master/team-master.container';
+import * as import208 from '../common/components/default-page/default-page.component';
+import * as import209 from '../client-documents/containers/client-documents-page/client-documents-page.container';
+import * as import210 from '../client-documents/containers/client-documents-master/client-documents-master.container';
+import * as import211 from '../client-documents/containers/client-documents-detail/client-documents-detail.container';
+import * as import212 from '../tasks/containers/tasks-page/tasks-page.container';
+import * as import213 from '../tasks/containers/tasks-master/tasks-master.container';
+import * as import214 from '../tasks/containers/tasks-today/tasks-today.container';
+import * as import215 from '../tasks/containers/tasks-week/tasks-week.container';
+import * as import216 from '../tasks/containers/tasks-next-week/tasks-next-week.container';
+import * as import217 from '../tasks/containers/tasks-month/tasks-month.container';
+import * as import218 from '../tasks/containers/tasks-all/tasks-all.container';
+import * as import219 from '@angular/router/src/url_handling_strategy';
+import * as import220 from '@angular/router/src/route_reuse_strategy';
+import * as import221 from '@angular/router/src/router';
+import * as import222 from '@angular/core/src/console';
+import * as import223 from '@angular/core/src/error_handler';
+import * as import224 from '@angular/http/src/interfaces';
+import * as import225 from '@angular/http/src/http';
+import * as import226 from '@angular/flex-layout/media-query/breakpoints/break-points';
+import * as import227 from '@angular/platform-browser/src/dom/dom_tokens';
+import * as import228 from '@angular/platform-browser/src/dom/animation_driver';
+import * as import229 from '@angular/core/src/render/api';
+import * as import230 from '@angular/core/src/security';
+import * as import231 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import232 from '@angular/core/src/change_detection/differs/keyvalue_differs';
+import * as import233 from '@angular/core/src/linker/ng_module_factory_loader';
+import * as import234 from '@angular/router/src/router_config_loader';
+import * as import235 from '@agm/core/services/maps-api-loader/maps-api-loader';
+import * as import236 from '@angular/router/src/router_state';
 class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   _CompatibilityModule_0:import2.CompatibilityModule;
   _MdRippleModule_1:import3.MdRippleModule;
@@ -396,74 +398,76 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   _XPensionsService_152:import113.XPensionsService;
   _XProtectionsService_153:import114.XProtectionsService;
   _BankAccountsService_154:import115.BankAccountsService;
-  __AppSandbox_155:import116.AppSandbox;
-  _GoogleMapsService_156:import117.GoogleMapsService;
-  _AddressesSandbox_157:import118.AddressesSandbox;
-  _ClientAccountsSandbox_158:import119.ClientAccountsSandbox;
-  _BoxAPIService_159:import120.BoxAPIService;
-  _ClientDocumentsSandbox_160:import121.ClientDocumentsSandbox;
-  _ContactsSandbox_161:import122.ContactsSandbox;
-  _MessagesSandbox_162:import123.MessagesSandbox;
-  _NotesSandbox_163:import124.NotesSandbox;
-  _ActivitiesSandbox_164:import125.ActivitiesSandbox;
-  __SalesSandbox_165:import126.SalesSandbox;
-  _TasksSandbox_166:import127.TasksSandbox;
-  _TeamSandbox_167:import128.TeamSandbox;
-  _XAssetsSandbox_168:import129.XAssetsSandbox;
-  _XLiabilitiesSandbox_169:import130.XLiabilitiesSandbox;
-  _XPensionsSandbox_170:import131.XPensionsSandbox;
-  _XProtectionsSandbox_171:import132.XProtectionsSandbox;
-  _BankAccountsSandbox_172:import133.BankAccountsSandbox;
-  constructor(parent:import134.Injector) {
+  _CommentsService_155:import116.CommentsService;
+  __AppSandbox_156:import117.AppSandbox;
+  _GoogleMapsService_157:import118.GoogleMapsService;
+  _AddressesSandbox_158:import119.AddressesSandbox;
+  _ClientAccountsSandbox_159:import120.ClientAccountsSandbox;
+  _BoxAPIService_160:import121.BoxAPIService;
+  _ClientDocumentsSandbox_161:import122.ClientDocumentsSandbox;
+  _ContactsSandbox_162:import123.ContactsSandbox;
+  _MessagesSandbox_163:import124.MessagesSandbox;
+  _NotesSandbox_164:import125.NotesSandbox;
+  _ActivitiesSandbox_165:import126.ActivitiesSandbox;
+  __SalesSandbox_166:import127.SalesSandbox;
+  _TasksSandbox_167:import128.TasksSandbox;
+  _TeamSandbox_168:import129.TeamSandbox;
+  _XAssetsSandbox_169:import130.XAssetsSandbox;
+  _XLiabilitiesSandbox_170:import131.XLiabilitiesSandbox;
+  _XPensionsSandbox_171:import132.XPensionsSandbox;
+  _XProtectionsSandbox_172:import133.XProtectionsSandbox;
+  _BankAccountsSandbox_173:import134.BankAccountsSandbox;
+  _CommentsSandbox_174:import135.CommentsSandbox;
+  constructor(parent:import136.Injector) {
     super(parent,[
-      import135.MdDialogContainerNgFactory,
-      import136.MdSnackBarContainerNgFactory,
-      import137.SimpleSnackBarNgFactory,
-      import138.TooltipComponentNgFactory,
-      import139.PopoverContentNgFactory,
-      import140.AuthenticationContainerNgFactory,
-      import141.RegisterContainerNgFactory,
-      import142.ContactsPageContainerNgFactory,
-      import143.ContactsMasterContainerNgFactory,
-      import144.AddContactContainerNgFactory,
-      import145.ContactsDetailContainerNgFactory,
-      import146.ClientAccountsPageContainerNgFactory,
-      import147.ClientAccountsMasterContainerNgFactory,
-      import148.ClientAccountsOverviewContainerNgFactory,
-      import149.ClientAccountsDetailContainerNgFactory,
-      import150.NotesPageContainerNgFactory,
-      import151.NotesMasterContainerNgFactory,
-      import152.AddNoteContainerNgFactory,
-      import153.NotesDetailContainerNgFactory,
-      import154.MessagesPageContainerNgFactory,
-      import155.MessagesMasterContainerNgFactory,
-      import156.MessagesDetailContainerNgFactory,
-      import157.TeamPageContainerNgFactory,
-      import158.TeamMasterContainerNgFactory,
-      import159.DefaultPageComponentNgFactory,
-      import160.ClientDocumentsPageContainerNgFactory,
-      import161.ClientDocumentsMasterContainerNgFactory,
-      import162.ClientDocumentsDetailContainerNgFactory,
-      import163.TasksPageContainerNgFactory,
-      import164.TasksMasterContainerNgFactory,
-      import165.TasksTodayContainerNgFactory,
-      import166.TasksWeekContainerNgFactory,
-      import167.TasksNextWeekContainerNgFactory,
-      import168.TasksMonthContainerNgFactory,
-      import169.TasksAllContainerNgFactory
+      import137.MdDialogContainerNgFactory,
+      import138.MdSnackBarContainerNgFactory,
+      import139.SimpleSnackBarNgFactory,
+      import140.TooltipComponentNgFactory,
+      import141.PopoverContentNgFactory,
+      import142.AuthenticationContainerNgFactory,
+      import143.RegisterContainerNgFactory,
+      import144.ContactsPageContainerNgFactory,
+      import145.ContactsMasterContainerNgFactory,
+      import146.AddContactContainerNgFactory,
+      import147.ContactsDetailContainerNgFactory,
+      import148.ClientAccountsPageContainerNgFactory,
+      import149.ClientAccountsMasterContainerNgFactory,
+      import150.ClientAccountsOverviewContainerNgFactory,
+      import151.ClientAccountsDetailContainerNgFactory,
+      import152.NotesPageContainerNgFactory,
+      import153.NotesMasterContainerNgFactory,
+      import154.AddNoteContainerNgFactory,
+      import155.NotesDetailContainerNgFactory,
+      import156.MessagesPageContainerNgFactory,
+      import157.MessagesMasterContainerNgFactory,
+      import158.MessagesDetailContainerNgFactory,
+      import159.TeamPageContainerNgFactory,
+      import160.TeamMasterContainerNgFactory,
+      import161.DefaultPageComponentNgFactory,
+      import162.ClientDocumentsPageContainerNgFactory,
+      import163.ClientDocumentsMasterContainerNgFactory,
+      import164.ClientDocumentsDetailContainerNgFactory,
+      import165.TasksPageContainerNgFactory,
+      import166.TasksMasterContainerNgFactory,
+      import167.TasksTodayContainerNgFactory,
+      import168.TasksWeekContainerNgFactory,
+      import169.TasksNextWeekContainerNgFactory,
+      import170.TasksMonthContainerNgFactory,
+      import171.TasksAllContainerNgFactory
     ]
     ,([] as any[]));
   }
   get _ScrollDispatcher_58():any {
-    if ((this.__ScrollDispatcher_58 == null)) { (this.__ScrollDispatcher_58 = import170.SCROLL_DISPATCHER_PROVIDER_FACTORY(this.parent.get(import170.ScrollDispatcher,(null as any)))); }
+    if ((this.__ScrollDispatcher_58 == null)) { (this.__ScrollDispatcher_58 = import172.SCROLL_DISPATCHER_PROVIDER_FACTORY(this.parent.get(import172.ScrollDispatcher,(null as any)))); }
     return this.__ScrollDispatcher_58;
   }
   get _ViewportRuler_59():any {
-    if ((this.__ViewportRuler_59 == null)) { (this.__ViewportRuler_59 = import171.VIEWPORT_RULER_PROVIDER_FACTORY(this.parent.get(import171.ViewportRuler,(null as any)),this._ScrollDispatcher_58)); }
+    if ((this.__ViewportRuler_59 == null)) { (this.__ViewportRuler_59 = import173.VIEWPORT_RULER_PROVIDER_FACTORY(this.parent.get(import173.ViewportRuler,(null as any)),this._ScrollDispatcher_58)); }
     return this.__ViewportRuler_59;
   }
   get _LOCALE_ID_60():any {
-    if ((this.__LOCALE_ID_60 == null)) { (this.__LOCALE_ID_60 = import44._localeFactory(this.parent.get(import172.LOCALE_ID,(null as any)))); }
+    if ((this.__LOCALE_ID_60 == null)) { (this.__LOCALE_ID_60 = import44._localeFactory(this.parent.get(import174.LOCALE_ID,(null as any)))); }
     return this.__LOCALE_ID_60;
   }
   get _NgLocalization_61():import57.NgLocaleLocalization {
@@ -471,7 +475,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__NgLocalization_61;
   }
   get _OverlayContainer_62():any {
-    if ((this.__OverlayContainer_62 == null)) { (this.__OverlayContainer_62 = import173.OVERLAY_CONTAINER_PROVIDER_FACTORY(this.parent.get(import173.OverlayContainer,(null as any)))); }
+    if ((this.__OverlayContainer_62 == null)) { (this.__OverlayContainer_62 = import175.OVERLAY_CONTAINER_PROVIDER_FACTORY(this.parent.get(import175.OverlayContainer,(null as any)))); }
     return this.__OverlayContainer_62;
   }
   get _OverlayPositionBuilder_63():import58.OverlayPositionBuilder {
@@ -495,7 +499,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__ApplicationInitStatus_67;
   }
   get _Testability_68():import60.Testability {
-    if ((this.__Testability_68 == null)) { (this.__Testability_68 = new import60.Testability(this.parent.get(import174.NgZone))); }
+    if ((this.__Testability_68 == null)) { (this.__Testability_68 = new import60.Testability(this.parent.get(import176.NgZone))); }
     return this.__Testability_68;
   }
   get _ApplicationRef_70():any {
@@ -503,7 +507,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__ApplicationRef_70;
   }
   get _Overlay_71():import62.Overlay {
-    if ((this.__Overlay_71 == null)) { (this.__Overlay_71 = new import62.Overlay(this._OverlayContainer_62,this,this._OverlayPositionBuilder_63,this._ApplicationRef_70,this,this.parent.get(import174.NgZone))); }
+    if ((this.__Overlay_71 == null)) { (this.__Overlay_71 = new import62.Overlay(this._OverlayContainer_62,this,this._OverlayPositionBuilder_63,this._ApplicationRef_70,this,this.parent.get(import176.NgZone))); }
     return this.__Overlay_71;
   }
   get _RadioControlRegistry_72():import63.RadioControlRegistry {
@@ -511,7 +515,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__RadioControlRegistry_72;
   }
   get _UniqueSelectionDispatcher_73():any {
-    if ((this.__UniqueSelectionDispatcher_73 == null)) { (this.__UniqueSelectionDispatcher_73 = import175.UNIQUE_SELECTION_DISPATCHER_PROVIDER_FACTORY(this.parent.get(import175.UniqueSelectionDispatcher,(null as any)))); }
+    if ((this.__UniqueSelectionDispatcher_73 == null)) { (this.__UniqueSelectionDispatcher_73 = import177.UNIQUE_SELECTION_DISPATCHER_PROVIDER_FACTORY(this.parent.get(import177.UniqueSelectionDispatcher,(null as any)))); }
     return this.__UniqueSelectionDispatcher_73;
   }
   get _Platform_74():import64.Platform {
@@ -523,7 +527,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__InteractivityChecker_75;
   }
   get _LiveAnnouncer_76():any {
-    if ((this.__LiveAnnouncer_76 == null)) { (this.__LiveAnnouncer_76 = import176.LIVE_ANNOUNCER_PROVIDER_FACTORY(this.parent.get(import176.LiveAnnouncer,(null as any)),this.parent.get(import176.LIVE_ANNOUNCER_ELEMENT_TOKEN,(null as any)))); }
+    if ((this.__LiveAnnouncer_76 == null)) { (this.__LiveAnnouncer_76 = import178.LIVE_ANNOUNCER_PROVIDER_FACTORY(this.parent.get(import178.LiveAnnouncer,(null as any)),this.parent.get(import178.LIVE_ANNOUNCER_ELEMENT_TOKEN,(null as any)))); }
     return this.__LiveAnnouncer_76;
   }
   get _MdDialog_77():import66.MdDialog {
@@ -551,7 +555,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__RequestOptions_82;
   }
   get _Http_83():any {
-    if ((this.__Http_83 == null)) { (this.__Http_83 = import177.customHttpFactory(this._XHRBackend_81,this._RequestOptions_82,this.parent.get(import178.Store))); }
+    if ((this.__Http_83 == null)) { (this.__Http_83 = import179.customHttpFactory(this._XHRBackend_81,this._RequestOptions_82,this.parent.get(import180.Store))); }
     return this.__Http_83;
   }
   get _DomSanitizer_84():import71.DomSanitizerImpl {
@@ -559,7 +563,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__DomSanitizer_84;
   }
   get _MdIconRegistry_85():any {
-    if ((this.__MdIconRegistry_85 == null)) { (this.__MdIconRegistry_85 = import22.ICON_REGISTRY_PROVIDER_FACTORY(this.parent.get(import179.MdIconRegistry,(null as any)),this._Http_83,this._DomSanitizer_84)); }
+    if ((this.__MdIconRegistry_85 == null)) { (this.__MdIconRegistry_85 = import22.ICON_REGISTRY_PROVIDER_FACTORY(this.parent.get(import181.MdIconRegistry,(null as any)),this._Http_83,this._DomSanitizer_84)); }
     return this.__MdIconRegistry_85;
   }
   get _HAMMER_GESTURE_CONFIG_86():import72.HammerGestureConfig {
@@ -571,7 +575,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__MdSnackBar_87;
   }
   get _FocusOriginMonitor_88():any {
-    if ((this.__FocusOriginMonitor_88 == null)) { (this.__FocusOriginMonitor_88 = import180.FOCUS_ORIGIN_MONITOR_PROVIDER_FACTORY(this.parent.get(import180.FocusOriginMonitor,(null as any)))); }
+    if ((this.__FocusOriginMonitor_88 == null)) { (this.__FocusOriginMonitor_88 = import182.FOCUS_ORIGIN_MONITOR_PROVIDER_FACTORY(this.parent.get(import182.FocusOriginMonitor,(null as any)))); }
     return this.__FocusOriginMonitor_88;
   }
   get _DomProjection_89():import40.DomProjection {
@@ -579,7 +583,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__DomProjection_89;
   }
   get _MatchMedia_90():import74.MatchMedia {
-    if ((this.__MatchMedia_90 == null)) { (this.__MatchMedia_90 = new import74.MatchMedia(this.parent.get(import174.NgZone))); }
+    if ((this.__MatchMedia_90 == null)) { (this.__MatchMedia_90 = new import74.MatchMedia(this.parent.get(import176.NgZone))); }
     return this.__MatchMedia_90;
   }
   get _BREAKPOINTS_91():any {
@@ -668,7 +672,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__Compiler_95;
   }
   get _APP_ID_96():any {
-    if ((this.__APP_ID_96 == null)) { (this.__APP_ID_96 = import181._appIdRandomProviderFactory()); }
+    if ((this.__APP_ID_96 == null)) { (this.__APP_ID_96 = import183._appIdRandomProviderFactory()); }
     return this.__APP_ID_96;
   }
   get _DOCUMENT_97():any {
@@ -677,15 +681,15 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   }
   get _EVENT_MANAGER_PLUGINS_98():any[] {
     if ((this.__EVENT_MANAGER_PLUGINS_98 == null)) { (this.__EVENT_MANAGER_PLUGINS_98 = [
-      new import182.DomEventsPlugin(),
-      new import183.KeyEventsPlugin(),
+      new import184.DomEventsPlugin(),
+      new import185.KeyEventsPlugin(),
       new import72.HammerGesturesPlugin(this._HAMMER_GESTURE_CONFIG_86)
     ]
     ); }
     return this.__EVENT_MANAGER_PLUGINS_98;
   }
   get _EventManager_99():import79.EventManager {
-    if ((this.__EventManager_99 == null)) { (this.__EventManager_99 = new import79.EventManager(this._EVENT_MANAGER_PLUGINS_98,this.parent.get(import174.NgZone))); }
+    if ((this.__EventManager_99 == null)) { (this.__EventManager_99 = new import79.EventManager(this._EVENT_MANAGER_PLUGINS_98,this.parent.get(import176.NgZone))); }
     return this.__EventManager_99;
   }
   get _AnimationDriver_101():any {
@@ -701,7 +705,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__NgProbeToken_103;
   }
   get _RootRenderer_104():any {
-    if ((this.__RootRenderer_104 == null)) { (this.__RootRenderer_104 = import184._createConditionalRootRenderer(this._DomRootRenderer_102,this.parent.get(import184.NgProbeToken,(null as any)),this._NgProbeToken_103)); }
+    if ((this.__RootRenderer_104 == null)) { (this.__RootRenderer_104 = import186._createConditionalRootRenderer(this._DomRootRenderer_102,this.parent.get(import186.NgProbeToken,(null as any)),this._NgProbeToken_103)); }
     return this.__RootRenderer_104;
   }
   get _Sanitizer_105():any {
@@ -709,7 +713,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__Sanitizer_105;
   }
   get _AnimationQueue_106():import82.AnimationQueue {
-    if ((this.__AnimationQueue_106 == null)) { (this.__AnimationQueue_106 = new import82.AnimationQueue(this.parent.get(import174.NgZone))); }
+    if ((this.__AnimationQueue_106 == null)) { (this.__AnimationQueue_106 = new import82.AnimationQueue(this.parent.get(import176.NgZone))); }
     return this.__AnimationQueue_106;
   }
   get _ViewUtils_107():import83.ViewUtils {
@@ -745,7 +749,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__UtilsService_114;
   }
   get _CommonSandbox_115():import88.CommonSandbox {
-    if ((this.__CommonSandbox_115 == null)) { (this.__CommonSandbox_115 = new import88.CommonSandbox(this.parent.get(import178.Store))); }
+    if ((this.__CommonSandbox_115 == null)) { (this.__CommonSandbox_115 = new import88.CommonSandbox(this.parent.get(import180.Store))); }
     return this.__CommonSandbox_115;
   }
   get _UrlSerializer_116():import89.DefaultUrlSerializer {
@@ -761,7 +765,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__ROUTER_CONFIGURATION_118;
   }
   get _LocationStrategy_119():any {
-    if ((this.__LocationStrategy_119 == null)) { (this.__LocationStrategy_119 = import46.provideLocationStrategy(this.parent.get(import185.PlatformLocation),this.parent.get(import186.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_118)); }
+    if ((this.__LocationStrategy_119 == null)) { (this.__LocationStrategy_119 = import46.provideLocationStrategy(this.parent.get(import187.PlatformLocation),this.parent.get(import188.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_118)); }
     return this.__LocationStrategy_119;
   }
   get _Location_120():import91.Location {
@@ -783,34 +787,34 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'authentication',
-          component: import187.AuthenticationContainer
+          component: import189.AuthenticationContainer
         }
         ,
         {
           path: 'authenticationregisterhiddencomponenttemp',
-          component: import188.RegisterContainer
+          component: import190.RegisterContainer
         }
         ,
         {
           path: 'contacts',
-          component: import189.ContactsPageContainer,
+          component: import191.ContactsPageContainer,
           canActivate: [import93.AuthenticatedGuard],
           children: [
             {
               path: 'list',
-              component: import190.ContactsMasterContainer,
+              component: import192.ContactsMasterContainer,
               outlet: 'm'
             }
             ,
             {
               path: 'add',
-              component: import191.AddContactContainer,
+              component: import193.AddContactContainer,
               outlet: 'd'
             }
             ,
             {
               path: ':id',
-              component: import192.ContactsDetailContainer,
+              component: import194.ContactsDetailContainer,
               outlet: 'd'
             }
 
@@ -820,24 +824,24 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'accounts',
-          component: import193.ClientAccountsPageContainer,
+          component: import195.ClientAccountsPageContainer,
           canActivate: [import93.AuthenticatedGuard],
           children: [
             {
               path: 'list',
-              component: import194.ClientAccountsMasterContainer,
+              component: import196.ClientAccountsMasterContainer,
               outlet: 'm'
             }
             ,
             {
               path: 'overview',
-              component: import195.ClientAccountsOverviewContainer,
+              component: import197.ClientAccountsOverviewContainer,
               outlet: 'd'
             }
             ,
             {
               path: ':id',
-              component: import196.ClientAccountsDetailContainer,
+              component: import198.ClientAccountsDetailContainer,
               outlet: 'd'
             }
 
@@ -847,24 +851,24 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'notes',
-          component: import197.NotesPageContainer,
+          component: import199.NotesPageContainer,
           canActivate: [import93.AuthenticatedGuard],
           children: [
             {
               path: 'list',
-              component: import198.NotesMasterContainer,
+              component: import200.NotesMasterContainer,
               outlet: 'm'
             }
             ,
             {
               path: 'add',
-              component: import199.AddNoteContainer,
+              component: import201.AddNoteContainer,
               outlet: 'd'
             }
             ,
             {
               path: ':id',
-              component: import200.NotesDetailContainer,
+              component: import202.NotesDetailContainer,
               outlet: 'd'
             }
 
@@ -874,24 +878,24 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'messages',
-          component: import201.MessagesPageContainer,
+          component: import203.MessagesPageContainer,
           canActivate: [import93.AuthenticatedGuard],
           children: [
             {
               path: 'list',
-              component: import202.MessagesMasterContainer,
+              component: import204.MessagesMasterContainer,
               outlet: 'm'
             }
             ,
             {
               path: 'add',
-              component: import203.MessagesDetailContainer,
+              component: import205.MessagesDetailContainer,
               outlet: 'd'
             }
             ,
             {
               path: ':id',
-              component: import203.MessagesDetailContainer,
+              component: import205.MessagesDetailContainer,
               outlet: 'd'
             }
 
@@ -901,24 +905,24 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'team',
-          component: import204.TeamPageContainer,
+          component: import206.TeamPageContainer,
           canActivate: [import93.AuthenticatedGuard],
           children: [
             {
               path: 'list',
-              component: import205.TeamMasterContainer,
+              component: import207.TeamMasterContainer,
               outlet: 'm'
             }
             ,
             {
               path: 'add',
-              component: import206.DefaultPageComponent,
+              component: import208.DefaultPageComponent,
               outlet: 'd'
             }
             ,
             {
               path: ':id',
-              component: import206.DefaultPageComponent,
+              component: import208.DefaultPageComponent,
               outlet: 'd'
             }
 
@@ -928,24 +932,24 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'documents',
-          component: import207.ClientDocumentsPageContainer,
+          component: import209.ClientDocumentsPageContainer,
           canActivate: [import93.AuthenticatedGuard],
           children: [
             {
               path: 'list',
-              component: import208.ClientDocumentsMasterContainer,
+              component: import210.ClientDocumentsMasterContainer,
               outlet: 'm'
             }
             ,
             {
               path: 'add',
-              component: import209.ClientDocumentsDetailContainer,
+              component: import211.ClientDocumentsDetailContainer,
               outlet: 'd'
             }
             ,
             {
               path: ':id',
-              component: import209.ClientDocumentsDetailContainer,
+              component: import211.ClientDocumentsDetailContainer,
               outlet: 'd'
             }
 
@@ -955,48 +959,48 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'tasks',
-          component: import210.TasksPageContainer,
+          component: import212.TasksPageContainer,
           canActivate: [import93.AuthenticatedGuard],
           children: [
             {
               path: 'list',
-              component: import211.TasksMasterContainer,
+              component: import213.TasksMasterContainer,
               outlet: 'm'
             }
             ,
             {
               path: 'today',
-              component: import212.TasksTodayContainer,
+              component: import214.TasksTodayContainer,
               outlet: 'd'
             }
             ,
             {
               path: 'week',
-              component: import213.TasksWeekContainer,
+              component: import215.TasksWeekContainer,
               outlet: 'd'
             }
             ,
             {
               path: 'nextweek',
-              component: import214.TasksNextWeekContainer,
+              component: import216.TasksNextWeekContainer,
               outlet: 'd'
             }
             ,
             {
               path: 'month',
-              component: import215.TasksMonthContainer,
+              component: import217.TasksMonthContainer,
               outlet: 'd'
             }
             ,
             {
               path: 'assigned',
-              component: import212.TasksTodayContainer,
+              component: import214.TasksTodayContainer,
               outlet: 'd'
             }
             ,
             {
               path: 'all',
-              component: import216.TasksAllContainer,
+              component: import218.TasksAllContainer,
               outlet: 'd'
             }
 
@@ -1009,7 +1013,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__ROUTES_122;
   }
   get _Router_123():any {
-    if ((this.__Router_123 == null)) { (this.__Router_123 = import46.setupRouter(this._ApplicationRef_70,this._UrlSerializer_116,this._RouterOutletMap_117,this._Location_120,this,this._NgModuleFactoryLoader_121,this._Compiler_95,this._ROUTES_122,this._ROUTER_CONFIGURATION_118,this.parent.get(import217.UrlHandlingStrategy,(null as any)),this.parent.get(import218.RouteReuseStrategy,(null as any)))); }
+    if ((this.__Router_123 == null)) { (this.__Router_123 = import46.setupRouter(this._ApplicationRef_70,this._UrlSerializer_116,this._RouterOutletMap_117,this._Location_120,this,this._NgModuleFactoryLoader_121,this._Compiler_95,this._ROUTES_122,this._ROUTER_CONFIGURATION_118,this.parent.get(import219.UrlHandlingStrategy,(null as any)),this.parent.get(import220.RouteReuseStrategy,(null as any)))); }
     return this.__Router_123;
   }
   get _AuthenticatedGuard_124():import93.AuthenticatedGuard {
@@ -1017,7 +1021,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__AuthenticatedGuard_124;
   }
   get _RealTime_125():import94.RealTime {
-    if ((this.__RealTime_125 == null)) { (this.__RealTime_125 = new import94.RealTime(this.parent.get(import178.Store),this._Router_123)); }
+    if ((this.__RealTime_125 == null)) { (this.__RealTime_125 = new import94.RealTime(this.parent.get(import180.Store),this._Router_123)); }
     return this.__RealTime_125;
   }
   get _AuthenticationService_126():import95.AuthenticationService {
@@ -1025,7 +1029,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__AuthenticationService_126;
   }
   get _AuthenticationSandbox_127():import96.AuthenticationSandbox {
-    if ((this.__AuthenticationSandbox_127 == null)) { (this.__AuthenticationSandbox_127 = new import96.AuthenticationSandbox(this._AuthenticationService_126,this.parent.get(import178.Store))); }
+    if ((this.__AuthenticationSandbox_127 == null)) { (this.__AuthenticationSandbox_127 = new import96.AuthenticationSandbox(this._AuthenticationService_126,this.parent.get(import180.Store))); }
     return this.__AuthenticationSandbox_127;
   }
   get _WindowRef_128():import97.WindowRef {
@@ -1065,16 +1069,16 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__APP_BOOTSTRAP_LISTENER_139;
   }
   get _SalesService_147():import108.SalesService {
-    if ((this.__SalesService_147 == null)) { (this.__SalesService_147 = new import108.SalesService(this.parent.get(import178.Store),this._Http_83)); }
+    if ((this.__SalesService_147 == null)) { (this.__SalesService_147 = new import108.SalesService(this.parent.get(import180.Store),this._Http_83)); }
     return this.__SalesService_147;
   }
-  get _AppSandbox_155():import116.AppSandbox {
-    if ((this.__AppSandbox_155 == null)) { (this.__AppSandbox_155 = new import116.AppSandbox(this.parent.get(import178.Store),this._AuthenticationService_126,this._ContactsService_140,this._NotesService_141,this._UserDataService_142,this._MessagesService_143,this._AddressesService_144,this._ClientAccountsService_145,this._ClientDocumentsService_146,this._SalesService_147,this._TasksService_148,this._ActivitiesService_149,this._XAssetsService_150,this._XLiabilitiesService_151,this._XPensionsService_152,this._XProtectionsService_153,this._BankAccountsService_154,this._RealTime_125)); }
-    return this.__AppSandbox_155;
+  get _AppSandbox_156():import117.AppSandbox {
+    if ((this.__AppSandbox_156 == null)) { (this.__AppSandbox_156 = new import117.AppSandbox(this.parent.get(import180.Store),this._AuthenticationService_126,this._ContactsService_140,this._NotesService_141,this._UserDataService_142,this._MessagesService_143,this._AddressesService_144,this._ClientAccountsService_145,this._ClientDocumentsService_146,this._SalesService_147,this._TasksService_148,this._ActivitiesService_149,this._XAssetsService_150,this._XLiabilitiesService_151,this._XPensionsService_152,this._XProtectionsService_153,this._BankAccountsService_154,this._CommentsService_155,this._RealTime_125)); }
+    return this.__AppSandbox_156;
   }
-  get _SalesSandbox_165():import126.SalesSandbox {
-    if ((this.__SalesSandbox_165 == null)) { (this.__SalesSandbox_165 = new import126.SalesSandbox(this.parent.get(import178.Store),this._SalesService_147)); }
-    return this.__SalesSandbox_165;
+  get _SalesSandbox_166():import127.SalesSandbox {
+    if ((this.__SalesSandbox_166 == null)) { (this.__SalesSandbox_166 = new import127.SalesSandbox(this.parent.get(import180.Store),this._SalesService_147)); }
+    return this.__SalesSandbox_166;
   }
   createInternal():import1.AppModule {
     this._CompatibilityModule_0 = new import2.CompatibilityModule();
@@ -1122,7 +1126,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     this._ApplicationModule_42 = new import44.ApplicationModule();
     this._BrowserModule_43 = new import45.BrowserModule(this.parent.get(import45.BrowserModule,(null as any)));
     this._ReactiveFormsModule_44 = new import11.ReactiveFormsModule();
-    this._ROUTER_FORROOT_GUARD_45 = import46.provideForRootGuard(this.parent.get(import219.Router,(null as any)));
+    this._ROUTER_FORROOT_GUARD_45 = import46.provideForRootGuard(this.parent.get(import221.Router,(null as any)));
     this._RouterModule_46 = new import46.RouterModule(this._ROUTER_FORROOT_GUARD_45);
     this._DpDatePickerModule_47 = new import47.DpDatePickerModule();
     this._AgmCoreModule_48 = new import48.AgmCoreModule();
@@ -1135,41 +1139,43 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     this._CommonLogicModule_55 = new import55.CommonLogicModule();
     this._AuthenticationModule_56 = new import56.AuthenticationModule();
     this._AppModule_57 = new import1.AppModule();
-    this._ApplicationRef__69 = new import61.ApplicationRef_(this.parent.get(import174.NgZone),this.parent.get(import220.Console),this,this._ErrorHandler_64,this,this._ApplicationInitStatus_67,this.parent.get(import60.TestabilityRegistry,(null as any)),this._Testability_68);
+    this._ApplicationRef__69 = new import61.ApplicationRef_(this.parent.get(import176.NgZone),this.parent.get(import222.Console),this,this._ErrorHandler_64,this,this._ApplicationInitStatus_67,this.parent.get(import60.TestabilityRegistry,(null as any)),this._Testability_68);
     this._DomSharedStylesHost_100 = new import80.DomSharedStylesHost(this._DOCUMENT_97);
     this._NoPreloading_134 = new import100.NoPreloading();
     this._PreloadingStrategy_135 = this._NoPreloading_134;
     this._RouterPreloader_136 = new import100.RouterPreloader(this._Router_123,this._NgModuleFactoryLoader_121,this._Compiler_95,this,this._PreloadingStrategy_135);
-    this._ContactsService_140 = new import101.ContactsService(this.parent.get(import178.Store),this._Http_83);
-    this._NotesService_141 = new import102.NotesService(this.parent.get(import178.Store),this._Http_83);
-    this._UserDataService_142 = new import103.UserDataService(this.parent.get(import178.Store),this._Http_83);
-    this._MessagesService_143 = new import104.MessagesService(this.parent.get(import178.Store),this._Http_83);
-    this._AddressesService_144 = new import105.AddressesService(this.parent.get(import178.Store),this._Http_83);
-    this._ClientAccountsService_145 = new import106.ClientAccountsService(this.parent.get(import178.Store),this._Http_83);
-    this._ClientDocumentsService_146 = new import107.ClientDocumentsService(this.parent.get(import178.Store),this._Http_83);
-    this._TasksService_148 = new import109.TasksService(this.parent.get(import178.Store),this._Http_83);
-    this._ActivitiesService_149 = new import110.ActivitiesService(this.parent.get(import178.Store),this._Http_83);
-    this._XAssetsService_150 = new import111.XAssetsService(this.parent.get(import178.Store),this._Http_83);
-    this._XLiabilitiesService_151 = new import112.XLiabilitiesService(this.parent.get(import178.Store),this._Http_83);
-    this._XPensionsService_152 = new import113.XPensionsService(this.parent.get(import178.Store),this._Http_83);
-    this._XProtectionsService_153 = new import114.XProtectionsService(this.parent.get(import178.Store),this._Http_83);
-    this._BankAccountsService_154 = new import115.BankAccountsService(this.parent.get(import178.Store),this._Http_83);
-    this._GoogleMapsService_156 = new import117.GoogleMapsService(this._Http_83);
-    this._AddressesSandbox_157 = new import118.AddressesSandbox(this.parent.get(import178.Store),this._AddressesService_144,this._GoogleMapsService_156);
-    this._ClientAccountsSandbox_158 = new import119.ClientAccountsSandbox(this.parent.get(import178.Store),this._ClientAccountsService_145);
-    this._BoxAPIService_159 = new import120.BoxAPIService(this._Http_83);
-    this._ClientDocumentsSandbox_160 = new import121.ClientDocumentsSandbox(this.parent.get(import178.Store),this._ClientDocumentsService_146,this._BoxAPIService_159);
-    this._ContactsSandbox_161 = new import122.ContactsSandbox(this.parent.get(import178.Store),this._ContactsService_140);
-    this._MessagesSandbox_162 = new import123.MessagesSandbox(this.parent.get(import178.Store),this._MessagesService_143);
-    this._NotesSandbox_163 = new import124.NotesSandbox(this.parent.get(import178.Store),this._NotesService_141);
-    this._ActivitiesSandbox_164 = new import125.ActivitiesSandbox(this.parent.get(import178.Store),this._ActivitiesService_149);
-    this._TasksSandbox_166 = new import127.TasksSandbox(this.parent.get(import178.Store),this._TasksService_148);
-    this._TeamSandbox_167 = new import128.TeamSandbox(this.parent.get(import178.Store),this._UserDataService_142);
-    this._XAssetsSandbox_168 = new import129.XAssetsSandbox(this.parent.get(import178.Store),this._XAssetsService_150);
-    this._XLiabilitiesSandbox_169 = new import130.XLiabilitiesSandbox(this.parent.get(import178.Store),this._XLiabilitiesService_151);
-    this._XPensionsSandbox_170 = new import131.XPensionsSandbox(this.parent.get(import178.Store),this._XPensionsService_152);
-    this._XProtectionsSandbox_171 = new import132.XProtectionsSandbox(this.parent.get(import178.Store),this._XProtectionsService_153);
-    this._BankAccountsSandbox_172 = new import133.BankAccountsSandbox(this.parent.get(import178.Store),this._BankAccountsService_154);
+    this._ContactsService_140 = new import101.ContactsService(this.parent.get(import180.Store),this._Http_83);
+    this._NotesService_141 = new import102.NotesService(this.parent.get(import180.Store),this._Http_83);
+    this._UserDataService_142 = new import103.UserDataService(this.parent.get(import180.Store),this._Http_83);
+    this._MessagesService_143 = new import104.MessagesService(this.parent.get(import180.Store),this._Http_83);
+    this._AddressesService_144 = new import105.AddressesService(this.parent.get(import180.Store),this._Http_83);
+    this._ClientAccountsService_145 = new import106.ClientAccountsService(this.parent.get(import180.Store),this._Http_83);
+    this._ClientDocumentsService_146 = new import107.ClientDocumentsService(this.parent.get(import180.Store),this._Http_83);
+    this._TasksService_148 = new import109.TasksService(this.parent.get(import180.Store),this._Http_83);
+    this._ActivitiesService_149 = new import110.ActivitiesService(this.parent.get(import180.Store),this._Http_83);
+    this._XAssetsService_150 = new import111.XAssetsService(this.parent.get(import180.Store),this._Http_83);
+    this._XLiabilitiesService_151 = new import112.XLiabilitiesService(this.parent.get(import180.Store),this._Http_83);
+    this._XPensionsService_152 = new import113.XPensionsService(this.parent.get(import180.Store),this._Http_83);
+    this._XProtectionsService_153 = new import114.XProtectionsService(this.parent.get(import180.Store),this._Http_83);
+    this._BankAccountsService_154 = new import115.BankAccountsService(this.parent.get(import180.Store),this._Http_83);
+    this._CommentsService_155 = new import116.CommentsService(this.parent.get(import180.Store),this._Http_83);
+    this._GoogleMapsService_157 = new import118.GoogleMapsService(this._Http_83);
+    this._AddressesSandbox_158 = new import119.AddressesSandbox(this.parent.get(import180.Store),this._AddressesService_144,this._GoogleMapsService_157);
+    this._ClientAccountsSandbox_159 = new import120.ClientAccountsSandbox(this.parent.get(import180.Store),this._ClientAccountsService_145);
+    this._BoxAPIService_160 = new import121.BoxAPIService(this._Http_83);
+    this._ClientDocumentsSandbox_161 = new import122.ClientDocumentsSandbox(this.parent.get(import180.Store),this._ClientDocumentsService_146,this._BoxAPIService_160);
+    this._ContactsSandbox_162 = new import123.ContactsSandbox(this.parent.get(import180.Store),this._ContactsService_140);
+    this._MessagesSandbox_163 = new import124.MessagesSandbox(this.parent.get(import180.Store),this._MessagesService_143);
+    this._NotesSandbox_164 = new import125.NotesSandbox(this.parent.get(import180.Store),this._NotesService_141);
+    this._ActivitiesSandbox_165 = new import126.ActivitiesSandbox(this.parent.get(import180.Store),this._ActivitiesService_149);
+    this._TasksSandbox_167 = new import128.TasksSandbox(this.parent.get(import180.Store),this._TasksService_148);
+    this._TeamSandbox_168 = new import129.TeamSandbox(this.parent.get(import180.Store),this._UserDataService_142);
+    this._XAssetsSandbox_169 = new import130.XAssetsSandbox(this.parent.get(import180.Store),this._XAssetsService_150);
+    this._XLiabilitiesSandbox_170 = new import131.XLiabilitiesSandbox(this.parent.get(import180.Store),this._XLiabilitiesService_151);
+    this._XPensionsSandbox_171 = new import132.XPensionsSandbox(this.parent.get(import180.Store),this._XPensionsService_152);
+    this._XProtectionsSandbox_172 = new import133.XProtectionsSandbox(this.parent.get(import180.Store),this._XProtectionsService_153);
+    this._BankAccountsSandbox_173 = new import134.BankAccountsSandbox(this.parent.get(import180.Store),this._BankAccountsService_154);
+    this._CommentsSandbox_174 = new import135.CommentsSandbox(this.parent.get(import180.Store),this._CommentsService_155);
     return this._AppModule_57;
   }
   getInternal(token:any,notFoundResult:any):any {
@@ -1231,13 +1237,13 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import55.CommonLogicModule)) { return this._CommonLogicModule_55; }
     if ((token === import56.AuthenticationModule)) { return this._AuthenticationModule_56; }
     if ((token === import1.AppModule)) { return this._AppModule_57; }
-    if ((token === import170.ScrollDispatcher)) { return this._ScrollDispatcher_58; }
-    if ((token === import171.ViewportRuler)) { return this._ViewportRuler_59; }
-    if ((token === import172.LOCALE_ID)) { return this._LOCALE_ID_60; }
+    if ((token === import172.ScrollDispatcher)) { return this._ScrollDispatcher_58; }
+    if ((token === import173.ViewportRuler)) { return this._ViewportRuler_59; }
+    if ((token === import174.LOCALE_ID)) { return this._LOCALE_ID_60; }
     if ((token === import57.NgLocalization)) { return this._NgLocalization_61; }
-    if ((token === import173.OverlayContainer)) { return this._OverlayContainer_62; }
+    if ((token === import175.OverlayContainer)) { return this._OverlayContainer_62; }
     if ((token === import58.OverlayPositionBuilder)) { return this._OverlayPositionBuilder_63; }
-    if ((token === import221.ErrorHandler)) { return this._ErrorHandler_64; }
+    if ((token === import223.ErrorHandler)) { return this._ErrorHandler_64; }
     if ((token === import46.RouterInitializer)) { return this._RouterInitializer_65; }
     if ((token === import59.APP_INITIALIZER)) { return this._APP_INITIALIZER_66; }
     if ((token === import59.ApplicationInitStatus)) { return this._ApplicationInitStatus_67; }
@@ -1246,43 +1252,43 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import61.ApplicationRef)) { return this._ApplicationRef_70; }
     if ((token === import62.Overlay)) { return this._Overlay_71; }
     if ((token === import63.RadioControlRegistry)) { return this._RadioControlRegistry_72; }
-    if ((token === import175.UniqueSelectionDispatcher)) { return this._UniqueSelectionDispatcher_73; }
+    if ((token === import177.UniqueSelectionDispatcher)) { return this._UniqueSelectionDispatcher_73; }
     if ((token === import64.Platform)) { return this._Platform_74; }
     if ((token === import65.InteractivityChecker)) { return this._InteractivityChecker_75; }
-    if ((token === import176.LiveAnnouncer)) { return this._LiveAnnouncer_76; }
+    if ((token === import178.LiveAnnouncer)) { return this._LiveAnnouncer_76; }
     if ((token === import66.MdDialog)) { return this._MdDialog_77; }
     if ((token === import67.BrowserXhr)) { return this._BrowserXhr_78; }
     if ((token === import68.ResponseOptions)) { return this._ResponseOptions_79; }
-    if ((token === import222.XSRFStrategy)) { return this._XSRFStrategy_80; }
+    if ((token === import224.XSRFStrategy)) { return this._XSRFStrategy_80; }
     if ((token === import69.XHRBackend)) { return this._XHRBackend_81; }
     if ((token === import70.RequestOptions)) { return this._RequestOptions_82; }
-    if ((token === import223.Http)) { return this._Http_83; }
+    if ((token === import225.Http)) { return this._Http_83; }
     if ((token === import71.DomSanitizer)) { return this._DomSanitizer_84; }
-    if ((token === import179.MdIconRegistry)) { return this._MdIconRegistry_85; }
+    if ((token === import181.MdIconRegistry)) { return this._MdIconRegistry_85; }
     if ((token === import72.HAMMER_GESTURE_CONFIG)) { return this._HAMMER_GESTURE_CONFIG_86; }
     if ((token === import73.MdSnackBar)) { return this._MdSnackBar_87; }
-    if ((token === import180.FocusOriginMonitor)) { return this._FocusOriginMonitor_88; }
+    if ((token === import182.FocusOriginMonitor)) { return this._FocusOriginMonitor_88; }
     if ((token === import40.DomProjection)) { return this._DomProjection_89; }
     if ((token === import74.MatchMedia)) { return this._MatchMedia_90; }
-    if ((token === import224.BREAKPOINTS)) { return this._BREAKPOINTS_91; }
+    if ((token === import226.BREAKPOINTS)) { return this._BREAKPOINTS_91; }
     if ((token === import75.BreakPointRegistry)) { return this._BreakPointRegistry_92; }
     if ((token === import76.MediaMonitor)) { return this._MediaMonitor_93; }
     if ((token === import77.ObservableMedia)) { return this._ObservableMedia_94; }
     if ((token === import78.Compiler)) { return this._Compiler_95; }
-    if ((token === import181.APP_ID)) { return this._APP_ID_96; }
-    if ((token === import225.DOCUMENT)) { return this._DOCUMENT_97; }
+    if ((token === import183.APP_ID)) { return this._APP_ID_96; }
+    if ((token === import227.DOCUMENT)) { return this._DOCUMENT_97; }
     if ((token === import79.EVENT_MANAGER_PLUGINS)) { return this._EVENT_MANAGER_PLUGINS_98; }
     if ((token === import79.EventManager)) { return this._EventManager_99; }
     if ((token === import80.DomSharedStylesHost)) { return this._DomSharedStylesHost_100; }
-    if ((token === import226.AnimationDriver)) { return this._AnimationDriver_101; }
+    if ((token === import228.AnimationDriver)) { return this._AnimationDriver_101; }
     if ((token === import81.DomRootRenderer)) { return this._DomRootRenderer_102; }
     if ((token === import61.NgProbeToken)) { return this._NgProbeToken_103; }
-    if ((token === import227.RootRenderer)) { return this._RootRenderer_104; }
-    if ((token === import228.Sanitizer)) { return this._Sanitizer_105; }
+    if ((token === import229.RootRenderer)) { return this._RootRenderer_104; }
+    if ((token === import230.Sanitizer)) { return this._Sanitizer_105; }
     if ((token === import82.AnimationQueue)) { return this._AnimationQueue_106; }
     if ((token === import83.ViewUtils)) { return this._ViewUtils_107; }
-    if ((token === import229.IterableDiffers)) { return this._IterableDiffers_108; }
-    if ((token === import230.KeyValueDiffers)) { return this._KeyValueDiffers_109; }
+    if ((token === import231.IterableDiffers)) { return this._IterableDiffers_108; }
+    if ((token === import232.KeyValueDiffers)) { return this._KeyValueDiffers_109; }
     if ((token === import80.SharedStylesHost)) { return this._SharedStylesHost_110; }
     if ((token === import84.Title)) { return this._Title_111; }
     if ((token === import85.FormBuilder)) { return this._FormBuilder_112; }
@@ -1292,11 +1298,11 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import89.UrlSerializer)) { return this._UrlSerializer_116; }
     if ((token === import90.RouterOutletMap)) { return this._RouterOutletMap_117; }
     if ((token === import46.ROUTER_CONFIGURATION)) { return this._ROUTER_CONFIGURATION_118; }
-    if ((token === import186.LocationStrategy)) { return this._LocationStrategy_119; }
+    if ((token === import188.LocationStrategy)) { return this._LocationStrategy_119; }
     if ((token === import91.Location)) { return this._Location_120; }
-    if ((token === import231.NgModuleFactoryLoader)) { return this._NgModuleFactoryLoader_121; }
-    if ((token === import232.ROUTES)) { return this._ROUTES_122; }
-    if ((token === import219.Router)) { return this._Router_123; }
+    if ((token === import233.NgModuleFactoryLoader)) { return this._NgModuleFactoryLoader_121; }
+    if ((token === import234.ROUTES)) { return this._ROUTES_122; }
+    if ((token === import221.Router)) { return this._Router_123; }
     if ((token === import93.AuthenticatedGuard)) { return this._AuthenticatedGuard_124; }
     if ((token === import94.RealTime)) { return this._RealTime_125; }
     if ((token === import95.AuthenticationService)) { return this._AuthenticationService_126; }
@@ -1304,15 +1310,15 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import97.WindowRef)) { return this._WindowRef_128; }
     if ((token === import97.DocumentRef)) { return this._DocumentRef_129; }
     if ((token === import98.LAZY_MAPS_API_CONFIG)) { return this._LAZY_MAPS_API_CONFIG_130; }
-    if ((token === import233.MapsAPILoader)) { return this._MapsAPILoader_131; }
+    if ((token === import235.MapsAPILoader)) { return this._MapsAPILoader_131; }
     if ((token === import99.PageScrollService)) { return this._PageScrollService_132; }
-    if ((token === import234.ActivatedRoute)) { return this._ActivatedRoute_133; }
+    if ((token === import236.ActivatedRoute)) { return this._ActivatedRoute_133; }
     if ((token === import100.NoPreloading)) { return this._NoPreloading_134; }
     if ((token === import100.PreloadingStrategy)) { return this._PreloadingStrategy_135; }
     if ((token === import100.RouterPreloader)) { return this._RouterPreloader_136; }
     if ((token === import100.PreloadAllModules)) { return this._PreloadAllModules_137; }
     if ((token === import46.ROUTER_INITIALIZER)) { return this._ROUTER_INITIALIZER_138; }
-    if ((token === import181.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_139; }
+    if ((token === import183.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_139; }
     if ((token === import101.ContactsService)) { return this._ContactsService_140; }
     if ((token === import102.NotesService)) { return this._NotesService_141; }
     if ((token === import103.UserDataService)) { return this._UserDataService_142; }
@@ -1328,24 +1334,26 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import113.XPensionsService)) { return this._XPensionsService_152; }
     if ((token === import114.XProtectionsService)) { return this._XProtectionsService_153; }
     if ((token === import115.BankAccountsService)) { return this._BankAccountsService_154; }
-    if ((token === import116.AppSandbox)) { return this._AppSandbox_155; }
-    if ((token === import117.GoogleMapsService)) { return this._GoogleMapsService_156; }
-    if ((token === import118.AddressesSandbox)) { return this._AddressesSandbox_157; }
-    if ((token === import119.ClientAccountsSandbox)) { return this._ClientAccountsSandbox_158; }
-    if ((token === import120.BoxAPIService)) { return this._BoxAPIService_159; }
-    if ((token === import121.ClientDocumentsSandbox)) { return this._ClientDocumentsSandbox_160; }
-    if ((token === import122.ContactsSandbox)) { return this._ContactsSandbox_161; }
-    if ((token === import123.MessagesSandbox)) { return this._MessagesSandbox_162; }
-    if ((token === import124.NotesSandbox)) { return this._NotesSandbox_163; }
-    if ((token === import125.ActivitiesSandbox)) { return this._ActivitiesSandbox_164; }
-    if ((token === import126.SalesSandbox)) { return this._SalesSandbox_165; }
-    if ((token === import127.TasksSandbox)) { return this._TasksSandbox_166; }
-    if ((token === import128.TeamSandbox)) { return this._TeamSandbox_167; }
-    if ((token === import129.XAssetsSandbox)) { return this._XAssetsSandbox_168; }
-    if ((token === import130.XLiabilitiesSandbox)) { return this._XLiabilitiesSandbox_169; }
-    if ((token === import131.XPensionsSandbox)) { return this._XPensionsSandbox_170; }
-    if ((token === import132.XProtectionsSandbox)) { return this._XProtectionsSandbox_171; }
-    if ((token === import133.BankAccountsSandbox)) { return this._BankAccountsSandbox_172; }
+    if ((token === import116.CommentsService)) { return this._CommentsService_155; }
+    if ((token === import117.AppSandbox)) { return this._AppSandbox_156; }
+    if ((token === import118.GoogleMapsService)) { return this._GoogleMapsService_157; }
+    if ((token === import119.AddressesSandbox)) { return this._AddressesSandbox_158; }
+    if ((token === import120.ClientAccountsSandbox)) { return this._ClientAccountsSandbox_159; }
+    if ((token === import121.BoxAPIService)) { return this._BoxAPIService_160; }
+    if ((token === import122.ClientDocumentsSandbox)) { return this._ClientDocumentsSandbox_161; }
+    if ((token === import123.ContactsSandbox)) { return this._ContactsSandbox_162; }
+    if ((token === import124.MessagesSandbox)) { return this._MessagesSandbox_163; }
+    if ((token === import125.NotesSandbox)) { return this._NotesSandbox_164; }
+    if ((token === import126.ActivitiesSandbox)) { return this._ActivitiesSandbox_165; }
+    if ((token === import127.SalesSandbox)) { return this._SalesSandbox_166; }
+    if ((token === import128.TasksSandbox)) { return this._TasksSandbox_167; }
+    if ((token === import129.TeamSandbox)) { return this._TeamSandbox_168; }
+    if ((token === import130.XAssetsSandbox)) { return this._XAssetsSandbox_169; }
+    if ((token === import131.XLiabilitiesSandbox)) { return this._XLiabilitiesSandbox_170; }
+    if ((token === import132.XPensionsSandbox)) { return this._XPensionsSandbox_171; }
+    if ((token === import133.XProtectionsSandbox)) { return this._XProtectionsSandbox_172; }
+    if ((token === import134.BankAccountsSandbox)) { return this._BankAccountsSandbox_173; }
+    if ((token === import135.CommentsSandbox)) { return this._CommentsSandbox_174; }
     return notFoundResult;
   }
   destroyInternal():void {
@@ -1366,20 +1374,22 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     this._XPensionsService_152.ngOnDestroy();
     this._XProtectionsService_153.ngOnDestroy();
     this._BankAccountsService_154.ngOnDestroy();
-    this._AddressesSandbox_157.ngOnDestroy();
-    this._ClientAccountsSandbox_158.ngOnDestroy();
-    this._ClientDocumentsSandbox_160.ngOnDestroy();
-    this._ContactsSandbox_161.ngOnDestroy();
-    this._MessagesSandbox_162.ngOnDestroy();
-    this._NotesSandbox_163.ngOnDestroy();
-    this._ActivitiesSandbox_164.ngOnDestroy();
-    this._TasksSandbox_166.ngOnDestroy();
-    this._TeamSandbox_167.ngOnDestroy();
-    this._XAssetsSandbox_168.ngOnDestroy();
-    this._XLiabilitiesSandbox_169.ngOnDestroy();
-    this._XPensionsSandbox_170.ngOnDestroy();
-    this._XProtectionsSandbox_171.ngOnDestroy();
-    this._BankAccountsSandbox_172.ngOnDestroy();
+    this._CommentsService_155.ngOnDestroy();
+    this._AddressesSandbox_158.ngOnDestroy();
+    this._ClientAccountsSandbox_159.ngOnDestroy();
+    this._ClientDocumentsSandbox_161.ngOnDestroy();
+    this._ContactsSandbox_162.ngOnDestroy();
+    this._MessagesSandbox_163.ngOnDestroy();
+    this._NotesSandbox_164.ngOnDestroy();
+    this._ActivitiesSandbox_165.ngOnDestroy();
+    this._TasksSandbox_167.ngOnDestroy();
+    this._TeamSandbox_168.ngOnDestroy();
+    this._XAssetsSandbox_169.ngOnDestroy();
+    this._XLiabilitiesSandbox_170.ngOnDestroy();
+    this._XPensionsSandbox_171.ngOnDestroy();
+    this._XProtectionsSandbox_172.ngOnDestroy();
+    this._BankAccountsSandbox_173.ngOnDestroy();
+    this._CommentsSandbox_174.ngOnDestroy();
   }
 }
 export const AppModuleNgFactory:import0.NgModuleFactory<import1.AppModule> = new import0.NgModuleFactory(AppModuleInjector,import1.AppModule);

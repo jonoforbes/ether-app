@@ -28,7 +28,6 @@ import { MessagesDetailListComponent } from "../../components/detail-list/detail
     `
 })
 export class MessagesFormGroupContainer implements OnInit {
-    @Input() messages: Observable<Array<Message>>;
     
     @Input() recipientId: string;
     @Output() onSave = new EventEmitter<Message>();

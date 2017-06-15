@@ -183,6 +183,11 @@ import { BankAccountsService } from "../bank-accounts/services/bank-accounts.ser
 import { BankAccountsWidgetContainer } from "../bank-accounts/containers/bank-accounts-widget/bank-accounts-widget.container";
 import { BankAccountTabComponent } from "../bank-accounts/components/bank-account-tab/bank-account-tab.component";
 import { AddBankAccountTabComponent } from "../bank-accounts/components/add-bank-account-tab/add-bank-account-tab.component";
+import { CommentsSandbox } from "../comments/comments.sandbox";
+import { CommentsService } from "../comments/services/comments.service";
+import { CommentFormGroupContainer } from "../comments/containers/comment-form-group/comment-form-group.container";
+import { CommentsBarContainer } from "../comments/containers/comments-bar/comments-bar.container";
+import { CommentFormComponent } from "../comments/components/comment-form/comment-form.component";
 export let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -313,7 +318,10 @@ AppModule = __decorate([
             AddXPensionTabComponent,
             BankAccountsWidgetContainer,
             BankAccountTabComponent,
-            AddBankAccountTabComponent
+            AddBankAccountTabComponent,
+            CommentsBarContainer,
+            CommentFormGroupContainer,
+            CommentFormComponent
         ],
         exports: [
             ApplicationContainer,
@@ -353,6 +361,8 @@ AppModule = __decorate([
             XProtectionsService,
             BankAccountsSandbox,
             BankAccountsService,
+            CommentsSandbox,
+            CommentsService,
             {
                 provide: Http,
                 useFactory: customHttpFactory,

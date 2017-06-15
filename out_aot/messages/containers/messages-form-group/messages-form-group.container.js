@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from "@angular/core";
 import { Message } from "../../entities/Message";
-import { Observable } from "rxjs/Observable";
 import { FormBuilder } from "@angular/forms";
 import { MessagesSandbox } from "../../messages.sandbox";
 import { TeamSandbox } from "../../../team/team.sandbox";
@@ -41,10 +40,6 @@ export let MessagesFormGroupContainer = class MessagesFormGroupContainer {
         this.remove.emit(message);
     }
 };
-__decorate([
-    Input(), 
-    __metadata('design:type', Observable)
-], MessagesFormGroupContainer.prototype, "messages", void 0);
 __decorate([
     Input(), 
     __metadata('design:type', String)

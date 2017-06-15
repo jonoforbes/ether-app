@@ -25,6 +25,7 @@ import { XLiabilitiesService } from "../xliabilities/services/xliabilities.servi
 import { XPensionsService } from "../xpensions/services/xpensions.service";
 import { XProtectionsService } from "../xprotections/services/xprotections.service";
 import { BankAccountsService } from "../bank-accounts/services/bank-accounts.service";
+import { CommentsService } from "../comments/services/comments.service";
 import { RealTime } from "../common/realtime";
 import { LOCALSTORAGE_AUTH } from "../configuration";
 import { ClearAuthentication, SetAuthentication } from "../statemanagement/actions/data/autentication";
@@ -43,9 +44,10 @@ import { SetAllXLiabilities } from "../statemanagement/actions/data/xliability";
 import { SetAllXPensions } from "../statemanagement/actions/data/xpension";
 import { SetAllXProtections } from "../statemanagement/actions/data/xprotection";
 import { SetAllBankAccounts } from "../statemanagement/actions/data/bank-account";
+import { SetAllComments } from "../statemanagement/actions/data/comment";
 import { ToggleActivitiesBar } from "../statemanagement/actions/containers/activities-bar";
 export let AppSandbox = class AppSandbox {
-    constructor(store, authenticationService, contactsService, notesService, userDataService, messagesService, addressesService, clientAccountsService, clientDocumentsService, salesService, tasksService, activitiesService, xAssetsService, xLiabilitiesService, xPensionsService, xProtectionsService, bankAccountsService, realTime) {
+    constructor(store, authenticationService, contactsService, notesService, userDataService, messagesService, addressesService, clientAccountsService, clientDocumentsService, salesService, tasksService, activitiesService, xAssetsService, xLiabilitiesService, xPensionsService, xProtectionsService, bankAccountsService, commentsService, realTime) {
         this.store = store;
         this.authenticationService = authenticationService;
         this.contactsService = contactsService;
@@ -63,6 +65,7 @@ export let AppSandbox = class AppSandbox {
         this.xPensionsService = xPensionsService;
         this.xProtectionsService = xProtectionsService;
         this.bankAccountsService = bankAccountsService;
+        this.commentsService = commentsService;
         this.realTime = realTime;
         this.isAuthenticated$ = this.store.select(state => state.data.authentication.isAuthenticated);
         this.isBusy$ = this.store.select(state => state.containers.application.isBusy);
@@ -144,6 +147,10 @@ export let AppSandbox = class AppSandbox {
             this.store.dispatch(new SetAllBankAccounts(bankAccounts));
             console.log('setting bank accounts');
         });
+        this.commentsService.load().subscribe((comments) => {
+            this.store.dispatch(new SetAllComments(comments));
+            console.log('setting comments');
+        });
     }
     connectRealTime() {
         this.realTime.connect();
@@ -154,6 +161,6 @@ export let AppSandbox = class AppSandbox {
 };
 AppSandbox = __decorate([
     Injectable(), 
-    __metadata('design:paramtypes', [Store, AuthenticationService, ContactsService, NotesService, UserDataService, MessagesService, AddressesService, ClientAccountsService, ClientDocumentsService, SalesService, TasksService, ActivitiesService, XAssetsService, XLiabilitiesService, XPensionsService, XProtectionsService, BankAccountsService, RealTime])
+    __metadata('design:paramtypes', [Store, AuthenticationService, ContactsService, NotesService, UserDataService, MessagesService, AddressesService, ClientAccountsService, ClientDocumentsService, SalesService, TasksService, ActivitiesService, XAssetsService, XLiabilitiesService, XPensionsService, XProtectionsService, BankAccountsService, CommentsService, RealTime])
 ], AppSandbox);
 //# sourceMappingURL=app.sandbox.js.map

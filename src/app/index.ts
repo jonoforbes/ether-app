@@ -20,6 +20,7 @@
     // 19 - Pensions Module
     // 20 - Protections Module
     // 21 - Bank Accounts Module
+    // 22 - Comments Module
 
 
 //  -- Angular Imports --  //
@@ -343,6 +344,18 @@
         import { BankAccountTabComponent } from "../bank-accounts/components/bank-account-tab/bank-account-tab.component";
         import { AddBankAccountTabComponent } from "../bank-accounts/components/add-bank-account-tab/add-bank-account-tab.component";
 
+//  -- COMMENTS MODULE --  //
+    //  Injectables
+        import { CommentsSandbox } from "../comments/comments.sandbox";
+        import { CommentsService } from "../comments/services/comments.service";
+
+    //  Containers
+        import { CommentFormGroupContainer} from "../comments/containers/comment-form-group/comment-form-group.container";
+        import { CommentsBarContainer } from "../comments/containers/comments-bar/comments-bar.container";
+
+    //  Components
+        import { CommentFormComponent } from "../comments/components/comment-form/comment-form.component";
+
 // import { ContactsModule } from "../contacts";
 // import { NotesModule } from "../notes";
 // import { TeamModule } from "../team";
@@ -593,7 +606,15 @@
                 BankAccountsWidgetContainer,
             //  Components
                 BankAccountTabComponent,
-                AddBankAccountTabComponent
+                AddBankAccountTabComponent,
+
+        //  -- Comments Module --  //
+            //  Containers
+                CommentsBarContainer,
+                CommentFormGroupContainer,
+
+            //  Components
+                CommentFormComponent
 
     ],
     exports: [
@@ -677,6 +698,10 @@
         //  -- Bank Accounts Module --  //
             BankAccountsSandbox,
             BankAccountsService,
+
+        //  -- Comments Module --  //
+            CommentsSandbox,
+            CommentsService,
 
         {
             provide: Http,
