@@ -90,8 +90,8 @@ ApplicationContainer = __decorate([
   <md-sidenav #rightsidenav mode="{{navMode}}" align="end" [opened]="isCollapsed$|async" class="right-sidenav">
 
     <h3 *ngIf="(activitiesBarMode$ | async) == 'messages'" style="font-size: 40px; color: #838383">messages</h3>
-    <all-activities *ngIf="(activitiesBarMode$ | async) == 'notifications'">notifications</all-activities>
-      
+
+    <comments-bar *ngIf="(activitiesBarMode$ | async) == 'notifications'">notifications</comments-bar>  
       
 
 

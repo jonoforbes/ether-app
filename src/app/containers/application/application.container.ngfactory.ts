@@ -23,9 +23,9 @@ import * as import14 from '@angular/common/src/pipes/async_pipe';
 import * as import15 from '@angular/core/src/linker/view_container';
 import * as import16 from '../../../common/common.sandbox';
 import * as import17 from '@angular/core/src/change_detection/change_detection_util';
-import * as import18 from '../../../activities/containers/all-activities/all-activities.container';
-import * as import19 from '../../../activities/containers/all-activities/all-activities.container.ngfactory';
-import * as import20 from '../../../activities/activities.sandbox';
+import * as import18 from '../../../comments/containers/comments-bar/comments-bar.container';
+import * as import19 from '../../../comments/containers/comments-bar/comments-bar.container.ngfactory';
+import * as import20 from '../../../comments/comments.sandbox';
 import * as import21 from '@angular/core/src/linker/template_ref';
 import * as import22 from '@angular/common/src/directives/ng_if';
 import * as import23 from '@angular/material/core/compatibility/compatibility';
@@ -209,24 +209,24 @@ class View_ApplicationContainer2 extends import1.DebugAppView<any> {
   }
 }
 const nodeDebugInfos_ApplicationContainer3:import2.StaticNodeDebugInfo[] = [
-  new import2.StaticNodeDebugInfo([import18.AllActivitiesContainer],import18.AllActivitiesContainer,{}),
+  new import2.StaticNodeDebugInfo([import18.CommentsBarContainer],import18.CommentsBarContainer,{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
 class View_ApplicationContainer3 extends import1.DebugAppView<any> {
   _el_0:any;
-  compView_0:import1.AppView<import18.AllActivitiesContainer>;
-  _AllActivitiesContainer_0_3:import19.Wrapper_AllActivitiesContainer;
+  compView_0:import1.AppView<import18.CommentsBarContainer>;
+  _CommentsBarContainer_0_3:import19.Wrapper_CommentsBarContainer;
   _text_1:any;
   constructor(viewUtils:import5.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import15.ViewContainer) {
     super(View_ApplicationContainer3,renderType_ApplicationContainer,import7.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_ApplicationContainer3,declaredViewContainer);
   }
   createInternal(rootSelector:string):import9.ComponentRef<any> {
-    this._el_0 = import5.createRenderElement(this.renderer,(null as any),'all-activities',import5.EMPTY_INLINE_ARRAY,this.debug(0,13,4));
-    this.compView_0 = new import19.View_AllActivitiesContainer0(this.viewUtils,this,0,this._el_0);
-    this._AllActivitiesContainer_0_3 = new import19.Wrapper_AllActivitiesContainer(this.parentView.parentView.injectorGet(import20.ActivitiesSandbox,this.parentView.parentIndex));
-    this._text_1 = this.renderer.createText((null as any),'notifications',this.debug(1,13,76));
-    this.compView_0.create(this._AllActivitiesContainer_0_3.context);
+    this._el_0 = import5.createRenderElement(this.renderer,(null as any),'comments-bar',import5.EMPTY_INLINE_ARRAY,this.debug(0,14,4));
+    this.compView_0 = new import19.View_CommentsBarContainer0(this.viewUtils,this,0,this._el_0);
+    this._CommentsBarContainer_0_3 = new import19.Wrapper_CommentsBarContainer(this.parentView.parentView.injectorGet(import20.CommentsSandbox,this.parentView.parentIndex));
+    this._text_1 = this.renderer.createText((null as any),'notifications',this.debug(1,14,74));
+    this.compView_0.create(this._CommentsBarContainer_0_3.context);
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1
@@ -235,17 +235,17 @@ class View_ApplicationContainer3 extends import1.DebugAppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import18.AllActivitiesContainer) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 1)))) { return this._AllActivitiesContainer_0_3.context; }
+    if (((token === import18.CommentsBarContainer) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 1)))) { return this._CommentsBarContainer_0_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    this.debug(0,13,4);
-    if (this._AllActivitiesContainer_0_3.ngDoCheck(this,this._el_0,throwOnChange)) { this.compView_0.markAsCheckOnce(); }
+    this.debug(0,14,4);
+    if (this._CommentsBarContainer_0_3.ngDoCheck(this,this._el_0,throwOnChange)) { this.compView_0.markAsCheckOnce(); }
     this.compView_0.internalDetectChanges(throwOnChange);
   }
   destroyInternal():void {
     this.compView_0.destroy();
-    this._AllActivitiesContainer_0_3.ngOnDestroy();
+    this._CommentsBarContainer_0_3.ngOnDestroy();
   }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);
@@ -369,12 +369,12 @@ export class View_ApplicationContainer0 extends import1.DebugAppView<import0.App
     this._vc_12 = new import15.ViewContainer(12,10,this,this._anchor_12);
     this._TemplateRef_12_5 = new import21.TemplateRef_(this,12,this._anchor_12);
     this._NgIf_12_6 = new import27.Wrapper_NgIf(this._vc_12.vcRef,this._TemplateRef_12_5);
-    this._text_13 = this.renderer.createText((null as any),'\n    ',this.debug(13,12,112));
-    this._anchor_14 = this.renderer.createTemplateAnchor((null as any),this.debug(14,13,4));
+    this._text_13 = this.renderer.createText((null as any),'\n\n    ',this.debug(13,12,112));
+    this._anchor_14 = this.renderer.createTemplateAnchor((null as any),this.debug(14,14,4));
     this._vc_14 = new import15.ViewContainer(14,10,this,this._anchor_14);
     this._TemplateRef_14_5 = new import21.TemplateRef_(this,14,this._anchor_14);
     this._NgIf_14_6 = new import27.Wrapper_NgIf(this._vc_14.vcRef,this._TemplateRef_14_5);
-    this._text_15 = this.renderer.createText((null as any),'\n      \n      \n\n\n\n  ',this.debug(15,13,106));
+    this._text_15 = this.renderer.createText((null as any),'  \n      \n\n\n\n  ',this.debug(15,14,102));
     this.compView_10.create(this._MdSidenav_10_4.context);
     this._text_16 = this.renderer.createText((null as any),'\n\n',this.debug(16,19,15));
     this.compView_3.create(this._MdSidenavContainer_3_4.context);
@@ -454,7 +454,7 @@ export class View_ApplicationContainer0 extends import1.DebugAppView<import0.App
     const currVal_12_0_0:any = (valUnwrapper.unwrap(this._pipe_async_2.transform(this.context.activitiesBarMode$)) == 'messages');
     this._NgIf_12_6.check_ngIf(currVal_12_0_0,throwOnChange,valUnwrapper.hasWrappedValue);
     this._NgIf_12_6.ngDoCheck(this,this._anchor_12,throwOnChange);
-    this.debug(14,13,20);
+    this.debug(14,14,18);
     valUnwrapper.reset();
     const currVal_14_0_0:any = (valUnwrapper.unwrap(this._pipe_async_3.transform(this.context.activitiesBarMode$)) == 'notifications');
     this._NgIf_14_6.check_ngIf(currVal_14_0_0,throwOnChange,valUnwrapper.hasWrappedValue);
@@ -490,7 +490,7 @@ export class View_ApplicationContainer0 extends import1.DebugAppView<import0.App
     this._RouterOutlet_7_5.ngOnDestroy();
     this.debug(7,6,4);
     this.debug(12,12,4);
-    this.debug(14,13,4);
+    this.debug(14,14,4);
     this._MdSidenav_10_4.ngOnDestroy();
     this.debug(10,10,2);
     this._MdSidenavContainer_3_4.ngOnDestroy();

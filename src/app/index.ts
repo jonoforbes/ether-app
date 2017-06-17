@@ -355,6 +355,7 @@
 
     //  Components
         import { CommentFormComponent } from "../comments/components/comment-form/comment-form.component";
+        import { CommentsListComponent } from "../comments/components/comments-list/comments-list.component";
 
 // import { ContactsModule } from "../contacts";
 // import { NotesModule } from "../notes";
@@ -614,7 +615,8 @@
                 CommentFormGroupContainer,
 
             //  Components
-                CommentFormComponent
+                CommentFormComponent,
+                CommentsListComponent
 
     ],
     exports: [

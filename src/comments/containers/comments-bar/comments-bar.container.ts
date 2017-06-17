@@ -9,6 +9,7 @@ import { CommentsSandbox } from "../../comments.sandbox";
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
         <h2>Comments</h2>  
+        <comments-list [comments]="this.matchingComments$ | async"></comments-list>
         <comment-form-group (save)="onSave($event)"></comment-form-group>  
     `
 
