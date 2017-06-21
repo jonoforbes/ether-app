@@ -16,10 +16,17 @@ export let AddAddressTabComponent = class AddAddressTabComponent {
         this.address = new Address();
         this.contact = false;
         this.onSave = new EventEmitter();
+        this.addressTypes = [
+            'Money Purchase',
+            'Defined Benefits'
+        ];
     }
     ngOnInit() {
         this.addressForm = this.formBuilder.group({
             formattedName: [this.address.formattedName],
+            addressType: [this.address.addressType],
+            addressSince: [this.address.addressSince],
+            primaryAddress: [this.address.primaryAddress],
             houseNumber: [this.address.houseNumber, Validators.required],
             streetName: [this.address.streetName, Validators.required],
             city: [this.address.city, Validators.required],
@@ -43,16 +50,61 @@ export let AddAddressTabComponent = class AddAddressTabComponent {
         }
     }
     onSelectAddress(address) {
-        this.addressForm.setValue({
-            formattedName: address.formatted_address,
-            houseNumber: address.address_components[0].long_name,
-            streetName: address.address_components[1].long_name,
-            city: address.address_components[2].long_name,
-            postCode: address.address_components[6].long_name,
-            country: address.address_components[5].long_name,
-            latitude: address.geometry.location.lat,
-            longitude: address.geometry.location.lng
+        var houseNumber = "";
+        var streetName = "";
+        var city = "";
+        var postCode = "";
+        var country = "";
+        var houseNumberComponent = address.address_components.filter((addressComponent) => {
+            return addressComponent.types.find((type) => {
+                return type === "street_number";
+            });
         });
+        var streetNameComponent = address.address_components.filter((addressComponent) => {
+            return addressComponent.types.find((type) => {
+                return type === "route";
+            });
+        });
+        var cityComponent = address.address_components.filter((addressComponent) => {
+            return addressComponent.types.find((type) => {
+                return type === "locality" || type === "postal_town";
+            });
+        });
+        var postCodeComponent = address.address_components.filter((addressComponent) => {
+            return addressComponent.types.find((type) => {
+                return type === "postal_code";
+            });
+        });
+        var countryComponent = address.address_components.filter((addressComponent) => {
+            return addressComponent.types.find((type) => {
+                return type === "country";
+            });
+        });
+        if (houseNumberComponent) {
+            houseNumber = houseNumberComponent.long_name;
+        }
+        ;
+        if (streetNameComponent) {
+            streetName = streetNameComponent.long_name;
+        }
+        ;
+        if (cityComponent) {
+            city = cityComponent.long_name;
+        }
+        ;
+        if (postCodeComponent) {
+            postCode = postCodeComponent.long_name;
+        }
+        ;
+        if (countryComponent) {
+            country = countryComponent.long_name;
+        }
+        ;
+        console.log('house number', houseNumber);
+        console.log('street name', streetName);
+        console.log('city', city);
+        console.log('post code', postCode);
+        console.log('country', country);
         console.log(address);
         console.log(this.addressForm);
     }
@@ -82,12 +134,15 @@ AddAddressTabComponent = __decorate([
                 <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
                 <div class="mapDetail" style="margin-top: 0px;">
 
-                    <button type="submit" [disabled]="!addressForm.valid" md-button class="mapButton">
-                        <p>SAVE ADDRESS</p>
-                    </button>
-
                     
-                        
+                        <md-input-container>
+                            <input mdInput placeholder="Address Type" [mdAutocomplete]="addressTypeSelect" formControlName="addressType">
+                        </md-input-container>
+                        <md-autocomplete #addressTypeSelect="mdAutocomplete">
+                            <md-option style="overflow: hidden !important" *ngFor="let type of addressTypes" [value]="type">
+                                {{ type }}
+                            </md-option>
+                        </md-autocomplete>
                         <md-input-container>
                             <input mdInput placeholder="House Number" formControlName="houseNumber">
                         </md-input-container>

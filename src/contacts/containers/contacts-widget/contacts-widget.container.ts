@@ -8,6 +8,7 @@ import 'rxjs/add/observable/from';
 import { Store } from "@ngrx/store";
 import { ApplicationState } from "../../../statemanagement/state/ApplicationState";
 import { ContactsSandbox } from "../../contacts.sandbox";
+import { CommentsSandbox } from "../../../comments/comments.sandbox";
 import { ContactTabComponent } from "../../components/contact-tab/contact-tab.component";
 // import { AddAddressTabComponent } from "../../components/add-address-tab/add-address-tab.component";
 import { AddContactTabComponent } from "../../components/add-contact-tab/add-contact-tab.component";
@@ -29,6 +30,7 @@ import { AddContactTabComponent } from "../../components/add-contact-tab/add-con
                 </md-tab>
                 <md-tab *ngFor="let item of this.contacts$|async" label="{{item.firstName}} {{item.lastName}}">
                     <contact-tab (updateContact)="onUpdateContact($event)"
+                    (openComments)="onOpenComments($event)"
                                 (updateContactAccount)="onUpdateContactAccount($event)" [contact]="item"></contact-tab>
                 </md-tab>      
             </md-tab-group>
@@ -45,6 +47,7 @@ export class ContactsWidgetContainer implements OnInit {
     id$ = new Observable<String>();
 
     constructor(private sb: ContactsSandbox,
+                private commentsSb: CommentsSandbox,
                 private route: ActivatedRoute,
                 private router: Router) {
 
@@ -97,6 +100,12 @@ export class ContactsWidgetContainer implements OnInit {
         console.log(id);
         console.log(contact);
         this.sb.setAccount(contact, id);
+    }
+
+    onOpenComments(commentParams: any) {
+        console.log(commentParams.parentId);
+        console.log(commentParams.commentType);
+        this.commentsSb.openComments(commentParams.parentId, commentParams.commentType);
     }
 
 

@@ -27,7 +27,7 @@ CommentFormComponent = __decorate([
                                                                             bottom: 42px;
                                                                             overflow-y: hidden !important;
                                                                             z-index: 2;
-                                                                            position: fixed">
+                                                                            position: absolute !important">
 
         <div class="message-form-row" [formGroup]="commentForm">
 

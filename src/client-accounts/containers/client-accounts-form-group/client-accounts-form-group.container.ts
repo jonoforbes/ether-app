@@ -7,6 +7,7 @@ import { ClientAccountsDetailHeaderComponent } from "../../components/detail-hea
 import { ClientAccountsDetailFormComponent } from "../../components/detail-form/detail-form.component";
 import { ClientAccountsDetailComplianceComponent } from "../../components/detail-compliance/detail-compliance.component";
 import { ClientAccountsProgressWidgetComponent } from "../../components/progress-widget/progress-widget.component";
+import { CommentsSandbox } from "../../../comments/comments.sandbox";
 
 @Component({
     selector: "client-accounts-form-group",
@@ -26,7 +27,9 @@ import { ClientAccountsProgressWidgetComponent } from "../../components/progress
             (updateStatus)="onUpdateStatus(clientAccount, $event)">
         </client-accounts-detail-header>
         <client-accounts-detail-form [clientAccountForm]="this.clientAccountForm" (remove)="onRemove(clientAccount)"></client-accounts-detail-form>
-        <client-accounts-detail-compliance [clientAccountForm]="this.clientAccountForm" (remove)="onRemove(clientAccount)"></client-accounts-detail-compliance>
+        <client-accounts-detail-compliance 
+            (openComments)="onOpenComments($event)"
+            [clientAccountForm]="this.clientAccountForm" (remove)="onRemove(clientAccount)"></client-accounts-detail-compliance>
     </form>
         
     
@@ -41,6 +44,7 @@ export class ClientAccountsFormGroupContainer implements OnInit {
     public clientAccountForm: FormGroup;
 
     constructor(private sb: ClientAccountsSandbox,
+                public commentsSb: CommentsSandbox,
                 private formBuilder: FormBuilder
                  ) {
         
@@ -50,6 +54,7 @@ export class ClientAccountsFormGroupContainer implements OnInit {
 
     ngOnInit() {
         this.clientAccountForm = this.formBuilder.group({
+            _id: [this.clientAccount._id],
             accountName: [this.clientAccount.accountName],
             companyFullName: [this.clientAccount.companyFullName],
             companyNumber: [this.clientAccount.companyNumber],
@@ -75,7 +80,11 @@ export class ClientAccountsFormGroupContainer implements OnInit {
 
     }
 
-    
+    onOpenComments(commentParams: any) {
+        console.log(commentParams.parentId);
+        console.log(commentParams.commentType);
+        this.commentsSb.openComments(commentParams.parentId, commentParams.commentType);
+    }
 
     onSubmit(): void {
         console.log(this.clientAccount);

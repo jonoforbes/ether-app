@@ -19,35 +19,35 @@ export class GoogleMapsService {
 }
 
 export interface GoogleMapsSearchResult {
-    results: Array<GoogleMapsResult>;
+    results?: Array<GoogleMapsResult>;
 }
 
 export interface GoogleMapsResult {
-    address_components: Array<GoogleMapsAddressComponent>;
-    formatted_address: string;
-    geometry: GoogleMapsGeometry;
-    place_id: string;
-    types: Array<string>;
+    address_components?: Array<GoogleMapsAddressComponent>;
+    formatted_address?: string;
+    geometry?: GoogleMapsGeometry;
+    place_id?: string;
+    types?: Array<string>;
 }
 
 export interface GoogleMapsAddressComponent {
-    long_name: string;
-    short_name: string;
-    types: Array<string>;
+    long_name?: string;
+    short_name?: string;
+    types?: Array<string>;
 }
 
 export interface GoogleMapsGeometry {
-    location: GoogleMapsLocation;
-    location_type: string;
-    viewport: GoogleMapsViewPort;
+    location?: GoogleMapsLocation;
+    location_type?: string;
+    viewport?: GoogleMapsViewPort;
 }
 
 export interface GoogleMapsLocation {
-    lat: number;
-    lng: number;
+    lat?: number;
+    lng?: number;
 }
 
 export interface GoogleMapsViewPort {
-    northeast: GoogleMapsLocation;
-    southwest: GoogleMapsLocation;
+    northeast?: GoogleMapsLocation;
+    southwest?: GoogleMapsLocation;
 }

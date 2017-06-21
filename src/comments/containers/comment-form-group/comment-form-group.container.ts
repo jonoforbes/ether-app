@@ -19,7 +19,8 @@ import { Validators, FormGroup, FormBuilder } from "@angular/forms";
 })
 export class CommentFormGroupContainer implements OnInit {
 
-    // @Input() recipientId: string;
+    @Input() parentId: string;
+    @Input() commentType: string;
     @Output() save = new EventEmitter<Comment>();
 
     commentForm: FormGroup;
@@ -37,6 +38,8 @@ export class CommentFormGroupContainer implements OnInit {
 
     onSubmit(): void {
         console.log('comment', this.comment);
+        this.comment.parentId = this.parentId;
+        this.comment.commentType = this.commentType;
         this.comment.recipientId = "no recipient";
         this.save.emit(Object.assign(this.comment, this.commentForm.value));
         var newComment = this.formBuilder.group({

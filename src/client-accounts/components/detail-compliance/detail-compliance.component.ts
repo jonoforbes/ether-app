@@ -8,89 +8,86 @@ import { Router } from "@angular/router";
     selector: "client-accounts-detail-compliance",
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
-        <accordion class="compliance-accordion" [closeOthers]="false" [showArrows]="true" style="max-width: 500px !important">
+        <accordion class="compliance-accordion" [closeOthers]="false" [showArrows]="true">
           
           <accordion-group class="compliance-accordion" [isOpened]="true">
             <accordion-heading class="compliance-accordion">
               <h2 class="widget widget-head">Wealth Source</h2>
             </accordion-heading>
             <div fxLayout="row">
-              <div class="contact-form tabContainer" fxLayout="column" fxFlex="570px">
-                <div class="contact-form-row" fxLayout="row" [formGroup]="clientAccountForm">
+              <div class="contact-form tabContainer" fxLayout="column" fxFlex="630px">
+                <div class="contact-form-row" fxLayout="row" fxLayoutAlign="space-between" [formGroup]="clientAccountForm">
 
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 15px; margin-right: 40px" formControlName="wealthIncome">
+                  <md-checkbox class="selectionCheckbox" style="margin-left: 15px" formControlName="wealthIncome">
                             <span style="margin-left: 10px;">Income</span>
                   </md-checkbox>
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 40px" formControlName="wealthBonus">
+                  <md-checkbox class="selectionCheckbox" formControlName="wealthBonus">
                             <span style="margin-left: 10px;">Bonus</span>
                   </md-checkbox>
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 40px" formControlName="wealthHouseSale">
+                  <md-checkbox class="selectionCheckbox" formControlName="wealthHouseSale">
                             <span style="margin-left: 10px;">House Sale</span>
                   </md-checkbox>
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 0px" formControlName="wealthBusinessSale">
+                  <md-checkbox class="selectionCheckbox" style="margin-right: 40px" formControlName="wealthBusinessSale">
                             <span style="margin-left: 10px;">Business Sale</span>
                   </md-checkbox>
                 </div>
-                <div class="contact-form-row" fxLayout="row" [formGroup]="clientAccountForm">
+                <div class="contact-form-row" fxLayout="row" fxLayoutAlign="space-between" [formGroup]="clientAccountForm">
 
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 15px; margin-right: 40px" formControlName="wealthInheritance">
+                  <md-checkbox class="selectionCheckbox" style="margin-left: 15px" formControlName="wealthInheritance">
                             <span style="margin-left: 10px;">Inheritance</span>
                   </md-checkbox>
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 40px" formControlName="wealthReplacement">
+                  <md-checkbox class="selectionCheckbox" formControlName="wealthReplacement">
                             <span style="margin-left: 10px;">Replacement</span>
                   </md-checkbox>
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 40px" formControlName="wealthDivorce">
+                  <md-checkbox class="selectionCheckbox" formControlName="wealthDivorce">
                             <span style="margin-left: 10px;">Divorce</span>
                   </md-checkbox>
-                  <md-checkbox class="selectionCheckbox" style="margin-left: 0px" formControlName="wealthOther">
+                  <md-checkbox class="selectionCheckbox" style="margin-right: 40px" formControlName="wealthOther">
                             <span style="margin-left: 10px;">Other</span>
                   </md-checkbox>
                 </div>
               </div>
               <div fxLayout="column" fxFlex="50px">
-                <div style="height: 20px"></div>
+                <div style="height: 27px"></div>
                 <button md-button class="midColumnButton"><md-icon style="color: #838383; margin-top: -1px">save</md-icon></button>
+                <button md-button type="button" (click)="onOpenComments('Wealth Source')" class="midColumnButton"><md-icon style="color: #838383; margin-top: -1px">message</md-icon></button>
               </div>
               <div fxLayout="column" fxFlex fxLayoutAlign="start end">
                 <div style="height: 20px"></div>
-                <button md-button type="submit" style="text-align: left !important; width: 200px; padding: 5px">
-                  <div fxLayout="row">
-                  <md-icon style="color: #838383; margin-top: -1px">message</md-icon><p style="margin: 4px 10px 4px 10px;">Comments (0)</p>
-                  </div>
-                </button>
+
               </div>
             </div>
           </accordion-group>
 
-          <accordion-group [isOpened]="true">
+          <accordion-group [isOpened]="false">
             <accordion-heading>
                 <h2 class="widget widget-head">Funds Source</h2>
             </accordion-heading>
                   <div fxLayout="row">
                   
-                  <div class="contact-form tabContainer" fxLayout="column" fxFlex="570px">
+                  <div class="contact-form tabContainer" fxLayout="column" fxFlex="630px">
 
-                  <div class="contact-form-row" fxLayout="row" [formGroup]="clientAccountForm">
+                  <div class="contact-form-row" fxLayoutAlign="space-between" fxLayout="row" [formGroup]="clientAccountForm">
 
-                    <md-checkbox class="selectionCheckbox" style="margin-left: 15px; margin-right: 20px" formControlName="fundsUKBank">
+                    <md-checkbox class="selectionCheckbox" style="margin-left: 15px" formControlName="fundsUKBank">
                               <span style="margin-left: 10px;">UK Bank Account</span>
                     </md-checkbox>
-                    <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 20px" formControlName="fundsEUBank">
+                    <md-checkbox class="selectionCheckbox" formControlName="fundsEUBank">
                               <span style="margin-left: 10px;">EU Bank Account</span>
                     </md-checkbox>
-                    <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 20px" formControlName="fundsBSOC">
+                    <md-checkbox class="selectionCheckbox" style="margin-right: 40px" formControlName="fundsBSOC">
                               <span style="margin-left: 10px;">Banking Society Account</span>
                     </md-checkbox>
                   </div>
-                  <div class="contact-form-row" fxLayout="row" [formGroup]="clientAccountForm">
+                  <div class="contact-form-row" fxLayoutAlign="space-between" fxLayout="row" [formGroup]="clientAccountForm">
 
-                    <md-checkbox class="selectionCheckbox" style="margin-left: 15px; margin-right: 40px" formControlName="fundsStock">
+                    <md-checkbox class="selectionCheckbox" style="margin-left: 15px" formControlName="fundsStock">
                               <span style="margin-left: 10px;">Stockbrokers</span>
                     </md-checkbox>
-                    <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 40px" formControlName="fundsOtherReg">
+                    <md-checkbox class="selectionCheckbox" formControlName="fundsOtherReg">
                               <span style="margin-left: 10px;">Other Regulated Firm</span>
                     </md-checkbox>
-                    <md-checkbox class="selectionCheckbox" style="margin-left: 0px; margin-right: 0px" formControlName="fundsSolicitor">
+                    <md-checkbox class="selectionCheckbox" style="margin-right: 40px" formControlName="fundsSolicitor">
                               <span style="margin-left: 10px;">Solicitor's Account</span>
                     </md-checkbox>
                   </div>
@@ -107,15 +104,9 @@ import { Router } from "@angular/router";
                 <div fxLayout="column" fxFlex="50px">
                   <div style="height: 20px"></div>
                   <button md-button class="midColumnButton"><md-icon style="color: #838383; margin-top: -1px">save</md-icon></button>
+                  <button md-button type="button" (click)="onOpenComments('Funds Source')" class="midColumnButton"><md-icon style="color: #838383; margin-top: -1px">message</md-icon></button>
                 </div>
-                  <div fxLayout="column" fxFlex fxLayoutAlign="start end">
-                <div style="height: 15px"></div>
-                <button md-button type="submit" style="text-align: left !important; width: 200px; padding: 5px">
-                  <div fxLayout="row">
-                  <md-icon style="color: #838383; margin-top: -1px">message</md-icon><p style="margin: 4px 10px 4px 10px;">Comments (0)</p>
-                  </div>
-                </button>
-              </div>
+                  
               </div>
           </accordion-group>
 </accordion>
@@ -123,12 +114,22 @@ import { Router } from "@angular/router";
 })
 export class ClientAccountsDetailComplianceComponent {
   @Input() clientAccountForm: FormGroup;
+  @Output() openComments = new EventEmitter<{parentId: string, commentType: string}>();
 
   accountStatuses = [
     {value: 'Active', viewValue: 'Active'},
     {value: 'Inactive', viewValue: 'Inactive'}
   ]
 
+
+  onOpenComments(section: string) {
+    var commentParams: any = {
+      parentId: this.clientAccountForm.controls['_id'].value,
+      commentType: `${this.clientAccountForm.controls['accountName'].value} - ${section}`
+    };
+    console.log(commentParams);
+    this.openComments.emit(Object.assign({}, commentParams));
+  }
 
 }
 

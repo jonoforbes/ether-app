@@ -35,16 +35,17 @@ import * as import26 from '../../../client-documents/containers/client-documents
 import * as import27 from '../../../tasks/containers/tasks-widget/tasks-widget.container.ngfactory';
 import * as import28 from '@angular/common/src/pipes/async_pipe';
 import * as import29 from '@angular/core/src/linker/view_container';
-import * as import30 from '@angular/forms/src/form_builder';
-import * as import31 from '../../../contacts/contacts.sandbox';
-import * as import32 from '../../../addresses/addresses.sandbox';
-import * as import33 from '../../../client-documents/client-documents.sandbox';
-import * as import34 from '@angular/core/src/linker/element_ref';
-import * as import35 from '../../../tasks/tasks.sandbox';
-import * as import36 from '@angular/core/src/change_detection/change_detection_util';
-import * as import37 from '@angular/core/src/linker/template_ref';
-import * as import38 from '@angular/common/src/directives/ng_if';
-import * as import39 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import30 from '../../../comments/comments.sandbox';
+import * as import31 from '@angular/forms/src/form_builder';
+import * as import32 from '../../../contacts/contacts.sandbox';
+import * as import33 from '../../../addresses/addresses.sandbox';
+import * as import34 from '../../../client-documents/client-documents.sandbox';
+import * as import35 from '@angular/core/src/linker/element_ref';
+import * as import36 from '../../../tasks/tasks.sandbox';
+import * as import37 from '@angular/core/src/change_detection/change_detection_util';
+import * as import38 from '@angular/core/src/linker/template_ref';
+import * as import39 from '@angular/common/src/directives/ng_if';
+import * as import40 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
 export class Wrapper_ClientAccountsDetailContainer {
   /*private*/ _eventHandler:Function;
   context:import0.ClientAccountsDetailContainer;
@@ -177,43 +178,43 @@ class View_ClientAccountsDetailContainer1 extends import1.DebugAppView<any> {
     this._text_1 = this.renderer.createText(this._el_0,'\n            ',this.debug(1,4,48));
     this._el_2 = import4.createRenderElement(this.renderer,this._el_0,'client-accounts-form-group',import4.EMPTY_INLINE_ARRAY,this.debug(2,5,12));
     this.compView_2 = new import20.View_ClientAccountsFormGroupContainer0(this.viewUtils,this,2,this._el_2);
-    this._ClientAccountsFormGroupContainer_2_3 = new import20.Wrapper_ClientAccountsFormGroupContainer(this.parentView.parentView.injectorGet(import9.ClientAccountsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import30.FormBuilder,this.parentView.parentIndex));
+    this._ClientAccountsFormGroupContainer_2_3 = new import20.Wrapper_ClientAccountsFormGroupContainer(this.parentView.parentView.injectorGet(import9.ClientAccountsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import30.CommentsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import31.FormBuilder,this.parentView.parentIndex));
     this._text_3 = this.renderer.createText((null as any),'\n            ',this.debug(3,9,56));
     this.compView_2.create(this._ClientAccountsFormGroupContainer_2_3.context);
     this._text_4 = this.renderer.createText(this._el_0,'\n            ',this.debug(4,10,41));
     this._el_5 = import4.createRenderElement(this.renderer,this._el_0,'contacts-widget',import4.EMPTY_INLINE_ARRAY,this.debug(5,11,12));
     this.compView_5 = new import21.View_ContactsWidgetContainer0(this.viewUtils,this,5,this._el_5);
-    this._ContactsWidgetContainer_5_3 = new import21.Wrapper_ContactsWidgetContainer(this.parentView.parentView.injectorGet(import31.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
+    this._ContactsWidgetContainer_5_3 = new import21.Wrapper_ContactsWidgetContainer(this.parentView.parentView.injectorGet(import32.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
     this.compView_5.create(this._ContactsWidgetContainer_5_3.context);
     this._text_6 = this.renderer.createText(this._el_0,'\n            ',this.debug(6,11,47));
     this._el_7 = import4.createRenderElement(this.renderer,this._el_0,'addresses-widget',import4.EMPTY_INLINE_ARRAY,this.debug(7,12,12));
     this.compView_7 = new import22.View_AddressesWidgetContainer0(this.viewUtils,this,7,this._el_7);
-    this._AddressesWidgetContainer_7_3 = new import22.Wrapper_AddressesWidgetContainer(this.parentView.parentView.injectorGet(import32.AddressesSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex));
+    this._AddressesWidgetContainer_7_3 = new import22.Wrapper_AddressesWidgetContainer(this.parentView.parentView.injectorGet(import33.AddressesSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex));
     this.compView_7.create(this._AddressesWidgetContainer_7_3.context);
     this._text_8 = this.renderer.createText(this._el_0,'\n            ',this.debug(8,12,67));
     this._el_9 = import4.createRenderElement(this.renderer,this._el_0,'health-occupation-widget',import4.EMPTY_INLINE_ARRAY,this.debug(9,13,12));
     this.compView_9 = new import23.View_HealthOccupationWidgetContainer0(this.viewUtils,this,9,this._el_9);
-    this._HealthOccupationWidgetContainer_9_3 = new import23.Wrapper_HealthOccupationWidgetContainer(this.parentView.parentView.injectorGet(import31.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
+    this._HealthOccupationWidgetContainer_9_3 = new import23.Wrapper_HealthOccupationWidgetContainer(this.parentView.parentView.injectorGet(import32.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
     this.compView_9.create(this._HealthOccupationWidgetContainer_9_3.context);
     this._text_10 = this.renderer.createText(this._el_0,'\n            ',this.debug(10,13,65));
     this._el_11 = import4.createRenderElement(this.renderer,this._el_0,'income-widget',import4.EMPTY_INLINE_ARRAY,this.debug(11,14,12));
     this.compView_11 = new import24.View_IncomeWidgetContainer0(this.viewUtils,this,11,this._el_11);
-    this._IncomeWidgetContainer_11_3 = new import24.Wrapper_IncomeWidgetContainer(this.parentView.parentView.injectorGet(import31.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
+    this._IncomeWidgetContainer_11_3 = new import24.Wrapper_IncomeWidgetContainer(this.parentView.parentView.injectorGet(import32.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
     this.compView_11.create(this._IncomeWidgetContainer_11_3.context);
     this._text_12 = this.renderer.createText(this._el_0,'\n            ',this.debug(12,14,43));
     this._el_13 = import4.createRenderElement(this.renderer,this._el_0,'contacts-intermediate-widget',import4.EMPTY_INLINE_ARRAY,this.debug(13,15,12));
     this.compView_13 = new import25.View_ContactsIntermediateWidgetContainer0(this.viewUtils,this,13,this._el_13);
-    this._ContactsIntermediateWidgetContainer_13_3 = new import25.Wrapper_ContactsIntermediateWidgetContainer(this.parentView.parentView.injectorGet(import31.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
+    this._ContactsIntermediateWidgetContainer_13_3 = new import25.Wrapper_ContactsIntermediateWidgetContainer(this.parentView.parentView.injectorGet(import32.ContactsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
     this.compView_13.create(this._ContactsIntermediateWidgetContainer_13_3.context);
     this._text_14 = this.renderer.createText(this._el_0,'\n            ',this.debug(14,15,73));
     this._el_15 = import4.createRenderElement(this.renderer,this._el_0,'documents-widget',import4.EMPTY_INLINE_ARRAY,this.debug(15,16,12));
     this.compView_15 = new import26.View_ClientDocumentsWidgetContainer0(this.viewUtils,this,15,this._el_15);
-    this._ClientDocumentsWidgetContainer_15_3 = new import26.Wrapper_ClientDocumentsWidgetContainer(this.parentView.parentView.injectorGet(import33.ClientDocumentsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex),new import34.ElementRef(this._el_15));
+    this._ClientDocumentsWidgetContainer_15_3 = new import26.Wrapper_ClientDocumentsWidgetContainer(this.parentView.parentView.injectorGet(import34.ClientDocumentsSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex),new import35.ElementRef(this._el_15));
     this.compView_15.create(this._ClientDocumentsWidgetContainer_15_3.context);
     this._text_16 = this.renderer.createText(this._el_0,'\n            ',this.debug(16,16,63));
     this._el_17 = import4.createRenderElement(this.renderer,this._el_0,'tasks-widget',import4.EMPTY_INLINE_ARRAY,this.debug(17,17,12));
     this.compView_17 = new import27.View_TasksWidgetContainer0(this.viewUtils,this,17,this._el_17);
-    this._TasksWidgetContainer_17_3 = new import27.Wrapper_TasksWidgetContainer(this.parentView.parentView.injectorGet(import35.TasksSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
+    this._TasksWidgetContainer_17_3 = new import27.Wrapper_TasksWidgetContainer(this.parentView.parentView.injectorGet(import36.TasksSandbox,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import10.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import11.Router,this.parentView.parentIndex));
     this.compView_17.create(this._TasksWidgetContainer_17_3.context);
     this._text_18 = this.renderer.createText(this._el_0,'\n        ',this.debug(18,17,55));
     var disposable_0:Function = import4.subscribeToRenderElement(this,this._el_2,new import4.InlineArray8(6,'onSave',(null as any),'remove',(null as any),'updateStatus',(null as any)),this.eventHandler(this.handleEvent_2));
@@ -256,7 +257,7 @@ class View_ClientAccountsDetailContainer1 extends import1.DebugAppView<any> {
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const valUnwrapper:any = new import36.ValueUnwrapper();
+    const valUnwrapper:any = new import37.ValueUnwrapper();
     this.debug(2,6,16);
     valUnwrapper.reset();
     const currVal_2_0_0:any = valUnwrapper.unwrap(this._pipe_async_0.transform(this.parentView.context.editClientAccount$));
@@ -343,8 +344,8 @@ const nodeDebugInfos_ClientAccountsDetailContainer0:import2.StaticNodeDebugInfo[
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo([
-    import37.TemplateRef,
-    import38.NgIf
+    import38.TemplateRef,
+    import39.NgIf
   ]
   ,(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -359,7 +360,7 @@ export class View_ClientAccountsDetailContainer0 extends import1.DebugAppView<im
   _anchor_3:any;
   /*private*/ _vc_3:import29.ViewContainer;
   _TemplateRef_3_5:any;
-  _NgIf_3_6:import39.Wrapper_NgIf;
+  _NgIf_3_6:import40.Wrapper_NgIf;
   _text_4:any;
   _text_5:any;
   _pipe_async_0:import28.AsyncPipe;
@@ -373,8 +374,8 @@ export class View_ClientAccountsDetailContainer0 extends import1.DebugAppView<im
     this._text_2 = this.renderer.createText(this._el_1,'\n        \n        \n        ',this.debug(2,1,43));
     this._anchor_3 = this.renderer.createTemplateAnchor(this._el_1,this.debug(3,4,8));
     this._vc_3 = new import29.ViewContainer(3,1,this,this._anchor_3);
-    this._TemplateRef_3_5 = new import37.TemplateRef_(this,3,this._anchor_3);
-    this._NgIf_3_6 = new import39.Wrapper_NgIf(this._vc_3.vcRef,this._TemplateRef_3_5);
+    this._TemplateRef_3_5 = new import38.TemplateRef_(this,3,this._anchor_3);
+    this._NgIf_3_6 = new import40.Wrapper_NgIf(this._vc_3.vcRef,this._TemplateRef_3_5);
     this._text_4 = this.renderer.createText(this._el_1,'\n        \n    ',this.debug(4,18,14));
     this._text_5 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(5,20,10));
     this.debug((null as any),(null as any),(null as any));
@@ -391,12 +392,12 @@ export class View_ClientAccountsDetailContainer0 extends import1.DebugAppView<im
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import37.TemplateRef) && (3 === requestNodeIndex))) { return this._TemplateRef_3_5; }
-    if (((token === import38.NgIf) && (3 === requestNodeIndex))) { return this._NgIf_3_6.context; }
+    if (((token === import38.TemplateRef) && (3 === requestNodeIndex))) { return this._TemplateRef_3_5; }
+    if (((token === import39.NgIf) && (3 === requestNodeIndex))) { return this._NgIf_3_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const valUnwrapper:any = new import36.ValueUnwrapper();
+    const valUnwrapper:any = new import37.ValueUnwrapper();
     this.debug(3,4,13);
     valUnwrapper.reset();
     const currVal_3_0_0:any = valUnwrapper.unwrap(this._pipe_async_0.transform(this.context.editClientAccount$));

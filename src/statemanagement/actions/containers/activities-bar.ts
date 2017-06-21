@@ -4,7 +4,7 @@ export const ActionTypes = {
     TOGGLE_ACTIVITIES_BAR: type("CONTAINER_ACTIVITIES_BAR_TOGGLE"),
     SET_ACTIVITIES_BAR_MODE: type("CONTAINER_ACTIVITIES_BAR_MODE"),
     SET_ACTIVITIES_BAR_COMMENT_ID: type("CONTAINER_ACTIVITIES_BAR_COMMENT_ID"),
-    SET_ACTIVITIES_BAR_COMMENT_SECTION: type("CONTAINER_ACTIVITIES_BAR_COMMENT_SECTION")
+    SET_ACTIVITIES_BAR_COMMENT_TYPE: type("CONTAINER_ACTIVITIES_BAR_COMMENT_TYPE")
 }
 
 export class ToggleActivitiesBar implements Action {
@@ -30,15 +30,15 @@ export class SetActivitiesBarCommentID implements Action {
     }
 }
 
-export class SetActivitiesBarCommentSection implements Action {
-    type = ActionTypes.SET_ACTIVITIES_BAR_COMMENT_SECTION;
-    payload: {section: String};
-    constructor(section: String) {
-        this.payload = {section};
+export class SetActivitiesBarCommentType implements Action {
+    type = ActionTypes.SET_ACTIVITIES_BAR_COMMENT_TYPE;
+    payload: {commentType: String};
+    constructor(commentType: String) {
+        this.payload = {commentType};
     }
 }
 
 
 
 
-export type Actions = ToggleActivitiesBar | SetActivitiesBarMode | SetActivitiesBarCommentID | SetActivitiesBarCommentSection;
+export type Actions = ToggleActivitiesBar | SetActivitiesBarMode | SetActivitiesBarCommentID | SetActivitiesBarCommentType;

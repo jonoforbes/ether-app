@@ -65,7 +65,7 @@ import { SetAllXPensions } from "../statemanagement/actions/data/xpension";
 import { SetAllXProtections } from "../statemanagement/actions/data/xprotection";
 import { SetAllBankAccounts } from "../statemanagement/actions/data/bank-account";
 import { SetAllComments } from "../statemanagement/actions/data/comment";
-import { ToggleActivitiesBar } from "../statemanagement/actions/containers/activities-bar";
+import { ToggleActivitiesBar, SetActivitiesBarMode } from "../statemanagement/actions/containers/activities-bar";
 
 
 @Injectable()
@@ -204,7 +204,10 @@ export class AppSandbox {
     }
 
     toggleActivitiesBar(): void {
-
         this.store.dispatch(new ToggleActivitiesBar());
+    }
+    
+    setActivitiesBarMode(mode: string): void {
+        this.store.dispatch(new SetActivitiesBarMode(mode));
     }
 }

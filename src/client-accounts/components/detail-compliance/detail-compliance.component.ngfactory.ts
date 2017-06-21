@@ -20,31 +20,31 @@ import * as import11 from 'ng2-accordion/AccordionGroup';
 import * as import12 from 'ng2-accordion/AccordionHeading';
 import * as import13 from '@angular/flex-layout/flexbox/api/layout';
 import * as import14 from '@angular/flex-layout/flexbox/api/flex';
-import * as import15 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
-import * as import16 from '@angular/forms/src/directives/control_container';
-import * as import17 from '@angular/forms/src/directives/ng_control_status';
-import * as import18 from '@angular/material/core/compatibility/compatibility';
-import * as import19 from '@angular/material/checkbox/checkbox';
-import * as import20 from '@angular/forms/src/directives/control_value_accessor';
-import * as import21 from '@angular/forms/src/directives/reactive_directives/form_control_name';
-import * as import22 from '@angular/forms/src/directives/ng_control';
-import * as import23 from '@angular/material/button/button';
-import * as import24 from '@angular/material/icon/icon';
-import * as import25 from '@angular/flex-layout/flexbox/api/layout-align';
+import * as import15 from '@angular/flex-layout/flexbox/api/layout-align';
+import * as import16 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
+import * as import17 from '@angular/forms/src/directives/control_container';
+import * as import18 from '@angular/forms/src/directives/ng_control_status';
+import * as import19 from '@angular/material/core/compatibility/compatibility';
+import * as import20 from '@angular/material/checkbox/checkbox';
+import * as import21 from '@angular/forms/src/directives/control_value_accessor';
+import * as import22 from '@angular/forms/src/directives/reactive_directives/form_control_name';
+import * as import23 from '@angular/forms/src/directives/ng_control';
+import * as import24 from '@angular/material/button/button';
+import * as import25 from '@angular/material/icon/icon';
 import * as import26 from '../../../../node_modules/ng2-accordion/Accordion.ngfactory';
 import * as import27 from '@angular/core/src/linker/query_list';
 import * as import28 from '../../../../node_modules/ng2-accordion/AccordionGroup.ngfactory';
 import * as import29 from '../../../../node_modules/ng2-accordion/AccordionHeading.ngfactory';
 import * as import30 from '../../../../node_modules/@angular/flex-layout/flexbox/api/layout.ngfactory';
 import * as import31 from '../../../../node_modules/@angular/flex-layout/flexbox/api/flex.ngfactory';
-import * as import32 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory';
-import * as import33 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
-import * as import34 from '../../../../node_modules/@angular/material/core/compatibility/compatibility.ngfactory';
-import * as import35 from '../../../../node_modules/@angular/material/checkbox/checkbox.ngfactory';
-import * as import36 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory';
-import * as import37 from '../../../../node_modules/@angular/material/button/button.ngfactory';
-import * as import38 from '../../../../node_modules/@angular/material/icon/icon.ngfactory';
-import * as import39 from '../../../../node_modules/@angular/flex-layout/flexbox/api/layout-align.ngfactory';
+import * as import32 from '../../../../node_modules/@angular/flex-layout/flexbox/api/layout-align.ngfactory';
+import * as import33 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory';
+import * as import34 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
+import * as import35 from '../../../../node_modules/@angular/material/core/compatibility/compatibility.ngfactory';
+import * as import36 from '../../../../node_modules/@angular/material/checkbox/checkbox.ngfactory';
+import * as import37 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory';
+import * as import38 from '../../../../node_modules/@angular/material/button/button.ngfactory';
+import * as import39 from '../../../../node_modules/@angular/material/icon/icon.ngfactory';
 import * as import40 from '@angular/flex-layout/media-query/media-monitor';
 import * as import41 from '@angular/core/src/linker/element_ref';
 import * as import42 from '@angular/flex-layout/flexbox/api/layout-wrap';
@@ -54,6 +54,7 @@ export class Wrapper_ClientAccountsDetailComplianceComponent {
   context:import0.ClientAccountsDetailComplianceComponent;
   /*private*/ _changed:boolean;
   /*private*/ _expr_0:any;
+  subscription0:any;
   constructor() {
     this._changed = false;
     this.context = new import0.ClientAccountsDetailComplianceComponent();
@@ -62,6 +63,7 @@ export class Wrapper_ClientAccountsDetailComplianceComponent {
   ngOnDetach(view:import2.AppView<any>,componentView:import2.AppView<any>,el:any):void {
   }
   ngOnDestroy():void {
+    (this.subscription0 && this.subscription0.unsubscribe());
   }
   check_clientAccountForm(currValue:any,throwOnChange:boolean,forceUpdate:boolean):void {
     if ((forceUpdate || import3.checkBinding(throwOnChange,this._expr_0,currValue))) {
@@ -81,8 +83,9 @@ export class Wrapper_ClientAccountsDetailComplianceComponent {
     var result:boolean = true;
     return result;
   }
-  subscribe(view:import2.AppView<any>,_eventHandler:any):void {
+  subscribe(view:import2.AppView<any>,_eventHandler:any,emit0:boolean):void {
     this._eventHandler = _eventHandler;
+    if (emit0) { (this.subscription0 = this.context.openComments.subscribe(_eventHandler.bind(view,'openComments'))); }
   }
 }
 const nodeDebugInfos_ClientAccountsDetailComplianceComponent_Host0:import4.StaticNodeDebugInfo[] = [new import4.StaticNodeDebugInfo([import0.ClientAccountsDetailComplianceComponent],import0.ClientAccountsDetailComplianceComponent,{})];
@@ -113,6 +116,7 @@ class View_ClientAccountsDetailComplianceComponent_Host0 extends import2.DebugAp
   }
   destroyInternal():void {
     this.compView_0.destroy();
+    this._ClientAccountsDetailComplianceComponent_0_3.ngOnDestroy();
   }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);
@@ -142,63 +146,64 @@ const nodeDebugInfos_ClientAccountsDetailComplianceComponent0:import4.StaticNode
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
     import13.LayoutDirective,
-    import15.FormGroupDirective,
-    import16.ControlContainer,
-    import17.NgControlStatusGroup
+    import15.LayoutAlignDirective,
+    import16.FormGroupDirective,
+    import17.ControlContainer,
+    import18.NgControlStatusGroup
   ]
   ,(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -207,63 +212,64 @@ const nodeDebugInfos_ClientAccountsDetailComplianceComponent0:import4.StaticNode
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
     import13.LayoutDirective,
-    import15.FormGroupDirective,
-    import16.ControlContainer,
-    import17.NgControlStatusGroup
+    import15.LayoutAlignDirective,
+    import16.FormGroupDirective,
+    import17.ControlContainer,
+    import18.NgControlStatusGroup
   ]
   ,(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -280,45 +286,38 @@ const nodeDebugInfos_ClientAccountsDetailComplianceComponent0:import4.StaticNode
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import23.MdButton,
-    import23.MdButtonCssMatStyler
+    import19.MdPrefixRejector,
+    import24.MdButton,
+    import24.MdButtonCssMatStyler
   ]
-  ,import23.MdButton,{}),
+  ,import24.MdButton,{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import24.MdIcon
+    import19.MdPrefixRejector,
+    import25.MdIcon
   ]
-  ,import24.MdIcon,{}),
+  ,import25.MdIcon,{}),
+  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import4.StaticNodeDebugInfo([
+    import19.MdPrefixRejector,
+    import24.MdButton,
+    import24.MdButtonCssMatStyler
+  ]
+  ,import24.MdButton,{}),
+  new import4.StaticNodeDebugInfo([
+    import19.MdPrefixRejector,
+    import25.MdIcon
+  ]
+  ,import25.MdIcon,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
     import13.LayoutDirective,
-    import25.LayoutAlignDirective,
+    import15.LayoutAlignDirective,
     import14.FlexDirective
   ]
   ,(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import23.MdButton,
-    import23.MdButtonCssMatStyler
-  ]
-  ,import23.MdButton,{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([import13.LayoutDirective],(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import24.MdIcon
-  ]
-  ,import24.MdIcon,{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -343,49 +342,50 @@ const nodeDebugInfos_ClientAccountsDetailComplianceComponent0:import4.StaticNode
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
     import13.LayoutDirective,
-    import15.FormGroupDirective,
-    import16.ControlContainer,
-    import17.NgControlStatusGroup
+    import15.LayoutAlignDirective,
+    import16.FormGroupDirective,
+    import17.ControlContainer,
+    import18.NgControlStatusGroup
   ]
   ,(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -394,49 +394,50 @@ const nodeDebugInfos_ClientAccountsDetailComplianceComponent0:import4.StaticNode
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
     import13.LayoutDirective,
-    import15.FormGroupDirective,
-    import16.ControlContainer,
-    import17.NgControlStatusGroup
+    import15.LayoutAlignDirective,
+    import16.FormGroupDirective,
+    import17.ControlContainer,
+    import18.NgControlStatusGroup
   ]
   ,(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -445,35 +446,35 @@ const nodeDebugInfos_ClientAccountsDetailComplianceComponent0:import4.StaticNode
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
     import13.LayoutDirective,
-    import15.FormGroupDirective,
-    import16.ControlContainer,
-    import17.NgControlStatusGroup
+    import16.FormGroupDirective,
+    import17.ControlContainer,
+    import18.NgControlStatusGroup
   ]
   ,(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import19.MdCheckbox,
-    import20.NG_VALUE_ACCESSOR,
-    import21.FormControlName,
-    import22.NgControl,
-    import17.NgControlStatus
+    import19.MdPrefixRejector,
+    import20.MdCheckbox,
+    import21.NG_VALUE_ACCESSOR,
+    import22.FormControlName,
+    import23.NgControl,
+    import18.NgControlStatus
   ]
-  ,import19.MdCheckbox,{}),
+  ,import20.MdCheckbox,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -490,46 +491,29 @@ const nodeDebugInfos_ClientAccountsDetailComplianceComponent0:import4.StaticNode
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import23.MdButton,
-    import23.MdButtonCssMatStyler
+    import19.MdPrefixRejector,
+    import24.MdButton,
+    import24.MdButtonCssMatStyler
   ]
-  ,import23.MdButton,{}),
+  ,import24.MdButton,{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import24.MdIcon
+    import19.MdPrefixRejector,
+    import25.MdIcon
   ]
-  ,import24.MdIcon,{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([
-    import13.LayoutDirective,
-    import25.LayoutAlignDirective,
-    import14.FlexDirective
-  ]
-  ,(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  ,import25.MdIcon,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import23.MdButton,
-    import23.MdButtonCssMatStyler
+    import19.MdPrefixRejector,
+    import24.MdButton,
+    import24.MdButtonCssMatStyler
   ]
-  ,import23.MdButton,{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([import13.LayoutDirective],(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  ,import24.MdButton,{}),
   new import4.StaticNodeDebugInfo([
-    import18.MdPrefixRejector,
-    import24.MdIcon
+    import19.MdPrefixRejector,
+    import25.MdIcon
   ]
-  ,import24.MdIcon,{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  ,import25.MdIcon,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -568,57 +552,58 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
   _text_14:any;
   _el_15:any;
   _LayoutDirective_15_3:import30.Wrapper_LayoutDirective;
-  _FormGroupDirective_15_4:import32.Wrapper_FormGroupDirective;
-  _ControlContainer_15_5:any;
-  _NgControlStatusGroup_15_6:import33.Wrapper_NgControlStatusGroup;
+  _LayoutAlignDirective_15_4:import32.Wrapper_LayoutAlignDirective;
+  _FormGroupDirective_15_5:import33.Wrapper_FormGroupDirective;
+  _ControlContainer_15_6:any;
+  _NgControlStatusGroup_15_7:import34.Wrapper_NgControlStatusGroup;
   _text_16:any;
   _el_17:any;
-  compView_17:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_17_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_17_4:import35.Wrapper_MdCheckbox;
+  compView_17:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_17_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_17_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_17_5:any[];
-  _FormControlName_17_6:import36.Wrapper_FormControlName;
+  _FormControlName_17_6:import37.Wrapper_FormControlName;
   _NgControl_17_7:any;
-  _NgControlStatus_17_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_17_8:import34.Wrapper_NgControlStatus;
   _text_18:any;
   _el_19:any;
   _text_20:any;
   _text_21:any;
   _text_22:any;
   _el_23:any;
-  compView_23:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_23_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_23_4:import35.Wrapper_MdCheckbox;
+  compView_23:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_23_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_23_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_23_5:any[];
-  _FormControlName_23_6:import36.Wrapper_FormControlName;
+  _FormControlName_23_6:import37.Wrapper_FormControlName;
   _NgControl_23_7:any;
-  _NgControlStatus_23_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_23_8:import34.Wrapper_NgControlStatus;
   _text_24:any;
   _el_25:any;
   _text_26:any;
   _text_27:any;
   _text_28:any;
   _el_29:any;
-  compView_29:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_29_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_29_4:import35.Wrapper_MdCheckbox;
+  compView_29:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_29_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_29_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_29_5:any[];
-  _FormControlName_29_6:import36.Wrapper_FormControlName;
+  _FormControlName_29_6:import37.Wrapper_FormControlName;
   _NgControl_29_7:any;
-  _NgControlStatus_29_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_29_8:import34.Wrapper_NgControlStatus;
   _text_30:any;
   _el_31:any;
   _text_32:any;
   _text_33:any;
   _text_34:any;
   _el_35:any;
-  compView_35:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_35_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_35_4:import35.Wrapper_MdCheckbox;
+  compView_35:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_35_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_35_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_35_5:any[];
-  _FormControlName_35_6:import36.Wrapper_FormControlName;
+  _FormControlName_35_6:import37.Wrapper_FormControlName;
   _NgControl_35_7:any;
-  _NgControlStatus_35_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_35_8:import34.Wrapper_NgControlStatus;
   _text_36:any;
   _el_37:any;
   _text_38:any;
@@ -627,57 +612,58 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
   _text_41:any;
   _el_42:any;
   _LayoutDirective_42_3:import30.Wrapper_LayoutDirective;
-  _FormGroupDirective_42_4:import32.Wrapper_FormGroupDirective;
-  _ControlContainer_42_5:any;
-  _NgControlStatusGroup_42_6:import33.Wrapper_NgControlStatusGroup;
+  _LayoutAlignDirective_42_4:import32.Wrapper_LayoutAlignDirective;
+  _FormGroupDirective_42_5:import33.Wrapper_FormGroupDirective;
+  _ControlContainer_42_6:any;
+  _NgControlStatusGroup_42_7:import34.Wrapper_NgControlStatusGroup;
   _text_43:any;
   _el_44:any;
-  compView_44:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_44_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_44_4:import35.Wrapper_MdCheckbox;
+  compView_44:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_44_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_44_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_44_5:any[];
-  _FormControlName_44_6:import36.Wrapper_FormControlName;
+  _FormControlName_44_6:import37.Wrapper_FormControlName;
   _NgControl_44_7:any;
-  _NgControlStatus_44_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_44_8:import34.Wrapper_NgControlStatus;
   _text_45:any;
   _el_46:any;
   _text_47:any;
   _text_48:any;
   _text_49:any;
   _el_50:any;
-  compView_50:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_50_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_50_4:import35.Wrapper_MdCheckbox;
+  compView_50:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_50_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_50_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_50_5:any[];
-  _FormControlName_50_6:import36.Wrapper_FormControlName;
+  _FormControlName_50_6:import37.Wrapper_FormControlName;
   _NgControl_50_7:any;
-  _NgControlStatus_50_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_50_8:import34.Wrapper_NgControlStatus;
   _text_51:any;
   _el_52:any;
   _text_53:any;
   _text_54:any;
   _text_55:any;
   _el_56:any;
-  compView_56:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_56_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_56_4:import35.Wrapper_MdCheckbox;
+  compView_56:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_56_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_56_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_56_5:any[];
-  _FormControlName_56_6:import36.Wrapper_FormControlName;
+  _FormControlName_56_6:import37.Wrapper_FormControlName;
   _NgControl_56_7:any;
-  _NgControlStatus_56_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_56_8:import34.Wrapper_NgControlStatus;
   _text_57:any;
   _el_58:any;
   _text_59:any;
   _text_60:any;
   _text_61:any;
   _el_62:any;
-  compView_62:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_62_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_62_4:import35.Wrapper_MdCheckbox;
+  compView_62:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_62_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_62_4:import36.Wrapper_MdCheckbox;
   _NG_VALUE_ACCESSOR_62_5:any[];
-  _FormControlName_62_6:import36.Wrapper_FormControlName;
+  _FormControlName_62_6:import37.Wrapper_FormControlName;
   _NgControl_62_7:any;
-  _NgControlStatus_62_8:import33.Wrapper_NgControlStatus;
+  _NgControlStatus_62_8:import34.Wrapper_NgControlStatus;
   _text_63:any;
   _el_64:any;
   _text_65:any;
@@ -692,251 +678,229 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
   _el_72:any;
   _text_73:any;
   _el_74:any;
-  compView_74:import2.AppView<import23.MdButton>;
-  _MdPrefixRejector_74_3:import34.Wrapper_MdPrefixRejector;
-  _MdButton_74_4:import37.Wrapper_MdButton;
-  _MdButtonCssMatStyler_74_5:import37.Wrapper_MdButtonCssMatStyler;
+  compView_74:import2.AppView<import24.MdButton>;
+  _MdPrefixRejector_74_3:import35.Wrapper_MdPrefixRejector;
+  _MdButton_74_4:import38.Wrapper_MdButton;
+  _MdButtonCssMatStyler_74_5:import38.Wrapper_MdButtonCssMatStyler;
   _el_75:any;
-  compView_75:import2.AppView<import24.MdIcon>;
-  _MdPrefixRejector_75_3:import34.Wrapper_MdPrefixRejector;
-  _MdIcon_75_4:import38.Wrapper_MdIcon;
+  compView_75:import2.AppView<import25.MdIcon>;
+  _MdPrefixRejector_75_3:import35.Wrapper_MdPrefixRejector;
+  _MdIcon_75_4:import39.Wrapper_MdIcon;
   _text_76:any;
   _text_77:any;
-  _text_78:any;
+  _el_78:any;
+  compView_78:import2.AppView<import24.MdButton>;
+  _MdPrefixRejector_78_3:import35.Wrapper_MdPrefixRejector;
+  _MdButton_78_4:import38.Wrapper_MdButton;
+  _MdButtonCssMatStyler_78_5:import38.Wrapper_MdButtonCssMatStyler;
   _el_79:any;
-  _LayoutDirective_79_3:import30.Wrapper_LayoutDirective;
-  _LayoutAlignDirective_79_4:import39.Wrapper_LayoutAlignDirective;
-  _FlexDirective_79_5:import31.Wrapper_FlexDirective;
+  compView_79:import2.AppView<import25.MdIcon>;
+  _MdPrefixRejector_79_3:import35.Wrapper_MdPrefixRejector;
+  _MdIcon_79_4:import39.Wrapper_MdIcon;
   _text_80:any;
-  _el_81:any;
+  _text_81:any;
   _text_82:any;
   _el_83:any;
-  compView_83:import2.AppView<import23.MdButton>;
-  _MdPrefixRejector_83_3:import34.Wrapper_MdPrefixRejector;
-  _MdButton_83_4:import37.Wrapper_MdButton;
-  _MdButtonCssMatStyler_83_5:import37.Wrapper_MdButtonCssMatStyler;
+  _LayoutDirective_83_3:import30.Wrapper_LayoutDirective;
+  _LayoutAlignDirective_83_4:import32.Wrapper_LayoutAlignDirective;
+  _FlexDirective_83_5:import31.Wrapper_FlexDirective;
   _text_84:any;
   _el_85:any;
-  _LayoutDirective_85_3:import30.Wrapper_LayoutDirective;
   _text_86:any;
-  _el_87:any;
-  compView_87:import2.AppView<import24.MdIcon>;
-  _MdPrefixRejector_87_3:import34.Wrapper_MdPrefixRejector;
-  _MdIcon_87_4:import38.Wrapper_MdIcon;
+  _text_87:any;
   _text_88:any;
-  _el_89:any;
-  _text_90:any;
+  _text_89:any;
+  _el_90:any;
+  compView_90:import2.AppView<import11.AccordionGroup>;
+  _AccordionGroup_90_3:import28.Wrapper_AccordionGroup;
+  _query_AccordionToggle_90_0:import27.QueryList<any>;
   _text_91:any;
-  _text_92:any;
+  _el_92:any;
+  compView_92:import2.AppView<import12.AccordionHeading>;
+  _AccordionHeading_92_3:import29.Wrapper_AccordionHeading;
   _text_93:any;
-  _text_94:any;
+  _el_94:any;
   _text_95:any;
   _text_96:any;
-  _el_97:any;
-  compView_97:import2.AppView<import11.AccordionGroup>;
-  _AccordionGroup_97_3:import28.Wrapper_AccordionGroup;
-  _query_AccordionToggle_97_0:import27.QueryList<any>;
-  _text_98:any;
-  _el_99:any;
-  compView_99:import2.AppView<import12.AccordionHeading>;
-  _AccordionHeading_99_3:import29.Wrapper_AccordionHeading;
-  _text_100:any;
-  _el_101:any;
-  _text_102:any;
+  _text_97:any;
+  _el_98:any;
+  _LayoutDirective_98_3:import30.Wrapper_LayoutDirective;
+  _text_99:any;
+  _el_100:any;
+  _LayoutDirective_100_3:import30.Wrapper_LayoutDirective;
+  _FlexDirective_100_4:import31.Wrapper_FlexDirective;
+  _text_101:any;
+  _el_102:any;
+  _LayoutDirective_102_3:import30.Wrapper_LayoutDirective;
+  _LayoutAlignDirective_102_4:import32.Wrapper_LayoutAlignDirective;
+  _FormGroupDirective_102_5:import33.Wrapper_FormGroupDirective;
+  _ControlContainer_102_6:any;
+  _NgControlStatusGroup_102_7:import34.Wrapper_NgControlStatusGroup;
   _text_103:any;
-  _text_104:any;
-  _el_105:any;
-  _LayoutDirective_105_3:import30.Wrapper_LayoutDirective;
-  _text_106:any;
-  _el_107:any;
-  _LayoutDirective_107_3:import30.Wrapper_LayoutDirective;
-  _FlexDirective_107_4:import31.Wrapper_FlexDirective;
+  _el_104:any;
+  compView_104:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_104_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_104_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_104_5:any[];
+  _FormControlName_104_6:import37.Wrapper_FormControlName;
+  _NgControl_104_7:any;
+  _NgControlStatus_104_8:import34.Wrapper_NgControlStatus;
+  _text_105:any;
+  _el_106:any;
+  _text_107:any;
   _text_108:any;
-  _el_109:any;
-  _LayoutDirective_109_3:import30.Wrapper_LayoutDirective;
-  _FormGroupDirective_109_4:import32.Wrapper_FormGroupDirective;
-  _ControlContainer_109_5:any;
-  _NgControlStatusGroup_109_6:import33.Wrapper_NgControlStatusGroup;
-  _text_110:any;
-  _el_111:any;
-  compView_111:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_111_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_111_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_111_5:any[];
-  _FormControlName_111_6:import36.Wrapper_FormControlName;
-  _NgControl_111_7:any;
-  _NgControlStatus_111_8:import33.Wrapper_NgControlStatus;
-  _text_112:any;
-  _el_113:any;
+  _text_109:any;
+  _el_110:any;
+  compView_110:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_110_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_110_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_110_5:any[];
+  _FormControlName_110_6:import37.Wrapper_FormControlName;
+  _NgControl_110_7:any;
+  _NgControlStatus_110_8:import34.Wrapper_NgControlStatus;
+  _text_111:any;
+  _el_112:any;
+  _text_113:any;
   _text_114:any;
   _text_115:any;
-  _text_116:any;
-  _el_117:any;
-  compView_117:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_117_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_117_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_117_5:any[];
-  _FormControlName_117_6:import36.Wrapper_FormControlName;
-  _NgControl_117_7:any;
-  _NgControlStatus_117_8:import33.Wrapper_NgControlStatus;
-  _text_118:any;
-  _el_119:any;
+  _el_116:any;
+  compView_116:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_116_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_116_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_116_5:any[];
+  _FormControlName_116_6:import37.Wrapper_FormControlName;
+  _NgControl_116_7:any;
+  _NgControlStatus_116_8:import34.Wrapper_NgControlStatus;
+  _text_117:any;
+  _el_118:any;
+  _text_119:any;
   _text_120:any;
   _text_121:any;
   _text_122:any;
   _el_123:any;
-  compView_123:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_123_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_123_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_123_5:any[];
-  _FormControlName_123_6:import36.Wrapper_FormControlName;
-  _NgControl_123_7:any;
-  _NgControlStatus_123_8:import33.Wrapper_NgControlStatus;
+  _LayoutDirective_123_3:import30.Wrapper_LayoutDirective;
+  _LayoutAlignDirective_123_4:import32.Wrapper_LayoutAlignDirective;
+  _FormGroupDirective_123_5:import33.Wrapper_FormGroupDirective;
+  _ControlContainer_123_6:any;
+  _NgControlStatusGroup_123_7:import34.Wrapper_NgControlStatusGroup;
   _text_124:any;
   _el_125:any;
+  compView_125:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_125_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_125_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_125_5:any[];
+  _FormControlName_125_6:import37.Wrapper_FormControlName;
+  _NgControl_125_7:any;
+  _NgControlStatus_125_8:import34.Wrapper_NgControlStatus;
   _text_126:any;
-  _text_127:any;
+  _el_127:any;
   _text_128:any;
   _text_129:any;
-  _el_130:any;
-  _LayoutDirective_130_3:import30.Wrapper_LayoutDirective;
-  _FormGroupDirective_130_4:import32.Wrapper_FormGroupDirective;
-  _ControlContainer_130_5:any;
-  _NgControlStatusGroup_130_6:import33.Wrapper_NgControlStatusGroup;
-  _text_131:any;
-  _el_132:any;
-  compView_132:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_132_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_132_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_132_5:any[];
-  _FormControlName_132_6:import36.Wrapper_FormControlName;
-  _NgControl_132_7:any;
-  _NgControlStatus_132_8:import33.Wrapper_NgControlStatus;
-  _text_133:any;
-  _el_134:any;
+  _text_130:any;
+  _el_131:any;
+  compView_131:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_131_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_131_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_131_5:any[];
+  _FormControlName_131_6:import37.Wrapper_FormControlName;
+  _NgControl_131_7:any;
+  _NgControlStatus_131_8:import34.Wrapper_NgControlStatus;
+  _text_132:any;
+  _el_133:any;
+  _text_134:any;
   _text_135:any;
   _text_136:any;
-  _text_137:any;
-  _el_138:any;
-  compView_138:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_138_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_138_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_138_5:any[];
-  _FormControlName_138_6:import36.Wrapper_FormControlName;
-  _NgControl_138_7:any;
-  _NgControlStatus_138_8:import33.Wrapper_NgControlStatus;
-  _text_139:any;
-  _el_140:any;
+  _el_137:any;
+  compView_137:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_137_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_137_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_137_5:any[];
+  _FormControlName_137_6:import37.Wrapper_FormControlName;
+  _NgControl_137_7:any;
+  _NgControlStatus_137_8:import34.Wrapper_NgControlStatus;
+  _text_138:any;
+  _el_139:any;
+  _text_140:any;
   _text_141:any;
   _text_142:any;
   _text_143:any;
   _el_144:any;
-  compView_144:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_144_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_144_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_144_5:any[];
-  _FormControlName_144_6:import36.Wrapper_FormControlName;
-  _NgControl_144_7:any;
-  _NgControlStatus_144_8:import33.Wrapper_NgControlStatus;
+  _LayoutDirective_144_3:import30.Wrapper_LayoutDirective;
+  _FormGroupDirective_144_4:import33.Wrapper_FormGroupDirective;
+  _ControlContainer_144_5:any;
+  _NgControlStatusGroup_144_6:import34.Wrapper_NgControlStatusGroup;
   _text_145:any;
   _el_146:any;
+  compView_146:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_146_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_146_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_146_5:any[];
+  _FormControlName_146_6:import37.Wrapper_FormControlName;
+  _NgControl_146_7:any;
+  _NgControlStatus_146_8:import34.Wrapper_NgControlStatus;
   _text_147:any;
-  _text_148:any;
+  _el_148:any;
   _text_149:any;
   _text_150:any;
-  _el_151:any;
-  _LayoutDirective_151_3:import30.Wrapper_LayoutDirective;
-  _FormGroupDirective_151_4:import32.Wrapper_FormGroupDirective;
-  _ControlContainer_151_5:any;
-  _NgControlStatusGroup_151_6:import33.Wrapper_NgControlStatusGroup;
-  _text_152:any;
-  _el_153:any;
-  compView_153:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_153_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_153_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_153_5:any[];
-  _FormControlName_153_6:import36.Wrapper_FormControlName;
-  _NgControl_153_7:any;
-  _NgControlStatus_153_8:import33.Wrapper_NgControlStatus;
-  _text_154:any;
-  _el_155:any;
+  _text_151:any;
+  _el_152:any;
+  compView_152:import2.AppView<import20.MdCheckbox>;
+  _MdPrefixRejector_152_3:import35.Wrapper_MdPrefixRejector;
+  _MdCheckbox_152_4:import36.Wrapper_MdCheckbox;
+  _NG_VALUE_ACCESSOR_152_5:any[];
+  _FormControlName_152_6:import37.Wrapper_FormControlName;
+  _NgControl_152_7:any;
+  _NgControlStatus_152_8:import34.Wrapper_NgControlStatus;
+  _text_153:any;
+  _el_154:any;
+  _text_155:any;
   _text_156:any;
   _text_157:any;
   _text_158:any;
-  _el_159:any;
-  compView_159:import2.AppView<import19.MdCheckbox>;
-  _MdPrefixRejector_159_3:import34.Wrapper_MdPrefixRejector;
-  _MdCheckbox_159_4:import35.Wrapper_MdCheckbox;
-  _NG_VALUE_ACCESSOR_159_5:any[];
-  _FormControlName_159_6:import36.Wrapper_FormControlName;
-  _NgControl_159_7:any;
-  _NgControlStatus_159_8:import33.Wrapper_NgControlStatus;
-  _text_160:any;
-  _el_161:any;
-  _text_162:any;
+  _text_159:any;
+  _el_160:any;
+  _LayoutDirective_160_3:import30.Wrapper_LayoutDirective;
+  _FlexDirective_160_4:import31.Wrapper_FlexDirective;
+  _text_161:any;
+  _el_162:any;
   _text_163:any;
-  _text_164:any;
-  _text_165:any;
+  _el_164:any;
+  compView_164:import2.AppView<import24.MdButton>;
+  _MdPrefixRejector_164_3:import35.Wrapper_MdPrefixRejector;
+  _MdButton_164_4:import38.Wrapper_MdButton;
+  _MdButtonCssMatStyler_164_5:import38.Wrapper_MdButtonCssMatStyler;
+  _el_165:any;
+  compView_165:import2.AppView<import25.MdIcon>;
+  _MdPrefixRejector_165_3:import35.Wrapper_MdPrefixRejector;
+  _MdIcon_165_4:import39.Wrapper_MdIcon;
   _text_166:any;
-  _el_167:any;
-  _LayoutDirective_167_3:import30.Wrapper_LayoutDirective;
-  _FlexDirective_167_4:import31.Wrapper_FlexDirective;
-  _text_168:any;
+  _text_167:any;
+  _el_168:any;
+  compView_168:import2.AppView<import24.MdButton>;
+  _MdPrefixRejector_168_3:import35.Wrapper_MdPrefixRejector;
+  _MdButton_168_4:import38.Wrapper_MdButton;
+  _MdButtonCssMatStyler_168_5:import38.Wrapper_MdButtonCssMatStyler;
   _el_169:any;
+  compView_169:import2.AppView<import25.MdIcon>;
+  _MdPrefixRejector_169_3:import35.Wrapper_MdPrefixRejector;
+  _MdIcon_169_4:import39.Wrapper_MdIcon;
   _text_170:any;
-  _el_171:any;
-  compView_171:import2.AppView<import23.MdButton>;
-  _MdPrefixRejector_171_3:import34.Wrapper_MdPrefixRejector;
-  _MdButton_171_4:import37.Wrapper_MdButton;
-  _MdButtonCssMatStyler_171_5:import37.Wrapper_MdButtonCssMatStyler;
-  _el_172:any;
-  compView_172:import2.AppView<import24.MdIcon>;
-  _MdPrefixRejector_172_3:import34.Wrapper_MdPrefixRejector;
-  _MdIcon_172_4:import38.Wrapper_MdIcon;
+  _text_171:any;
+  _text_172:any;
   _text_173:any;
   _text_174:any;
   _text_175:any;
-  _el_176:any;
-  _LayoutDirective_176_3:import30.Wrapper_LayoutDirective;
-  _LayoutAlignDirective_176_4:import39.Wrapper_LayoutAlignDirective;
-  _FlexDirective_176_5:import31.Wrapper_FlexDirective;
-  _text_177:any;
-  _el_178:any;
-  _text_179:any;
-  _el_180:any;
-  compView_180:import2.AppView<import23.MdButton>;
-  _MdPrefixRejector_180_3:import34.Wrapper_MdPrefixRejector;
-  _MdButton_180_4:import37.Wrapper_MdButton;
-  _MdButtonCssMatStyler_180_5:import37.Wrapper_MdButtonCssMatStyler;
-  _text_181:any;
-  _el_182:any;
-  _LayoutDirective_182_3:import30.Wrapper_LayoutDirective;
-  _text_183:any;
-  _el_184:any;
-  compView_184:import2.AppView<import24.MdIcon>;
-  _MdPrefixRejector_184_3:import34.Wrapper_MdPrefixRejector;
-  _MdIcon_184_4:import38.Wrapper_MdIcon;
-  _text_185:any;
-  _el_186:any;
-  _text_187:any;
-  _text_188:any;
-  _text_189:any;
-  _text_190:any;
-  _text_191:any;
-  _text_192:any;
-  _text_193:any;
-  _text_194:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_ClientAccountsDetailComplianceComponent0,renderType_ClientAccountsDetailComplianceComponent,import7.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckOnce,nodeDebugInfos_ClientAccountsDetailComplianceComponent0);
   }
   createInternal(rootSelector:string):import9.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
     this._text_0 = this.renderer.createText(parentRenderNode,'\n        ',this.debug(0,0,0));
-    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'accordion',new import3.InlineArray4(4,'class','compliance-accordion','style','max-width: 500px !important'),this.debug(1,1,8));
+    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'accordion',new import3.InlineArray2(2,'class','compliance-accordion'),this.debug(1,1,8));
     this.compView_1 = new import26.View_Accordion0(this.viewUtils,this,1,this._el_1);
     this._Accordion_1_3 = new import26.Wrapper_Accordion();
     this._query_AccordionGroup_1_0 = new import27.QueryList<any>();
-    this._text_2 = this.renderer.createText((null as any),'\n          \n          ',this.debug(2,1,126));
+    this._text_2 = this.renderer.createText((null as any),'\n          \n          ',this.debug(2,1,90));
     this._el_3 = import3.createRenderElement(this.renderer,(null as any),'accordion-group',new import3.InlineArray2(2,'class','compliance-accordion'),this.debug(3,3,10));
     this.compView_3 = new import28.View_AccordionGroup0(this.viewUtils,this,3,this._el_3);
     this._AccordionGroup_3_3 = new import28.Wrapper_AccordionGroup(this._Accordion_1_3.context,this.compView_3.ref);
@@ -954,130 +918,132 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._el_11 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'fxLayout','row'),this.debug(11,7,12));
     this._LayoutDirective_11_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_11),this.renderer);
     this._text_12 = this.renderer.createText(this._el_11,'\n              ',this.debug(12,7,32));
-    this._el_13 = import3.createRenderElement(this.renderer,this._el_11,'div',new import3.InlineArray8(6,'class','contact-form tabContainer','fxFlex','570px','fxLayout','column'),this.debug(13,8,14));
+    this._el_13 = import3.createRenderElement(this.renderer,this._el_11,'div',new import3.InlineArray8(6,'class','contact-form tabContainer','fxFlex','630px','fxLayout','column'),this.debug(13,8,14));
     this._LayoutDirective_13_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_13),this.renderer);
     this._FlexDirective_13_4 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_13),this.renderer,this._LayoutDirective_11_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
     this._text_14 = this.renderer.createText(this._el_13,'\n                ',this.debug(14,8,86));
-    this._el_15 = import3.createRenderElement(this.renderer,this._el_13,'div',new import3.InlineArray4(4,'class','contact-form-row','fxLayout','row'),this.debug(15,9,16));
+    this._el_15 = import3.createRenderElement(this.renderer,this._el_13,'div',new import3.InlineArray8(6,'class','contact-form-row','fxLayout','row','fxLayoutAlign','space-between'),this.debug(15,9,16));
     this._LayoutDirective_15_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_15),this.renderer);
-    this._FormGroupDirective_15_4 = new import32.Wrapper_FormGroupDirective((null as any),(null as any));
-    this._ControlContainer_15_5 = this._FormGroupDirective_15_4.context;
-    this._NgControlStatusGroup_15_6 = new import33.Wrapper_NgControlStatusGroup(this._ControlContainer_15_5);
-    this._text_16 = this.renderer.createText(this._el_15,'\n\n                  ',this.debug(16,9,93));
-    this._el_17 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthIncome','style','margin-left: 15px; margin-right: 40px'),this.debug(17,11,18));
-    this.compView_17 = new import35.View_MdCheckbox0(this.viewUtils,this,17,this._el_17);
-    this._MdPrefixRejector_17_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_17_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_17),this.compView_17.ref);
+    this._LayoutAlignDirective_15_4 = new import32.Wrapper_LayoutAlignDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_15),this.renderer,this._LayoutDirective_15_3.context);
+    this._FormGroupDirective_15_5 = new import33.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._ControlContainer_15_6 = this._FormGroupDirective_15_5.context;
+    this._NgControlStatusGroup_15_7 = new import34.Wrapper_NgControlStatusGroup(this._ControlContainer_15_6);
+    this._text_16 = this.renderer.createText(this._el_15,'\n\n                  ',this.debug(16,9,123));
+    this._el_17 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthIncome','style','margin-left: 15px'),this.debug(17,11,18));
+    this.compView_17 = new import36.View_MdCheckbox0(this.viewUtils,this,17,this._el_17);
+    this._MdPrefixRejector_17_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_17_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_17),this.compView_17.ref);
     this._NG_VALUE_ACCESSOR_17_5 = [this._MdCheckbox_17_4.context];
-    this._FormControlName_17_6 = new import36.Wrapper_FormControlName(this._ControlContainer_15_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_17_5);
+    this._FormControlName_17_6 = new import37.Wrapper_FormControlName(this._ControlContainer_15_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_17_5);
     this._NgControl_17_7 = this._FormControlName_17_6.context;
-    this._NgControlStatus_17_8 = new import33.Wrapper_NgControlStatus(this._NgControl_17_7);
-    this._text_18 = this.renderer.createText((null as any),'\n                            ',this.debug(18,11,134));
+    this._NgControlStatus_17_8 = new import34.Wrapper_NgControlStatus(this._NgControl_17_7);
+    this._text_18 = this.renderer.createText((null as any),'\n                            ',this.debug(18,11,114));
     this._el_19 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(19,12,28));
     this._text_20 = this.renderer.createText(this._el_19,'Income',this.debug(20,12,61));
     this._text_21 = this.renderer.createText((null as any),'\n                  ',this.debug(21,12,74));
     this.compView_17.create(this._MdCheckbox_17_4.context);
     this._text_22 = this.renderer.createText(this._el_15,'\n                  ',this.debug(22,13,32));
-    this._el_23 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthBonus','style','margin-left: 0px; margin-right: 40px'),this.debug(23,14,18));
-    this.compView_23 = new import35.View_MdCheckbox0(this.viewUtils,this,23,this._el_23);
-    this._MdPrefixRejector_23_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_23_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_23),this.compView_23.ref);
+    this._el_23 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray4(4,'class','selectionCheckbox','formControlName','wealthBonus'),this.debug(23,14,18));
+    this.compView_23 = new import36.View_MdCheckbox0(this.viewUtils,this,23,this._el_23);
+    this._MdPrefixRejector_23_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_23_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_23),this.compView_23.ref);
     this._NG_VALUE_ACCESSOR_23_5 = [this._MdCheckbox_23_4.context];
-    this._FormControlName_23_6 = new import36.Wrapper_FormControlName(this._ControlContainer_15_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_23_5);
+    this._FormControlName_23_6 = new import37.Wrapper_FormControlName(this._ControlContainer_15_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_23_5);
     this._NgControl_23_7 = this._FormControlName_23_6.context;
-    this._NgControlStatus_23_8 = new import33.Wrapper_NgControlStatus(this._NgControl_23_7);
-    this._text_24 = this.renderer.createText((null as any),'\n                            ',this.debug(24,14,132));
+    this._NgControlStatus_23_8 = new import34.Wrapper_NgControlStatus(this._NgControl_23_7);
+    this._text_24 = this.renderer.createText((null as any),'\n                            ',this.debug(24,14,87));
     this._el_25 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(25,15,28));
     this._text_26 = this.renderer.createText(this._el_25,'Bonus',this.debug(26,15,61));
     this._text_27 = this.renderer.createText((null as any),'\n                  ',this.debug(27,15,73));
     this.compView_23.create(this._MdCheckbox_23_4.context);
     this._text_28 = this.renderer.createText(this._el_15,'\n                  ',this.debug(28,16,32));
-    this._el_29 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthHouseSale','style','margin-left: 0px; margin-right: 40px'),this.debug(29,17,18));
-    this.compView_29 = new import35.View_MdCheckbox0(this.viewUtils,this,29,this._el_29);
-    this._MdPrefixRejector_29_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_29_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_29),this.compView_29.ref);
+    this._el_29 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray4(4,'class','selectionCheckbox','formControlName','wealthHouseSale'),this.debug(29,17,18));
+    this.compView_29 = new import36.View_MdCheckbox0(this.viewUtils,this,29,this._el_29);
+    this._MdPrefixRejector_29_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_29_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_29),this.compView_29.ref);
     this._NG_VALUE_ACCESSOR_29_5 = [this._MdCheckbox_29_4.context];
-    this._FormControlName_29_6 = new import36.Wrapper_FormControlName(this._ControlContainer_15_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_29_5);
+    this._FormControlName_29_6 = new import37.Wrapper_FormControlName(this._ControlContainer_15_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_29_5);
     this._NgControl_29_7 = this._FormControlName_29_6.context;
-    this._NgControlStatus_29_8 = new import33.Wrapper_NgControlStatus(this._NgControl_29_7);
-    this._text_30 = this.renderer.createText((null as any),'\n                            ',this.debug(30,17,136));
+    this._NgControlStatus_29_8 = new import34.Wrapper_NgControlStatus(this._NgControl_29_7);
+    this._text_30 = this.renderer.createText((null as any),'\n                            ',this.debug(30,17,91));
     this._el_31 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(31,18,28));
     this._text_32 = this.renderer.createText(this._el_31,'House Sale',this.debug(32,18,61));
     this._text_33 = this.renderer.createText((null as any),'\n                  ',this.debug(33,18,78));
     this.compView_29.create(this._MdCheckbox_29_4.context);
     this._text_34 = this.renderer.createText(this._el_15,'\n                  ',this.debug(34,19,32));
-    this._el_35 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthBusinessSale','style','margin-left: 0px'),this.debug(35,20,18));
-    this.compView_35 = new import35.View_MdCheckbox0(this.viewUtils,this,35,this._el_35);
-    this._MdPrefixRejector_35_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_35_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_35),this.compView_35.ref);
+    this._el_35 = import3.createRenderElement(this.renderer,this._el_15,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthBusinessSale','style','margin-right: 40px'),this.debug(35,20,18));
+    this.compView_35 = new import36.View_MdCheckbox0(this.viewUtils,this,35,this._el_35);
+    this._MdPrefixRejector_35_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_35_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_35),this.compView_35.ref);
     this._NG_VALUE_ACCESSOR_35_5 = [this._MdCheckbox_35_4.context];
-    this._FormControlName_35_6 = new import36.Wrapper_FormControlName(this._ControlContainer_15_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_35_5);
+    this._FormControlName_35_6 = new import37.Wrapper_FormControlName(this._ControlContainer_15_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_35_5);
     this._NgControl_35_7 = this._FormControlName_35_6.context;
-    this._NgControlStatus_35_8 = new import33.Wrapper_NgControlStatus(this._NgControl_35_7);
-    this._text_36 = this.renderer.createText((null as any),'\n                            ',this.debug(36,20,119));
+    this._NgControlStatus_35_8 = new import34.Wrapper_NgControlStatus(this._NgControl_35_7);
+    this._text_36 = this.renderer.createText((null as any),'\n                            ',this.debug(36,20,121));
     this._el_37 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(37,21,28));
     this._text_38 = this.renderer.createText(this._el_37,'Business Sale',this.debug(38,21,61));
     this._text_39 = this.renderer.createText((null as any),'\n                  ',this.debug(39,21,81));
     this.compView_35.create(this._MdCheckbox_35_4.context);
     this._text_40 = this.renderer.createText(this._el_15,'\n                ',this.debug(40,22,32));
     this._text_41 = this.renderer.createText(this._el_13,'\n                ',this.debug(41,23,22));
-    this._el_42 = import3.createRenderElement(this.renderer,this._el_13,'div',new import3.InlineArray4(4,'class','contact-form-row','fxLayout','row'),this.debug(42,24,16));
+    this._el_42 = import3.createRenderElement(this.renderer,this._el_13,'div',new import3.InlineArray8(6,'class','contact-form-row','fxLayout','row','fxLayoutAlign','space-between'),this.debug(42,24,16));
     this._LayoutDirective_42_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_42),this.renderer);
-    this._FormGroupDirective_42_4 = new import32.Wrapper_FormGroupDirective((null as any),(null as any));
-    this._ControlContainer_42_5 = this._FormGroupDirective_42_4.context;
-    this._NgControlStatusGroup_42_6 = new import33.Wrapper_NgControlStatusGroup(this._ControlContainer_42_5);
-    this._text_43 = this.renderer.createText(this._el_42,'\n\n                  ',this.debug(43,24,93));
-    this._el_44 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthInheritance','style','margin-left: 15px; margin-right: 40px'),this.debug(44,26,18));
-    this.compView_44 = new import35.View_MdCheckbox0(this.viewUtils,this,44,this._el_44);
-    this._MdPrefixRejector_44_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_44_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_44),this.compView_44.ref);
+    this._LayoutAlignDirective_42_4 = new import32.Wrapper_LayoutAlignDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_42),this.renderer,this._LayoutDirective_42_3.context);
+    this._FormGroupDirective_42_5 = new import33.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._ControlContainer_42_6 = this._FormGroupDirective_42_5.context;
+    this._NgControlStatusGroup_42_7 = new import34.Wrapper_NgControlStatusGroup(this._ControlContainer_42_6);
+    this._text_43 = this.renderer.createText(this._el_42,'\n\n                  ',this.debug(43,24,123));
+    this._el_44 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthInheritance','style','margin-left: 15px'),this.debug(44,26,18));
+    this.compView_44 = new import36.View_MdCheckbox0(this.viewUtils,this,44,this._el_44);
+    this._MdPrefixRejector_44_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_44_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_44),this.compView_44.ref);
     this._NG_VALUE_ACCESSOR_44_5 = [this._MdCheckbox_44_4.context];
-    this._FormControlName_44_6 = new import36.Wrapper_FormControlName(this._ControlContainer_42_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_44_5);
+    this._FormControlName_44_6 = new import37.Wrapper_FormControlName(this._ControlContainer_42_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_44_5);
     this._NgControl_44_7 = this._FormControlName_44_6.context;
-    this._NgControlStatus_44_8 = new import33.Wrapper_NgControlStatus(this._NgControl_44_7);
-    this._text_45 = this.renderer.createText((null as any),'\n                            ',this.debug(45,26,139));
+    this._NgControlStatus_44_8 = new import34.Wrapper_NgControlStatus(this._NgControl_44_7);
+    this._text_45 = this.renderer.createText((null as any),'\n                            ',this.debug(45,26,119));
     this._el_46 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(46,27,28));
     this._text_47 = this.renderer.createText(this._el_46,'Inheritance',this.debug(47,27,61));
     this._text_48 = this.renderer.createText((null as any),'\n                  ',this.debug(48,27,79));
     this.compView_44.create(this._MdCheckbox_44_4.context);
     this._text_49 = this.renderer.createText(this._el_42,'\n                  ',this.debug(49,28,32));
-    this._el_50 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthReplacement','style','margin-left: 0px; margin-right: 40px'),this.debug(50,29,18));
-    this.compView_50 = new import35.View_MdCheckbox0(this.viewUtils,this,50,this._el_50);
-    this._MdPrefixRejector_50_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_50_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_50),this.compView_50.ref);
+    this._el_50 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray4(4,'class','selectionCheckbox','formControlName','wealthReplacement'),this.debug(50,29,18));
+    this.compView_50 = new import36.View_MdCheckbox0(this.viewUtils,this,50,this._el_50);
+    this._MdPrefixRejector_50_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_50_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_50),this.compView_50.ref);
     this._NG_VALUE_ACCESSOR_50_5 = [this._MdCheckbox_50_4.context];
-    this._FormControlName_50_6 = new import36.Wrapper_FormControlName(this._ControlContainer_42_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_50_5);
+    this._FormControlName_50_6 = new import37.Wrapper_FormControlName(this._ControlContainer_42_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_50_5);
     this._NgControl_50_7 = this._FormControlName_50_6.context;
-    this._NgControlStatus_50_8 = new import33.Wrapper_NgControlStatus(this._NgControl_50_7);
-    this._text_51 = this.renderer.createText((null as any),'\n                            ',this.debug(51,29,138));
+    this._NgControlStatus_50_8 = new import34.Wrapper_NgControlStatus(this._NgControl_50_7);
+    this._text_51 = this.renderer.createText((null as any),'\n                            ',this.debug(51,29,93));
     this._el_52 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(52,30,28));
     this._text_53 = this.renderer.createText(this._el_52,'Replacement',this.debug(53,30,61));
     this._text_54 = this.renderer.createText((null as any),'\n                  ',this.debug(54,30,79));
     this.compView_50.create(this._MdCheckbox_50_4.context);
     this._text_55 = this.renderer.createText(this._el_42,'\n                  ',this.debug(55,31,32));
-    this._el_56 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthDivorce','style','margin-left: 0px; margin-right: 40px'),this.debug(56,32,18));
-    this.compView_56 = new import35.View_MdCheckbox0(this.viewUtils,this,56,this._el_56);
-    this._MdPrefixRejector_56_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_56_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_56),this.compView_56.ref);
+    this._el_56 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray4(4,'class','selectionCheckbox','formControlName','wealthDivorce'),this.debug(56,32,18));
+    this.compView_56 = new import36.View_MdCheckbox0(this.viewUtils,this,56,this._el_56);
+    this._MdPrefixRejector_56_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_56_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_56),this.compView_56.ref);
     this._NG_VALUE_ACCESSOR_56_5 = [this._MdCheckbox_56_4.context];
-    this._FormControlName_56_6 = new import36.Wrapper_FormControlName(this._ControlContainer_42_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_56_5);
+    this._FormControlName_56_6 = new import37.Wrapper_FormControlName(this._ControlContainer_42_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_56_5);
     this._NgControl_56_7 = this._FormControlName_56_6.context;
-    this._NgControlStatus_56_8 = new import33.Wrapper_NgControlStatus(this._NgControl_56_7);
-    this._text_57 = this.renderer.createText((null as any),'\n                            ',this.debug(57,32,134));
+    this._NgControlStatus_56_8 = new import34.Wrapper_NgControlStatus(this._NgControl_56_7);
+    this._text_57 = this.renderer.createText((null as any),'\n                            ',this.debug(57,32,89));
     this._el_58 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(58,33,28));
     this._text_59 = this.renderer.createText(this._el_58,'Divorce',this.debug(59,33,61));
     this._text_60 = this.renderer.createText((null as any),'\n                  ',this.debug(60,33,75));
     this.compView_56.create(this._MdCheckbox_56_4.context);
     this._text_61 = this.renderer.createText(this._el_42,'\n                  ',this.debug(61,34,32));
-    this._el_62 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthOther','style','margin-left: 0px'),this.debug(62,35,18));
-    this.compView_62 = new import35.View_MdCheckbox0(this.viewUtils,this,62,this._el_62);
-    this._MdPrefixRejector_62_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_62_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_62),this.compView_62.ref);
+    this._el_62 = import3.createRenderElement(this.renderer,this._el_42,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','wealthOther','style','margin-right: 40px'),this.debug(62,35,18));
+    this.compView_62 = new import36.View_MdCheckbox0(this.viewUtils,this,62,this._el_62);
+    this._MdPrefixRejector_62_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_62_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_62),this.compView_62.ref);
     this._NG_VALUE_ACCESSOR_62_5 = [this._MdCheckbox_62_4.context];
-    this._FormControlName_62_6 = new import36.Wrapper_FormControlName(this._ControlContainer_42_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_62_5);
+    this._FormControlName_62_6 = new import37.Wrapper_FormControlName(this._ControlContainer_42_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_62_5);
     this._NgControl_62_7 = this._FormControlName_62_6.context;
-    this._NgControlStatus_62_8 = new import33.Wrapper_NgControlStatus(this._NgControl_62_7);
-    this._text_63 = this.renderer.createText((null as any),'\n                            ',this.debug(63,35,112));
+    this._NgControlStatus_62_8 = new import34.Wrapper_NgControlStatus(this._NgControl_62_7);
+    this._text_63 = this.renderer.createText((null as any),'\n                            ',this.debug(63,35,114));
     this._el_64 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(64,36,28));
     this._text_65 = this.renderer.createText(this._el_64,'Other',this.debug(65,36,61));
     this._text_66 = this.renderer.createText((null as any),'\n                  ',this.debug(66,36,73));
@@ -1089,276 +1055,254 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._LayoutDirective_70_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_70),this.renderer);
     this._FlexDirective_70_4 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_70),this.renderer,this._LayoutDirective_11_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
     this._text_71 = this.renderer.createText(this._el_70,'\n                ',this.debug(71,40,51));
-    this._el_72 = import3.createRenderElement(this.renderer,this._el_70,'div',new import3.InlineArray2(2,'style','height: 20px'),this.debug(72,41,16));
+    this._el_72 = import3.createRenderElement(this.renderer,this._el_70,'div',new import3.InlineArray2(2,'style','height: 27px'),this.debug(72,41,16));
     this._text_73 = this.renderer.createText(this._el_70,'\n                ',this.debug(73,41,48));
     this._el_74 = import3.createRenderElement(this.renderer,this._el_70,'button',new import3.InlineArray4(4,'class','midColumnButton','md-button',''),this.debug(74,42,16));
-    this.compView_74 = new import37.View_MdButton0(this.viewUtils,this,74,this._el_74);
-    this._MdPrefixRejector_74_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdButton_74_4 = new import37.Wrapper_MdButton(new import41.ElementRef(this._el_74),this.renderer);
-    this._MdButtonCssMatStyler_74_5 = new import37.Wrapper_MdButtonCssMatStyler();
+    this.compView_74 = new import38.View_MdButton0(this.viewUtils,this,74,this._el_74);
+    this._MdPrefixRejector_74_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdButton_74_4 = new import38.Wrapper_MdButton(new import41.ElementRef(this._el_74),this.renderer);
+    this._MdButtonCssMatStyler_74_5 = new import38.Wrapper_MdButtonCssMatStyler();
     this._el_75 = import3.createRenderElement(this.renderer,(null as any),'md-icon',new import3.InlineArray4(4,'role','img','style','color: #838383; margin-top: -1px'),this.debug(75,42,58));
-    this.compView_75 = new import38.View_MdIcon0(this.viewUtils,this,75,this._el_75);
-    this._MdPrefixRejector_75_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdIcon_75_4 = new import38.Wrapper_MdIcon(new import41.ElementRef(this._el_75),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
+    this.compView_75 = new import39.View_MdIcon0(this.viewUtils,this,75,this._el_75);
+    this._MdPrefixRejector_75_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdIcon_75_4 = new import39.Wrapper_MdIcon(new import41.ElementRef(this._el_75),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
     this._text_76 = this.renderer.createText((null as any),'save',this.debug(76,42,108));
     this.compView_75.create(this._MdIcon_75_4.context);
     this.compView_74.create(this._MdButton_74_4.context);
-    this._text_77 = this.renderer.createText(this._el_70,'\n              ',this.debug(77,42,131));
-    this._text_78 = this.renderer.createText(this._el_11,'\n              ',this.debug(78,43,20));
-    this._el_79 = import3.createRenderElement(this.renderer,this._el_11,'div',new import3.InlineArray8(6,'fxFlex','','fxLayout','column','fxLayoutAlign','start end'),this.debug(79,44,14));
-    this._LayoutDirective_79_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_79),this.renderer);
-    this._LayoutAlignDirective_79_4 = new import39.Wrapper_LayoutAlignDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_79),this.renderer,this._LayoutDirective_79_3.context);
-    this._FlexDirective_79_5 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_79),this.renderer,this._LayoutDirective_11_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
-    this._text_80 = this.renderer.createText(this._el_79,'\n                ',this.debug(80,44,70));
-    this._el_81 = import3.createRenderElement(this.renderer,this._el_79,'div',new import3.InlineArray2(2,'style','height: 20px'),this.debug(81,45,16));
-    this._text_82 = this.renderer.createText(this._el_79,'\n                ',this.debug(82,45,48));
-    this._el_83 = import3.createRenderElement(this.renderer,this._el_79,'button',new import3.InlineArray8(6,'md-button','','style','text-align: left !important; width: 200px; padding: 5px','type','submit'),this.debug(83,46,16));
-    this.compView_83 = new import37.View_MdButton0(this.viewUtils,this,83,this._el_83);
-    this._MdPrefixRejector_83_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdButton_83_4 = new import37.Wrapper_MdButton(new import41.ElementRef(this._el_83),this.renderer);
-    this._MdButtonCssMatStyler_83_5 = new import37.Wrapper_MdButtonCssMatStyler();
-    this._text_84 = this.renderer.createText((null as any),'\n                  ',this.debug(84,46,112));
-    this._el_85 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'fxLayout','row'),this.debug(85,47,18));
-    this._LayoutDirective_85_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_85),this.renderer);
-    this._text_86 = this.renderer.createText(this._el_85,'\n                  ',this.debug(86,47,38));
-    this._el_87 = import3.createRenderElement(this.renderer,this._el_85,'md-icon',new import3.InlineArray4(4,'role','img','style','color: #838383; margin-top: -1px'),this.debug(87,48,18));
-    this.compView_87 = new import38.View_MdIcon0(this.viewUtils,this,87,this._el_87);
-    this._MdPrefixRejector_87_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdIcon_87_4 = new import38.Wrapper_MdIcon(new import41.ElementRef(this._el_87),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
-    this._text_88 = this.renderer.createText((null as any),'message',this.debug(88,48,68));
-    this.compView_87.create(this._MdIcon_87_4.context);
-    this._el_89 = import3.createRenderElement(this.renderer,this._el_85,'p',new import3.InlineArray2(2,'style','margin: 4px 10px 4px 10px;'),this.debug(89,48,85));
-    this._text_90 = this.renderer.createText(this._el_89,'Comments (0)',this.debug(90,48,123));
-    this._text_91 = this.renderer.createText(this._el_85,'\n                  ',this.debug(91,48,139));
-    this._text_92 = this.renderer.createText((null as any),'\n                ',this.debug(92,49,24));
-    this.compView_83.create(this._MdButton_83_4.context);
-    this._text_93 = this.renderer.createText(this._el_79,'\n              ',this.debug(93,50,25));
-    this._text_94 = this.renderer.createText(this._el_11,'\n            ',this.debug(94,51,20));
-    this._text_95 = this.renderer.createText((null as any),'\n          ',this.debug(95,52,18));
+    this._text_77 = this.renderer.createText(this._el_70,'\n                ',this.debug(77,42,131));
+    this._el_78 = import3.createRenderElement(this.renderer,this._el_70,'button',new import3.InlineArray8(6,'class','midColumnButton','md-button','','type','button'),this.debug(78,43,16));
+    this.compView_78 = new import38.View_MdButton0(this.viewUtils,this,78,this._el_78);
+    this._MdPrefixRejector_78_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdButton_78_4 = new import38.Wrapper_MdButton(new import41.ElementRef(this._el_78),this.renderer);
+    this._MdButtonCssMatStyler_78_5 = new import38.Wrapper_MdButtonCssMatStyler();
+    this._el_79 = import3.createRenderElement(this.renderer,(null as any),'md-icon',new import3.InlineArray4(4,'role','img','style','color: #838383; margin-top: -1px'),this.debug(79,43,114));
+    this.compView_79 = new import39.View_MdIcon0(this.viewUtils,this,79,this._el_79);
+    this._MdPrefixRejector_79_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdIcon_79_4 = new import39.Wrapper_MdIcon(new import41.ElementRef(this._el_79),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
+    this._text_80 = this.renderer.createText((null as any),'message',this.debug(80,43,164));
+    this.compView_79.create(this._MdIcon_79_4.context);
+    this.compView_78.create(this._MdButton_78_4.context);
+    this._text_81 = this.renderer.createText(this._el_70,'\n              ',this.debug(81,43,190));
+    this._text_82 = this.renderer.createText(this._el_11,'\n              ',this.debug(82,44,20));
+    this._el_83 = import3.createRenderElement(this.renderer,this._el_11,'div',new import3.InlineArray8(6,'fxFlex','','fxLayout','column','fxLayoutAlign','start end'),this.debug(83,45,14));
+    this._LayoutDirective_83_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_83),this.renderer);
+    this._LayoutAlignDirective_83_4 = new import32.Wrapper_LayoutAlignDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_83),this.renderer,this._LayoutDirective_83_3.context);
+    this._FlexDirective_83_5 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_83),this.renderer,this._LayoutDirective_11_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
+    this._text_84 = this.renderer.createText(this._el_83,'\n                ',this.debug(84,45,70));
+    this._el_85 = import3.createRenderElement(this.renderer,this._el_83,'div',new import3.InlineArray2(2,'style','height: 20px'),this.debug(85,46,16));
+    this._text_86 = this.renderer.createText(this._el_83,'\n\n              ',this.debug(86,46,48));
+    this._text_87 = this.renderer.createText(this._el_11,'\n            ',this.debug(87,48,20));
+    this._text_88 = this.renderer.createText((null as any),'\n          ',this.debug(88,49,18));
     this.compView_3.create(this._AccordionGroup_3_3.context);
-    this._text_96 = this.renderer.createText((null as any),'\n\n          ',this.debug(96,53,28));
-    this._el_97 = import3.createRenderElement(this.renderer,(null as any),'accordion-group',import3.EMPTY_INLINE_ARRAY,this.debug(97,55,10));
-    this.compView_97 = new import28.View_AccordionGroup0(this.viewUtils,this,97,this._el_97);
-    this._AccordionGroup_97_3 = new import28.Wrapper_AccordionGroup(this._Accordion_1_3.context,this.compView_97.ref);
-    this._query_AccordionToggle_97_0 = new import27.QueryList<any>();
-    this._text_98 = this.renderer.createText((null as any),'\n            ',this.debug(98,55,45));
-    this._el_99 = import3.createRenderElement(this.renderer,(null as any),'accordion-heading',import3.EMPTY_INLINE_ARRAY,this.debug(99,56,12));
-    this.compView_99 = new import29.View_AccordionHeading0(this.viewUtils,this,99,this._el_99);
-    this._AccordionHeading_99_3 = new import29.Wrapper_AccordionHeading();
-    this._text_100 = this.renderer.createText((null as any),'\n                ',this.debug(100,56,31));
-    this._el_101 = import3.createRenderElement(this.renderer,(null as any),'h2',new import3.InlineArray2(2,'class','widget widget-head'),this.debug(101,57,16));
-    this._text_102 = this.renderer.createText(this._el_101,'Funds Source',this.debug(102,57,47));
-    this._text_103 = this.renderer.createText((null as any),'\n            ',this.debug(103,57,64));
-    this.compView_99.create(this._AccordionHeading_99_3.context);
-    this._text_104 = this.renderer.createText((null as any),'\n                  ',this.debug(104,58,32));
-    this._el_105 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'fxLayout','row'),this.debug(105,59,18));
-    this._LayoutDirective_105_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_105),this.renderer);
-    this._text_106 = this.renderer.createText(this._el_105,'\n                  \n                  ',this.debug(106,59,38));
-    this._el_107 = import3.createRenderElement(this.renderer,this._el_105,'div',new import3.InlineArray8(6,'class','contact-form tabContainer','fxFlex','570px','fxLayout','column'),this.debug(107,61,18));
-    this._LayoutDirective_107_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_107),this.renderer);
-    this._FlexDirective_107_4 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_107),this.renderer,this._LayoutDirective_105_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
-    this._text_108 = this.renderer.createText(this._el_107,'\n\n                  ',this.debug(108,61,90));
-    this._el_109 = import3.createRenderElement(this.renderer,this._el_107,'div',new import3.InlineArray4(4,'class','contact-form-row','fxLayout','row'),this.debug(109,63,18));
-    this._LayoutDirective_109_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_109),this.renderer);
-    this._FormGroupDirective_109_4 = new import32.Wrapper_FormGroupDirective((null as any),(null as any));
-    this._ControlContainer_109_5 = this._FormGroupDirective_109_4.context;
-    this._NgControlStatusGroup_109_6 = new import33.Wrapper_NgControlStatusGroup(this._ControlContainer_109_5);
-    this._text_110 = this.renderer.createText(this._el_109,'\n\n                    ',this.debug(110,63,95));
-    this._el_111 = import3.createRenderElement(this.renderer,this._el_109,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsUKBank','style','margin-left: 15px; margin-right: 20px'),this.debug(111,65,20));
-    this.compView_111 = new import35.View_MdCheckbox0(this.viewUtils,this,111,this._el_111);
-    this._MdPrefixRejector_111_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_111_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_111),this.compView_111.ref);
-    this._NG_VALUE_ACCESSOR_111_5 = [this._MdCheckbox_111_4.context];
-    this._FormControlName_111_6 = new import36.Wrapper_FormControlName(this._ControlContainer_109_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_111_5);
-    this._NgControl_111_7 = this._FormControlName_111_6.context;
-    this._NgControlStatus_111_8 = new import33.Wrapper_NgControlStatus(this._NgControl_111_7);
-    this._text_112 = this.renderer.createText((null as any),'\n                              ',this.debug(112,65,135));
-    this._el_113 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(113,66,30));
-    this._text_114 = this.renderer.createText(this._el_113,'UK Bank Account',this.debug(114,66,63));
-    this._text_115 = this.renderer.createText((null as any),'\n                    ',this.debug(115,66,85));
-    this.compView_111.create(this._MdCheckbox_111_4.context);
-    this._text_116 = this.renderer.createText(this._el_109,'\n                    ',this.debug(116,67,34));
-    this._el_117 = import3.createRenderElement(this.renderer,this._el_109,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsEUBank','style','margin-left: 0px; margin-right: 20px'),this.debug(117,68,20));
-    this.compView_117 = new import35.View_MdCheckbox0(this.viewUtils,this,117,this._el_117);
-    this._MdPrefixRejector_117_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_117_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_117),this.compView_117.ref);
-    this._NG_VALUE_ACCESSOR_117_5 = [this._MdCheckbox_117_4.context];
-    this._FormControlName_117_6 = new import36.Wrapper_FormControlName(this._ControlContainer_109_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_117_5);
-    this._NgControl_117_7 = this._FormControlName_117_6.context;
-    this._NgControlStatus_117_8 = new import33.Wrapper_NgControlStatus(this._NgControl_117_7);
-    this._text_118 = this.renderer.createText((null as any),'\n                              ',this.debug(118,68,134));
-    this._el_119 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(119,69,30));
-    this._text_120 = this.renderer.createText(this._el_119,'EU Bank Account',this.debug(120,69,63));
-    this._text_121 = this.renderer.createText((null as any),'\n                    ',this.debug(121,69,85));
-    this.compView_117.create(this._MdCheckbox_117_4.context);
-    this._text_122 = this.renderer.createText(this._el_109,'\n                    ',this.debug(122,70,34));
-    this._el_123 = import3.createRenderElement(this.renderer,this._el_109,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsBSOC','style','margin-left: 0px; margin-right: 20px'),this.debug(123,71,20));
-    this.compView_123 = new import35.View_MdCheckbox0(this.viewUtils,this,123,this._el_123);
-    this._MdPrefixRejector_123_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_123_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_123),this.compView_123.ref);
-    this._NG_VALUE_ACCESSOR_123_5 = [this._MdCheckbox_123_4.context];
-    this._FormControlName_123_6 = new import36.Wrapper_FormControlName(this._ControlContainer_109_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_123_5);
-    this._NgControl_123_7 = this._FormControlName_123_6.context;
-    this._NgControlStatus_123_8 = new import33.Wrapper_NgControlStatus(this._NgControl_123_7);
-    this._text_124 = this.renderer.createText((null as any),'\n                              ',this.debug(124,71,132));
-    this._el_125 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(125,72,30));
-    this._text_126 = this.renderer.createText(this._el_125,'Banking Society Account',this.debug(126,72,63));
-    this._text_127 = this.renderer.createText((null as any),'\n                    ',this.debug(127,72,93));
-    this.compView_123.create(this._MdCheckbox_123_4.context);
-    this._text_128 = this.renderer.createText(this._el_109,'\n                  ',this.debug(128,73,34));
-    this._text_129 = this.renderer.createText(this._el_107,'\n                  ',this.debug(129,74,24));
-    this._el_130 = import3.createRenderElement(this.renderer,this._el_107,'div',new import3.InlineArray4(4,'class','contact-form-row','fxLayout','row'),this.debug(130,75,18));
-    this._LayoutDirective_130_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_130),this.renderer);
-    this._FormGroupDirective_130_4 = new import32.Wrapper_FormGroupDirective((null as any),(null as any));
-    this._ControlContainer_130_5 = this._FormGroupDirective_130_4.context;
-    this._NgControlStatusGroup_130_6 = new import33.Wrapper_NgControlStatusGroup(this._ControlContainer_130_5);
-    this._text_131 = this.renderer.createText(this._el_130,'\n\n                    ',this.debug(131,75,95));
-    this._el_132 = import3.createRenderElement(this.renderer,this._el_130,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsStock','style','margin-left: 15px; margin-right: 40px'),this.debug(132,77,20));
-    this.compView_132 = new import35.View_MdCheckbox0(this.viewUtils,this,132,this._el_132);
-    this._MdPrefixRejector_132_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_132_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_132),this.compView_132.ref);
-    this._NG_VALUE_ACCESSOR_132_5 = [this._MdCheckbox_132_4.context];
-    this._FormControlName_132_6 = new import36.Wrapper_FormControlName(this._ControlContainer_130_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_132_5);
-    this._NgControl_132_7 = this._FormControlName_132_6.context;
-    this._NgControlStatus_132_8 = new import33.Wrapper_NgControlStatus(this._NgControl_132_7);
-    this._text_133 = this.renderer.createText((null as any),'\n                              ',this.debug(133,77,134));
-    this._el_134 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(134,78,30));
-    this._text_135 = this.renderer.createText(this._el_134,'Stockbrokers',this.debug(135,78,63));
-    this._text_136 = this.renderer.createText((null as any),'\n                    ',this.debug(136,78,82));
-    this.compView_132.create(this._MdCheckbox_132_4.context);
-    this._text_137 = this.renderer.createText(this._el_130,'\n                    ',this.debug(137,79,34));
-    this._el_138 = import3.createRenderElement(this.renderer,this._el_130,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsOtherReg','style','margin-left: 0px; margin-right: 40px'),this.debug(138,80,20));
-    this.compView_138 = new import35.View_MdCheckbox0(this.viewUtils,this,138,this._el_138);
-    this._MdPrefixRejector_138_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_138_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_138),this.compView_138.ref);
-    this._NG_VALUE_ACCESSOR_138_5 = [this._MdCheckbox_138_4.context];
-    this._FormControlName_138_6 = new import36.Wrapper_FormControlName(this._ControlContainer_130_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_138_5);
-    this._NgControl_138_7 = this._FormControlName_138_6.context;
-    this._NgControlStatus_138_8 = new import33.Wrapper_NgControlStatus(this._NgControl_138_7);
-    this._text_139 = this.renderer.createText((null as any),'\n                              ',this.debug(139,80,136));
-    this._el_140 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(140,81,30));
-    this._text_141 = this.renderer.createText(this._el_140,'Other Regulated Firm',this.debug(141,81,63));
-    this._text_142 = this.renderer.createText((null as any),'\n                    ',this.debug(142,81,90));
-    this.compView_138.create(this._MdCheckbox_138_4.context);
-    this._text_143 = this.renderer.createText(this._el_130,'\n                    ',this.debug(143,82,34));
-    this._el_144 = import3.createRenderElement(this.renderer,this._el_130,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsSolicitor','style','margin-left: 0px; margin-right: 0px'),this.debug(144,83,20));
-    this.compView_144 = new import35.View_MdCheckbox0(this.viewUtils,this,144,this._el_144);
-    this._MdPrefixRejector_144_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_144_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_144),this.compView_144.ref);
-    this._NG_VALUE_ACCESSOR_144_5 = [this._MdCheckbox_144_4.context];
-    this._FormControlName_144_6 = new import36.Wrapper_FormControlName(this._ControlContainer_130_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_144_5);
-    this._NgControl_144_7 = this._FormControlName_144_6.context;
-    this._NgControlStatus_144_8 = new import33.Wrapper_NgControlStatus(this._NgControl_144_7);
-    this._text_145 = this.renderer.createText((null as any),'\n                              ',this.debug(145,83,136));
-    this._el_146 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(146,84,30));
-    this._text_147 = this.renderer.createText(this._el_146,'Solicitor\'s Account',this.debug(147,84,63));
-    this._text_148 = this.renderer.createText((null as any),'\n                    ',this.debug(148,84,89));
-    this.compView_144.create(this._MdCheckbox_144_4.context);
-    this._text_149 = this.renderer.createText(this._el_130,'\n                  ',this.debug(149,85,34));
-    this._text_150 = this.renderer.createText(this._el_107,'\n                  ',this.debug(150,86,24));
-    this._el_151 = import3.createRenderElement(this.renderer,this._el_107,'div',new import3.InlineArray4(4,'class','contact-form-row','fxLayout','row'),this.debug(151,87,18));
-    this._LayoutDirective_151_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_151),this.renderer);
-    this._FormGroupDirective_151_4 = new import32.Wrapper_FormGroupDirective((null as any),(null as any));
-    this._ControlContainer_151_5 = this._FormGroupDirective_151_4.context;
-    this._NgControlStatusGroup_151_6 = new import33.Wrapper_NgControlStatusGroup(this._ControlContainer_151_5);
-    this._text_152 = this.renderer.createText(this._el_151,'\n                    ',this.debug(152,87,95));
-    this._el_153 = import3.createRenderElement(this.renderer,this._el_151,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsAccountant','style','margin-left: 15px; margin-right: 40px'),this.debug(153,88,20));
-    this.compView_153 = new import35.View_MdCheckbox0(this.viewUtils,this,153,this._el_153);
-    this._MdPrefixRejector_153_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_153_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_153),this.compView_153.ref);
-    this._NG_VALUE_ACCESSOR_153_5 = [this._MdCheckbox_153_4.context];
-    this._FormControlName_153_6 = new import36.Wrapper_FormControlName(this._ControlContainer_151_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_153_5);
-    this._NgControl_153_7 = this._FormControlName_153_6.context;
-    this._NgControlStatus_153_8 = new import33.Wrapper_NgControlStatus(this._NgControl_153_7);
-    this._text_154 = this.renderer.createText((null as any),'\n                              ',this.debug(154,88,139));
-    this._el_155 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(155,89,30));
-    this._text_156 = this.renderer.createText(this._el_155,'Accountant\'s Account',this.debug(156,89,63));
-    this._text_157 = this.renderer.createText((null as any),'\n                    ',this.debug(157,89,90));
-    this.compView_153.create(this._MdCheckbox_153_4.context);
-    this._text_158 = this.renderer.createText(this._el_151,'\n                    ',this.debug(158,90,34));
-    this._el_159 = import3.createRenderElement(this.renderer,this._el_151,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsOther','style','margin-left: 0px; margin-right: 40px'),this.debug(159,91,20));
-    this.compView_159 = new import35.View_MdCheckbox0(this.viewUtils,this,159,this._el_159);
-    this._MdPrefixRejector_159_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdCheckbox_159_4 = new import35.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_159),this.compView_159.ref);
-    this._NG_VALUE_ACCESSOR_159_5 = [this._MdCheckbox_159_4.context];
-    this._FormControlName_159_6 = new import36.Wrapper_FormControlName(this._ControlContainer_151_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_159_5);
-    this._NgControl_159_7 = this._FormControlName_159_6.context;
-    this._NgControlStatus_159_8 = new import33.Wrapper_NgControlStatus(this._NgControl_159_7);
-    this._text_160 = this.renderer.createText((null as any),'\n                              ',this.debug(160,91,133));
-    this._el_161 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(161,92,30));
-    this._text_162 = this.renderer.createText(this._el_161,'Other',this.debug(162,92,63));
-    this._text_163 = this.renderer.createText((null as any),'\n                    ',this.debug(163,92,75));
-    this.compView_159.create(this._MdCheckbox_159_4.context);
-    this._text_164 = this.renderer.createText(this._el_151,'\n                  ',this.debug(164,93,34));
-    this._text_165 = this.renderer.createText(this._el_107,'\n\n                  ',this.debug(165,94,24));
-    this._text_166 = this.renderer.createText(this._el_105,'\n                ',this.debug(166,96,24));
-    this._el_167 = import3.createRenderElement(this.renderer,this._el_105,'div',new import3.InlineArray4(4,'fxFlex','50px','fxLayout','column'),this.debug(167,97,16));
-    this._LayoutDirective_167_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_167),this.renderer);
-    this._FlexDirective_167_4 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_167),this.renderer,this._LayoutDirective_105_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
-    this._text_168 = this.renderer.createText(this._el_167,'\n                  ',this.debug(168,97,53));
-    this._el_169 = import3.createRenderElement(this.renderer,this._el_167,'div',new import3.InlineArray2(2,'style','height: 20px'),this.debug(169,98,18));
-    this._text_170 = this.renderer.createText(this._el_167,'\n                  ',this.debug(170,98,50));
-    this._el_171 = import3.createRenderElement(this.renderer,this._el_167,'button',new import3.InlineArray4(4,'class','midColumnButton','md-button',''),this.debug(171,99,18));
-    this.compView_171 = new import37.View_MdButton0(this.viewUtils,this,171,this._el_171);
-    this._MdPrefixRejector_171_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdButton_171_4 = new import37.Wrapper_MdButton(new import41.ElementRef(this._el_171),this.renderer);
-    this._MdButtonCssMatStyler_171_5 = new import37.Wrapper_MdButtonCssMatStyler();
-    this._el_172 = import3.createRenderElement(this.renderer,(null as any),'md-icon',new import3.InlineArray4(4,'role','img','style','color: #838383; margin-top: -1px'),this.debug(172,99,60));
-    this.compView_172 = new import38.View_MdIcon0(this.viewUtils,this,172,this._el_172);
-    this._MdPrefixRejector_172_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdIcon_172_4 = new import38.Wrapper_MdIcon(new import41.ElementRef(this._el_172),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
-    this._text_173 = this.renderer.createText((null as any),'save',this.debug(173,99,110));
-    this.compView_172.create(this._MdIcon_172_4.context);
-    this.compView_171.create(this._MdButton_171_4.context);
-    this._text_174 = this.renderer.createText(this._el_167,'\n                ',this.debug(174,99,133));
-    this._text_175 = this.renderer.createText(this._el_105,'\n                  ',this.debug(175,100,22));
-    this._el_176 = import3.createRenderElement(this.renderer,this._el_105,'div',new import3.InlineArray8(6,'fxFlex','','fxLayout','column','fxLayoutAlign','start end'),this.debug(176,101,18));
-    this._LayoutDirective_176_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_176),this.renderer);
-    this._LayoutAlignDirective_176_4 = new import39.Wrapper_LayoutAlignDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_176),this.renderer,this._LayoutDirective_176_3.context);
-    this._FlexDirective_176_5 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_176),this.renderer,this._LayoutDirective_105_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
-    this._text_177 = this.renderer.createText(this._el_176,'\n                ',this.debug(177,101,74));
-    this._el_178 = import3.createRenderElement(this.renderer,this._el_176,'div',new import3.InlineArray2(2,'style','height: 15px'),this.debug(178,102,16));
-    this._text_179 = this.renderer.createText(this._el_176,'\n                ',this.debug(179,102,48));
-    this._el_180 = import3.createRenderElement(this.renderer,this._el_176,'button',new import3.InlineArray8(6,'md-button','','style','text-align: left !important; width: 200px; padding: 5px','type','submit'),this.debug(180,103,16));
-    this.compView_180 = new import37.View_MdButton0(this.viewUtils,this,180,this._el_180);
-    this._MdPrefixRejector_180_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdButton_180_4 = new import37.Wrapper_MdButton(new import41.ElementRef(this._el_180),this.renderer);
-    this._MdButtonCssMatStyler_180_5 = new import37.Wrapper_MdButtonCssMatStyler();
-    this._text_181 = this.renderer.createText((null as any),'\n                  ',this.debug(181,103,112));
-    this._el_182 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'fxLayout','row'),this.debug(182,104,18));
-    this._LayoutDirective_182_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_182),this.renderer);
-    this._text_183 = this.renderer.createText(this._el_182,'\n                  ',this.debug(183,104,38));
-    this._el_184 = import3.createRenderElement(this.renderer,this._el_182,'md-icon',new import3.InlineArray4(4,'role','img','style','color: #838383; margin-top: -1px'),this.debug(184,105,18));
-    this.compView_184 = new import38.View_MdIcon0(this.viewUtils,this,184,this._el_184);
-    this._MdPrefixRejector_184_3 = new import34.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import18.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
-    this._MdIcon_184_4 = new import38.Wrapper_MdIcon(new import41.ElementRef(this._el_184),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
-    this._text_185 = this.renderer.createText((null as any),'message',this.debug(185,105,68));
-    this.compView_184.create(this._MdIcon_184_4.context);
-    this._el_186 = import3.createRenderElement(this.renderer,this._el_182,'p',new import3.InlineArray2(2,'style','margin: 4px 10px 4px 10px;'),this.debug(186,105,85));
-    this._text_187 = this.renderer.createText(this._el_186,'Comments (0)',this.debug(187,105,123));
-    this._text_188 = this.renderer.createText(this._el_182,'\n                  ',this.debug(188,105,139));
-    this._text_189 = this.renderer.createText((null as any),'\n                ',this.debug(189,106,24));
-    this.compView_180.create(this._MdButton_180_4.context);
-    this._text_190 = this.renderer.createText(this._el_176,'\n              ',this.debug(190,107,25));
-    this._text_191 = this.renderer.createText(this._el_105,'\n              ',this.debug(191,108,20));
-    this._text_192 = this.renderer.createText((null as any),'\n          ',this.debug(192,109,20));
-    this.compView_97.create(this._AccordionGroup_97_3.context);
-    this._text_193 = this.renderer.createText((null as any),'\n',this.debug(193,110,28));
+    this._text_89 = this.renderer.createText((null as any),'\n\n          ',this.debug(89,50,28));
+    this._el_90 = import3.createRenderElement(this.renderer,(null as any),'accordion-group',import3.EMPTY_INLINE_ARRAY,this.debug(90,52,10));
+    this.compView_90 = new import28.View_AccordionGroup0(this.viewUtils,this,90,this._el_90);
+    this._AccordionGroup_90_3 = new import28.Wrapper_AccordionGroup(this._Accordion_1_3.context,this.compView_90.ref);
+    this._query_AccordionToggle_90_0 = new import27.QueryList<any>();
+    this._text_91 = this.renderer.createText((null as any),'\n            ',this.debug(91,52,46));
+    this._el_92 = import3.createRenderElement(this.renderer,(null as any),'accordion-heading',import3.EMPTY_INLINE_ARRAY,this.debug(92,53,12));
+    this.compView_92 = new import29.View_AccordionHeading0(this.viewUtils,this,92,this._el_92);
+    this._AccordionHeading_92_3 = new import29.Wrapper_AccordionHeading();
+    this._text_93 = this.renderer.createText((null as any),'\n                ',this.debug(93,53,31));
+    this._el_94 = import3.createRenderElement(this.renderer,(null as any),'h2',new import3.InlineArray2(2,'class','widget widget-head'),this.debug(94,54,16));
+    this._text_95 = this.renderer.createText(this._el_94,'Funds Source',this.debug(95,54,47));
+    this._text_96 = this.renderer.createText((null as any),'\n            ',this.debug(96,54,64));
+    this.compView_92.create(this._AccordionHeading_92_3.context);
+    this._text_97 = this.renderer.createText((null as any),'\n                  ',this.debug(97,55,32));
+    this._el_98 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'fxLayout','row'),this.debug(98,56,18));
+    this._LayoutDirective_98_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_98),this.renderer);
+    this._text_99 = this.renderer.createText(this._el_98,'\n                  \n                  ',this.debug(99,56,38));
+    this._el_100 = import3.createRenderElement(this.renderer,this._el_98,'div',new import3.InlineArray8(6,'class','contact-form tabContainer','fxFlex','630px','fxLayout','column'),this.debug(100,58,18));
+    this._LayoutDirective_100_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_100),this.renderer);
+    this._FlexDirective_100_4 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_100),this.renderer,this._LayoutDirective_98_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
+    this._text_101 = this.renderer.createText(this._el_100,'\n\n                  ',this.debug(101,58,90));
+    this._el_102 = import3.createRenderElement(this.renderer,this._el_100,'div',new import3.InlineArray8(6,'class','contact-form-row','fxLayout','row','fxLayoutAlign','space-between'),this.debug(102,60,18));
+    this._LayoutDirective_102_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_102),this.renderer);
+    this._LayoutAlignDirective_102_4 = new import32.Wrapper_LayoutAlignDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_102),this.renderer,this._LayoutDirective_102_3.context);
+    this._FormGroupDirective_102_5 = new import33.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._ControlContainer_102_6 = this._FormGroupDirective_102_5.context;
+    this._NgControlStatusGroup_102_7 = new import34.Wrapper_NgControlStatusGroup(this._ControlContainer_102_6);
+    this._text_103 = this.renderer.createText(this._el_102,'\n\n                    ',this.debug(103,60,125));
+    this._el_104 = import3.createRenderElement(this.renderer,this._el_102,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsUKBank','style','margin-left: 15px'),this.debug(104,62,20));
+    this.compView_104 = new import36.View_MdCheckbox0(this.viewUtils,this,104,this._el_104);
+    this._MdPrefixRejector_104_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_104_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_104),this.compView_104.ref);
+    this._NG_VALUE_ACCESSOR_104_5 = [this._MdCheckbox_104_4.context];
+    this._FormControlName_104_6 = new import37.Wrapper_FormControlName(this._ControlContainer_102_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_104_5);
+    this._NgControl_104_7 = this._FormControlName_104_6.context;
+    this._NgControlStatus_104_8 = new import34.Wrapper_NgControlStatus(this._NgControl_104_7);
+    this._text_105 = this.renderer.createText((null as any),'\n                              ',this.debug(105,62,115));
+    this._el_106 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(106,63,30));
+    this._text_107 = this.renderer.createText(this._el_106,'UK Bank Account',this.debug(107,63,63));
+    this._text_108 = this.renderer.createText((null as any),'\n                    ',this.debug(108,63,85));
+    this.compView_104.create(this._MdCheckbox_104_4.context);
+    this._text_109 = this.renderer.createText(this._el_102,'\n                    ',this.debug(109,64,34));
+    this._el_110 = import3.createRenderElement(this.renderer,this._el_102,'md-checkbox',new import3.InlineArray4(4,'class','selectionCheckbox','formControlName','fundsEUBank'),this.debug(110,65,20));
+    this.compView_110 = new import36.View_MdCheckbox0(this.viewUtils,this,110,this._el_110);
+    this._MdPrefixRejector_110_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_110_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_110),this.compView_110.ref);
+    this._NG_VALUE_ACCESSOR_110_5 = [this._MdCheckbox_110_4.context];
+    this._FormControlName_110_6 = new import37.Wrapper_FormControlName(this._ControlContainer_102_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_110_5);
+    this._NgControl_110_7 = this._FormControlName_110_6.context;
+    this._NgControlStatus_110_8 = new import34.Wrapper_NgControlStatus(this._NgControl_110_7);
+    this._text_111 = this.renderer.createText((null as any),'\n                              ',this.debug(111,65,89));
+    this._el_112 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(112,66,30));
+    this._text_113 = this.renderer.createText(this._el_112,'EU Bank Account',this.debug(113,66,63));
+    this._text_114 = this.renderer.createText((null as any),'\n                    ',this.debug(114,66,85));
+    this.compView_110.create(this._MdCheckbox_110_4.context);
+    this._text_115 = this.renderer.createText(this._el_102,'\n                    ',this.debug(115,67,34));
+    this._el_116 = import3.createRenderElement(this.renderer,this._el_102,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsBSOC','style','margin-right: 40px'),this.debug(116,68,20));
+    this.compView_116 = new import36.View_MdCheckbox0(this.viewUtils,this,116,this._el_116);
+    this._MdPrefixRejector_116_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_116_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_116),this.compView_116.ref);
+    this._NG_VALUE_ACCESSOR_116_5 = [this._MdCheckbox_116_4.context];
+    this._FormControlName_116_6 = new import37.Wrapper_FormControlName(this._ControlContainer_102_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_116_5);
+    this._NgControl_116_7 = this._FormControlName_116_6.context;
+    this._NgControlStatus_116_8 = new import34.Wrapper_NgControlStatus(this._NgControl_116_7);
+    this._text_117 = this.renderer.createText((null as any),'\n                              ',this.debug(117,68,114));
+    this._el_118 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(118,69,30));
+    this._text_119 = this.renderer.createText(this._el_118,'Banking Society Account',this.debug(119,69,63));
+    this._text_120 = this.renderer.createText((null as any),'\n                    ',this.debug(120,69,93));
+    this.compView_116.create(this._MdCheckbox_116_4.context);
+    this._text_121 = this.renderer.createText(this._el_102,'\n                  ',this.debug(121,70,34));
+    this._text_122 = this.renderer.createText(this._el_100,'\n                  ',this.debug(122,71,24));
+    this._el_123 = import3.createRenderElement(this.renderer,this._el_100,'div',new import3.InlineArray8(6,'class','contact-form-row','fxLayout','row','fxLayoutAlign','space-between'),this.debug(123,72,18));
+    this._LayoutDirective_123_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_123),this.renderer);
+    this._LayoutAlignDirective_123_4 = new import32.Wrapper_LayoutAlignDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_123),this.renderer,this._LayoutDirective_123_3.context);
+    this._FormGroupDirective_123_5 = new import33.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._ControlContainer_123_6 = this._FormGroupDirective_123_5.context;
+    this._NgControlStatusGroup_123_7 = new import34.Wrapper_NgControlStatusGroup(this._ControlContainer_123_6);
+    this._text_124 = this.renderer.createText(this._el_123,'\n\n                    ',this.debug(124,72,125));
+    this._el_125 = import3.createRenderElement(this.renderer,this._el_123,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsStock','style','margin-left: 15px'),this.debug(125,74,20));
+    this.compView_125 = new import36.View_MdCheckbox0(this.viewUtils,this,125,this._el_125);
+    this._MdPrefixRejector_125_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_125_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_125),this.compView_125.ref);
+    this._NG_VALUE_ACCESSOR_125_5 = [this._MdCheckbox_125_4.context];
+    this._FormControlName_125_6 = new import37.Wrapper_FormControlName(this._ControlContainer_123_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_125_5);
+    this._NgControl_125_7 = this._FormControlName_125_6.context;
+    this._NgControlStatus_125_8 = new import34.Wrapper_NgControlStatus(this._NgControl_125_7);
+    this._text_126 = this.renderer.createText((null as any),'\n                              ',this.debug(126,74,114));
+    this._el_127 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(127,75,30));
+    this._text_128 = this.renderer.createText(this._el_127,'Stockbrokers',this.debug(128,75,63));
+    this._text_129 = this.renderer.createText((null as any),'\n                    ',this.debug(129,75,82));
+    this.compView_125.create(this._MdCheckbox_125_4.context);
+    this._text_130 = this.renderer.createText(this._el_123,'\n                    ',this.debug(130,76,34));
+    this._el_131 = import3.createRenderElement(this.renderer,this._el_123,'md-checkbox',new import3.InlineArray4(4,'class','selectionCheckbox','formControlName','fundsOtherReg'),this.debug(131,77,20));
+    this.compView_131 = new import36.View_MdCheckbox0(this.viewUtils,this,131,this._el_131);
+    this._MdPrefixRejector_131_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_131_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_131),this.compView_131.ref);
+    this._NG_VALUE_ACCESSOR_131_5 = [this._MdCheckbox_131_4.context];
+    this._FormControlName_131_6 = new import37.Wrapper_FormControlName(this._ControlContainer_123_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_131_5);
+    this._NgControl_131_7 = this._FormControlName_131_6.context;
+    this._NgControlStatus_131_8 = new import34.Wrapper_NgControlStatus(this._NgControl_131_7);
+    this._text_132 = this.renderer.createText((null as any),'\n                              ',this.debug(132,77,91));
+    this._el_133 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(133,78,30));
+    this._text_134 = this.renderer.createText(this._el_133,'Other Regulated Firm',this.debug(134,78,63));
+    this._text_135 = this.renderer.createText((null as any),'\n                    ',this.debug(135,78,90));
+    this.compView_131.create(this._MdCheckbox_131_4.context);
+    this._text_136 = this.renderer.createText(this._el_123,'\n                    ',this.debug(136,79,34));
+    this._el_137 = import3.createRenderElement(this.renderer,this._el_123,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsSolicitor','style','margin-right: 40px'),this.debug(137,80,20));
+    this.compView_137 = new import36.View_MdCheckbox0(this.viewUtils,this,137,this._el_137);
+    this._MdPrefixRejector_137_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_137_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_137),this.compView_137.ref);
+    this._NG_VALUE_ACCESSOR_137_5 = [this._MdCheckbox_137_4.context];
+    this._FormControlName_137_6 = new import37.Wrapper_FormControlName(this._ControlContainer_123_6,(null as any),(null as any),this._NG_VALUE_ACCESSOR_137_5);
+    this._NgControl_137_7 = this._FormControlName_137_6.context;
+    this._NgControlStatus_137_8 = new import34.Wrapper_NgControlStatus(this._NgControl_137_7);
+    this._text_138 = this.renderer.createText((null as any),'\n                              ',this.debug(138,80,119));
+    this._el_139 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(139,81,30));
+    this._text_140 = this.renderer.createText(this._el_139,'Solicitor\'s Account',this.debug(140,81,63));
+    this._text_141 = this.renderer.createText((null as any),'\n                    ',this.debug(141,81,89));
+    this.compView_137.create(this._MdCheckbox_137_4.context);
+    this._text_142 = this.renderer.createText(this._el_123,'\n                  ',this.debug(142,82,34));
+    this._text_143 = this.renderer.createText(this._el_100,'\n                  ',this.debug(143,83,24));
+    this._el_144 = import3.createRenderElement(this.renderer,this._el_100,'div',new import3.InlineArray4(4,'class','contact-form-row','fxLayout','row'),this.debug(144,84,18));
+    this._LayoutDirective_144_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_144),this.renderer);
+    this._FormGroupDirective_144_4 = new import33.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._ControlContainer_144_5 = this._FormGroupDirective_144_4.context;
+    this._NgControlStatusGroup_144_6 = new import34.Wrapper_NgControlStatusGroup(this._ControlContainer_144_5);
+    this._text_145 = this.renderer.createText(this._el_144,'\n                    ',this.debug(145,84,95));
+    this._el_146 = import3.createRenderElement(this.renderer,this._el_144,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsAccountant','style','margin-left: 15px; margin-right: 40px'),this.debug(146,85,20));
+    this.compView_146 = new import36.View_MdCheckbox0(this.viewUtils,this,146,this._el_146);
+    this._MdPrefixRejector_146_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_146_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_146),this.compView_146.ref);
+    this._NG_VALUE_ACCESSOR_146_5 = [this._MdCheckbox_146_4.context];
+    this._FormControlName_146_6 = new import37.Wrapper_FormControlName(this._ControlContainer_144_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_146_5);
+    this._NgControl_146_7 = this._FormControlName_146_6.context;
+    this._NgControlStatus_146_8 = new import34.Wrapper_NgControlStatus(this._NgControl_146_7);
+    this._text_147 = this.renderer.createText((null as any),'\n                              ',this.debug(147,85,139));
+    this._el_148 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(148,86,30));
+    this._text_149 = this.renderer.createText(this._el_148,'Accountant\'s Account',this.debug(149,86,63));
+    this._text_150 = this.renderer.createText((null as any),'\n                    ',this.debug(150,86,90));
+    this.compView_146.create(this._MdCheckbox_146_4.context);
+    this._text_151 = this.renderer.createText(this._el_144,'\n                    ',this.debug(151,87,34));
+    this._el_152 = import3.createRenderElement(this.renderer,this._el_144,'md-checkbox',new import3.InlineArray8(6,'class','selectionCheckbox','formControlName','fundsOther','style','margin-left: 0px; margin-right: 40px'),this.debug(152,88,20));
+    this.compView_152 = new import36.View_MdCheckbox0(this.viewUtils,this,152,this._el_152);
+    this._MdPrefixRejector_152_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdCheckbox_152_4 = new import36.Wrapper_MdCheckbox(this.renderer,new import41.ElementRef(this._el_152),this.compView_152.ref);
+    this._NG_VALUE_ACCESSOR_152_5 = [this._MdCheckbox_152_4.context];
+    this._FormControlName_152_6 = new import37.Wrapper_FormControlName(this._ControlContainer_144_5,(null as any),(null as any),this._NG_VALUE_ACCESSOR_152_5);
+    this._NgControl_152_7 = this._FormControlName_152_6.context;
+    this._NgControlStatus_152_8 = new import34.Wrapper_NgControlStatus(this._NgControl_152_7);
+    this._text_153 = this.renderer.createText((null as any),'\n                              ',this.debug(153,88,133));
+    this._el_154 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'style','margin-left: 10px;'),this.debug(154,89,30));
+    this._text_155 = this.renderer.createText(this._el_154,'Other',this.debug(155,89,63));
+    this._text_156 = this.renderer.createText((null as any),'\n                    ',this.debug(156,89,75));
+    this.compView_152.create(this._MdCheckbox_152_4.context);
+    this._text_157 = this.renderer.createText(this._el_144,'\n                  ',this.debug(157,90,34));
+    this._text_158 = this.renderer.createText(this._el_100,'\n\n                  ',this.debug(158,91,24));
+    this._text_159 = this.renderer.createText(this._el_98,'\n                ',this.debug(159,93,24));
+    this._el_160 = import3.createRenderElement(this.renderer,this._el_98,'div',new import3.InlineArray4(4,'fxFlex','50px','fxLayout','column'),this.debug(160,94,16));
+    this._LayoutDirective_160_3 = new import30.Wrapper_LayoutDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_160),this.renderer);
+    this._FlexDirective_160_4 = new import31.Wrapper_FlexDirective(this.parentView.injectorGet(import40.MediaMonitor,this.parentIndex),new import41.ElementRef(this._el_160),this.renderer,this._LayoutDirective_98_3.context,this.parentView.injectorGet(import42.LayoutWrapDirective,this.parentIndex,(null as any)));
+    this._text_161 = this.renderer.createText(this._el_160,'\n                  ',this.debug(161,94,53));
+    this._el_162 = import3.createRenderElement(this.renderer,this._el_160,'div',new import3.InlineArray2(2,'style','height: 20px'),this.debug(162,95,18));
+    this._text_163 = this.renderer.createText(this._el_160,'\n                  ',this.debug(163,95,50));
+    this._el_164 = import3.createRenderElement(this.renderer,this._el_160,'button',new import3.InlineArray4(4,'class','midColumnButton','md-button',''),this.debug(164,96,18));
+    this.compView_164 = new import38.View_MdButton0(this.viewUtils,this,164,this._el_164);
+    this._MdPrefixRejector_164_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdButton_164_4 = new import38.Wrapper_MdButton(new import41.ElementRef(this._el_164),this.renderer);
+    this._MdButtonCssMatStyler_164_5 = new import38.Wrapper_MdButtonCssMatStyler();
+    this._el_165 = import3.createRenderElement(this.renderer,(null as any),'md-icon',new import3.InlineArray4(4,'role','img','style','color: #838383; margin-top: -1px'),this.debug(165,96,60));
+    this.compView_165 = new import39.View_MdIcon0(this.viewUtils,this,165,this._el_165);
+    this._MdPrefixRejector_165_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdIcon_165_4 = new import39.Wrapper_MdIcon(new import41.ElementRef(this._el_165),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
+    this._text_166 = this.renderer.createText((null as any),'save',this.debug(166,96,110));
+    this.compView_165.create(this._MdIcon_165_4.context);
+    this.compView_164.create(this._MdButton_164_4.context);
+    this._text_167 = this.renderer.createText(this._el_160,'\n                  ',this.debug(167,96,133));
+    this._el_168 = import3.createRenderElement(this.renderer,this._el_160,'button',new import3.InlineArray8(6,'class','midColumnButton','md-button','','type','button'),this.debug(168,97,18));
+    this.compView_168 = new import38.View_MdButton0(this.viewUtils,this,168,this._el_168);
+    this._MdPrefixRejector_168_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdButton_168_4 = new import38.Wrapper_MdButton(new import41.ElementRef(this._el_168),this.renderer);
+    this._MdButtonCssMatStyler_168_5 = new import38.Wrapper_MdButtonCssMatStyler();
+    this._el_169 = import3.createRenderElement(this.renderer,(null as any),'md-icon',new import3.InlineArray4(4,'role','img','style','color: #838383; margin-top: -1px'),this.debug(169,97,115));
+    this.compView_169 = new import39.View_MdIcon0(this.viewUtils,this,169,this._el_169);
+    this._MdPrefixRejector_169_3 = new import35.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import19.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
+    this._MdIcon_169_4 = new import39.Wrapper_MdIcon(new import41.ElementRef(this._el_169),this.renderer,this.parentView.injectorGet(import43.MdIconRegistry,this.parentIndex));
+    this._text_170 = this.renderer.createText((null as any),'message',this.debug(170,97,165));
+    this.compView_169.create(this._MdIcon_169_4.context);
+    this.compView_168.create(this._MdButton_168_4.context);
+    this._text_171 = this.renderer.createText(this._el_160,'\n                ',this.debug(171,97,191));
+    this._text_172 = this.renderer.createText(this._el_98,'\n                  \n              ',this.debug(172,98,22));
+    this._text_173 = this.renderer.createText((null as any),'\n          ',this.debug(173,100,20));
+    this.compView_90.create(this._AccordionGroup_90_3.context);
+    this._text_174 = this.renderer.createText((null as any),'\n',this.debug(174,101,28));
     this.compView_1.create(this._Accordion_1_3.context);
-    this._text_194 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(194,111,12));
+    this._text_175 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(175,102,12));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_15,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_15));
     var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_42,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_42));
     var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_74,new import3.InlineArray8(6,'mousedown',(null as any),'focus',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_74));
-    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_83,new import3.InlineArray8(6,'mousedown',(null as any),'focus',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_83));
-    var disposable_4:Function = import3.subscribeToRenderElement(this,this._el_109,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_109));
-    var disposable_5:Function = import3.subscribeToRenderElement(this,this._el_130,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_130));
-    var disposable_6:Function = import3.subscribeToRenderElement(this,this._el_151,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_151));
-    var disposable_7:Function = import3.subscribeToRenderElement(this,this._el_171,new import3.InlineArray8(6,'mousedown',(null as any),'focus',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_171));
-    var disposable_8:Function = import3.subscribeToRenderElement(this,this._el_180,new import3.InlineArray8(6,'mousedown',(null as any),'focus',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_180));
+    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_78,new import3.InlineArray8(8,'click',(null as any),'mousedown',(null as any),'focus',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_78));
+    var disposable_4:Function = import3.subscribeToRenderElement(this,this._el_102,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_102));
+    var disposable_5:Function = import3.subscribeToRenderElement(this,this._el_123,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_123));
+    var disposable_6:Function = import3.subscribeToRenderElement(this,this._el_144,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_144));
+    var disposable_7:Function = import3.subscribeToRenderElement(this,this._el_164,new import3.InlineArray8(6,'mousedown',(null as any),'focus',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_164));
+    var disposable_8:Function = import3.subscribeToRenderElement(this,this._el_168,new import3.InlineArray8(8,'click',(null as any),'mousedown',(null as any),'focus',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_168));
     this._query_AccordionToggle_3_0.reset(([] as any[]));
     this._AccordionGroup_3_3.context.toggler = this._query_AccordionToggle_3_0.first;
-    this._query_AccordionToggle_97_0.reset(([] as any[]));
-    this._AccordionGroup_97_3.context.toggler = this._query_AccordionToggle_97_0.first;
+    this._query_AccordionToggle_90_0.reset(([] as any[]));
+    this._AccordionGroup_90_3.context.toggler = this._query_AccordionToggle_90_0.first;
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._text_0,
       this._el_1,
@@ -1438,48 +1382,48 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
       this._el_75,
       this._text_76,
       this._text_77,
-      this._text_78,
+      this._el_78,
       this._el_79,
       this._text_80,
-      this._el_81,
+      this._text_81,
       this._text_82,
       this._el_83,
       this._text_84,
       this._el_85,
       this._text_86,
-      this._el_87,
+      this._text_87,
       this._text_88,
-      this._el_89,
-      this._text_90,
+      this._text_89,
+      this._el_90,
       this._text_91,
-      this._text_92,
+      this._el_92,
       this._text_93,
-      this._text_94,
+      this._el_94,
       this._text_95,
       this._text_96,
-      this._el_97,
-      this._text_98,
-      this._el_99,
-      this._text_100,
-      this._el_101,
-      this._text_102,
+      this._text_97,
+      this._el_98,
+      this._text_99,
+      this._el_100,
+      this._text_101,
+      this._el_102,
       this._text_103,
-      this._text_104,
-      this._el_105,
-      this._text_106,
-      this._el_107,
+      this._el_104,
+      this._text_105,
+      this._el_106,
+      this._text_107,
       this._text_108,
-      this._el_109,
-      this._text_110,
-      this._el_111,
-      this._text_112,
-      this._el_113,
+      this._text_109,
+      this._el_110,
+      this._text_111,
+      this._el_112,
+      this._text_113,
       this._text_114,
       this._text_115,
-      this._text_116,
-      this._el_117,
-      this._text_118,
-      this._el_119,
+      this._el_116,
+      this._text_117,
+      this._el_118,
+      this._text_119,
       this._text_120,
       this._text_121,
       this._text_122,
@@ -1487,20 +1431,20 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
       this._text_124,
       this._el_125,
       this._text_126,
-      this._text_127,
+      this._el_127,
       this._text_128,
       this._text_129,
-      this._el_130,
-      this._text_131,
-      this._el_132,
-      this._text_133,
-      this._el_134,
+      this._text_130,
+      this._el_131,
+      this._text_132,
+      this._el_133,
+      this._text_134,
       this._text_135,
       this._text_136,
-      this._text_137,
-      this._el_138,
-      this._text_139,
-      this._el_140,
+      this._el_137,
+      this._text_138,
+      this._el_139,
+      this._text_140,
       this._text_141,
       this._text_142,
       this._text_143,
@@ -1508,53 +1452,34 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
       this._text_145,
       this._el_146,
       this._text_147,
-      this._text_148,
+      this._el_148,
       this._text_149,
       this._text_150,
-      this._el_151,
-      this._text_152,
-      this._el_153,
-      this._text_154,
-      this._el_155,
+      this._text_151,
+      this._el_152,
+      this._text_153,
+      this._el_154,
+      this._text_155,
       this._text_156,
       this._text_157,
       this._text_158,
-      this._el_159,
-      this._text_160,
-      this._el_161,
-      this._text_162,
+      this._text_159,
+      this._el_160,
+      this._text_161,
+      this._el_162,
       this._text_163,
-      this._text_164,
-      this._text_165,
+      this._el_164,
+      this._el_165,
       this._text_166,
-      this._el_167,
-      this._text_168,
+      this._text_167,
+      this._el_168,
       this._el_169,
       this._text_170,
-      this._el_171,
-      this._el_172,
+      this._text_171,
+      this._text_172,
       this._text_173,
       this._text_174,
-      this._text_175,
-      this._el_176,
-      this._text_177,
-      this._el_178,
-      this._text_179,
-      this._el_180,
-      this._text_181,
-      this._el_182,
-      this._text_183,
-      this._el_184,
-      this._text_185,
-      this._el_186,
-      this._text_187,
-      this._text_188,
-      this._text_189,
-      this._text_190,
-      this._text_191,
-      this._text_192,
-      this._text_193,
-      this._text_194
+      this._text_175
     ]
     ),[
       disposable_0,
@@ -1572,164 +1497,163 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
     if (((token === import12.AccordionHeading) && ((5 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return this._AccordionHeading_5_3.context; }
-    if (((token === import18.MdPrefixRejector) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._MdPrefixRejector_17_3.context; }
-    if (((token === import19.MdCheckbox) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._MdCheckbox_17_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._NG_VALUE_ACCESSOR_17_5; }
-    if (((token === import21.FormControlName) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._FormControlName_17_6.context; }
-    if (((token === import22.NgControl) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._NgControl_17_7; }
-    if (((token === import17.NgControlStatus) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._NgControlStatus_17_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._MdPrefixRejector_23_3.context; }
-    if (((token === import19.MdCheckbox) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._MdCheckbox_23_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._NG_VALUE_ACCESSOR_23_5; }
-    if (((token === import21.FormControlName) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._FormControlName_23_6.context; }
-    if (((token === import22.NgControl) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._NgControl_23_7; }
-    if (((token === import17.NgControlStatus) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._NgControlStatus_23_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._MdPrefixRejector_29_3.context; }
-    if (((token === import19.MdCheckbox) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._MdCheckbox_29_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._NG_VALUE_ACCESSOR_29_5; }
-    if (((token === import21.FormControlName) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._FormControlName_29_6.context; }
-    if (((token === import22.NgControl) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._NgControl_29_7; }
-    if (((token === import17.NgControlStatus) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._NgControlStatus_29_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._MdPrefixRejector_35_3.context; }
-    if (((token === import19.MdCheckbox) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._MdCheckbox_35_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._NG_VALUE_ACCESSOR_35_5; }
-    if (((token === import21.FormControlName) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._FormControlName_35_6.context; }
-    if (((token === import22.NgControl) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._NgControl_35_7; }
-    if (((token === import17.NgControlStatus) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._NgControlStatus_35_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._MdPrefixRejector_17_3.context; }
+    if (((token === import20.MdCheckbox) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._MdCheckbox_17_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._NG_VALUE_ACCESSOR_17_5; }
+    if (((token === import22.FormControlName) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._FormControlName_17_6.context; }
+    if (((token === import23.NgControl) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._NgControl_17_7; }
+    if (((token === import18.NgControlStatus) && ((17 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._NgControlStatus_17_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._MdPrefixRejector_23_3.context; }
+    if (((token === import20.MdCheckbox) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._MdCheckbox_23_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._NG_VALUE_ACCESSOR_23_5; }
+    if (((token === import22.FormControlName) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._FormControlName_23_6.context; }
+    if (((token === import23.NgControl) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._NgControl_23_7; }
+    if (((token === import18.NgControlStatus) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 27)))) { return this._NgControlStatus_23_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._MdPrefixRejector_29_3.context; }
+    if (((token === import20.MdCheckbox) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._MdCheckbox_29_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._NG_VALUE_ACCESSOR_29_5; }
+    if (((token === import22.FormControlName) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._FormControlName_29_6.context; }
+    if (((token === import23.NgControl) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._NgControl_29_7; }
+    if (((token === import18.NgControlStatus) && ((29 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._NgControlStatus_29_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._MdPrefixRejector_35_3.context; }
+    if (((token === import20.MdCheckbox) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._MdCheckbox_35_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._NG_VALUE_ACCESSOR_35_5; }
+    if (((token === import22.FormControlName) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._FormControlName_35_6.context; }
+    if (((token === import23.NgControl) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._NgControl_35_7; }
+    if (((token === import18.NgControlStatus) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 39)))) { return this._NgControlStatus_35_8.context; }
     if (((token === import13.LayoutDirective) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._LayoutDirective_15_3.context; }
-    if (((token === import15.FormGroupDirective) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._FormGroupDirective_15_4.context; }
-    if (((token === import16.ControlContainer) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._ControlContainer_15_5; }
-    if (((token === import17.NgControlStatusGroup) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._NgControlStatusGroup_15_6.context; }
-    if (((token === import18.MdPrefixRejector) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._MdPrefixRejector_44_3.context; }
-    if (((token === import19.MdCheckbox) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._MdCheckbox_44_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._NG_VALUE_ACCESSOR_44_5; }
-    if (((token === import21.FormControlName) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._FormControlName_44_6.context; }
-    if (((token === import22.NgControl) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._NgControl_44_7; }
-    if (((token === import17.NgControlStatus) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._NgControlStatus_44_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._MdPrefixRejector_50_3.context; }
-    if (((token === import19.MdCheckbox) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._MdCheckbox_50_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._NG_VALUE_ACCESSOR_50_5; }
-    if (((token === import21.FormControlName) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._FormControlName_50_6.context; }
-    if (((token === import22.NgControl) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._NgControl_50_7; }
-    if (((token === import17.NgControlStatus) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._NgControlStatus_50_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._MdPrefixRejector_56_3.context; }
-    if (((token === import19.MdCheckbox) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._MdCheckbox_56_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NG_VALUE_ACCESSOR_56_5; }
-    if (((token === import21.FormControlName) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._FormControlName_56_6.context; }
-    if (((token === import22.NgControl) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgControl_56_7; }
-    if (((token === import17.NgControlStatus) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgControlStatus_56_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._MdPrefixRejector_62_3.context; }
-    if (((token === import19.MdCheckbox) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._MdCheckbox_62_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NG_VALUE_ACCESSOR_62_5; }
-    if (((token === import21.FormControlName) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._FormControlName_62_6.context; }
-    if (((token === import22.NgControl) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgControl_62_7; }
-    if (((token === import17.NgControlStatus) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgControlStatus_62_8.context; }
+    if (((token === import15.LayoutAlignDirective) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._LayoutAlignDirective_15_4.context; }
+    if (((token === import16.FormGroupDirective) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._FormGroupDirective_15_5.context; }
+    if (((token === import17.ControlContainer) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._ControlContainer_15_6; }
+    if (((token === import18.NgControlStatusGroup) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 40)))) { return this._NgControlStatusGroup_15_7.context; }
+    if (((token === import19.MdPrefixRejector) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._MdPrefixRejector_44_3.context; }
+    if (((token === import20.MdCheckbox) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._MdCheckbox_44_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._NG_VALUE_ACCESSOR_44_5; }
+    if (((token === import22.FormControlName) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._FormControlName_44_6.context; }
+    if (((token === import23.NgControl) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._NgControl_44_7; }
+    if (((token === import18.NgControlStatus) && ((44 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._NgControlStatus_44_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._MdPrefixRejector_50_3.context; }
+    if (((token === import20.MdCheckbox) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._MdCheckbox_50_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._NG_VALUE_ACCESSOR_50_5; }
+    if (((token === import22.FormControlName) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._FormControlName_50_6.context; }
+    if (((token === import23.NgControl) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._NgControl_50_7; }
+    if (((token === import18.NgControlStatus) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 54)))) { return this._NgControlStatus_50_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._MdPrefixRejector_56_3.context; }
+    if (((token === import20.MdCheckbox) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._MdCheckbox_56_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NG_VALUE_ACCESSOR_56_5; }
+    if (((token === import22.FormControlName) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._FormControlName_56_6.context; }
+    if (((token === import23.NgControl) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgControl_56_7; }
+    if (((token === import18.NgControlStatus) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgControlStatus_56_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._MdPrefixRejector_62_3.context; }
+    if (((token === import20.MdCheckbox) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._MdCheckbox_62_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NG_VALUE_ACCESSOR_62_5; }
+    if (((token === import22.FormControlName) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._FormControlName_62_6.context; }
+    if (((token === import23.NgControl) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgControl_62_7; }
+    if (((token === import18.NgControlStatus) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgControlStatus_62_8.context; }
     if (((token === import13.LayoutDirective) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._LayoutDirective_42_3.context; }
-    if (((token === import15.FormGroupDirective) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._FormGroupDirective_42_4.context; }
-    if (((token === import16.ControlContainer) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._ControlContainer_42_5; }
-    if (((token === import17.NgControlStatusGroup) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._NgControlStatusGroup_42_6.context; }
+    if (((token === import15.LayoutAlignDirective) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._LayoutAlignDirective_42_4.context; }
+    if (((token === import16.FormGroupDirective) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._FormGroupDirective_42_5.context; }
+    if (((token === import17.ControlContainer) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._ControlContainer_42_6; }
+    if (((token === import18.NgControlStatusGroup) && ((42 <= requestNodeIndex) && (requestNodeIndex <= 67)))) { return this._NgControlStatusGroup_42_7.context; }
     if (((token === import13.LayoutDirective) && ((13 <= requestNodeIndex) && (requestNodeIndex <= 68)))) { return this._LayoutDirective_13_3.context; }
     if (((token === import14.FlexDirective) && ((13 <= requestNodeIndex) && (requestNodeIndex <= 68)))) { return this._FlexDirective_13_4.context; }
-    if (((token === import18.MdPrefixRejector) && ((75 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdPrefixRejector_75_3.context; }
-    if (((token === import24.MdIcon) && ((75 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdIcon_75_4.context; }
-    if (((token === import18.MdPrefixRejector) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdPrefixRejector_74_3.context; }
-    if (((token === import23.MdButton) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdButton_74_4.context; }
-    if (((token === import23.MdButtonCssMatStyler) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdButtonCssMatStyler_74_5.context; }
-    if (((token === import13.LayoutDirective) && ((70 <= requestNodeIndex) && (requestNodeIndex <= 77)))) { return this._LayoutDirective_70_3.context; }
-    if (((token === import14.FlexDirective) && ((70 <= requestNodeIndex) && (requestNodeIndex <= 77)))) { return this._FlexDirective_70_4.context; }
-    if (((token === import18.MdPrefixRejector) && ((87 <= requestNodeIndex) && (requestNodeIndex <= 88)))) { return this._MdPrefixRejector_87_3.context; }
-    if (((token === import24.MdIcon) && ((87 <= requestNodeIndex) && (requestNodeIndex <= 88)))) { return this._MdIcon_87_4.context; }
-    if (((token === import13.LayoutDirective) && ((85 <= requestNodeIndex) && (requestNodeIndex <= 91)))) { return this._LayoutDirective_85_3.context; }
-    if (((token === import18.MdPrefixRejector) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 92)))) { return this._MdPrefixRejector_83_3.context; }
-    if (((token === import23.MdButton) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 92)))) { return this._MdButton_83_4.context; }
-    if (((token === import23.MdButtonCssMatStyler) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 92)))) { return this._MdButtonCssMatStyler_83_5.context; }
-    if (((token === import13.LayoutDirective) && ((79 <= requestNodeIndex) && (requestNodeIndex <= 93)))) { return this._LayoutDirective_79_3.context; }
-    if (((token === import25.LayoutAlignDirective) && ((79 <= requestNodeIndex) && (requestNodeIndex <= 93)))) { return this._LayoutAlignDirective_79_4.context; }
-    if (((token === import14.FlexDirective) && ((79 <= requestNodeIndex) && (requestNodeIndex <= 93)))) { return this._FlexDirective_79_5.context; }
-    if (((token === import13.LayoutDirective) && ((11 <= requestNodeIndex) && (requestNodeIndex <= 94)))) { return this._LayoutDirective_11_3.context; }
-    if (((token === import11.AccordionGroup) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 95)))) { return this._AccordionGroup_3_3.context; }
-    if (((token === import12.AccordionHeading) && ((99 <= requestNodeIndex) && (requestNodeIndex <= 103)))) { return this._AccordionHeading_99_3.context; }
-    if (((token === import18.MdPrefixRejector) && ((111 <= requestNodeIndex) && (requestNodeIndex <= 115)))) { return this._MdPrefixRejector_111_3.context; }
-    if (((token === import19.MdCheckbox) && ((111 <= requestNodeIndex) && (requestNodeIndex <= 115)))) { return this._MdCheckbox_111_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((111 <= requestNodeIndex) && (requestNodeIndex <= 115)))) { return this._NG_VALUE_ACCESSOR_111_5; }
-    if (((token === import21.FormControlName) && ((111 <= requestNodeIndex) && (requestNodeIndex <= 115)))) { return this._FormControlName_111_6.context; }
-    if (((token === import22.NgControl) && ((111 <= requestNodeIndex) && (requestNodeIndex <= 115)))) { return this._NgControl_111_7; }
-    if (((token === import17.NgControlStatus) && ((111 <= requestNodeIndex) && (requestNodeIndex <= 115)))) { return this._NgControlStatus_111_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._MdPrefixRejector_117_3.context; }
-    if (((token === import19.MdCheckbox) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._MdCheckbox_117_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._NG_VALUE_ACCESSOR_117_5; }
-    if (((token === import21.FormControlName) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._FormControlName_117_6.context; }
-    if (((token === import22.NgControl) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._NgControl_117_7; }
-    if (((token === import17.NgControlStatus) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._NgControlStatus_117_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 127)))) { return this._MdPrefixRejector_123_3.context; }
-    if (((token === import19.MdCheckbox) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 127)))) { return this._MdCheckbox_123_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 127)))) { return this._NG_VALUE_ACCESSOR_123_5; }
-    if (((token === import21.FormControlName) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 127)))) { return this._FormControlName_123_6.context; }
-    if (((token === import22.NgControl) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 127)))) { return this._NgControl_123_7; }
-    if (((token === import17.NgControlStatus) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 127)))) { return this._NgControlStatus_123_8.context; }
-    if (((token === import13.LayoutDirective) && ((109 <= requestNodeIndex) && (requestNodeIndex <= 128)))) { return this._LayoutDirective_109_3.context; }
-    if (((token === import15.FormGroupDirective) && ((109 <= requestNodeIndex) && (requestNodeIndex <= 128)))) { return this._FormGroupDirective_109_4.context; }
-    if (((token === import16.ControlContainer) && ((109 <= requestNodeIndex) && (requestNodeIndex <= 128)))) { return this._ControlContainer_109_5; }
-    if (((token === import17.NgControlStatusGroup) && ((109 <= requestNodeIndex) && (requestNodeIndex <= 128)))) { return this._NgControlStatusGroup_109_6.context; }
-    if (((token === import18.MdPrefixRejector) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 136)))) { return this._MdPrefixRejector_132_3.context; }
-    if (((token === import19.MdCheckbox) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 136)))) { return this._MdCheckbox_132_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 136)))) { return this._NG_VALUE_ACCESSOR_132_5; }
-    if (((token === import21.FormControlName) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 136)))) { return this._FormControlName_132_6.context; }
-    if (((token === import22.NgControl) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 136)))) { return this._NgControl_132_7; }
-    if (((token === import17.NgControlStatus) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 136)))) { return this._NgControlStatus_132_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._MdPrefixRejector_138_3.context; }
-    if (((token === import19.MdCheckbox) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._MdCheckbox_138_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._NG_VALUE_ACCESSOR_138_5; }
-    if (((token === import21.FormControlName) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._FormControlName_138_6.context; }
-    if (((token === import22.NgControl) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._NgControl_138_7; }
-    if (((token === import17.NgControlStatus) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._NgControlStatus_138_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 148)))) { return this._MdPrefixRejector_144_3.context; }
-    if (((token === import19.MdCheckbox) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 148)))) { return this._MdCheckbox_144_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 148)))) { return this._NG_VALUE_ACCESSOR_144_5; }
-    if (((token === import21.FormControlName) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 148)))) { return this._FormControlName_144_6.context; }
-    if (((token === import22.NgControl) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 148)))) { return this._NgControl_144_7; }
-    if (((token === import17.NgControlStatus) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 148)))) { return this._NgControlStatus_144_8.context; }
-    if (((token === import13.LayoutDirective) && ((130 <= requestNodeIndex) && (requestNodeIndex <= 149)))) { return this._LayoutDirective_130_3.context; }
-    if (((token === import15.FormGroupDirective) && ((130 <= requestNodeIndex) && (requestNodeIndex <= 149)))) { return this._FormGroupDirective_130_4.context; }
-    if (((token === import16.ControlContainer) && ((130 <= requestNodeIndex) && (requestNodeIndex <= 149)))) { return this._ControlContainer_130_5; }
-    if (((token === import17.NgControlStatusGroup) && ((130 <= requestNodeIndex) && (requestNodeIndex <= 149)))) { return this._NgControlStatusGroup_130_6.context; }
-    if (((token === import18.MdPrefixRejector) && ((153 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._MdPrefixRejector_153_3.context; }
-    if (((token === import19.MdCheckbox) && ((153 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._MdCheckbox_153_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((153 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._NG_VALUE_ACCESSOR_153_5; }
-    if (((token === import21.FormControlName) && ((153 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._FormControlName_153_6.context; }
-    if (((token === import22.NgControl) && ((153 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._NgControl_153_7; }
-    if (((token === import17.NgControlStatus) && ((153 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._NgControlStatus_153_8.context; }
-    if (((token === import18.MdPrefixRejector) && ((159 <= requestNodeIndex) && (requestNodeIndex <= 163)))) { return this._MdPrefixRejector_159_3.context; }
-    if (((token === import19.MdCheckbox) && ((159 <= requestNodeIndex) && (requestNodeIndex <= 163)))) { return this._MdCheckbox_159_4.context; }
-    if (((token === import20.NG_VALUE_ACCESSOR) && ((159 <= requestNodeIndex) && (requestNodeIndex <= 163)))) { return this._NG_VALUE_ACCESSOR_159_5; }
-    if (((token === import21.FormControlName) && ((159 <= requestNodeIndex) && (requestNodeIndex <= 163)))) { return this._FormControlName_159_6.context; }
-    if (((token === import22.NgControl) && ((159 <= requestNodeIndex) && (requestNodeIndex <= 163)))) { return this._NgControl_159_7; }
-    if (((token === import17.NgControlStatus) && ((159 <= requestNodeIndex) && (requestNodeIndex <= 163)))) { return this._NgControlStatus_159_8.context; }
-    if (((token === import13.LayoutDirective) && ((151 <= requestNodeIndex) && (requestNodeIndex <= 164)))) { return this._LayoutDirective_151_3.context; }
-    if (((token === import15.FormGroupDirective) && ((151 <= requestNodeIndex) && (requestNodeIndex <= 164)))) { return this._FormGroupDirective_151_4.context; }
-    if (((token === import16.ControlContainer) && ((151 <= requestNodeIndex) && (requestNodeIndex <= 164)))) { return this._ControlContainer_151_5; }
-    if (((token === import17.NgControlStatusGroup) && ((151 <= requestNodeIndex) && (requestNodeIndex <= 164)))) { return this._NgControlStatusGroup_151_6.context; }
-    if (((token === import13.LayoutDirective) && ((107 <= requestNodeIndex) && (requestNodeIndex <= 165)))) { return this._LayoutDirective_107_3.context; }
-    if (((token === import14.FlexDirective) && ((107 <= requestNodeIndex) && (requestNodeIndex <= 165)))) { return this._FlexDirective_107_4.context; }
-    if (((token === import18.MdPrefixRejector) && ((172 <= requestNodeIndex) && (requestNodeIndex <= 173)))) { return this._MdPrefixRejector_172_3.context; }
-    if (((token === import24.MdIcon) && ((172 <= requestNodeIndex) && (requestNodeIndex <= 173)))) { return this._MdIcon_172_4.context; }
-    if (((token === import18.MdPrefixRejector) && ((171 <= requestNodeIndex) && (requestNodeIndex <= 173)))) { return this._MdPrefixRejector_171_3.context; }
-    if (((token === import23.MdButton) && ((171 <= requestNodeIndex) && (requestNodeIndex <= 173)))) { return this._MdButton_171_4.context; }
-    if (((token === import23.MdButtonCssMatStyler) && ((171 <= requestNodeIndex) && (requestNodeIndex <= 173)))) { return this._MdButtonCssMatStyler_171_5.context; }
-    if (((token === import13.LayoutDirective) && ((167 <= requestNodeIndex) && (requestNodeIndex <= 174)))) { return this._LayoutDirective_167_3.context; }
-    if (((token === import14.FlexDirective) && ((167 <= requestNodeIndex) && (requestNodeIndex <= 174)))) { return this._FlexDirective_167_4.context; }
-    if (((token === import18.MdPrefixRejector) && ((184 <= requestNodeIndex) && (requestNodeIndex <= 185)))) { return this._MdPrefixRejector_184_3.context; }
-    if (((token === import24.MdIcon) && ((184 <= requestNodeIndex) && (requestNodeIndex <= 185)))) { return this._MdIcon_184_4.context; }
-    if (((token === import13.LayoutDirective) && ((182 <= requestNodeIndex) && (requestNodeIndex <= 188)))) { return this._LayoutDirective_182_3.context; }
-    if (((token === import18.MdPrefixRejector) && ((180 <= requestNodeIndex) && (requestNodeIndex <= 189)))) { return this._MdPrefixRejector_180_3.context; }
-    if (((token === import23.MdButton) && ((180 <= requestNodeIndex) && (requestNodeIndex <= 189)))) { return this._MdButton_180_4.context; }
-    if (((token === import23.MdButtonCssMatStyler) && ((180 <= requestNodeIndex) && (requestNodeIndex <= 189)))) { return this._MdButtonCssMatStyler_180_5.context; }
-    if (((token === import13.LayoutDirective) && ((176 <= requestNodeIndex) && (requestNodeIndex <= 190)))) { return this._LayoutDirective_176_3.context; }
-    if (((token === import25.LayoutAlignDirective) && ((176 <= requestNodeIndex) && (requestNodeIndex <= 190)))) { return this._LayoutAlignDirective_176_4.context; }
-    if (((token === import14.FlexDirective) && ((176 <= requestNodeIndex) && (requestNodeIndex <= 190)))) { return this._FlexDirective_176_5.context; }
-    if (((token === import13.LayoutDirective) && ((105 <= requestNodeIndex) && (requestNodeIndex <= 191)))) { return this._LayoutDirective_105_3.context; }
-    if (((token === import11.AccordionGroup) && ((97 <= requestNodeIndex) && (requestNodeIndex <= 192)))) { return this._AccordionGroup_97_3.context; }
-    if (((token === import10.Accordion) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 193)))) { return this._Accordion_1_3.context; }
+    if (((token === import19.MdPrefixRejector) && ((75 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdPrefixRejector_75_3.context; }
+    if (((token === import25.MdIcon) && ((75 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdIcon_75_4.context; }
+    if (((token === import19.MdPrefixRejector) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdPrefixRejector_74_3.context; }
+    if (((token === import24.MdButton) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdButton_74_4.context; }
+    if (((token === import24.MdButtonCssMatStyler) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 76)))) { return this._MdButtonCssMatStyler_74_5.context; }
+    if (((token === import19.MdPrefixRejector) && ((79 <= requestNodeIndex) && (requestNodeIndex <= 80)))) { return this._MdPrefixRejector_79_3.context; }
+    if (((token === import25.MdIcon) && ((79 <= requestNodeIndex) && (requestNodeIndex <= 80)))) { return this._MdIcon_79_4.context; }
+    if (((token === import19.MdPrefixRejector) && ((78 <= requestNodeIndex) && (requestNodeIndex <= 80)))) { return this._MdPrefixRejector_78_3.context; }
+    if (((token === import24.MdButton) && ((78 <= requestNodeIndex) && (requestNodeIndex <= 80)))) { return this._MdButton_78_4.context; }
+    if (((token === import24.MdButtonCssMatStyler) && ((78 <= requestNodeIndex) && (requestNodeIndex <= 80)))) { return this._MdButtonCssMatStyler_78_5.context; }
+    if (((token === import13.LayoutDirective) && ((70 <= requestNodeIndex) && (requestNodeIndex <= 81)))) { return this._LayoutDirective_70_3.context; }
+    if (((token === import14.FlexDirective) && ((70 <= requestNodeIndex) && (requestNodeIndex <= 81)))) { return this._FlexDirective_70_4.context; }
+    if (((token === import13.LayoutDirective) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 86)))) { return this._LayoutDirective_83_3.context; }
+    if (((token === import15.LayoutAlignDirective) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 86)))) { return this._LayoutAlignDirective_83_4.context; }
+    if (((token === import14.FlexDirective) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 86)))) { return this._FlexDirective_83_5.context; }
+    if (((token === import13.LayoutDirective) && ((11 <= requestNodeIndex) && (requestNodeIndex <= 87)))) { return this._LayoutDirective_11_3.context; }
+    if (((token === import11.AccordionGroup) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 88)))) { return this._AccordionGroup_3_3.context; }
+    if (((token === import12.AccordionHeading) && ((92 <= requestNodeIndex) && (requestNodeIndex <= 96)))) { return this._AccordionHeading_92_3.context; }
+    if (((token === import19.MdPrefixRejector) && ((104 <= requestNodeIndex) && (requestNodeIndex <= 108)))) { return this._MdPrefixRejector_104_3.context; }
+    if (((token === import20.MdCheckbox) && ((104 <= requestNodeIndex) && (requestNodeIndex <= 108)))) { return this._MdCheckbox_104_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((104 <= requestNodeIndex) && (requestNodeIndex <= 108)))) { return this._NG_VALUE_ACCESSOR_104_5; }
+    if (((token === import22.FormControlName) && ((104 <= requestNodeIndex) && (requestNodeIndex <= 108)))) { return this._FormControlName_104_6.context; }
+    if (((token === import23.NgControl) && ((104 <= requestNodeIndex) && (requestNodeIndex <= 108)))) { return this._NgControl_104_7; }
+    if (((token === import18.NgControlStatus) && ((104 <= requestNodeIndex) && (requestNodeIndex <= 108)))) { return this._NgControlStatus_104_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((110 <= requestNodeIndex) && (requestNodeIndex <= 114)))) { return this._MdPrefixRejector_110_3.context; }
+    if (((token === import20.MdCheckbox) && ((110 <= requestNodeIndex) && (requestNodeIndex <= 114)))) { return this._MdCheckbox_110_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((110 <= requestNodeIndex) && (requestNodeIndex <= 114)))) { return this._NG_VALUE_ACCESSOR_110_5; }
+    if (((token === import22.FormControlName) && ((110 <= requestNodeIndex) && (requestNodeIndex <= 114)))) { return this._FormControlName_110_6.context; }
+    if (((token === import23.NgControl) && ((110 <= requestNodeIndex) && (requestNodeIndex <= 114)))) { return this._NgControl_110_7; }
+    if (((token === import18.NgControlStatus) && ((110 <= requestNodeIndex) && (requestNodeIndex <= 114)))) { return this._NgControlStatus_110_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((116 <= requestNodeIndex) && (requestNodeIndex <= 120)))) { return this._MdPrefixRejector_116_3.context; }
+    if (((token === import20.MdCheckbox) && ((116 <= requestNodeIndex) && (requestNodeIndex <= 120)))) { return this._MdCheckbox_116_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((116 <= requestNodeIndex) && (requestNodeIndex <= 120)))) { return this._NG_VALUE_ACCESSOR_116_5; }
+    if (((token === import22.FormControlName) && ((116 <= requestNodeIndex) && (requestNodeIndex <= 120)))) { return this._FormControlName_116_6.context; }
+    if (((token === import23.NgControl) && ((116 <= requestNodeIndex) && (requestNodeIndex <= 120)))) { return this._NgControl_116_7; }
+    if (((token === import18.NgControlStatus) && ((116 <= requestNodeIndex) && (requestNodeIndex <= 120)))) { return this._NgControlStatus_116_8.context; }
+    if (((token === import13.LayoutDirective) && ((102 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._LayoutDirective_102_3.context; }
+    if (((token === import15.LayoutAlignDirective) && ((102 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._LayoutAlignDirective_102_4.context; }
+    if (((token === import16.FormGroupDirective) && ((102 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._FormGroupDirective_102_5.context; }
+    if (((token === import17.ControlContainer) && ((102 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._ControlContainer_102_6; }
+    if (((token === import18.NgControlStatusGroup) && ((102 <= requestNodeIndex) && (requestNodeIndex <= 121)))) { return this._NgControlStatusGroup_102_7.context; }
+    if (((token === import19.MdPrefixRejector) && ((125 <= requestNodeIndex) && (requestNodeIndex <= 129)))) { return this._MdPrefixRejector_125_3.context; }
+    if (((token === import20.MdCheckbox) && ((125 <= requestNodeIndex) && (requestNodeIndex <= 129)))) { return this._MdCheckbox_125_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((125 <= requestNodeIndex) && (requestNodeIndex <= 129)))) { return this._NG_VALUE_ACCESSOR_125_5; }
+    if (((token === import22.FormControlName) && ((125 <= requestNodeIndex) && (requestNodeIndex <= 129)))) { return this._FormControlName_125_6.context; }
+    if (((token === import23.NgControl) && ((125 <= requestNodeIndex) && (requestNodeIndex <= 129)))) { return this._NgControl_125_7; }
+    if (((token === import18.NgControlStatus) && ((125 <= requestNodeIndex) && (requestNodeIndex <= 129)))) { return this._NgControlStatus_125_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((131 <= requestNodeIndex) && (requestNodeIndex <= 135)))) { return this._MdPrefixRejector_131_3.context; }
+    if (((token === import20.MdCheckbox) && ((131 <= requestNodeIndex) && (requestNodeIndex <= 135)))) { return this._MdCheckbox_131_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((131 <= requestNodeIndex) && (requestNodeIndex <= 135)))) { return this._NG_VALUE_ACCESSOR_131_5; }
+    if (((token === import22.FormControlName) && ((131 <= requestNodeIndex) && (requestNodeIndex <= 135)))) { return this._FormControlName_131_6.context; }
+    if (((token === import23.NgControl) && ((131 <= requestNodeIndex) && (requestNodeIndex <= 135)))) { return this._NgControl_131_7; }
+    if (((token === import18.NgControlStatus) && ((131 <= requestNodeIndex) && (requestNodeIndex <= 135)))) { return this._NgControlStatus_131_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((137 <= requestNodeIndex) && (requestNodeIndex <= 141)))) { return this._MdPrefixRejector_137_3.context; }
+    if (((token === import20.MdCheckbox) && ((137 <= requestNodeIndex) && (requestNodeIndex <= 141)))) { return this._MdCheckbox_137_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((137 <= requestNodeIndex) && (requestNodeIndex <= 141)))) { return this._NG_VALUE_ACCESSOR_137_5; }
+    if (((token === import22.FormControlName) && ((137 <= requestNodeIndex) && (requestNodeIndex <= 141)))) { return this._FormControlName_137_6.context; }
+    if (((token === import23.NgControl) && ((137 <= requestNodeIndex) && (requestNodeIndex <= 141)))) { return this._NgControl_137_7; }
+    if (((token === import18.NgControlStatus) && ((137 <= requestNodeIndex) && (requestNodeIndex <= 141)))) { return this._NgControlStatus_137_8.context; }
+    if (((token === import13.LayoutDirective) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._LayoutDirective_123_3.context; }
+    if (((token === import15.LayoutAlignDirective) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._LayoutAlignDirective_123_4.context; }
+    if (((token === import16.FormGroupDirective) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._FormGroupDirective_123_5.context; }
+    if (((token === import17.ControlContainer) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._ControlContainer_123_6; }
+    if (((token === import18.NgControlStatusGroup) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 142)))) { return this._NgControlStatusGroup_123_7.context; }
+    if (((token === import19.MdPrefixRejector) && ((146 <= requestNodeIndex) && (requestNodeIndex <= 150)))) { return this._MdPrefixRejector_146_3.context; }
+    if (((token === import20.MdCheckbox) && ((146 <= requestNodeIndex) && (requestNodeIndex <= 150)))) { return this._MdCheckbox_146_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((146 <= requestNodeIndex) && (requestNodeIndex <= 150)))) { return this._NG_VALUE_ACCESSOR_146_5; }
+    if (((token === import22.FormControlName) && ((146 <= requestNodeIndex) && (requestNodeIndex <= 150)))) { return this._FormControlName_146_6.context; }
+    if (((token === import23.NgControl) && ((146 <= requestNodeIndex) && (requestNodeIndex <= 150)))) { return this._NgControl_146_7; }
+    if (((token === import18.NgControlStatus) && ((146 <= requestNodeIndex) && (requestNodeIndex <= 150)))) { return this._NgControlStatus_146_8.context; }
+    if (((token === import19.MdPrefixRejector) && ((152 <= requestNodeIndex) && (requestNodeIndex <= 156)))) { return this._MdPrefixRejector_152_3.context; }
+    if (((token === import20.MdCheckbox) && ((152 <= requestNodeIndex) && (requestNodeIndex <= 156)))) { return this._MdCheckbox_152_4.context; }
+    if (((token === import21.NG_VALUE_ACCESSOR) && ((152 <= requestNodeIndex) && (requestNodeIndex <= 156)))) { return this._NG_VALUE_ACCESSOR_152_5; }
+    if (((token === import22.FormControlName) && ((152 <= requestNodeIndex) && (requestNodeIndex <= 156)))) { return this._FormControlName_152_6.context; }
+    if (((token === import23.NgControl) && ((152 <= requestNodeIndex) && (requestNodeIndex <= 156)))) { return this._NgControl_152_7; }
+    if (((token === import18.NgControlStatus) && ((152 <= requestNodeIndex) && (requestNodeIndex <= 156)))) { return this._NgControlStatus_152_8.context; }
+    if (((token === import13.LayoutDirective) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._LayoutDirective_144_3.context; }
+    if (((token === import16.FormGroupDirective) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._FormGroupDirective_144_4.context; }
+    if (((token === import17.ControlContainer) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._ControlContainer_144_5; }
+    if (((token === import18.NgControlStatusGroup) && ((144 <= requestNodeIndex) && (requestNodeIndex <= 157)))) { return this._NgControlStatusGroup_144_6.context; }
+    if (((token === import13.LayoutDirective) && ((100 <= requestNodeIndex) && (requestNodeIndex <= 158)))) { return this._LayoutDirective_100_3.context; }
+    if (((token === import14.FlexDirective) && ((100 <= requestNodeIndex) && (requestNodeIndex <= 158)))) { return this._FlexDirective_100_4.context; }
+    if (((token === import19.MdPrefixRejector) && ((165 <= requestNodeIndex) && (requestNodeIndex <= 166)))) { return this._MdPrefixRejector_165_3.context; }
+    if (((token === import25.MdIcon) && ((165 <= requestNodeIndex) && (requestNodeIndex <= 166)))) { return this._MdIcon_165_4.context; }
+    if (((token === import19.MdPrefixRejector) && ((164 <= requestNodeIndex) && (requestNodeIndex <= 166)))) { return this._MdPrefixRejector_164_3.context; }
+    if (((token === import24.MdButton) && ((164 <= requestNodeIndex) && (requestNodeIndex <= 166)))) { return this._MdButton_164_4.context; }
+    if (((token === import24.MdButtonCssMatStyler) && ((164 <= requestNodeIndex) && (requestNodeIndex <= 166)))) { return this._MdButtonCssMatStyler_164_5.context; }
+    if (((token === import19.MdPrefixRejector) && ((169 <= requestNodeIndex) && (requestNodeIndex <= 170)))) { return this._MdPrefixRejector_169_3.context; }
+    if (((token === import25.MdIcon) && ((169 <= requestNodeIndex) && (requestNodeIndex <= 170)))) { return this._MdIcon_169_4.context; }
+    if (((token === import19.MdPrefixRejector) && ((168 <= requestNodeIndex) && (requestNodeIndex <= 170)))) { return this._MdPrefixRejector_168_3.context; }
+    if (((token === import24.MdButton) && ((168 <= requestNodeIndex) && (requestNodeIndex <= 170)))) { return this._MdButton_168_4.context; }
+    if (((token === import24.MdButtonCssMatStyler) && ((168 <= requestNodeIndex) && (requestNodeIndex <= 170)))) { return this._MdButtonCssMatStyler_168_5.context; }
+    if (((token === import13.LayoutDirective) && ((160 <= requestNodeIndex) && (requestNodeIndex <= 171)))) { return this._LayoutDirective_160_3.context; }
+    if (((token === import14.FlexDirective) && ((160 <= requestNodeIndex) && (requestNodeIndex <= 171)))) { return this._FlexDirective_160_4.context; }
+    if (((token === import13.LayoutDirective) && ((98 <= requestNodeIndex) && (requestNodeIndex <= 172)))) { return this._LayoutDirective_98_3.context; }
+    if (((token === import11.AccordionGroup) && ((90 <= requestNodeIndex) && (requestNodeIndex <= 173)))) { return this._AccordionGroup_90_3.context; }
+    if (((token === import10.Accordion) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 174)))) { return this._Accordion_1_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -1755,7 +1679,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._LayoutDirective_13_3.check_layout(currVal_13_0_0,throwOnChange,false);
     this._LayoutDirective_13_3.ngDoCheck(this,this._el_13,throwOnChange);
     this.debug(13,8,71);
-    const currVal_13_1_0:any = '570px';
+    const currVal_13_1_0:any = '630px';
     this._FlexDirective_13_4.check_flex(currVal_13_1_0,throwOnChange,false);
     this._FlexDirective_13_4.ngDoCheck(this,this._el_13,throwOnChange);
     this.debug(15,9,46);
@@ -1763,15 +1687,19 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._LayoutDirective_15_3.check_layout(currVal_15_0_0,throwOnChange,false);
     this._LayoutDirective_15_3.ngDoCheck(this,this._el_15,throwOnChange);
     this.debug(15,9,61);
-    const currVal_15_1_0:any = this.context.clientAccountForm;
-    this._FormGroupDirective_15_4.check_form(currVal_15_1_0,throwOnChange,false);
-    this._FormGroupDirective_15_4.ngDoCheck(this,this._el_15,throwOnChange);
+    const currVal_15_1_0:any = 'space-between';
+    this._LayoutAlignDirective_15_4.check_align(currVal_15_1_0,throwOnChange,false);
+    this._LayoutAlignDirective_15_4.ngDoCheck(this,this._el_15,throwOnChange);
+    this.debug(15,9,91);
+    const currVal_15_2_0:any = this.context.clientAccountForm;
+    this._FormGroupDirective_15_5.check_form(currVal_15_2_0,throwOnChange,false);
+    this._FormGroupDirective_15_5.ngDoCheck(this,this._el_15,throwOnChange);
     this.debug(15,9,16);
-    this._NgControlStatusGroup_15_6.ngDoCheck(this,this._el_15,throwOnChange);
+    this._NgControlStatusGroup_15_7.ngDoCheck(this,this._el_15,throwOnChange);
     this.debug(17,11,18);
     this._MdPrefixRejector_17_3.ngDoCheck(this,this._el_17,throwOnChange);
     if (this._MdCheckbox_17_4.ngDoCheck(this,this._el_17,throwOnChange)) { this.compView_17.markAsCheckOnce(); }
-    this.debug(17,11,103);
+    this.debug(17,11,83);
     const currVal_17_2_0:any = 'wealthIncome';
     this._FormControlName_17_6.check_name(currVal_17_2_0,throwOnChange,false);
     this._FormControlName_17_6.ngDoCheck(this,this._el_17,throwOnChange);
@@ -1780,7 +1708,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.debug(23,14,18);
     this._MdPrefixRejector_23_3.ngDoCheck(this,this._el_23,throwOnChange);
     if (this._MdCheckbox_23_4.ngDoCheck(this,this._el_23,throwOnChange)) { this.compView_23.markAsCheckOnce(); }
-    this.debug(23,14,102);
+    this.debug(23,14,57);
     const currVal_23_2_0:any = 'wealthBonus';
     this._FormControlName_23_6.check_name(currVal_23_2_0,throwOnChange,false);
     this._FormControlName_23_6.ngDoCheck(this,this._el_23,throwOnChange);
@@ -1789,7 +1717,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.debug(29,17,18);
     this._MdPrefixRejector_29_3.ngDoCheck(this,this._el_29,throwOnChange);
     if (this._MdCheckbox_29_4.ngDoCheck(this,this._el_29,throwOnChange)) { this.compView_29.markAsCheckOnce(); }
-    this.debug(29,17,102);
+    this.debug(29,17,57);
     const currVal_29_2_0:any = 'wealthHouseSale';
     this._FormControlName_29_6.check_name(currVal_29_2_0,throwOnChange,false);
     this._FormControlName_29_6.ngDoCheck(this,this._el_29,throwOnChange);
@@ -1798,7 +1726,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.debug(35,20,18);
     this._MdPrefixRejector_35_3.ngDoCheck(this,this._el_35,throwOnChange);
     if (this._MdCheckbox_35_4.ngDoCheck(this,this._el_35,throwOnChange)) { this.compView_35.markAsCheckOnce(); }
-    this.debug(35,20,82);
+    this.debug(35,20,84);
     const currVal_35_2_0:any = 'wealthBusinessSale';
     this._FormControlName_35_6.check_name(currVal_35_2_0,throwOnChange,false);
     this._FormControlName_35_6.ngDoCheck(this,this._el_35,throwOnChange);
@@ -1809,15 +1737,19 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._LayoutDirective_42_3.check_layout(currVal_42_0_0,throwOnChange,false);
     this._LayoutDirective_42_3.ngDoCheck(this,this._el_42,throwOnChange);
     this.debug(42,24,61);
-    const currVal_42_1_0:any = this.context.clientAccountForm;
-    this._FormGroupDirective_42_4.check_form(currVal_42_1_0,throwOnChange,false);
-    this._FormGroupDirective_42_4.ngDoCheck(this,this._el_42,throwOnChange);
+    const currVal_42_1_0:any = 'space-between';
+    this._LayoutAlignDirective_42_4.check_align(currVal_42_1_0,throwOnChange,false);
+    this._LayoutAlignDirective_42_4.ngDoCheck(this,this._el_42,throwOnChange);
+    this.debug(42,24,91);
+    const currVal_42_2_0:any = this.context.clientAccountForm;
+    this._FormGroupDirective_42_5.check_form(currVal_42_2_0,throwOnChange,false);
+    this._FormGroupDirective_42_5.ngDoCheck(this,this._el_42,throwOnChange);
     this.debug(42,24,16);
-    this._NgControlStatusGroup_42_6.ngDoCheck(this,this._el_42,throwOnChange);
+    this._NgControlStatusGroup_42_7.ngDoCheck(this,this._el_42,throwOnChange);
     this.debug(44,26,18);
     this._MdPrefixRejector_44_3.ngDoCheck(this,this._el_44,throwOnChange);
     if (this._MdCheckbox_44_4.ngDoCheck(this,this._el_44,throwOnChange)) { this.compView_44.markAsCheckOnce(); }
-    this.debug(44,26,103);
+    this.debug(44,26,83);
     const currVal_44_2_0:any = 'wealthInheritance';
     this._FormControlName_44_6.check_name(currVal_44_2_0,throwOnChange,false);
     this._FormControlName_44_6.ngDoCheck(this,this._el_44,throwOnChange);
@@ -1826,7 +1758,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.debug(50,29,18);
     this._MdPrefixRejector_50_3.ngDoCheck(this,this._el_50,throwOnChange);
     if (this._MdCheckbox_50_4.ngDoCheck(this,this._el_50,throwOnChange)) { this.compView_50.markAsCheckOnce(); }
-    this.debug(50,29,102);
+    this.debug(50,29,57);
     const currVal_50_2_0:any = 'wealthReplacement';
     this._FormControlName_50_6.check_name(currVal_50_2_0,throwOnChange,false);
     this._FormControlName_50_6.ngDoCheck(this,this._el_50,throwOnChange);
@@ -1835,7 +1767,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.debug(56,32,18);
     this._MdPrefixRejector_56_3.ngDoCheck(this,this._el_56,throwOnChange);
     if (this._MdCheckbox_56_4.ngDoCheck(this,this._el_56,throwOnChange)) { this.compView_56.markAsCheckOnce(); }
-    this.debug(56,32,102);
+    this.debug(56,32,57);
     const currVal_56_2_0:any = 'wealthDivorce';
     this._FormControlName_56_6.check_name(currVal_56_2_0,throwOnChange,false);
     this._FormControlName_56_6.ngDoCheck(this,this._el_56,throwOnChange);
@@ -1844,7 +1776,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.debug(62,35,18);
     this._MdPrefixRejector_62_3.ngDoCheck(this,this._el_62,throwOnChange);
     if (this._MdCheckbox_62_4.ngDoCheck(this,this._el_62,throwOnChange)) { this.compView_62.markAsCheckOnce(); }
-    this.debug(62,35,82);
+    this.debug(62,35,84);
     const currVal_62_2_0:any = 'wealthOther';
     this._FormControlName_62_6.check_name(currVal_62_2_0,throwOnChange,false);
     this._FormControlName_62_6.ngDoCheck(this,this._el_62,throwOnChange);
@@ -1865,192 +1797,180 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.debug(75,42,58);
     this._MdPrefixRejector_75_3.ngDoCheck(this,this._el_75,throwOnChange);
     if (this._MdIcon_75_4.ngDoCheck(this,this._el_75,throwOnChange)) { this.compView_75.markAsCheckOnce(); }
-    this.debug(79,44,19);
-    const currVal_79_0_0:any = 'column';
-    this._LayoutDirective_79_3.check_layout(currVal_79_0_0,throwOnChange,false);
-    this._LayoutDirective_79_3.ngDoCheck(this,this._el_79,throwOnChange);
-    this.debug(79,44,44);
-    const currVal_79_1_0:any = 'start end';
-    this._LayoutAlignDirective_79_4.check_align(currVal_79_1_0,throwOnChange,false);
-    this._LayoutAlignDirective_79_4.ngDoCheck(this,this._el_79,throwOnChange);
-    this.debug(79,44,37);
-    const currVal_79_2_0:any = '';
-    this._FlexDirective_79_5.check_flex(currVal_79_2_0,throwOnChange,false);
-    this._FlexDirective_79_5.ngDoCheck(this,this._el_79,throwOnChange);
-    this.debug(83,46,16);
-    this._MdPrefixRejector_83_3.ngDoCheck(this,this._el_83,throwOnChange);
-    if (this._MdButton_83_4.ngDoCheck(this,this._el_83,throwOnChange)) { this.compView_83.markAsCheckOnce(); }
-    this._MdButtonCssMatStyler_83_5.ngDoCheck(this,this._el_83,throwOnChange);
-    this.debug(85,47,23);
-    const currVal_85_0_0:any = 'row';
-    this._LayoutDirective_85_3.check_layout(currVal_85_0_0,throwOnChange,false);
-    this._LayoutDirective_85_3.ngDoCheck(this,this._el_85,throwOnChange);
-    this.debug(87,48,18);
-    this._MdPrefixRejector_87_3.ngDoCheck(this,this._el_87,throwOnChange);
-    if (this._MdIcon_87_4.ngDoCheck(this,this._el_87,throwOnChange)) { this.compView_87.markAsCheckOnce(); }
-    this.debug(97,55,27);
-    const currVal_97_0_0:any = true;
-    this._AccordionGroup_97_3.check_isOpened(currVal_97_0_0,throwOnChange,false);
-    this._AccordionGroup_97_3.ngDoCheck(this,this._el_97,throwOnChange);
-    this.debug(99,56,12);
-    this._AccordionHeading_99_3.ngDoCheck(this,this._el_99,throwOnChange);
-    this.debug(105,59,23);
-    const currVal_105_0_0:any = 'row';
-    this._LayoutDirective_105_3.check_layout(currVal_105_0_0,throwOnChange,false);
-    this._LayoutDirective_105_3.ngDoCheck(this,this._el_105,throwOnChange);
-    this.debug(107,61,57);
-    const currVal_107_0_0:any = 'column';
-    this._LayoutDirective_107_3.check_layout(currVal_107_0_0,throwOnChange,false);
-    this._LayoutDirective_107_3.ngDoCheck(this,this._el_107,throwOnChange);
-    this.debug(107,61,75);
-    const currVal_107_1_0:any = '570px';
-    this._FlexDirective_107_4.check_flex(currVal_107_1_0,throwOnChange,false);
-    this._FlexDirective_107_4.ngDoCheck(this,this._el_107,throwOnChange);
-    this.debug(109,63,48);
-    const currVal_109_0_0:any = 'row';
-    this._LayoutDirective_109_3.check_layout(currVal_109_0_0,throwOnChange,false);
-    this._LayoutDirective_109_3.ngDoCheck(this,this._el_109,throwOnChange);
-    this.debug(109,63,63);
-    const currVal_109_1_0:any = this.context.clientAccountForm;
-    this._FormGroupDirective_109_4.check_form(currVal_109_1_0,throwOnChange,false);
-    this._FormGroupDirective_109_4.ngDoCheck(this,this._el_109,throwOnChange);
-    this.debug(109,63,18);
-    this._NgControlStatusGroup_109_6.ngDoCheck(this,this._el_109,throwOnChange);
-    this.debug(111,65,20);
-    this._MdPrefixRejector_111_3.ngDoCheck(this,this._el_111,throwOnChange);
-    if (this._MdCheckbox_111_4.ngDoCheck(this,this._el_111,throwOnChange)) { this.compView_111.markAsCheckOnce(); }
-    this.debug(111,65,105);
-    const currVal_111_2_0:any = 'fundsUKBank';
-    this._FormControlName_111_6.check_name(currVal_111_2_0,throwOnChange,false);
-    this._FormControlName_111_6.ngDoCheck(this,this._el_111,throwOnChange);
-    this.debug(111,65,20);
-    this._NgControlStatus_111_8.ngDoCheck(this,this._el_111,throwOnChange);
-    this.debug(117,68,20);
-    this._MdPrefixRejector_117_3.ngDoCheck(this,this._el_117,throwOnChange);
-    if (this._MdCheckbox_117_4.ngDoCheck(this,this._el_117,throwOnChange)) { this.compView_117.markAsCheckOnce(); }
-    this.debug(117,68,104);
-    const currVal_117_2_0:any = 'fundsEUBank';
-    this._FormControlName_117_6.check_name(currVal_117_2_0,throwOnChange,false);
-    this._FormControlName_117_6.ngDoCheck(this,this._el_117,throwOnChange);
-    this.debug(117,68,20);
-    this._NgControlStatus_117_8.ngDoCheck(this,this._el_117,throwOnChange);
-    this.debug(123,71,20);
-    this._MdPrefixRejector_123_3.ngDoCheck(this,this._el_123,throwOnChange);
-    if (this._MdCheckbox_123_4.ngDoCheck(this,this._el_123,throwOnChange)) { this.compView_123.markAsCheckOnce(); }
-    this.debug(123,71,104);
-    const currVal_123_2_0:any = 'fundsBSOC';
-    this._FormControlName_123_6.check_name(currVal_123_2_0,throwOnChange,false);
-    this._FormControlName_123_6.ngDoCheck(this,this._el_123,throwOnChange);
-    this.debug(123,71,20);
-    this._NgControlStatus_123_8.ngDoCheck(this,this._el_123,throwOnChange);
-    this.debug(130,75,48);
-    const currVal_130_0_0:any = 'row';
-    this._LayoutDirective_130_3.check_layout(currVal_130_0_0,throwOnChange,false);
-    this._LayoutDirective_130_3.ngDoCheck(this,this._el_130,throwOnChange);
-    this.debug(130,75,63);
-    const currVal_130_1_0:any = this.context.clientAccountForm;
-    this._FormGroupDirective_130_4.check_form(currVal_130_1_0,throwOnChange,false);
-    this._FormGroupDirective_130_4.ngDoCheck(this,this._el_130,throwOnChange);
-    this.debug(130,75,18);
-    this._NgControlStatusGroup_130_6.ngDoCheck(this,this._el_130,throwOnChange);
-    this.debug(132,77,20);
-    this._MdPrefixRejector_132_3.ngDoCheck(this,this._el_132,throwOnChange);
-    if (this._MdCheckbox_132_4.ngDoCheck(this,this._el_132,throwOnChange)) { this.compView_132.markAsCheckOnce(); }
-    this.debug(132,77,105);
-    const currVal_132_2_0:any = 'fundsStock';
-    this._FormControlName_132_6.check_name(currVal_132_2_0,throwOnChange,false);
-    this._FormControlName_132_6.ngDoCheck(this,this._el_132,throwOnChange);
-    this.debug(132,77,20);
-    this._NgControlStatus_132_8.ngDoCheck(this,this._el_132,throwOnChange);
-    this.debug(138,80,20);
-    this._MdPrefixRejector_138_3.ngDoCheck(this,this._el_138,throwOnChange);
-    if (this._MdCheckbox_138_4.ngDoCheck(this,this._el_138,throwOnChange)) { this.compView_138.markAsCheckOnce(); }
-    this.debug(138,80,104);
-    const currVal_138_2_0:any = 'fundsOtherReg';
-    this._FormControlName_138_6.check_name(currVal_138_2_0,throwOnChange,false);
-    this._FormControlName_138_6.ngDoCheck(this,this._el_138,throwOnChange);
-    this.debug(138,80,20);
-    this._NgControlStatus_138_8.ngDoCheck(this,this._el_138,throwOnChange);
-    this.debug(144,83,20);
-    this._MdPrefixRejector_144_3.ngDoCheck(this,this._el_144,throwOnChange);
-    if (this._MdCheckbox_144_4.ngDoCheck(this,this._el_144,throwOnChange)) { this.compView_144.markAsCheckOnce(); }
-    this.debug(144,83,103);
-    const currVal_144_2_0:any = 'fundsSolicitor';
-    this._FormControlName_144_6.check_name(currVal_144_2_0,throwOnChange,false);
-    this._FormControlName_144_6.ngDoCheck(this,this._el_144,throwOnChange);
-    this.debug(144,83,20);
-    this._NgControlStatus_144_8.ngDoCheck(this,this._el_144,throwOnChange);
-    this.debug(151,87,48);
-    const currVal_151_0_0:any = 'row';
-    this._LayoutDirective_151_3.check_layout(currVal_151_0_0,throwOnChange,false);
-    this._LayoutDirective_151_3.ngDoCheck(this,this._el_151,throwOnChange);
-    this.debug(151,87,63);
-    const currVal_151_1_0:any = this.context.clientAccountForm;
-    this._FormGroupDirective_151_4.check_form(currVal_151_1_0,throwOnChange,false);
-    this._FormGroupDirective_151_4.ngDoCheck(this,this._el_151,throwOnChange);
-    this.debug(151,87,18);
-    this._NgControlStatusGroup_151_6.ngDoCheck(this,this._el_151,throwOnChange);
-    this.debug(153,88,20);
-    this._MdPrefixRejector_153_3.ngDoCheck(this,this._el_153,throwOnChange);
-    if (this._MdCheckbox_153_4.ngDoCheck(this,this._el_153,throwOnChange)) { this.compView_153.markAsCheckOnce(); }
-    this.debug(153,88,105);
-    const currVal_153_2_0:any = 'fundsAccountant';
-    this._FormControlName_153_6.check_name(currVal_153_2_0,throwOnChange,false);
-    this._FormControlName_153_6.ngDoCheck(this,this._el_153,throwOnChange);
-    this.debug(153,88,20);
-    this._NgControlStatus_153_8.ngDoCheck(this,this._el_153,throwOnChange);
-    this.debug(159,91,20);
-    this._MdPrefixRejector_159_3.ngDoCheck(this,this._el_159,throwOnChange);
-    if (this._MdCheckbox_159_4.ngDoCheck(this,this._el_159,throwOnChange)) { this.compView_159.markAsCheckOnce(); }
-    this.debug(159,91,104);
-    const currVal_159_2_0:any = 'fundsOther';
-    this._FormControlName_159_6.check_name(currVal_159_2_0,throwOnChange,false);
-    this._FormControlName_159_6.ngDoCheck(this,this._el_159,throwOnChange);
-    this.debug(159,91,20);
-    this._NgControlStatus_159_8.ngDoCheck(this,this._el_159,throwOnChange);
-    this.debug(167,97,21);
-    const currVal_167_0_0:any = 'column';
-    this._LayoutDirective_167_3.check_layout(currVal_167_0_0,throwOnChange,false);
-    this._LayoutDirective_167_3.ngDoCheck(this,this._el_167,throwOnChange);
-    this.debug(167,97,39);
-    const currVal_167_1_0:any = '50px';
-    this._FlexDirective_167_4.check_flex(currVal_167_1_0,throwOnChange,false);
-    this._FlexDirective_167_4.ngDoCheck(this,this._el_167,throwOnChange);
-    this.debug(171,99,18);
-    this._MdPrefixRejector_171_3.ngDoCheck(this,this._el_171,throwOnChange);
-    if (this._MdButton_171_4.ngDoCheck(this,this._el_171,throwOnChange)) { this.compView_171.markAsCheckOnce(); }
-    this._MdButtonCssMatStyler_171_5.ngDoCheck(this,this._el_171,throwOnChange);
-    this.debug(172,99,60);
-    this._MdPrefixRejector_172_3.ngDoCheck(this,this._el_172,throwOnChange);
-    if (this._MdIcon_172_4.ngDoCheck(this,this._el_172,throwOnChange)) { this.compView_172.markAsCheckOnce(); }
-    this.debug(176,101,23);
-    const currVal_176_0_0:any = 'column';
-    this._LayoutDirective_176_3.check_layout(currVal_176_0_0,throwOnChange,false);
-    this._LayoutDirective_176_3.ngDoCheck(this,this._el_176,throwOnChange);
-    this.debug(176,101,48);
-    const currVal_176_1_0:any = 'start end';
-    this._LayoutAlignDirective_176_4.check_align(currVal_176_1_0,throwOnChange,false);
-    this._LayoutAlignDirective_176_4.ngDoCheck(this,this._el_176,throwOnChange);
-    this.debug(176,101,41);
-    const currVal_176_2_0:any = '';
-    this._FlexDirective_176_5.check_flex(currVal_176_2_0,throwOnChange,false);
-    this._FlexDirective_176_5.ngDoCheck(this,this._el_176,throwOnChange);
-    this.debug(180,103,16);
-    this._MdPrefixRejector_180_3.ngDoCheck(this,this._el_180,throwOnChange);
-    if (this._MdButton_180_4.ngDoCheck(this,this._el_180,throwOnChange)) { this.compView_180.markAsCheckOnce(); }
-    this._MdButtonCssMatStyler_180_5.ngDoCheck(this,this._el_180,throwOnChange);
-    this.debug(182,104,23);
-    const currVal_182_0_0:any = 'row';
-    this._LayoutDirective_182_3.check_layout(currVal_182_0_0,throwOnChange,false);
-    this._LayoutDirective_182_3.ngDoCheck(this,this._el_182,throwOnChange);
-    this.debug(184,105,18);
-    this._MdPrefixRejector_184_3.ngDoCheck(this,this._el_184,throwOnChange);
-    if (this._MdIcon_184_4.ngDoCheck(this,this._el_184,throwOnChange)) { this.compView_184.markAsCheckOnce(); }
+    this.debug(78,43,16);
+    this._MdPrefixRejector_78_3.ngDoCheck(this,this._el_78,throwOnChange);
+    if (this._MdButton_78_4.ngDoCheck(this,this._el_78,throwOnChange)) { this.compView_78.markAsCheckOnce(); }
+    this._MdButtonCssMatStyler_78_5.ngDoCheck(this,this._el_78,throwOnChange);
+    this.debug(79,43,114);
+    this._MdPrefixRejector_79_3.ngDoCheck(this,this._el_79,throwOnChange);
+    if (this._MdIcon_79_4.ngDoCheck(this,this._el_79,throwOnChange)) { this.compView_79.markAsCheckOnce(); }
+    this.debug(83,45,19);
+    const currVal_83_0_0:any = 'column';
+    this._LayoutDirective_83_3.check_layout(currVal_83_0_0,throwOnChange,false);
+    this._LayoutDirective_83_3.ngDoCheck(this,this._el_83,throwOnChange);
+    this.debug(83,45,44);
+    const currVal_83_1_0:any = 'start end';
+    this._LayoutAlignDirective_83_4.check_align(currVal_83_1_0,throwOnChange,false);
+    this._LayoutAlignDirective_83_4.ngDoCheck(this,this._el_83,throwOnChange);
+    this.debug(83,45,37);
+    const currVal_83_2_0:any = '';
+    this._FlexDirective_83_5.check_flex(currVal_83_2_0,throwOnChange,false);
+    this._FlexDirective_83_5.ngDoCheck(this,this._el_83,throwOnChange);
+    this.debug(90,52,27);
+    const currVal_90_0_0:any = false;
+    this._AccordionGroup_90_3.check_isOpened(currVal_90_0_0,throwOnChange,false);
+    this._AccordionGroup_90_3.ngDoCheck(this,this._el_90,throwOnChange);
+    this.debug(92,53,12);
+    this._AccordionHeading_92_3.ngDoCheck(this,this._el_92,throwOnChange);
+    this.debug(98,56,23);
+    const currVal_98_0_0:any = 'row';
+    this._LayoutDirective_98_3.check_layout(currVal_98_0_0,throwOnChange,false);
+    this._LayoutDirective_98_3.ngDoCheck(this,this._el_98,throwOnChange);
+    this.debug(100,58,57);
+    const currVal_100_0_0:any = 'column';
+    this._LayoutDirective_100_3.check_layout(currVal_100_0_0,throwOnChange,false);
+    this._LayoutDirective_100_3.ngDoCheck(this,this._el_100,throwOnChange);
+    this.debug(100,58,75);
+    const currVal_100_1_0:any = '630px';
+    this._FlexDirective_100_4.check_flex(currVal_100_1_0,throwOnChange,false);
+    this._FlexDirective_100_4.ngDoCheck(this,this._el_100,throwOnChange);
+    this.debug(102,60,78);
+    const currVal_102_0_0:any = 'row';
+    this._LayoutDirective_102_3.check_layout(currVal_102_0_0,throwOnChange,false);
+    this._LayoutDirective_102_3.ngDoCheck(this,this._el_102,throwOnChange);
+    this.debug(102,60,48);
+    const currVal_102_1_0:any = 'space-between';
+    this._LayoutAlignDirective_102_4.check_align(currVal_102_1_0,throwOnChange,false);
+    this._LayoutAlignDirective_102_4.ngDoCheck(this,this._el_102,throwOnChange);
+    this.debug(102,60,93);
+    const currVal_102_2_0:any = this.context.clientAccountForm;
+    this._FormGroupDirective_102_5.check_form(currVal_102_2_0,throwOnChange,false);
+    this._FormGroupDirective_102_5.ngDoCheck(this,this._el_102,throwOnChange);
+    this.debug(102,60,18);
+    this._NgControlStatusGroup_102_7.ngDoCheck(this,this._el_102,throwOnChange);
+    this.debug(104,62,20);
+    this._MdPrefixRejector_104_3.ngDoCheck(this,this._el_104,throwOnChange);
+    if (this._MdCheckbox_104_4.ngDoCheck(this,this._el_104,throwOnChange)) { this.compView_104.markAsCheckOnce(); }
+    this.debug(104,62,85);
+    const currVal_104_2_0:any = 'fundsUKBank';
+    this._FormControlName_104_6.check_name(currVal_104_2_0,throwOnChange,false);
+    this._FormControlName_104_6.ngDoCheck(this,this._el_104,throwOnChange);
+    this.debug(104,62,20);
+    this._NgControlStatus_104_8.ngDoCheck(this,this._el_104,throwOnChange);
+    this.debug(110,65,20);
+    this._MdPrefixRejector_110_3.ngDoCheck(this,this._el_110,throwOnChange);
+    if (this._MdCheckbox_110_4.ngDoCheck(this,this._el_110,throwOnChange)) { this.compView_110.markAsCheckOnce(); }
+    this.debug(110,65,59);
+    const currVal_110_2_0:any = 'fundsEUBank';
+    this._FormControlName_110_6.check_name(currVal_110_2_0,throwOnChange,false);
+    this._FormControlName_110_6.ngDoCheck(this,this._el_110,throwOnChange);
+    this.debug(110,65,20);
+    this._NgControlStatus_110_8.ngDoCheck(this,this._el_110,throwOnChange);
+    this.debug(116,68,20);
+    this._MdPrefixRejector_116_3.ngDoCheck(this,this._el_116,throwOnChange);
+    if (this._MdCheckbox_116_4.ngDoCheck(this,this._el_116,throwOnChange)) { this.compView_116.markAsCheckOnce(); }
+    this.debug(116,68,86);
+    const currVal_116_2_0:any = 'fundsBSOC';
+    this._FormControlName_116_6.check_name(currVal_116_2_0,throwOnChange,false);
+    this._FormControlName_116_6.ngDoCheck(this,this._el_116,throwOnChange);
+    this.debug(116,68,20);
+    this._NgControlStatus_116_8.ngDoCheck(this,this._el_116,throwOnChange);
+    this.debug(123,72,78);
+    const currVal_123_0_0:any = 'row';
+    this._LayoutDirective_123_3.check_layout(currVal_123_0_0,throwOnChange,false);
+    this._LayoutDirective_123_3.ngDoCheck(this,this._el_123,throwOnChange);
+    this.debug(123,72,48);
+    const currVal_123_1_0:any = 'space-between';
+    this._LayoutAlignDirective_123_4.check_align(currVal_123_1_0,throwOnChange,false);
+    this._LayoutAlignDirective_123_4.ngDoCheck(this,this._el_123,throwOnChange);
+    this.debug(123,72,93);
+    const currVal_123_2_0:any = this.context.clientAccountForm;
+    this._FormGroupDirective_123_5.check_form(currVal_123_2_0,throwOnChange,false);
+    this._FormGroupDirective_123_5.ngDoCheck(this,this._el_123,throwOnChange);
+    this.debug(123,72,18);
+    this._NgControlStatusGroup_123_7.ngDoCheck(this,this._el_123,throwOnChange);
+    this.debug(125,74,20);
+    this._MdPrefixRejector_125_3.ngDoCheck(this,this._el_125,throwOnChange);
+    if (this._MdCheckbox_125_4.ngDoCheck(this,this._el_125,throwOnChange)) { this.compView_125.markAsCheckOnce(); }
+    this.debug(125,74,85);
+    const currVal_125_2_0:any = 'fundsStock';
+    this._FormControlName_125_6.check_name(currVal_125_2_0,throwOnChange,false);
+    this._FormControlName_125_6.ngDoCheck(this,this._el_125,throwOnChange);
+    this.debug(125,74,20);
+    this._NgControlStatus_125_8.ngDoCheck(this,this._el_125,throwOnChange);
+    this.debug(131,77,20);
+    this._MdPrefixRejector_131_3.ngDoCheck(this,this._el_131,throwOnChange);
+    if (this._MdCheckbox_131_4.ngDoCheck(this,this._el_131,throwOnChange)) { this.compView_131.markAsCheckOnce(); }
+    this.debug(131,77,59);
+    const currVal_131_2_0:any = 'fundsOtherReg';
+    this._FormControlName_131_6.check_name(currVal_131_2_0,throwOnChange,false);
+    this._FormControlName_131_6.ngDoCheck(this,this._el_131,throwOnChange);
+    this.debug(131,77,20);
+    this._NgControlStatus_131_8.ngDoCheck(this,this._el_131,throwOnChange);
+    this.debug(137,80,20);
+    this._MdPrefixRejector_137_3.ngDoCheck(this,this._el_137,throwOnChange);
+    if (this._MdCheckbox_137_4.ngDoCheck(this,this._el_137,throwOnChange)) { this.compView_137.markAsCheckOnce(); }
+    this.debug(137,80,86);
+    const currVal_137_2_0:any = 'fundsSolicitor';
+    this._FormControlName_137_6.check_name(currVal_137_2_0,throwOnChange,false);
+    this._FormControlName_137_6.ngDoCheck(this,this._el_137,throwOnChange);
+    this.debug(137,80,20);
+    this._NgControlStatus_137_8.ngDoCheck(this,this._el_137,throwOnChange);
+    this.debug(144,84,48);
+    const currVal_144_0_0:any = 'row';
+    this._LayoutDirective_144_3.check_layout(currVal_144_0_0,throwOnChange,false);
+    this._LayoutDirective_144_3.ngDoCheck(this,this._el_144,throwOnChange);
+    this.debug(144,84,63);
+    const currVal_144_1_0:any = this.context.clientAccountForm;
+    this._FormGroupDirective_144_4.check_form(currVal_144_1_0,throwOnChange,false);
+    this._FormGroupDirective_144_4.ngDoCheck(this,this._el_144,throwOnChange);
+    this.debug(144,84,18);
+    this._NgControlStatusGroup_144_6.ngDoCheck(this,this._el_144,throwOnChange);
+    this.debug(146,85,20);
+    this._MdPrefixRejector_146_3.ngDoCheck(this,this._el_146,throwOnChange);
+    if (this._MdCheckbox_146_4.ngDoCheck(this,this._el_146,throwOnChange)) { this.compView_146.markAsCheckOnce(); }
+    this.debug(146,85,105);
+    const currVal_146_2_0:any = 'fundsAccountant';
+    this._FormControlName_146_6.check_name(currVal_146_2_0,throwOnChange,false);
+    this._FormControlName_146_6.ngDoCheck(this,this._el_146,throwOnChange);
+    this.debug(146,85,20);
+    this._NgControlStatus_146_8.ngDoCheck(this,this._el_146,throwOnChange);
+    this.debug(152,88,20);
+    this._MdPrefixRejector_152_3.ngDoCheck(this,this._el_152,throwOnChange);
+    if (this._MdCheckbox_152_4.ngDoCheck(this,this._el_152,throwOnChange)) { this.compView_152.markAsCheckOnce(); }
+    this.debug(152,88,104);
+    const currVal_152_2_0:any = 'fundsOther';
+    this._FormControlName_152_6.check_name(currVal_152_2_0,throwOnChange,false);
+    this._FormControlName_152_6.ngDoCheck(this,this._el_152,throwOnChange);
+    this.debug(152,88,20);
+    this._NgControlStatus_152_8.ngDoCheck(this,this._el_152,throwOnChange);
+    this.debug(160,94,21);
+    const currVal_160_0_0:any = 'column';
+    this._LayoutDirective_160_3.check_layout(currVal_160_0_0,throwOnChange,false);
+    this._LayoutDirective_160_3.ngDoCheck(this,this._el_160,throwOnChange);
+    this.debug(160,94,39);
+    const currVal_160_1_0:any = '50px';
+    this._FlexDirective_160_4.check_flex(currVal_160_1_0,throwOnChange,false);
+    this._FlexDirective_160_4.ngDoCheck(this,this._el_160,throwOnChange);
+    this.debug(164,96,18);
+    this._MdPrefixRejector_164_3.ngDoCheck(this,this._el_164,throwOnChange);
+    if (this._MdButton_164_4.ngDoCheck(this,this._el_164,throwOnChange)) { this.compView_164.markAsCheckOnce(); }
+    this._MdButtonCssMatStyler_164_5.ngDoCheck(this,this._el_164,throwOnChange);
+    this.debug(165,96,60);
+    this._MdPrefixRejector_165_3.ngDoCheck(this,this._el_165,throwOnChange);
+    if (this._MdIcon_165_4.ngDoCheck(this,this._el_165,throwOnChange)) { this.compView_165.markAsCheckOnce(); }
+    this.debug(168,97,18);
+    this._MdPrefixRejector_168_3.ngDoCheck(this,this._el_168,throwOnChange);
+    if (this._MdButton_168_4.ngDoCheck(this,this._el_168,throwOnChange)) { this.compView_168.markAsCheckOnce(); }
+    this._MdButtonCssMatStyler_168_5.ngDoCheck(this,this._el_168,throwOnChange);
+    this.debug(169,97,115);
+    this._MdPrefixRejector_169_3.ngDoCheck(this,this._el_169,throwOnChange);
+    if (this._MdIcon_169_4.ngDoCheck(this,this._el_169,throwOnChange)) { this.compView_169.markAsCheckOnce(); }
     if (!throwOnChange) {
       if (this._query_AccordionGroup_1_0.dirty) {
         this._query_AccordionGroup_1_0.reset([
           this._AccordionGroup_3_3.context,
-          this._AccordionGroup_97_3.context
+          this._AccordionGroup_90_3.context
         ]
         );
         this._Accordion_1_3.context.groups = this._query_AccordionGroup_1_0;
@@ -2059,7 +1979,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
       this.debug(1,1,8);
       if ((this.numberOfChecks === 0)) { this._Accordion_1_3.context.ngAfterContentInit(); }
     }
-    this._NgControlStatusGroup_15_6.checkHost(this,this,this._el_15,throwOnChange);
+    this._NgControlStatusGroup_15_7.checkHost(this,this,this._el_15,throwOnChange);
     this._MdCheckbox_17_4.checkHost(this,this.compView_17,this._el_17,throwOnChange);
     this._NgControlStatus_17_8.checkHost(this,this.compView_17,this._el_17,throwOnChange);
     this._MdCheckbox_23_4.checkHost(this,this.compView_23,this._el_23,throwOnChange);
@@ -2068,7 +1988,7 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._NgControlStatus_29_8.checkHost(this,this.compView_29,this._el_29,throwOnChange);
     this._MdCheckbox_35_4.checkHost(this,this.compView_35,this._el_35,throwOnChange);
     this._NgControlStatus_35_8.checkHost(this,this.compView_35,this._el_35,throwOnChange);
-    this._NgControlStatusGroup_42_6.checkHost(this,this,this._el_42,throwOnChange);
+    this._NgControlStatusGroup_42_7.checkHost(this,this,this._el_42,throwOnChange);
     this._MdCheckbox_44_4.checkHost(this,this.compView_44,this._el_44,throwOnChange);
     this._NgControlStatus_44_8.checkHost(this,this.compView_44,this._el_44,throwOnChange);
     this._MdCheckbox_50_4.checkHost(this,this.compView_50,this._el_50,throwOnChange);
@@ -2080,34 +2000,34 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._MdButton_74_4.checkHost(this,this.compView_74,this._el_74,throwOnChange);
     this._MdButtonCssMatStyler_74_5.checkHost(this,this.compView_74,this._el_74,throwOnChange);
     this._MdIcon_75_4.checkHost(this,this.compView_75,this._el_75,throwOnChange);
-    this._MdButton_83_4.checkHost(this,this.compView_83,this._el_83,throwOnChange);
-    this._MdButtonCssMatStyler_83_5.checkHost(this,this.compView_83,this._el_83,throwOnChange);
-    this._MdIcon_87_4.checkHost(this,this.compView_87,this._el_87,throwOnChange);
-    this._NgControlStatusGroup_109_6.checkHost(this,this,this._el_109,throwOnChange);
-    this._MdCheckbox_111_4.checkHost(this,this.compView_111,this._el_111,throwOnChange);
-    this._NgControlStatus_111_8.checkHost(this,this.compView_111,this._el_111,throwOnChange);
-    this._MdCheckbox_117_4.checkHost(this,this.compView_117,this._el_117,throwOnChange);
-    this._NgControlStatus_117_8.checkHost(this,this.compView_117,this._el_117,throwOnChange);
-    this._MdCheckbox_123_4.checkHost(this,this.compView_123,this._el_123,throwOnChange);
-    this._NgControlStatus_123_8.checkHost(this,this.compView_123,this._el_123,throwOnChange);
-    this._NgControlStatusGroup_130_6.checkHost(this,this,this._el_130,throwOnChange);
-    this._MdCheckbox_132_4.checkHost(this,this.compView_132,this._el_132,throwOnChange);
-    this._NgControlStatus_132_8.checkHost(this,this.compView_132,this._el_132,throwOnChange);
-    this._MdCheckbox_138_4.checkHost(this,this.compView_138,this._el_138,throwOnChange);
-    this._NgControlStatus_138_8.checkHost(this,this.compView_138,this._el_138,throwOnChange);
-    this._MdCheckbox_144_4.checkHost(this,this.compView_144,this._el_144,throwOnChange);
-    this._NgControlStatus_144_8.checkHost(this,this.compView_144,this._el_144,throwOnChange);
-    this._NgControlStatusGroup_151_6.checkHost(this,this,this._el_151,throwOnChange);
-    this._MdCheckbox_153_4.checkHost(this,this.compView_153,this._el_153,throwOnChange);
-    this._NgControlStatus_153_8.checkHost(this,this.compView_153,this._el_153,throwOnChange);
-    this._MdCheckbox_159_4.checkHost(this,this.compView_159,this._el_159,throwOnChange);
-    this._NgControlStatus_159_8.checkHost(this,this.compView_159,this._el_159,throwOnChange);
-    this._MdButton_171_4.checkHost(this,this.compView_171,this._el_171,throwOnChange);
-    this._MdButtonCssMatStyler_171_5.checkHost(this,this.compView_171,this._el_171,throwOnChange);
-    this._MdIcon_172_4.checkHost(this,this.compView_172,this._el_172,throwOnChange);
-    this._MdButton_180_4.checkHost(this,this.compView_180,this._el_180,throwOnChange);
-    this._MdButtonCssMatStyler_180_5.checkHost(this,this.compView_180,this._el_180,throwOnChange);
-    this._MdIcon_184_4.checkHost(this,this.compView_184,this._el_184,throwOnChange);
+    this._MdButton_78_4.checkHost(this,this.compView_78,this._el_78,throwOnChange);
+    this._MdButtonCssMatStyler_78_5.checkHost(this,this.compView_78,this._el_78,throwOnChange);
+    this._MdIcon_79_4.checkHost(this,this.compView_79,this._el_79,throwOnChange);
+    this._NgControlStatusGroup_102_7.checkHost(this,this,this._el_102,throwOnChange);
+    this._MdCheckbox_104_4.checkHost(this,this.compView_104,this._el_104,throwOnChange);
+    this._NgControlStatus_104_8.checkHost(this,this.compView_104,this._el_104,throwOnChange);
+    this._MdCheckbox_110_4.checkHost(this,this.compView_110,this._el_110,throwOnChange);
+    this._NgControlStatus_110_8.checkHost(this,this.compView_110,this._el_110,throwOnChange);
+    this._MdCheckbox_116_4.checkHost(this,this.compView_116,this._el_116,throwOnChange);
+    this._NgControlStatus_116_8.checkHost(this,this.compView_116,this._el_116,throwOnChange);
+    this._NgControlStatusGroup_123_7.checkHost(this,this,this._el_123,throwOnChange);
+    this._MdCheckbox_125_4.checkHost(this,this.compView_125,this._el_125,throwOnChange);
+    this._NgControlStatus_125_8.checkHost(this,this.compView_125,this._el_125,throwOnChange);
+    this._MdCheckbox_131_4.checkHost(this,this.compView_131,this._el_131,throwOnChange);
+    this._NgControlStatus_131_8.checkHost(this,this.compView_131,this._el_131,throwOnChange);
+    this._MdCheckbox_137_4.checkHost(this,this.compView_137,this._el_137,throwOnChange);
+    this._NgControlStatus_137_8.checkHost(this,this.compView_137,this._el_137,throwOnChange);
+    this._NgControlStatusGroup_144_6.checkHost(this,this,this._el_144,throwOnChange);
+    this._MdCheckbox_146_4.checkHost(this,this.compView_146,this._el_146,throwOnChange);
+    this._NgControlStatus_146_8.checkHost(this,this.compView_146,this._el_146,throwOnChange);
+    this._MdCheckbox_152_4.checkHost(this,this.compView_152,this._el_152,throwOnChange);
+    this._NgControlStatus_152_8.checkHost(this,this.compView_152,this._el_152,throwOnChange);
+    this._MdButton_164_4.checkHost(this,this.compView_164,this._el_164,throwOnChange);
+    this._MdButtonCssMatStyler_164_5.checkHost(this,this.compView_164,this._el_164,throwOnChange);
+    this._MdIcon_165_4.checkHost(this,this.compView_165,this._el_165,throwOnChange);
+    this._MdButton_168_4.checkHost(this,this.compView_168,this._el_168,throwOnChange);
+    this._MdButtonCssMatStyler_168_5.checkHost(this,this.compView_168,this._el_168,throwOnChange);
+    this._MdIcon_169_4.checkHost(this,this.compView_169,this._el_169,throwOnChange);
     this.compView_1.internalDetectChanges(throwOnChange);
     this.compView_3.internalDetectChanges(throwOnChange);
     this.compView_5.internalDetectChanges(throwOnChange);
@@ -2121,31 +2041,31 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.compView_62.internalDetectChanges(throwOnChange);
     this.compView_74.internalDetectChanges(throwOnChange);
     this.compView_75.internalDetectChanges(throwOnChange);
-    this.compView_83.internalDetectChanges(throwOnChange);
-    this.compView_87.internalDetectChanges(throwOnChange);
-    this.compView_97.internalDetectChanges(throwOnChange);
-    this.compView_99.internalDetectChanges(throwOnChange);
-    this.compView_111.internalDetectChanges(throwOnChange);
-    this.compView_117.internalDetectChanges(throwOnChange);
-    this.compView_123.internalDetectChanges(throwOnChange);
-    this.compView_132.internalDetectChanges(throwOnChange);
-    this.compView_138.internalDetectChanges(throwOnChange);
-    this.compView_144.internalDetectChanges(throwOnChange);
-    this.compView_153.internalDetectChanges(throwOnChange);
-    this.compView_159.internalDetectChanges(throwOnChange);
-    this.compView_171.internalDetectChanges(throwOnChange);
-    this.compView_172.internalDetectChanges(throwOnChange);
-    this.compView_180.internalDetectChanges(throwOnChange);
-    this.compView_184.internalDetectChanges(throwOnChange);
+    this.compView_78.internalDetectChanges(throwOnChange);
+    this.compView_79.internalDetectChanges(throwOnChange);
+    this.compView_90.internalDetectChanges(throwOnChange);
+    this.compView_92.internalDetectChanges(throwOnChange);
+    this.compView_104.internalDetectChanges(throwOnChange);
+    this.compView_110.internalDetectChanges(throwOnChange);
+    this.compView_116.internalDetectChanges(throwOnChange);
+    this.compView_125.internalDetectChanges(throwOnChange);
+    this.compView_131.internalDetectChanges(throwOnChange);
+    this.compView_137.internalDetectChanges(throwOnChange);
+    this.compView_146.internalDetectChanges(throwOnChange);
+    this.compView_152.internalDetectChanges(throwOnChange);
+    this.compView_164.internalDetectChanges(throwOnChange);
+    this.compView_165.internalDetectChanges(throwOnChange);
+    this.compView_168.internalDetectChanges(throwOnChange);
+    this.compView_169.internalDetectChanges(throwOnChange);
     if (!throwOnChange) {
       this.debug(75,42,58);
       this._MdIcon_75_4.context.ngAfterViewChecked();
-      this.debug(87,48,18);
-      this._MdIcon_87_4.context.ngAfterViewChecked();
-      this.debug(172,99,60);
-      this._MdIcon_172_4.context.ngAfterViewChecked();
-      this.debug(184,105,18);
-      this._MdIcon_184_4.context.ngAfterViewChecked();
+      this.debug(79,43,114);
+      this._MdIcon_79_4.context.ngAfterViewChecked();
+      this.debug(165,96,60);
+      this._MdIcon_165_4.context.ngAfterViewChecked();
+      this.debug(169,97,115);
+      this._MdIcon_169_4.context.ngAfterViewChecked();
     }
   }
   destroyInternal():void {
@@ -2162,22 +2082,22 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this.compView_62.destroy();
     this.compView_74.destroy();
     this.compView_75.destroy();
-    this.compView_83.destroy();
-    this.compView_87.destroy();
-    this.compView_97.destroy();
-    this.compView_99.destroy();
-    this.compView_111.destroy();
-    this.compView_117.destroy();
-    this.compView_123.destroy();
-    this.compView_132.destroy();
-    this.compView_138.destroy();
-    this.compView_144.destroy();
-    this.compView_153.destroy();
-    this.compView_159.destroy();
-    this.compView_171.destroy();
-    this.compView_172.destroy();
-    this.compView_180.destroy();
-    this.compView_184.destroy();
+    this.compView_78.destroy();
+    this.compView_79.destroy();
+    this.compView_90.destroy();
+    this.compView_92.destroy();
+    this.compView_104.destroy();
+    this.compView_110.destroy();
+    this.compView_116.destroy();
+    this.compView_125.destroy();
+    this.compView_131.destroy();
+    this.compView_137.destroy();
+    this.compView_146.destroy();
+    this.compView_152.destroy();
+    this.compView_164.destroy();
+    this.compView_165.destroy();
+    this.compView_168.destroy();
+    this.compView_169.destroy();
     this.debug(5,4,12);
     this._MdCheckbox_17_4.ngOnDestroy();
     this._FormControlName_17_6.ngOnDestroy();
@@ -2192,7 +2112,8 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._FormControlName_35_6.ngOnDestroy();
     this.debug(35,20,18);
     this._LayoutDirective_15_3.ngOnDestroy();
-    this._FormGroupDirective_15_4.ngOnDestroy();
+    this._LayoutAlignDirective_15_4.ngOnDestroy();
+    this._FormGroupDirective_15_5.ngOnDestroy();
     this.debug(15,9,16);
     this._MdCheckbox_44_4.ngOnDestroy();
     this._FormControlName_44_6.ngOnDestroy();
@@ -2207,98 +2128,93 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     this._FormControlName_62_6.ngOnDestroy();
     this.debug(62,35,18);
     this._LayoutDirective_42_3.ngOnDestroy();
-    this._FormGroupDirective_42_4.ngOnDestroy();
+    this._LayoutAlignDirective_42_4.ngOnDestroy();
+    this._FormGroupDirective_42_5.ngOnDestroy();
     this.debug(42,24,16);
     this._LayoutDirective_13_3.ngOnDestroy();
     this._FlexDirective_13_4.ngOnDestroy();
     this.debug(13,8,14);
     this.debug(75,42,58);
     this.debug(74,42,16);
+    this.debug(79,43,114);
+    this.debug(78,43,16);
     this._LayoutDirective_70_3.ngOnDestroy();
     this._FlexDirective_70_4.ngOnDestroy();
     this.debug(70,40,14);
-    this.debug(87,48,18);
-    this._LayoutDirective_85_3.ngOnDestroy();
-    this.debug(85,47,18);
-    this.debug(83,46,16);
-    this._LayoutDirective_79_3.ngOnDestroy();
-    this._LayoutAlignDirective_79_4.ngOnDestroy();
-    this._FlexDirective_79_5.ngOnDestroy();
-    this.debug(79,44,14);
+    this._LayoutDirective_83_3.ngOnDestroy();
+    this._LayoutAlignDirective_83_4.ngOnDestroy();
+    this._FlexDirective_83_5.ngOnDestroy();
+    this.debug(83,45,14);
     this._LayoutDirective_11_3.ngOnDestroy();
     this.debug(11,7,12);
     this._AccordionGroup_3_3.ngOnDestroy();
     this.debug(3,3,10);
-    this.debug(99,56,12);
-    this._MdCheckbox_111_4.ngOnDestroy();
-    this._FormControlName_111_6.ngOnDestroy();
-    this.debug(111,65,20);
-    this._MdCheckbox_117_4.ngOnDestroy();
-    this._FormControlName_117_6.ngOnDestroy();
-    this.debug(117,68,20);
-    this._MdCheckbox_123_4.ngOnDestroy();
-    this._FormControlName_123_6.ngOnDestroy();
-    this.debug(123,71,20);
-    this._LayoutDirective_109_3.ngOnDestroy();
-    this._FormGroupDirective_109_4.ngOnDestroy();
-    this.debug(109,63,18);
-    this._MdCheckbox_132_4.ngOnDestroy();
-    this._FormControlName_132_6.ngOnDestroy();
-    this.debug(132,77,20);
-    this._MdCheckbox_138_4.ngOnDestroy();
-    this._FormControlName_138_6.ngOnDestroy();
-    this.debug(138,80,20);
-    this._MdCheckbox_144_4.ngOnDestroy();
-    this._FormControlName_144_6.ngOnDestroy();
-    this.debug(144,83,20);
-    this._LayoutDirective_130_3.ngOnDestroy();
-    this._FormGroupDirective_130_4.ngOnDestroy();
-    this.debug(130,75,18);
-    this._MdCheckbox_153_4.ngOnDestroy();
-    this._FormControlName_153_6.ngOnDestroy();
-    this.debug(153,88,20);
-    this._MdCheckbox_159_4.ngOnDestroy();
-    this._FormControlName_159_6.ngOnDestroy();
-    this.debug(159,91,20);
-    this._LayoutDirective_151_3.ngOnDestroy();
-    this._FormGroupDirective_151_4.ngOnDestroy();
-    this.debug(151,87,18);
-    this._LayoutDirective_107_3.ngOnDestroy();
-    this._FlexDirective_107_4.ngOnDestroy();
-    this.debug(107,61,18);
-    this.debug(172,99,60);
-    this.debug(171,99,18);
-    this._LayoutDirective_167_3.ngOnDestroy();
-    this._FlexDirective_167_4.ngOnDestroy();
-    this.debug(167,97,16);
-    this.debug(184,105,18);
-    this._LayoutDirective_182_3.ngOnDestroy();
-    this.debug(182,104,18);
-    this.debug(180,103,16);
-    this._LayoutDirective_176_3.ngOnDestroy();
-    this._LayoutAlignDirective_176_4.ngOnDestroy();
-    this._FlexDirective_176_5.ngOnDestroy();
-    this.debug(176,101,18);
-    this._LayoutDirective_105_3.ngOnDestroy();
-    this.debug(105,59,18);
-    this._AccordionGroup_97_3.ngOnDestroy();
-    this.debug(97,55,10);
+    this.debug(92,53,12);
+    this._MdCheckbox_104_4.ngOnDestroy();
+    this._FormControlName_104_6.ngOnDestroy();
+    this.debug(104,62,20);
+    this._MdCheckbox_110_4.ngOnDestroy();
+    this._FormControlName_110_6.ngOnDestroy();
+    this.debug(110,65,20);
+    this._MdCheckbox_116_4.ngOnDestroy();
+    this._FormControlName_116_6.ngOnDestroy();
+    this.debug(116,68,20);
+    this._LayoutDirective_102_3.ngOnDestroy();
+    this._LayoutAlignDirective_102_4.ngOnDestroy();
+    this._FormGroupDirective_102_5.ngOnDestroy();
+    this.debug(102,60,18);
+    this._MdCheckbox_125_4.ngOnDestroy();
+    this._FormControlName_125_6.ngOnDestroy();
+    this.debug(125,74,20);
+    this._MdCheckbox_131_4.ngOnDestroy();
+    this._FormControlName_131_6.ngOnDestroy();
+    this.debug(131,77,20);
+    this._MdCheckbox_137_4.ngOnDestroy();
+    this._FormControlName_137_6.ngOnDestroy();
+    this.debug(137,80,20);
+    this._LayoutDirective_123_3.ngOnDestroy();
+    this._LayoutAlignDirective_123_4.ngOnDestroy();
+    this._FormGroupDirective_123_5.ngOnDestroy();
+    this.debug(123,72,18);
+    this._MdCheckbox_146_4.ngOnDestroy();
+    this._FormControlName_146_6.ngOnDestroy();
+    this.debug(146,85,20);
+    this._MdCheckbox_152_4.ngOnDestroy();
+    this._FormControlName_152_6.ngOnDestroy();
+    this.debug(152,88,20);
+    this._LayoutDirective_144_3.ngOnDestroy();
+    this._FormGroupDirective_144_4.ngOnDestroy();
+    this.debug(144,84,18);
+    this._LayoutDirective_100_3.ngOnDestroy();
+    this._FlexDirective_100_4.ngOnDestroy();
+    this.debug(100,58,18);
+    this.debug(165,96,60);
+    this.debug(164,96,18);
+    this.debug(169,97,115);
+    this.debug(168,97,18);
+    this._LayoutDirective_160_3.ngOnDestroy();
+    this._FlexDirective_160_4.ngOnDestroy();
+    this.debug(160,94,16);
+    this._LayoutDirective_98_3.ngOnDestroy();
+    this.debug(98,56,18);
+    this._AccordionGroup_90_3.ngOnDestroy();
+    this.debug(90,52,10);
     this._Accordion_1_3.ngOnDestroy();
   }
   visitProjectableNodesInternal(nodeIndex:number,ngContentIndex:number,cb:any,ctx:any):void {
     if (((nodeIndex == 1) && (ngContentIndex == 0))) {
       cb(this._text_2,ctx);
       cb(this._el_3,ctx);
-      cb(this._text_96,ctx);
-      cb(this._el_97,ctx);
-      cb(this._text_193,ctx);
+      cb(this._text_89,ctx);
+      cb(this._el_90,ctx);
+      cb(this._text_174,ctx);
     }
     if (((nodeIndex == 3) && (ngContentIndex == 0))) { cb(this._el_5,ctx); }
     if (((nodeIndex == 3) && (ngContentIndex == 1))) {
       cb(this._text_4,ctx);
       cb(this._text_10,ctx);
       cb(this._el_11,ctx);
-      cb(this._text_95,ctx);
+      cb(this._text_88,ctx);
     }
     if (((nodeIndex == 5) && (ngContentIndex == 0))) {
       cb(this._text_6,ctx);
@@ -2347,85 +2263,77 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     }
     if (((nodeIndex == 74) && (ngContentIndex == 0))) { cb(this._el_75,ctx); }
     if (((nodeIndex == 75) && (ngContentIndex == 0))) { cb(this._text_76,ctx); }
-    if (((nodeIndex == 83) && (ngContentIndex == 0))) {
-      cb(this._text_84,ctx);
-      cb(this._el_85,ctx);
-      cb(this._text_92,ctx);
+    if (((nodeIndex == 78) && (ngContentIndex == 0))) { cb(this._el_79,ctx); }
+    if (((nodeIndex == 79) && (ngContentIndex == 0))) { cb(this._text_80,ctx); }
+    if (((nodeIndex == 90) && (ngContentIndex == 0))) { cb(this._el_92,ctx); }
+    if (((nodeIndex == 90) && (ngContentIndex == 1))) {
+      cb(this._text_91,ctx);
+      cb(this._text_97,ctx);
+      cb(this._el_98,ctx);
+      cb(this._text_173,ctx);
     }
-    if (((nodeIndex == 87) && (ngContentIndex == 0))) { cb(this._text_88,ctx); }
-    if (((nodeIndex == 97) && (ngContentIndex == 0))) { cb(this._el_99,ctx); }
-    if (((nodeIndex == 97) && (ngContentIndex == 1))) {
-      cb(this._text_98,ctx);
-      cb(this._text_104,ctx);
-      cb(this._el_105,ctx);
-      cb(this._text_192,ctx);
+    if (((nodeIndex == 92) && (ngContentIndex == 0))) {
+      cb(this._text_93,ctx);
+      cb(this._el_94,ctx);
+      cb(this._text_96,ctx);
     }
-    if (((nodeIndex == 99) && (ngContentIndex == 0))) {
-      cb(this._text_100,ctx);
-      cb(this._el_101,ctx);
-      cb(this._text_103,ctx);
+    if (((nodeIndex == 104) && (ngContentIndex == 0))) {
+      cb(this._text_105,ctx);
+      cb(this._el_106,ctx);
+      cb(this._text_108,ctx);
     }
-    if (((nodeIndex == 111) && (ngContentIndex == 0))) {
-      cb(this._text_112,ctx);
-      cb(this._el_113,ctx);
-      cb(this._text_115,ctx);
+    if (((nodeIndex == 110) && (ngContentIndex == 0))) {
+      cb(this._text_111,ctx);
+      cb(this._el_112,ctx);
+      cb(this._text_114,ctx);
     }
-    if (((nodeIndex == 117) && (ngContentIndex == 0))) {
-      cb(this._text_118,ctx);
-      cb(this._el_119,ctx);
-      cb(this._text_121,ctx);
+    if (((nodeIndex == 116) && (ngContentIndex == 0))) {
+      cb(this._text_117,ctx);
+      cb(this._el_118,ctx);
+      cb(this._text_120,ctx);
     }
-    if (((nodeIndex == 123) && (ngContentIndex == 0))) {
-      cb(this._text_124,ctx);
-      cb(this._el_125,ctx);
-      cb(this._text_127,ctx);
+    if (((nodeIndex == 125) && (ngContentIndex == 0))) {
+      cb(this._text_126,ctx);
+      cb(this._el_127,ctx);
+      cb(this._text_129,ctx);
     }
-    if (((nodeIndex == 132) && (ngContentIndex == 0))) {
-      cb(this._text_133,ctx);
-      cb(this._el_134,ctx);
-      cb(this._text_136,ctx);
+    if (((nodeIndex == 131) && (ngContentIndex == 0))) {
+      cb(this._text_132,ctx);
+      cb(this._el_133,ctx);
+      cb(this._text_135,ctx);
     }
-    if (((nodeIndex == 138) && (ngContentIndex == 0))) {
-      cb(this._text_139,ctx);
-      cb(this._el_140,ctx);
-      cb(this._text_142,ctx);
+    if (((nodeIndex == 137) && (ngContentIndex == 0))) {
+      cb(this._text_138,ctx);
+      cb(this._el_139,ctx);
+      cb(this._text_141,ctx);
     }
-    if (((nodeIndex == 144) && (ngContentIndex == 0))) {
-      cb(this._text_145,ctx);
-      cb(this._el_146,ctx);
-      cb(this._text_148,ctx);
+    if (((nodeIndex == 146) && (ngContentIndex == 0))) {
+      cb(this._text_147,ctx);
+      cb(this._el_148,ctx);
+      cb(this._text_150,ctx);
     }
-    if (((nodeIndex == 153) && (ngContentIndex == 0))) {
-      cb(this._text_154,ctx);
-      cb(this._el_155,ctx);
-      cb(this._text_157,ctx);
+    if (((nodeIndex == 152) && (ngContentIndex == 0))) {
+      cb(this._text_153,ctx);
+      cb(this._el_154,ctx);
+      cb(this._text_156,ctx);
     }
-    if (((nodeIndex == 159) && (ngContentIndex == 0))) {
-      cb(this._text_160,ctx);
-      cb(this._el_161,ctx);
-      cb(this._text_163,ctx);
-    }
-    if (((nodeIndex == 171) && (ngContentIndex == 0))) { cb(this._el_172,ctx); }
-    if (((nodeIndex == 172) && (ngContentIndex == 0))) { cb(this._text_173,ctx); }
-    if (((nodeIndex == 180) && (ngContentIndex == 0))) {
-      cb(this._text_181,ctx);
-      cb(this._el_182,ctx);
-      cb(this._text_189,ctx);
-    }
-    if (((nodeIndex == 184) && (ngContentIndex == 0))) { cb(this._text_185,ctx); }
+    if (((nodeIndex == 164) && (ngContentIndex == 0))) { cb(this._el_165,ctx); }
+    if (((nodeIndex == 165) && (ngContentIndex == 0))) { cb(this._text_166,ctx); }
+    if (((nodeIndex == 168) && (ngContentIndex == 0))) { cb(this._el_169,ctx); }
+    if (((nodeIndex == 169) && (ngContentIndex == 0))) { cb(this._text_170,ctx); }
   }
   handleEvent_15(eventName:string,$event:any):boolean {
     this.debug(15,9,16);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._FormGroupDirective_15_4.handleEvent(eventName,$event) && result);
+    result = (this._FormGroupDirective_15_5.handleEvent(eventName,$event) && result);
     return result;
   }
   handleEvent_42(eventName:string,$event:any):boolean {
     this.debug(42,24,16);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._FormGroupDirective_42_4.handleEvent(eventName,$event) && result);
+    result = (this._FormGroupDirective_42_5.handleEvent(eventName,$event) && result);
     return result;
   }
   handleEvent_74(eventName:string,$event:any):boolean {
@@ -2435,46 +2343,54 @@ export class View_ClientAccountsDetailComplianceComponent0 extends import2.Debug
     result = (this._MdButton_74_4.handleEvent(eventName,$event) && result);
     return result;
   }
-  handleEvent_83(eventName:string,$event:any):boolean {
-    this.debug(83,46,16);
-    this.compView_83.markPathToRootAsCheckOnce();
+  handleEvent_78(eventName:string,$event:any):boolean {
+    this.debug(78,43,16);
+    this.compView_78.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._MdButton_83_4.handleEvent(eventName,$event) && result);
+    result = (this._MdButton_78_4.handleEvent(eventName,$event) && result);
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.context.onOpenComments('Wealth Source')) !== false);
+      result = (pd_sub_0 && result);
+    }
     return result;
   }
-  handleEvent_109(eventName:string,$event:any):boolean {
-    this.debug(109,63,18);
+  handleEvent_102(eventName:string,$event:any):boolean {
+    this.debug(102,60,18);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._FormGroupDirective_109_4.handleEvent(eventName,$event) && result);
+    result = (this._FormGroupDirective_102_5.handleEvent(eventName,$event) && result);
     return result;
   }
-  handleEvent_130(eventName:string,$event:any):boolean {
-    this.debug(130,75,18);
+  handleEvent_123(eventName:string,$event:any):boolean {
+    this.debug(123,72,18);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._FormGroupDirective_130_4.handleEvent(eventName,$event) && result);
+    result = (this._FormGroupDirective_123_5.handleEvent(eventName,$event) && result);
     return result;
   }
-  handleEvent_151(eventName:string,$event:any):boolean {
-    this.debug(151,87,18);
+  handleEvent_144(eventName:string,$event:any):boolean {
+    this.debug(144,84,18);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._FormGroupDirective_151_4.handleEvent(eventName,$event) && result);
+    result = (this._FormGroupDirective_144_4.handleEvent(eventName,$event) && result);
     return result;
   }
-  handleEvent_171(eventName:string,$event:any):boolean {
-    this.debug(171,99,18);
-    this.compView_171.markPathToRootAsCheckOnce();
+  handleEvent_164(eventName:string,$event:any):boolean {
+    this.debug(164,96,18);
+    this.compView_164.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._MdButton_171_4.handleEvent(eventName,$event) && result);
+    result = (this._MdButton_164_4.handleEvent(eventName,$event) && result);
     return result;
   }
-  handleEvent_180(eventName:string,$event:any):boolean {
-    this.debug(180,103,16);
-    this.compView_180.markPathToRootAsCheckOnce();
+  handleEvent_168(eventName:string,$event:any):boolean {
+    this.debug(168,97,18);
+    this.compView_168.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._MdButton_180_4.handleEvent(eventName,$event) && result);
+    result = (this._MdButton_168_4.handleEvent(eventName,$event) && result);
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.context.onOpenComments('Funds Source')) !== false);
+      result = (pd_sub_0 && result);
+    }
     return result;
   }
 }

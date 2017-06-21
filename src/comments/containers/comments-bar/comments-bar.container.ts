@@ -8,18 +8,38 @@ import { CommentsSandbox } from "../../comments.sandbox";
     selector: "comments-bar",
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
-        <h2>Comments</h2>  
-        <comments-list [comments]="this.matchingComments$ | async"></comments-list>
-        <comment-form-group (save)="onSave($event)"></comment-form-group>  
+        <div style="height: 100vh !important">
+        <div class="example-scrolling-content">
+            <div class="commentHeader">
+                <h3>Comments</h3>
+                <p>{{this.commentType$ | async}}</p>
+
+            </div> 
+            <comments-list [comments]="this.matchingComments$ | async"></comments-list>
+            <comment-form-group (save)="onSave($event)" [parentId]="this.parentId$ | async" [commentType]="this.commentType$ | async"></comment-form-group>  
+        </div>
+        </div>
     `
 
 })
-export class CommentsBarContainer implements OnInit {
+export class CommentsBarContainer {
     private ngUnsubscribe: Subject<void> = new Subject<void>();
-    matchingComments$: Observable<Array<Comment>>;
+    matchingComments$: Observable<Array<Comment>>
+    commentType$: Observable<string>;
+    parentId$: Observable<string>;
 
     constructor(private sb: CommentsSandbox) {
-
+        this.sb.commentParentId$
+            .takeUntil(this.ngUnsubscribe)
+            .subscribe((parentId: string) => {
+                this.sb.commentType$
+                .takeUntil(this.ngUnsubscribe)
+                .subscribe((commentType: string) => {
+                    this.matchingComments$ = this.sb.fetchComments(parentId, commentType);
+                })
+        })
+        this.commentType$ = this.sb.commentType$.takeUntil(this.ngUnsubscribe);
+        this.parentId$ = this.sb.commentParentId$.takeUntil(this.ngUnsubscribe);
     }
 
     ngOnDestroy() {
@@ -27,9 +47,12 @@ export class CommentsBarContainer implements OnInit {
         this.ngUnsubscribe.complete();
     }
 
-    ngOnInit() {
-        this.matchingComments$ = this.sb.comments$;
-    }
+    // ngOnChanges(simpleChanges: any) {
+    //     this.parentId$.take(1).subscribe((parentId: string) => {
+    //         this.matchingComments$ = this.sb.fetchComments(parentId);
+    //     });
+    // }
+
 
     onSave(comment: Comment): void {
         this.sb.addComment(comment);

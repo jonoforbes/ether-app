@@ -18,7 +18,7 @@ export interface ActivitiesBarContainerState {
     isCollapsed: boolean;
     mode: String;
     commentId: String;
-    commentSection: String;
+    commentType: String;
 }
 
 export interface MasterBarContainerState {

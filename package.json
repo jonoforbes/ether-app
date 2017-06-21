@@ -11,7 +11,7 @@
     "build-prod": "npm run clean-dist && ./node_modules/.bin/webpack --config webpack/webpack.build.js",
     "create-200": "cp dist/index.html dist/200.html",
     "build": "npm run ngc && npm run build-prod && npm run create-200",
-    "deploy": "npm run build && surge --project dist --domain ether-test.surge.sh"
+    "deploy": "npm run build && surge --project dist --domain https://ether-test.surge.sh"
   },
   "author": "Jonathan Forbes",
   "license": "ISC",

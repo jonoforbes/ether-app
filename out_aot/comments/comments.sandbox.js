@@ -14,6 +14,7 @@ import { Store } from "@ngrx/store";
 import * as toastr from "toastr";
 import { UNDO_ACTION } from "ngrx-undo";
 import { AddComment, UpdateComment, RemoveComment } from "../statemanagement/actions/data/comment";
+import { ToggleActivitiesBar, SetActivitiesBarMode, SetActivitiesBarCommentID, SetActivitiesBarCommentType } from "../statemanagement/actions/containers/activities-bar";
 export let CommentsSandbox = class CommentsSandbox {
     constructor(store, commentsService) {
         this.store = store;
@@ -22,6 +23,9 @@ export let CommentsSandbox = class CommentsSandbox {
         this.comments$ = this.store.select(state => state.data.comments);
         this.isAuthenticated$ = this.store.select(state => state.data.authentication.isAuthenticated);
         this.isCollapsed$ = this.store.select(state => state.containers.masterBar.isCollapsed);
+        this.commentsCollapsed$ = this.store.select(state => state.containers.activitiesBar.isCollapsed);
+        this.commentParentId$ = this.store.select(state => state.containers.activitiesBar.commentId);
+        this.commentType$ = this.store.select(state => state.containers.activitiesBar.commentType);
     }
     ngOnDestroy() {
         this.ngUnsubscribe.next();
@@ -43,10 +47,11 @@ export let CommentsSandbox = class CommentsSandbox {
             this.store.dispatch(new AddComment(comment));
         }, () => this.handleError());
     }
-    fetchComments(parentId) {
+    fetchComments(parentId, commentType) {
+        console.log('fetching comments by id');
         return this.comments$.map((comments) => {
             return comments.filter((comment) => {
-                return comment.parentId == parentId;
+                return comment.parentId == parentId && comment.commentType == commentType;
             });
         });
     }
@@ -57,6 +62,18 @@ export let CommentsSandbox = class CommentsSandbox {
             .takeUntil(this.ngUnsubscribe)
             .subscribe(() => {
         }, () => this.handleError(action));
+    }
+    openComments(parentId, commentType) {
+        console.log('in sandbox', parentId);
+        console.log('in sandbox', commentType);
+        this.store.dispatch(new SetActivitiesBarCommentID(parentId));
+        this.store.dispatch(new SetActivitiesBarCommentType(commentType));
+        this.store.dispatch(new SetActivitiesBarMode('comments'));
+        this.commentsCollapsed$.take(1).subscribe((isCollapsed) => {
+            if (isCollapsed == false) {
+                this.store.dispatch(new ToggleActivitiesBar());
+            }
+        });
     }
     handleError(action) {
         toastr.error("something went wrong");

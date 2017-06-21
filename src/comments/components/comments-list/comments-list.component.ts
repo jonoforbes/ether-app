@@ -5,9 +5,12 @@ import { Comment } from "../../entities/Comment";
     selector: "comments-list",
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
-        <div *ngFor="let comment of comments">
-            <h3>{{comment.content}}</h3>
-            <h3>{{comment.createdAt}}</h3>
+        <div class="commentItem" *ngFor="let comment of comments">
+            <div  class="commentBox">
+                <h2>Jono wrote:</h2>
+                <h3>{{comment.content}}</h3>
+            </div>
+            <p>Added {{comment.createdAt | date:'jm'}}, {{comment.createdAt | date:'d/M/y'}}</p>
         </div>
     `
 })

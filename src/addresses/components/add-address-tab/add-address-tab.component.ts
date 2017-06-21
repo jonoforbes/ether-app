@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input, Output, OnInit, EventEmitter } from "@angular/core";
 import { Address } from "../../entities/Address";
-import { GoogleMapsResult } from "../../services/googlemaps.service";
+import { GoogleMapsResult, GoogleMapsAddressComponent } from "../../services/googlemaps.service";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { AddressesSearchComponent } from "../addresses-search/addresses-search.component";
 
@@ -12,12 +12,15 @@ import { AddressesSearchComponent } from "../addresses-search/addresses-search.c
                 <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
                 <div class="mapDetail" style="margin-top: 0px;">
 
-                    <button type="submit" [disabled]="!addressForm.valid" md-button class="mapButton">
-                        <p>SAVE ADDRESS</p>
-                    </button>
-
                     
-                        
+                        <md-input-container>
+                            <input mdInput placeholder="Address Type" [mdAutocomplete]="addressTypeSelect" formControlName="addressType">
+                        </md-input-container>
+                        <md-autocomplete #addressTypeSelect="mdAutocomplete">
+                            <md-option style="overflow: hidden !important" *ngFor="let type of addressTypes" [value]="type">
+                                {{ type }}
+                            </md-option>
+                        </md-autocomplete>
                         <md-input-container>
                             <input mdInput placeholder="House Number" formControlName="houseNumber">
                         </md-input-container>
@@ -59,11 +62,19 @@ export class AddAddressTabComponent implements OnInit {
 
     }
 
+    addressTypes = [
+        'Money Purchase',
+        'Defined Benefits'
+    ];
+
     addressForm: FormGroup;
 
     ngOnInit(): void {
         this.addressForm = this.formBuilder.group({
             formattedName: [this.address.formattedName],
+            addressType: [this.address.addressType],
+            addressSince: [this.address.addressSince],
+            primaryAddress: [this.address.primaryAddress],
             houseNumber: [this.address.houseNumber, Validators.required],
             streetName: [this.address.streetName, Validators.required],
             city: [this.address.city, Validators.required],
@@ -90,17 +101,71 @@ export class AddAddressTabComponent implements OnInit {
     }
 
     onSelectAddress(address: GoogleMapsResult): void {
+        var houseNumber: string = "";
+        var streetName: string = "";
+        var city: string = "";
+        var postCode: string = "";
+        var country: string = "";
+        var houseNumberComponent: Array<GoogleMapsAddressComponent> = address.address_components.filter((addressComponent: GoogleMapsAddressComponent) => {
+                return addressComponent.types.find((type: string) => {
+                    return type === "street_number";
+                });
+            });
+        var streetNameComponent: Array<GoogleMapsAddressComponent>  = address.address_components.filter((addressComponent: GoogleMapsAddressComponent) => {
+            return addressComponent.types.find((type: string) => {
+                return type === "route";
+            });
+        });
+        var cityComponent: Array<GoogleMapsAddressComponent>  = address.address_components.filter((addressComponent: GoogleMapsAddressComponent) => {
+            return addressComponent.types.find((type: string) => {
+                return type === "locality" || type === "postal_town";
+            });
+        });
+        var postCodeComponent: Array<GoogleMapsAddressComponent> = address.address_components.filter((addressComponent: GoogleMapsAddressComponent) => {
+            return addressComponent.types.find((type: string) => {
+                return type === "postal_code";
+            });
+        });
+        var countryComponent: Array<GoogleMapsAddressComponent>  = address.address_components.filter((addressComponent: GoogleMapsAddressComponent) => {
+            return addressComponent.types.find((type: string) => {
+                return type === "country";
+            });
+        });
+        if (houseNumberComponent.length > 0) {
+            houseNumber = houseNumberComponent[0].long_name;
+        };
+        if (streetNameComponent.length > 0) {
+            streetName = streetNameComponent[0].long_name;
+        };
+        if (cityComponent.length > 0) {
+            city = cityComponent[0].long_name;
+        };
+        if (postCodeComponent.length > 0) {
+            postCode = postCodeComponent[0].long_name;
+        };
+        if (countryComponent.length > 0) {
+            country = countryComponent[0].long_name;
+        };
+        console.log('house number', houseNumber);
+        console.log('street name', streetName);
+        console.log('city', city);
+        console.log('post code', postCode);
+        console.log('country', country);
+
         this.addressForm.setValue({
             formattedName: address.formatted_address,
-            houseNumber: address.address_components[0].long_name,
-            streetName: address.address_components[1].long_name,
-            city: address.address_components[2].long_name,
-            postCode: address.address_components[6].long_name,
-            country: address.address_components[5].long_name,
+            houseNumber: houseNumber,
+            streetName: streetName,
+            city: city,
+            postCode: postCode,
+            country: country,
             latitude: address.geometry.location.lat,
-            longitude: address.geometry.location.lng
+            longitude: address.geometry.location.lng,
+            addressType: this.address.addressType,
+            addressSince: this.address.addressSince,
+            primaryAddress: this.address.primaryAddress
         });
-        console.log(address);
-        console.log(this.addressForm);
+        // console.log(address);
+        // console.log(this.addressForm);
     }
 }

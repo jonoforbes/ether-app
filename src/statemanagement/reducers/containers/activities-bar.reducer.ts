@@ -5,7 +5,7 @@ let initialState: ActivitiesBarContainerState = {
     isCollapsed: false,
     mode: '',
     commentId: "",
-    commentSection: ""
+    commentType: ""
 };
 
 export function activitiesBarReducer(
@@ -17,28 +17,28 @@ export function activitiesBarReducer(
                     isCollapsed: !state.isCollapsed,
                     mode: state.mode,
                     commentId: state.commentId,
-                    commentSection: state.commentSection
+                    commentType: state.commentType
                 };
             case activitiesBar.ActionTypes.SET_ACTIVITIES_BAR_MODE:
                 return {
                     isCollapsed: state.isCollapsed,
                     mode: action.payload.mode,
                     commentId: state.commentId,
-                    commentSection: state.commentSection
+                    commentType: state.commentType
                 };
             case activitiesBar.ActionTypes.SET_ACTIVITIES_BAR_COMMENT_ID:
                 return {
                     isCollapsed: state.isCollapsed,
                     mode: state.mode,
                     commentId: action.payload.id,
-                    commentSection: state.commentSection
+                    commentType: state.commentType
                 };
-            case activitiesBar.ActionTypes.SET_ACTIVITIES_BAR_COMMENT_SECTION:
+            case activitiesBar.ActionTypes.SET_ACTIVITIES_BAR_COMMENT_TYPE:
                 return {
                     isCollapsed: state.isCollapsed,
                     mode: state.mode,
                     commentId: state.commentId,
-                    commentSection: action.payload.section
+                    commentType: action.payload.commentType
                 }
             default:
                 return state;

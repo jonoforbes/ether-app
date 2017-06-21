@@ -15,9 +15,13 @@ import * as import6 from '@angular/core/src/linker/view_type';
 import * as import7 from '@angular/core/src/change_detection/constants';
 import * as import8 from '@angular/core/src/linker/component_factory';
 import * as import9 from '../../comments.sandbox';
-import * as import10 from '../comment-form-group/comment-form-group.container';
-import * as import11 from '../comment-form-group/comment-form-group.container.ngfactory';
-import * as import12 from '@angular/forms/src/form_builder';
+import * as import10 from '../../components/comments-list/comments-list.component';
+import * as import11 from '../comment-form-group/comment-form-group.container';
+import * as import12 from '../../components/comments-list/comments-list.component.ngfactory';
+import * as import13 from '../comment-form-group/comment-form-group.container.ngfactory';
+import * as import14 from '@angular/common/src/pipes/async_pipe';
+import * as import15 from '@angular/core/src/change_detection/change_detection_util';
+import * as import16 from '@angular/forms/src/form_builder';
 export class Wrapper_CommentsBarContainer {
   /*private*/ _eventHandler:Function;
   context:import0.CommentsBarContainer;
@@ -34,7 +38,6 @@ export class Wrapper_CommentsBarContainer {
   ngDoCheck(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
     var changed:any = this._changed;
     this._changed = false;
-    if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
     return changed;
   }
   checkHost(view:import1.AppView<any>,componentView:import1.AppView<any>,el:any,throwOnChange:boolean):void {
@@ -88,7 +91,21 @@ const nodeDebugInfos_CommentsBarContainer0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo([import10.CommentFormGroupContainer],import10.CommentFormGroupContainer,{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([import10.CommentsListComponent],import10.CommentsListComponent,{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([import11.CommentFormGroupContainer],import11.CommentFormGroupContainer,{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
@@ -97,53 +114,140 @@ export class View_CommentsBarContainer0 extends import1.DebugAppView<import0.Com
   _text_0:any;
   _el_1:any;
   _text_2:any;
-  _text_3:any;
-  _el_4:any;
-  compView_4:import1.AppView<import10.CommentFormGroupContainer>;
-  _CommentFormGroupContainer_4_3:import11.Wrapper_CommentFormGroupContainer;
-  _text_5:any;
+  _el_3:any;
+  _text_4:any;
+  _el_5:any;
+  _text_6:any;
+  _el_7:any;
+  _text_8:any;
+  _text_9:any;
+  _el_10:any;
+  _text_11:any;
+  _text_12:any;
+  _text_13:any;
+  _el_14:any;
+  compView_14:import1.AppView<import10.CommentsListComponent>;
+  _CommentsListComponent_14_3:import12.Wrapper_CommentsListComponent;
+  _text_15:any;
+  _el_16:any;
+  compView_16:import1.AppView<import11.CommentFormGroupContainer>;
+  _CommentFormGroupContainer_16_3:import13.Wrapper_CommentFormGroupContainer;
+  _text_17:any;
+  _text_18:any;
+  _text_19:any;
+  /*private*/ _expr_24:any;
+  _pipe_async_0:import14.AsyncPipe;
+  _pipe_async_1:import14.AsyncPipe;
+  _pipe_async_2:import14.AsyncPipe;
+  _pipe_async_3:import14.AsyncPipe;
   constructor(viewUtils:import4.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_CommentsBarContainer0,renderType_CommentsBarContainer,import6.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import7.ChangeDetectorStatus.CheckOnce,nodeDebugInfos_CommentsBarContainer0);
+    this._expr_24 = import15.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import8.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
     this._text_0 = this.renderer.createText(parentRenderNode,'\n        ',this.debug(0,0,0));
-    this._el_1 = import4.createRenderElement(this.renderer,parentRenderNode,'h2',import4.EMPTY_INLINE_ARRAY,this.debug(1,1,8));
-    this._text_2 = this.renderer.createText(this._el_1,'Comments',this.debug(2,1,12));
-    this._text_3 = this.renderer.createText(parentRenderNode,'  \n        ',this.debug(3,1,25));
-    this._el_4 = import4.createRenderElement(this.renderer,parentRenderNode,'comment-form-group',import4.EMPTY_INLINE_ARRAY,this.debug(4,2,8));
-    this.compView_4 = new import11.View_CommentFormGroupContainer0(this.viewUtils,this,4,this._el_4);
-    this._CommentFormGroupContainer_4_3 = new import11.Wrapper_CommentFormGroupContainer(this.parentView.injectorGet(import12.FormBuilder,this.parentIndex));
-    this.compView_4.create(this._CommentFormGroupContainer_4_3.context);
-    this._text_5 = this.renderer.createText(parentRenderNode,'  \n    ',this.debug(5,2,73));
-    var disposable_0:Function = import4.subscribeToRenderElement(this,this._el_4,new import4.InlineArray2(2,'save',(null as any)),this.eventHandler(this.handleEvent_4));
-    this._CommentFormGroupContainer_4_3.subscribe(this,this.eventHandler(this.handleEvent_4),true);
+    this._el_1 = import4.createRenderElement(this.renderer,parentRenderNode,'div',new import4.InlineArray2(2,'style','height: 100vh !important'),this.debug(1,1,8));
+    this._text_2 = this.renderer.createText(this._el_1,'\n        ',this.debug(2,1,46));
+    this._el_3 = import4.createRenderElement(this.renderer,this._el_1,'div',new import4.InlineArray2(2,'class','example-scrolling-content'),this.debug(3,2,8));
+    this._text_4 = this.renderer.createText(this._el_3,'\n            ',this.debug(4,2,47));
+    this._el_5 = import4.createRenderElement(this.renderer,this._el_3,'div',new import4.InlineArray2(2,'class','commentHeader'),this.debug(5,3,12));
+    this._text_6 = this.renderer.createText(this._el_5,'\n                ',this.debug(6,3,39));
+    this._el_7 = import4.createRenderElement(this.renderer,this._el_5,'h3',import4.EMPTY_INLINE_ARRAY,this.debug(7,4,16));
+    this._text_8 = this.renderer.createText(this._el_7,'Comments',this.debug(8,4,20));
+    this._text_9 = this.renderer.createText(this._el_5,'\n                ',this.debug(9,4,33));
+    this._el_10 = import4.createRenderElement(this.renderer,this._el_5,'p',import4.EMPTY_INLINE_ARRAY,this.debug(10,5,16));
+    this._text_11 = this.renderer.createText(this._el_10,'',this.debug(11,5,19));
+    this._text_12 = this.renderer.createText(this._el_5,'\n\n            ',this.debug(12,5,52));
+    this._text_13 = this.renderer.createText(this._el_3,' \n            ',this.debug(13,7,18));
+    this._el_14 = import4.createRenderElement(this.renderer,this._el_3,'comments-list',import4.EMPTY_INLINE_ARRAY,this.debug(14,8,12));
+    this.compView_14 = new import12.View_CommentsListComponent0(this.viewUtils,this,14,this._el_14);
+    this._CommentsListComponent_14_3 = new import12.Wrapper_CommentsListComponent();
+    this.compView_14.create(this._CommentsListComponent_14_3.context);
+    this._text_15 = this.renderer.createText(this._el_3,'\n            ',this.debug(15,8,87));
+    this._el_16 = import4.createRenderElement(this.renderer,this._el_3,'comment-form-group',import4.EMPTY_INLINE_ARRAY,this.debug(16,9,12));
+    this.compView_16 = new import13.View_CommentFormGroupContainer0(this.viewUtils,this,16,this._el_16);
+    this._CommentFormGroupContainer_16_3 = new import13.Wrapper_CommentFormGroupContainer(this.parentView.injectorGet(import16.FormBuilder,this.parentIndex));
+    this.compView_16.create(this._CommentFormGroupContainer_16_3.context);
+    this._text_17 = this.renderer.createText(this._el_3,'  \n        ',this.debug(17,9,155));
+    this._text_18 = this.renderer.createText(this._el_1,'\n        ',this.debug(18,10,14));
+    this._text_19 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(19,11,14));
+    this.debug((null as any),(null as any),(null as any));
+    this._pipe_async_0 = new import14.AsyncPipe(this.ref);
+    this._pipe_async_1 = new import14.AsyncPipe(this.ref);
+    var disposable_0:Function = import4.subscribeToRenderElement(this,this._el_16,new import4.InlineArray2(2,'save',(null as any)),this.eventHandler(this.handleEvent_16));
+    this._CommentFormGroupContainer_16_3.subscribe(this,this.eventHandler(this.handleEvent_16),true);
+    this._pipe_async_2 = new import14.AsyncPipe(this.ref);
+    this._pipe_async_3 = new import14.AsyncPipe(this.ref);
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._text_0,
       this._el_1,
       this._text_2,
-      this._text_3,
-      this._el_4,
-      this._text_5
+      this._el_3,
+      this._text_4,
+      this._el_5,
+      this._text_6,
+      this._el_7,
+      this._text_8,
+      this._text_9,
+      this._el_10,
+      this._text_11,
+      this._text_12,
+      this._text_13,
+      this._el_14,
+      this._text_15,
+      this._el_16,
+      this._text_17,
+      this._text_18,
+      this._text_19
     ]
     ),[disposable_0]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import10.CommentFormGroupContainer) && (4 === requestNodeIndex))) { return this._CommentFormGroupContainer_4_3.context; }
+    if (((token === import10.CommentsListComponent) && (14 === requestNodeIndex))) { return this._CommentsListComponent_14_3.context; }
+    if (((token === import11.CommentFormGroupContainer) && (16 === requestNodeIndex))) { return this._CommentFormGroupContainer_16_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    this.debug(4,2,8);
-    if (this._CommentFormGroupContainer_4_3.ngDoCheck(this,this._el_4,throwOnChange)) { this.compView_4.markAsCheckOnce(); }
-    this.compView_4.internalDetectChanges(throwOnChange);
+    const valUnwrapper:any = new import15.ValueUnwrapper();
+    this.debug(14,8,27);
+    valUnwrapper.reset();
+    const currVal_14_0_0:any = valUnwrapper.unwrap(this._pipe_async_1.transform(this.context.matchingComments$));
+    this._CommentsListComponent_14_3.check_comments(currVal_14_0_0,throwOnChange,valUnwrapper.hasWrappedValue);
+    if (this._CommentsListComponent_14_3.ngDoCheck(this,this._el_14,throwOnChange)) { this.compView_14.markAsCheckOnce(); }
+    this.debug(16,9,56);
+    valUnwrapper.reset();
+    const currVal_16_0_0:any = valUnwrapper.unwrap(this._pipe_async_2.transform(this.context.parentId$));
+    this._CommentFormGroupContainer_16_3.check_parentId(currVal_16_0_0,throwOnChange,valUnwrapper.hasWrappedValue);
+    this.debug(16,9,92);
+    valUnwrapper.reset();
+    const currVal_16_0_1:any = valUnwrapper.unwrap(this._pipe_async_3.transform(this.context.commentType$));
+    this._CommentFormGroupContainer_16_3.check_commentType(currVal_16_0_1,throwOnChange,valUnwrapper.hasWrappedValue);
+    if (this._CommentFormGroupContainer_16_3.ngDoCheck(this,this._el_16,throwOnChange)) { this.compView_16.markAsCheckOnce(); }
+    this.debug(11,5,19);
+    valUnwrapper.reset();
+    const currVal_24:any = import4.inlineInterpolate(1,'',valUnwrapper.unwrap(this._pipe_async_0.transform(this.context.commentType$)),'');
+    if ((valUnwrapper.hasWrappedValue || import4.checkBinding(throwOnChange,this._expr_24,currVal_24))) {
+      this.renderer.setText(this._text_11,currVal_24);
+      this._expr_24 = currVal_24;
+    }
+    this.compView_14.internalDetectChanges(throwOnChange);
+    this.compView_16.internalDetectChanges(throwOnChange);
   }
   destroyInternal():void {
-    this.compView_4.destroy();
-    this._CommentFormGroupContainer_4_3.ngOnDestroy();
+    this.compView_14.destroy();
+    this.compView_16.destroy();
+    this.debug(14,8,12);
+    this._CommentFormGroupContainer_16_3.ngOnDestroy();
+    this.debug(16,9,12);
+    this._pipe_async_0.ngOnDestroy();
+    this._pipe_async_1.ngOnDestroy();
+    this._pipe_async_2.ngOnDestroy();
+    this._pipe_async_3.ngOnDestroy();
   }
-  handleEvent_4(eventName:string,$event:any):boolean {
-    this.debug(4,2,8);
+  handleEvent_16(eventName:string,$event:any):boolean {
+    this.debug(16,9,12);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'save')) {

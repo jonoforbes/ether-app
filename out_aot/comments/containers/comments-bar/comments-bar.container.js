@@ -14,13 +14,21 @@ export let CommentsBarContainer = class CommentsBarContainer {
     constructor(sb) {
         this.sb = sb;
         this.ngUnsubscribe = new Subject();
+        this.sb.commentParentId$
+            .takeUntil(this.ngUnsubscribe)
+            .subscribe((parentId) => {
+            this.sb.commentType$
+                .takeUntil(this.ngUnsubscribe)
+                .subscribe((commentType) => {
+                this.matchingComments$ = this.sb.fetchComments(parentId, commentType);
+            });
+        });
+        this.commentType$ = this.sb.commentType$.takeUntil(this.ngUnsubscribe);
+        this.parentId$ = this.sb.commentParentId$.takeUntil(this.ngUnsubscribe);
     }
     ngOnDestroy() {
         this.ngUnsubscribe.next();
         this.ngUnsubscribe.complete();
-    }
-    ngOnInit() {
-        this.matchingComments$ = this.sb.comments$;
     }
     onSave(comment) {
         this.sb.addComment(comment);
@@ -31,8 +39,17 @@ CommentsBarContainer = __decorate([
         selector: "comments-bar",
         changeDetection: ChangeDetectionStrategy.OnPush,
         template: `
-        <h2>Comments</h2>  
-        <comment-form-group (save)="onSave($event)"></comment-form-group>  
+        <div style="height: 100vh !important">
+        <div class="example-scrolling-content">
+            <div class="commentHeader">
+                <h3>Comments</h3>
+                <p>{{this.commentType$ | async}}</p>
+
+            </div> 
+            <comments-list [comments]="this.matchingComments$ | async"></comments-list>
+            <comment-form-group (save)="onSave($event)" [parentId]="this.parentId$ | async" [commentType]="this.commentType$ | async"></comment-form-group>  
+        </div>
+        </div>
     `
     }), 
     __metadata('design:paramtypes', [CommentsSandbox])

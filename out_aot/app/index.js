@@ -188,6 +188,7 @@ import { CommentsService } from "../comments/services/comments.service";
 import { CommentFormGroupContainer } from "../comments/containers/comment-form-group/comment-form-group.container";
 import { CommentsBarContainer } from "../comments/containers/comments-bar/comments-bar.container";
 import { CommentFormComponent } from "../comments/components/comment-form/comment-form.component";
+import { CommentsListComponent } from "../comments/components/comments-list/comments-list.component";
 export let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -321,7 +322,8 @@ AppModule = __decorate([
             AddBankAccountTabComponent,
             CommentsBarContainer,
             CommentFormGroupContainer,
-            CommentFormComponent
+            CommentFormComponent,
+            CommentsListComponent
         ],
         exports: [
             ApplicationContainer,

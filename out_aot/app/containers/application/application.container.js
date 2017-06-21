@@ -39,11 +39,18 @@ export let ApplicationContainer = class ApplicationContainer {
         }
     }
     ngOnInit() {
+        console.log('width', window.innerWidth);
         this.sb.checkInitialAuthentication();
         this.subscriptions.push(this.sb.isAuthenticated$.subscribe((isAuthenticated) => {
             if (isAuthenticated) {
                 this.sb.loadData();
                 this.sb.connectRealTime();
+                if (window.innerWidth > 1450) {
+                    this.navMode = 'side';
+                    this.rightsidenav.open();
+                    this.sb.setActivitiesBarMode('notifications');
+                    console.log('width', window.innerWidth);
+                }
             }
         }));
     }
@@ -51,9 +58,16 @@ export let ApplicationContainer = class ApplicationContainer {
         this.router.navigate(["/stock"]);
         this.sb.logout();
         this.router.navigate(["/authentication"]);
+        this.rightsidenav.close();
     }
     ngOnDestroy() {
         this.subscriptions.forEach(sub => sub.unsubscribe());
+    }
+    onBackdropClick() {
+        this.sb.toggleActivitiesBar();
+    }
+    setActivitiesBarMode(mode) {
+        this.sb.setActivitiesBarMode(mode);
     }
 };
 __decorate([
@@ -79,7 +93,7 @@ ApplicationContainer = __decorate([
         changeDetection: ChangeDetectionStrategy.OnPush,
         template: `
         <navbar [account]="account$|async" (logout)="logout()" *ngIf="isAuthenticated$|async"></navbar>
-        <md-sidenav-container class="app-container">
+        <md-sidenav-container (backdropClick)="onBackdropClick()" class="app-container">
   
   <div>
 
@@ -91,8 +105,8 @@ ApplicationContainer = __decorate([
 
     <h3 *ngIf="(activitiesBarMode$ | async) == 'messages'" style="font-size: 40px; color: #838383">messages</h3>
 
-    <comments-bar *ngIf="(activitiesBarMode$ | async) == 'notifications'">notifications</comments-bar>  
-      
+    <comments-bar *ngIf="(activitiesBarMode$ | async) == 'comments'"></comments-bar>  
+    <all-activities *ngIf="(activitiesBarMode$ | async) == 'notifications'"></all-activities>  
 
 
 

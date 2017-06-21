@@ -45,7 +45,7 @@ import { SetAllXPensions } from "../statemanagement/actions/data/xpension";
 import { SetAllXProtections } from "../statemanagement/actions/data/xprotection";
 import { SetAllBankAccounts } from "../statemanagement/actions/data/bank-account";
 import { SetAllComments } from "../statemanagement/actions/data/comment";
-import { ToggleActivitiesBar } from "../statemanagement/actions/containers/activities-bar";
+import { ToggleActivitiesBar, SetActivitiesBarMode } from "../statemanagement/actions/containers/activities-bar";
 export let AppSandbox = class AppSandbox {
     constructor(store, authenticationService, contactsService, notesService, userDataService, messagesService, addressesService, clientAccountsService, clientDocumentsService, salesService, tasksService, activitiesService, xAssetsService, xLiabilitiesService, xPensionsService, xProtectionsService, bankAccountsService, commentsService, realTime) {
         this.store = store;
@@ -157,6 +157,9 @@ export let AppSandbox = class AppSandbox {
     }
     toggleActivitiesBar() {
         this.store.dispatch(new ToggleActivitiesBar());
+    }
+    setActivitiesBarMode(mode) {
+        this.store.dispatch(new SetActivitiesBarMode(mode));
     }
 };
 AppSandbox = __decorate([

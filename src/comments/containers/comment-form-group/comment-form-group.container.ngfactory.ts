@@ -6,69 +6,88 @@
  /* tslint:disable */
 
 import * as import0 from './comment-form-group.container';
-import * as import1 from '@angular/core/src/linker/view';
-import * as import2 from '@angular/core/src/linker/debug_context';
-import * as import3 from '@angular/core/src/render/api';
-import * as import4 from '@angular/core/src/linker/view_utils';
-import * as import5 from '@angular/core/src/metadata/view';
-import * as import6 from '@angular/core/src/linker/view_type';
-import * as import7 from '@angular/core/src/change_detection/constants';
-import * as import8 from '@angular/core/src/linker/component_factory';
-import * as import9 from '@angular/forms/src/form_builder';
-import * as import10 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
-import * as import11 from '@angular/forms/src/directives/control_container';
-import * as import12 from '@angular/forms/src/directives/ng_control_status';
-import * as import13 from '../../components/comment-form/comment-form.component';
-import * as import14 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory';
-import * as import15 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
-import * as import16 from '../../components/comment-form/comment-form.component.ngfactory';
+import * as import1 from '@angular/core/src/change_detection/change_detection_util';
+import * as import2 from '@angular/core/src/linker/view';
+import * as import3 from '@angular/core/src/linker/view_utils';
+import * as import4 from '@angular/core/src/linker/debug_context';
+import * as import5 from '@angular/core/src/render/api';
+import * as import6 from '@angular/core/src/metadata/view';
+import * as import7 from '@angular/core/src/linker/view_type';
+import * as import8 from '@angular/core/src/change_detection/constants';
+import * as import9 from '@angular/core/src/linker/component_factory';
+import * as import10 from '@angular/forms/src/form_builder';
+import * as import11 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
+import * as import12 from '@angular/forms/src/directives/control_container';
+import * as import13 from '@angular/forms/src/directives/ng_control_status';
+import * as import14 from '../../components/comment-form/comment-form.component';
+import * as import15 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory';
+import * as import16 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
+import * as import17 from '../../components/comment-form/comment-form.component.ngfactory';
 export class Wrapper_CommentFormGroupContainer {
   /*private*/ _eventHandler:Function;
   context:import0.CommentFormGroupContainer;
   /*private*/ _changed:boolean;
+  /*private*/ _expr_0:any;
+  /*private*/ _expr_1:any;
   subscription0:any;
   constructor(p0:any) {
     this._changed = false;
     this.context = new import0.CommentFormGroupContainer(p0);
+    this._expr_0 = import1.UNINITIALIZED;
+    this._expr_1 = import1.UNINITIALIZED;
   }
-  ngOnDetach(view:import1.AppView<any>,componentView:import1.AppView<any>,el:any):void {
+  ngOnDetach(view:import2.AppView<any>,componentView:import2.AppView<any>,el:any):void {
   }
   ngOnDestroy():void {
     (this.subscription0 && this.subscription0.unsubscribe());
   }
-  ngDoCheck(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
+  check_parentId(currValue:any,throwOnChange:boolean,forceUpdate:boolean):void {
+    if ((forceUpdate || import3.checkBinding(throwOnChange,this._expr_0,currValue))) {
+      this._changed = true;
+      this.context.parentId = currValue;
+      this._expr_0 = currValue;
+    }
+  }
+  check_commentType(currValue:any,throwOnChange:boolean,forceUpdate:boolean):void {
+    if ((forceUpdate || import3.checkBinding(throwOnChange,this._expr_1,currValue))) {
+      this._changed = true;
+      this.context.commentType = currValue;
+      this._expr_1 = currValue;
+    }
+  }
+  ngDoCheck(view:import2.AppView<any>,el:any,throwOnChange:boolean):boolean {
     var changed:any = this._changed;
     this._changed = false;
     if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
     return changed;
   }
-  checkHost(view:import1.AppView<any>,componentView:import1.AppView<any>,el:any,throwOnChange:boolean):void {
+  checkHost(view:import2.AppView<any>,componentView:import2.AppView<any>,el:any,throwOnChange:boolean):void {
   }
   handleEvent(eventName:string,$event:any):boolean {
     var result:boolean = true;
     return result;
   }
-  subscribe(view:import1.AppView<any>,_eventHandler:any,emit0:boolean):void {
+  subscribe(view:import2.AppView<any>,_eventHandler:any,emit0:boolean):void {
     this._eventHandler = _eventHandler;
     if (emit0) { (this.subscription0 = this.context.save.subscribe(_eventHandler.bind(view,'save'))); }
   }
 }
-const nodeDebugInfos_CommentFormGroupContainer_Host0:import2.StaticNodeDebugInfo[] = [new import2.StaticNodeDebugInfo([import0.CommentFormGroupContainer],import0.CommentFormGroupContainer,{})];
-var renderType_CommentFormGroupContainer_Host:import3.RenderComponentType = import4.createRenderComponentType('',0,import5.ViewEncapsulation.None,([] as any[]),{});
-class View_CommentFormGroupContainer_Host0 extends import1.DebugAppView<any> {
+const nodeDebugInfos_CommentFormGroupContainer_Host0:import4.StaticNodeDebugInfo[] = [new import4.StaticNodeDebugInfo([import0.CommentFormGroupContainer],import0.CommentFormGroupContainer,{})];
+var renderType_CommentFormGroupContainer_Host:import5.RenderComponentType = import3.createRenderComponentType('',0,import6.ViewEncapsulation.None,([] as any[]),{});
+class View_CommentFormGroupContainer_Host0 extends import2.DebugAppView<any> {
   _el_0:any;
-  compView_0:import1.AppView<import0.CommentFormGroupContainer>;
+  compView_0:import2.AppView<import0.CommentFormGroupContainer>;
   _CommentFormGroupContainer_0_3:Wrapper_CommentFormGroupContainer;
-  constructor(viewUtils:import4.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
-    super(View_CommentFormGroupContainer_Host0,renderType_CommentFormGroupContainer_Host,import6.ViewType.HOST,viewUtils,parentView,parentIndex,parentElement,import7.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_CommentFormGroupContainer_Host0);
+  constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any) {
+    super(View_CommentFormGroupContainer_Host0,renderType_CommentFormGroupContainer_Host,import7.ViewType.HOST,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_CommentFormGroupContainer_Host0);
   }
-  createInternal(rootSelector:string):import8.ComponentRef<any> {
-    this._el_0 = import4.selectOrCreateRenderHostElement(this.renderer,'comment-form-group',import4.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
+  createInternal(rootSelector:string):import9.ComponentRef<any> {
+    this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer,'comment-form-group',import3.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this.compView_0 = new View_CommentFormGroupContainer0(this.viewUtils,this,0,this._el_0);
-    this._CommentFormGroupContainer_0_3 = new Wrapper_CommentFormGroupContainer(this.injectorGet(import9.FormBuilder,this.parentIndex));
+    this._CommentFormGroupContainer_0_3 = new Wrapper_CommentFormGroupContainer(this.injectorGet(import10.FormBuilder,this.parentIndex));
     this.compView_0.create(this._CommentFormGroupContainer_0_3.context);
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
-    return new import8.ComponentRef_<any>(0,this,this._el_0,this._CommentFormGroupContainer_0_3.context);
+    return new import9.ComponentRef_<any>(0,this,this._el_0,this._CommentFormGroupContainer_0_3.context);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
     if (((token === import0.CommentFormGroupContainer) && (0 === requestNodeIndex))) { return this._CommentFormGroupContainer_0_3.context; }
@@ -87,53 +106,53 @@ class View_CommentFormGroupContainer_Host0 extends import1.DebugAppView<any> {
     cb(this._el_0,ctx);
   }
 }
-export const CommentFormGroupContainerNgFactory:import8.ComponentFactory<import0.CommentFormGroupContainer> = new import8.ComponentFactory<import0.CommentFormGroupContainer>('comment-form-group',View_CommentFormGroupContainer_Host0,import0.CommentFormGroupContainer);
+export const CommentFormGroupContainerNgFactory:import9.ComponentFactory<import0.CommentFormGroupContainer> = new import9.ComponentFactory<import0.CommentFormGroupContainer>('comment-form-group',View_CommentFormGroupContainer_Host0,import0.CommentFormGroupContainer);
 const styles_CommentFormGroupContainer:any[] = ([] as any[]);
-const nodeDebugInfos_CommentFormGroupContainer0:import2.StaticNodeDebugInfo[] = [
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo([
-    import10.FormGroupDirective,
-    import11.ControlContainer,
-    import12.NgControlStatusGroup
+const nodeDebugInfos_CommentFormGroupContainer0:import4.StaticNodeDebugInfo[] = [
+  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import4.StaticNodeDebugInfo([
+    import11.FormGroupDirective,
+    import12.ControlContainer,
+    import13.NgControlStatusGroup
   ]
   ,(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo([import13.CommentFormComponent],import13.CommentFormComponent,{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
+  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import4.StaticNodeDebugInfo([import14.CommentFormComponent],import14.CommentFormComponent,{}),
+  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_CommentFormGroupContainer:import3.RenderComponentType = import4.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/comments/containers/comment-form-group/comment-form-group.container.ts class CommentFormGroupContainer - inline template',0,import5.ViewEncapsulation.None,styles_CommentFormGroupContainer,{});
-export class View_CommentFormGroupContainer0 extends import1.DebugAppView<import0.CommentFormGroupContainer> {
+var renderType_CommentFormGroupContainer:import5.RenderComponentType = import3.createRenderComponentType('/Users/jonoforbes/Developer/Ether/ether-app/src/comments/containers/comment-form-group/comment-form-group.container.ts class CommentFormGroupContainer - inline template',0,import6.ViewEncapsulation.None,styles_CommentFormGroupContainer,{});
+export class View_CommentFormGroupContainer0 extends import2.DebugAppView<import0.CommentFormGroupContainer> {
   _text_0:any;
   _el_1:any;
-  _FormGroupDirective_1_3:import14.Wrapper_FormGroupDirective;
+  _FormGroupDirective_1_3:import15.Wrapper_FormGroupDirective;
   _ControlContainer_1_4:any;
-  _NgControlStatusGroup_1_5:import15.Wrapper_NgControlStatusGroup;
+  _NgControlStatusGroup_1_5:import16.Wrapper_NgControlStatusGroup;
   _text_2:any;
   _el_3:any;
-  compView_3:import1.AppView<import13.CommentFormComponent>;
-  _CommentFormComponent_3_3:import16.Wrapper_CommentFormComponent;
+  compView_3:import2.AppView<import14.CommentFormComponent>;
+  _CommentFormComponent_3_3:import17.Wrapper_CommentFormComponent;
   _text_4:any;
   _text_5:any;
-  constructor(viewUtils:import4.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
-    super(View_CommentFormGroupContainer0,renderType_CommentFormGroupContainer,import6.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import7.ChangeDetectorStatus.CheckOnce,nodeDebugInfos_CommentFormGroupContainer0);
+  constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any) {
+    super(View_CommentFormGroupContainer0,renderType_CommentFormGroupContainer,import7.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckOnce,nodeDebugInfos_CommentFormGroupContainer0);
   }
-  createInternal(rootSelector:string):import8.ComponentRef<any> {
+  createInternal(rootSelector:string):import9.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
     this._text_0 = this.renderer.createText(parentRenderNode,'\n        ',this.debug(0,0,0));
-    this._el_1 = import4.createRenderElement(this.renderer,parentRenderNode,'form',new import4.InlineArray2(2,'novalidate',''),this.debug(1,1,8));
-    this._FormGroupDirective_1_3 = new import14.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'form',new import3.InlineArray2(2,'novalidate',''),this.debug(1,1,8));
+    this._FormGroupDirective_1_3 = new import15.Wrapper_FormGroupDirective((null as any),(null as any));
     this._ControlContainer_1_4 = this._FormGroupDirective_1_3.context;
-    this._NgControlStatusGroup_1_5 = new import15.Wrapper_NgControlStatusGroup(this._ControlContainer_1_4);
+    this._NgControlStatusGroup_1_5 = new import16.Wrapper_NgControlStatusGroup(this._ControlContainer_1_4);
     this._text_2 = this.renderer.createText(this._el_1,'\n\n        \n   \n        \n\n        ',this.debug(2,1,75));
-    this._el_3 = import4.createRenderElement(this.renderer,this._el_1,'comment-form',import4.EMPTY_INLINE_ARRAY,this.debug(3,7,8));
-    this.compView_3 = new import16.View_CommentFormComponent0(this.viewUtils,this,3,this._el_3);
-    this._CommentFormComponent_3_3 = new import16.Wrapper_CommentFormComponent();
+    this._el_3 = import3.createRenderElement(this.renderer,this._el_1,'comment-form',import3.EMPTY_INLINE_ARRAY,this.debug(3,7,8));
+    this.compView_3 = new import17.View_CommentFormComponent0(this.viewUtils,this,3,this._el_3);
+    this._CommentFormComponent_3_3 = new import17.Wrapper_CommentFormComponent();
     this.compView_3.create(this._CommentFormComponent_3_3.context);
     this._text_4 = this.renderer.createText(this._el_1,'\n        \n    ',this.debug(4,7,70));
     this._text_5 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(5,9,11));
-    var disposable_0:Function = import4.subscribeToRenderElement(this,this._el_1,new import4.InlineArray8(6,'ngSubmit',(null as any),'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_1));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_1,new import3.InlineArray8(6,'ngSubmit',(null as any),'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_1));
     this._FormGroupDirective_1_3.subscribe(this,this.eventHandler(this.handleEvent_1),true);
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._text_0,
@@ -147,10 +166,10 @@ export class View_CommentFormGroupContainer0 extends import1.DebugAppView<import
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import13.CommentFormComponent) && (3 === requestNodeIndex))) { return this._CommentFormComponent_3_3.context; }
-    if (((token === import10.FormGroupDirective) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._FormGroupDirective_1_3.context; }
-    if (((token === import11.ControlContainer) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._ControlContainer_1_4; }
-    if (((token === import12.NgControlStatusGroup) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._NgControlStatusGroup_1_5.context; }
+    if (((token === import14.CommentFormComponent) && (3 === requestNodeIndex))) { return this._CommentFormComponent_3_3.context; }
+    if (((token === import11.FormGroupDirective) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._FormGroupDirective_1_3.context; }
+    if (((token === import12.ControlContainer) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._ControlContainer_1_4; }
+    if (((token === import13.NgControlStatusGroup) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._NgControlStatusGroup_1_5.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {

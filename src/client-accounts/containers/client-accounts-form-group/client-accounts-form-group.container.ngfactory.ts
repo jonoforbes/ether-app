@@ -16,20 +16,21 @@ import * as import7 from '@angular/core/src/linker/view_type';
 import * as import8 from '@angular/core/src/change_detection/constants';
 import * as import9 from '@angular/core/src/linker/component_factory';
 import * as import10 from '../../client-accounts.sandbox';
-import * as import11 from '@angular/forms/src/form_builder';
-import * as import12 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
-import * as import13 from '@angular/forms/src/directives/control_container';
-import * as import14 from '@angular/forms/src/directives/ng_control_status';
-import * as import15 from '../../components/detail-header/detail-header.component';
-import * as import16 from '../../components/detail-form/detail-form.component';
-import * as import17 from '../../components/detail-compliance/detail-compliance.component';
-import * as import18 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory';
-import * as import19 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
-import * as import20 from '../../components/detail-header/detail-header.component.ngfactory';
-import * as import21 from '../../components/detail-form/detail-form.component.ngfactory';
-import * as import22 from '../../components/detail-compliance/detail-compliance.component.ngfactory';
-import * as import23 from '../../services/client-accounts.service';
-import * as import24 from '@angular/router/src/router';
+import * as import11 from '../../../comments/comments.sandbox';
+import * as import12 from '@angular/forms/src/form_builder';
+import * as import13 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
+import * as import14 from '@angular/forms/src/directives/control_container';
+import * as import15 from '@angular/forms/src/directives/ng_control_status';
+import * as import16 from '../../components/detail-header/detail-header.component';
+import * as import17 from '../../components/detail-form/detail-form.component';
+import * as import18 from '../../components/detail-compliance/detail-compliance.component';
+import * as import19 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory';
+import * as import20 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
+import * as import21 from '../../components/detail-header/detail-header.component.ngfactory';
+import * as import22 from '../../components/detail-form/detail-form.component.ngfactory';
+import * as import23 from '../../components/detail-compliance/detail-compliance.component.ngfactory';
+import * as import24 from '../../services/client-accounts.service';
+import * as import25 from '@angular/router/src/router';
 export class Wrapper_ClientAccountsFormGroupContainer {
   /*private*/ _eventHandler:Function;
   context:import0.ClientAccountsFormGroupContainer;
@@ -38,9 +39,9 @@ export class Wrapper_ClientAccountsFormGroupContainer {
   subscription0:any;
   subscription1:any;
   subscription2:any;
-  constructor(p0:any,p1:any) {
+  constructor(p0:any,p1:any,p2:any) {
     this._changed = false;
-    this.context = new import0.ClientAccountsFormGroupContainer(p0,p1);
+    this.context = new import0.ClientAccountsFormGroupContainer(p0,p1,p2);
     this._expr_0 = import1.UNINITIALIZED;
   }
   ngOnDetach(view:import2.AppView<any>,componentView:import2.AppView<any>,el:any):void {
@@ -88,7 +89,7 @@ class View_ClientAccountsFormGroupContainer_Host0 extends import2.DebugAppView<a
   createInternal(rootSelector:string):import9.ComponentRef<any> {
     this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer,'client-accounts-form-group',import3.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this.compView_0 = new View_ClientAccountsFormGroupContainer0(this.viewUtils,this,0,this._el_0);
-    this._ClientAccountsFormGroupContainer_0_3 = new Wrapper_ClientAccountsFormGroupContainer(this.injectorGet(import10.ClientAccountsSandbox,this.parentIndex),this.injectorGet(import11.FormBuilder,this.parentIndex));
+    this._ClientAccountsFormGroupContainer_0_3 = new Wrapper_ClientAccountsFormGroupContainer(this.injectorGet(import10.ClientAccountsSandbox,this.parentIndex),this.injectorGet(import11.CommentsSandbox,this.parentIndex),this.injectorGet(import12.FormBuilder,this.parentIndex));
     this.compView_0.create(this._ClientAccountsFormGroupContainer_0_3.context);
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
     return new import9.ComponentRef_<any>(0,this,this._el_0,this._ClientAccountsFormGroupContainer_0_3.context);
@@ -115,18 +116,18 @@ const styles_ClientAccountsFormGroupContainer:any[] = ([] as any[]);
 const nodeDebugInfos_ClientAccountsFormGroupContainer0:import4.StaticNodeDebugInfo[] = [
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo([
-    import12.FormGroupDirective,
-    import13.ControlContainer,
-    import14.NgControlStatusGroup
+    import13.FormGroupDirective,
+    import14.ControlContainer,
+    import15.NgControlStatusGroup
   ]
   ,(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([import15.ClientAccountsDetailHeaderComponent],import15.ClientAccountsDetailHeaderComponent,{}),
+  new import4.StaticNodeDebugInfo([import16.ClientAccountsDetailHeaderComponent],import16.ClientAccountsDetailHeaderComponent,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([import16.ClientAccountsDetailFormComponent],import16.ClientAccountsDetailFormComponent,{}),
+  new import4.StaticNodeDebugInfo([import17.ClientAccountsDetailFormComponent],import17.ClientAccountsDetailFormComponent,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import4.StaticNodeDebugInfo([import17.ClientAccountsDetailComplianceComponent],import17.ClientAccountsDetailComplianceComponent,{}),
+  new import4.StaticNodeDebugInfo([import18.ClientAccountsDetailComplianceComponent],import18.ClientAccountsDetailComplianceComponent,{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import4.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
@@ -135,22 +136,22 @@ var renderType_ClientAccountsFormGroupContainer:import5.RenderComponentType = im
 export class View_ClientAccountsFormGroupContainer0 extends import2.DebugAppView<import0.ClientAccountsFormGroupContainer> {
   _text_0:any;
   _el_1:any;
-  _FormGroupDirective_1_3:import18.Wrapper_FormGroupDirective;
+  _FormGroupDirective_1_3:import19.Wrapper_FormGroupDirective;
   _ControlContainer_1_4:any;
-  _NgControlStatusGroup_1_5:import19.Wrapper_NgControlStatusGroup;
+  _NgControlStatusGroup_1_5:import20.Wrapper_NgControlStatusGroup;
   _text_2:any;
   _el_3:any;
-  compView_3:import2.AppView<import15.ClientAccountsDetailHeaderComponent>;
-  _ClientAccountsDetailHeaderComponent_3_3:import20.Wrapper_ClientAccountsDetailHeaderComponent;
+  compView_3:import2.AppView<import16.ClientAccountsDetailHeaderComponent>;
+  _ClientAccountsDetailHeaderComponent_3_3:import21.Wrapper_ClientAccountsDetailHeaderComponent;
   _text_4:any;
   _text_5:any;
   _el_6:any;
-  compView_6:import2.AppView<import16.ClientAccountsDetailFormComponent>;
-  _ClientAccountsDetailFormComponent_6_3:import21.Wrapper_ClientAccountsDetailFormComponent;
+  compView_6:import2.AppView<import17.ClientAccountsDetailFormComponent>;
+  _ClientAccountsDetailFormComponent_6_3:import22.Wrapper_ClientAccountsDetailFormComponent;
   _text_7:any;
   _el_8:any;
-  compView_8:import2.AppView<import17.ClientAccountsDetailComplianceComponent>;
-  _ClientAccountsDetailComplianceComponent_8_3:import22.Wrapper_ClientAccountsDetailComplianceComponent;
+  compView_8:import2.AppView<import18.ClientAccountsDetailComplianceComponent>;
+  _ClientAccountsDetailComplianceComponent_8_3:import23.Wrapper_ClientAccountsDetailComplianceComponent;
   _text_9:any;
   _text_10:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any) {
@@ -160,34 +161,35 @@ export class View_ClientAccountsFormGroupContainer0 extends import2.DebugAppView
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
     this._text_0 = this.renderer.createText(parentRenderNode,'\n    \n        \n        ',this.debug(0,0,0));
     this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'form',new import3.InlineArray2(2,'novalidate',''),this.debug(1,3,8));
-    this._FormGroupDirective_1_3 = new import18.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._FormGroupDirective_1_3 = new import19.Wrapper_FormGroupDirective((null as any),(null as any));
     this._ControlContainer_1_4 = this._FormGroupDirective_1_3.context;
-    this._NgControlStatusGroup_1_5 = new import19.Wrapper_NgControlStatusGroup(this._ControlContainer_1_4);
+    this._NgControlStatusGroup_1_5 = new import20.Wrapper_NgControlStatusGroup(this._ControlContainer_1_4);
     this._text_2 = this.renderer.createText(this._el_1,'\n\n        ',this.debug(2,6,36));
     this._el_3 = import3.createRenderElement(this.renderer,this._el_1,'client-accounts-detail-header',import3.EMPTY_INLINE_ARRAY,this.debug(3,8,8));
-    this.compView_3 = new import20.View_ClientAccountsDetailHeaderComponent0(this.viewUtils,this,3,this._el_3);
-    this._ClientAccountsDetailHeaderComponent_3_3 = new import20.Wrapper_ClientAccountsDetailHeaderComponent(this.parentView.injectorGet(import23.ClientAccountsService,this.parentIndex));
+    this.compView_3 = new import21.View_ClientAccountsDetailHeaderComponent0(this.viewUtils,this,3,this._el_3);
+    this._ClientAccountsDetailHeaderComponent_3_3 = new import21.Wrapper_ClientAccountsDetailHeaderComponent(this.parentView.injectorGet(import24.ClientAccountsService,this.parentIndex));
     this._text_4 = this.renderer.createText((null as any),'\n        ',this.debug(4,12,67));
     this.compView_3.create(this._ClientAccountsDetailHeaderComponent_3_3.context);
     this._text_5 = this.renderer.createText(this._el_1,'\n        ',this.debug(5,13,40));
     this._el_6 = import3.createRenderElement(this.renderer,this._el_1,'client-accounts-detail-form',import3.EMPTY_INLINE_ARRAY,this.debug(6,14,8));
-    this.compView_6 = new import21.View_ClientAccountsDetailFormComponent0(this.viewUtils,this,6,this._el_6);
-    this._ClientAccountsDetailFormComponent_6_3 = new import21.Wrapper_ClientAccountsDetailFormComponent(this.parentView.injectorGet(import24.Router,this.parentIndex));
+    this.compView_6 = new import22.View_ClientAccountsDetailFormComponent0(this.viewUtils,this,6,this._el_6);
+    this._ClientAccountsDetailFormComponent_6_3 = new import22.Wrapper_ClientAccountsDetailFormComponent(this.parentView.injectorGet(import25.Router,this.parentIndex));
     this.compView_6.create(this._ClientAccountsDetailFormComponent_6_3.context);
     this._text_7 = this.renderer.createText(this._el_1,'\n        ',this.debug(7,14,147));
     this._el_8 = import3.createRenderElement(this.renderer,this._el_1,'client-accounts-detail-compliance',import3.EMPTY_INLINE_ARRAY,this.debug(8,15,8));
-    this.compView_8 = new import22.View_ClientAccountsDetailComplianceComponent0(this.viewUtils,this,8,this._el_8);
-    this._ClientAccountsDetailComplianceComponent_8_3 = new import22.Wrapper_ClientAccountsDetailComplianceComponent();
+    this.compView_8 = new import23.View_ClientAccountsDetailComplianceComponent0(this.viewUtils,this,8,this._el_8);
+    this._ClientAccountsDetailComplianceComponent_8_3 = new import23.Wrapper_ClientAccountsDetailComplianceComponent();
     this.compView_8.create(this._ClientAccountsDetailComplianceComponent_8_3.context);
-    this._text_9 = this.renderer.createText(this._el_1,'\n    ',this.debug(9,15,159));
-    this._text_10 = this.renderer.createText(parentRenderNode,'\n        \n    \n    ',this.debug(10,16,11));
+    this._text_9 = this.renderer.createText(this._el_1,'\n    ',this.debug(9,17,128));
+    this._text_10 = this.renderer.createText(parentRenderNode,'\n        \n    \n    ',this.debug(10,18,11));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_1,new import3.InlineArray8(6,'ngSubmit',(null as any),'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_1));
     this._FormGroupDirective_1_3.subscribe(this,this.eventHandler(this.handleEvent_1),true);
     var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_3,new import3.InlineArray4(4,'submitForm',(null as any),'updateStatus',(null as any)),this.eventHandler(this.handleEvent_3));
     this._ClientAccountsDetailHeaderComponent_3_3.subscribe(this,this.eventHandler(this.handleEvent_3),true,true);
     var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_6,new import3.InlineArray2(2,'remove',(null as any)),this.eventHandler(this.handleEvent_6));
     this._ClientAccountsDetailFormComponent_6_3.subscribe(this,this.eventHandler(this.handleEvent_6),true);
-    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_8,new import3.InlineArray2(2,'remove',(null as any)),this.eventHandler(this.handleEvent_8));
+    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_8,new import3.InlineArray4(4,'openComments',(null as any),'remove',(null as any)),this.eventHandler(this.handleEvent_8));
+    this._ClientAccountsDetailComplianceComponent_8_3.subscribe(this,this.eventHandler(this.handleEvent_8),true);
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._text_0,
       this._el_1,
@@ -211,12 +213,12 @@ export class View_ClientAccountsFormGroupContainer0 extends import2.DebugAppView
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import15.ClientAccountsDetailHeaderComponent) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._ClientAccountsDetailHeaderComponent_3_3.context; }
-    if (((token === import16.ClientAccountsDetailFormComponent) && (6 === requestNodeIndex))) { return this._ClientAccountsDetailFormComponent_6_3.context; }
-    if (((token === import17.ClientAccountsDetailComplianceComponent) && (8 === requestNodeIndex))) { return this._ClientAccountsDetailComplianceComponent_8_3.context; }
-    if (((token === import12.FormGroupDirective) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return this._FormGroupDirective_1_3.context; }
-    if (((token === import13.ControlContainer) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return this._ControlContainer_1_4; }
-    if (((token === import14.NgControlStatusGroup) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return this._NgControlStatusGroup_1_5.context; }
+    if (((token === import16.ClientAccountsDetailHeaderComponent) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._ClientAccountsDetailHeaderComponent_3_3.context; }
+    if (((token === import17.ClientAccountsDetailFormComponent) && (6 === requestNodeIndex))) { return this._ClientAccountsDetailFormComponent_6_3.context; }
+    if (((token === import18.ClientAccountsDetailComplianceComponent) && (8 === requestNodeIndex))) { return this._ClientAccountsDetailComplianceComponent_8_3.context; }
+    if (((token === import13.FormGroupDirective) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return this._FormGroupDirective_1_3.context; }
+    if (((token === import14.ControlContainer) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return this._ControlContainer_1_4; }
+    if (((token === import15.NgControlStatusGroup) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 9)))) { return this._NgControlStatusGroup_1_5.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -237,7 +239,7 @@ export class View_ClientAccountsFormGroupContainer0 extends import2.DebugAppView
     const currVal_6_0_0:any = this.context.clientAccountForm;
     this._ClientAccountsDetailFormComponent_6_3.check_clientAccountForm(currVal_6_0_0,throwOnChange,false);
     if (this._ClientAccountsDetailFormComponent_6_3.ngDoCheck(this,this._el_6,throwOnChange)) { this.compView_6.markAsCheckOnce(); }
-    this.debug(8,15,43);
+    this.debug(8,17,12);
     const currVal_8_0_0:any = this.context.clientAccountForm;
     this._ClientAccountsDetailComplianceComponent_8_3.check_clientAccountForm(currVal_8_0_0,throwOnChange,false);
     if (this._ClientAccountsDetailComplianceComponent_8_3.ngDoCheck(this,this._el_8,throwOnChange)) { this.compView_8.markAsCheckOnce(); }
@@ -254,6 +256,7 @@ export class View_ClientAccountsFormGroupContainer0 extends import2.DebugAppView
     this.debug(3,8,8);
     this._ClientAccountsDetailFormComponent_6_3.ngOnDestroy();
     this.debug(6,14,8);
+    this._ClientAccountsDetailComplianceComponent_8_3.ngOnDestroy();
     this.debug(8,15,8);
     this._FormGroupDirective_1_3.ngOnDestroy();
   }
@@ -296,9 +299,13 @@ export class View_ClientAccountsFormGroupContainer0 extends import2.DebugAppView
     this.debug(8,15,8);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    if ((eventName == 'remove')) {
-      const pd_sub_0:any = ((<any>this.context.onRemove(this.context.clientAccount)) !== false);
+    if ((eventName == 'openComments')) {
+      const pd_sub_0:any = ((<any>this.context.onOpenComments($event)) !== false);
       result = (pd_sub_0 && result);
+    }
+    if ((eventName == 'remove')) {
+      const pd_sub_1:any = ((<any>this.context.onRemove(this.context.clientAccount)) !== false);
+      result = (pd_sub_1 && result);
     }
     return result;
   }

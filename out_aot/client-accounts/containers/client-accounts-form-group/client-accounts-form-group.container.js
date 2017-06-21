@@ -11,9 +11,11 @@ import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from 
 import { ClientAccount } from "../../entities/ClientAccount";
 import { FormBuilder } from "@angular/forms";
 import { ClientAccountsSandbox } from "../../client-accounts.sandbox";
+import { CommentsSandbox } from "../../../comments/comments.sandbox";
 export let ClientAccountsFormGroupContainer = class ClientAccountsFormGroupContainer {
-    constructor(sb, formBuilder) {
+    constructor(sb, commentsSb, formBuilder) {
         this.sb = sb;
+        this.commentsSb = commentsSb;
         this.formBuilder = formBuilder;
         this.clientAccount = new ClientAccount();
         this.onSave = new EventEmitter(false);
@@ -22,6 +24,7 @@ export let ClientAccountsFormGroupContainer = class ClientAccountsFormGroupConta
     }
     ngOnInit() {
         this.clientAccountForm = this.formBuilder.group({
+            _id: [this.clientAccount._id],
             accountName: [this.clientAccount.accountName],
             companyFullName: [this.clientAccount.companyFullName],
             companyNumber: [this.clientAccount.companyNumber],
@@ -43,6 +46,11 @@ export let ClientAccountsFormGroupContainer = class ClientAccountsFormGroupConta
             fundsAccountant: [this.clientAccount.fundsAccountant],
             fundsOther: [this.clientAccount.fundsOther]
         });
+    }
+    onOpenComments(commentParams) {
+        console.log(commentParams.parentId);
+        console.log(commentParams.commentType);
+        this.commentsSb.openComments(commentParams.parentId, commentParams.commentType);
     }
     onSubmit() {
         console.log(this.clientAccount);
@@ -91,12 +99,14 @@ ClientAccountsFormGroupContainer = __decorate([
             (updateStatus)="onUpdateStatus(clientAccount, $event)">
         </client-accounts-detail-header>
         <client-accounts-detail-form [clientAccountForm]="this.clientAccountForm" (remove)="onRemove(clientAccount)"></client-accounts-detail-form>
-        <client-accounts-detail-compliance [clientAccountForm]="this.clientAccountForm" (remove)="onRemove(clientAccount)"></client-accounts-detail-compliance>
+        <client-accounts-detail-compliance 
+            (openComments)="onOpenComments($event)"
+            [clientAccountForm]="this.clientAccountForm" (remove)="onRemove(clientAccount)"></client-accounts-detail-compliance>
     </form>
         
     
     `
     }), 
-    __metadata('design:paramtypes', [ClientAccountsSandbox, FormBuilder])
+    __metadata('design:paramtypes', [ClientAccountsSandbox, CommentsSandbox, FormBuilder])
 ], ClientAccountsFormGroupContainer);
 //# sourceMappingURL=client-accounts-form-group.container.js.map

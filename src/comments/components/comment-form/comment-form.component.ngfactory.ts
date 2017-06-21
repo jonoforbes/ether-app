@@ -174,11 +174,11 @@ export class View_CommentFormComponent0 extends import2.DebugAppView<import0.Com
   createInternal(rootSelector:string):import9.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
     this._text_0 = this.renderer.createText(parentRenderNode,'\n        ',this.debug(0,0,0));
-    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'md-toolbar',new import3.InlineArray8(6,'class','message-form','role','toolbar','style','height: 42px !important; \n                                                                            background-color: #fff !important; \n                                                                            bottom: 42px;\n                                                                            overflow-y: hidden !important;\n                                                                            z-index: 2;\n                                                                            position: fixed'),this.debug(1,1,8));
+    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'md-toolbar',new import3.InlineArray8(6,'class','message-form','role','toolbar','style','height: 42px !important; \n                                                                            background-color: #fff !important; \n                                                                            bottom: 42px;\n                                                                            overflow-y: hidden !important;\n                                                                            z-index: 2;\n                                                                            position: absolute !important'),this.debug(1,1,8));
     this.compView_1 = new import21.View_MdToolbar0(this.viewUtils,this,1,this._el_1);
     this._MdPrefixRejector_1_3 = new import20.Wrapper_MdPrefixRejector(this.parentView.injectorGet(import10.MATERIAL_COMPATIBILITY_MODE,this.parentIndex,(null as any)));
     this._MdToolbar_1_4 = new import21.Wrapper_MdToolbar(new import28.ElementRef(this._el_1),this.renderer);
-    this._text_2 = this.renderer.createText((null as any),'\n\n        ',this.debug(2,6,93));
+    this._text_2 = this.renderer.createText((null as any),'\n\n        ',this.debug(2,6,107));
     this._el_3 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','message-form-row'),this.debug(3,8,8));
     this._FormGroupDirective_3_3 = new import22.Wrapper_FormGroupDirective((null as any),(null as any));
     this._ControlContainer_3_4 = this._FormGroupDirective_3_3.context;

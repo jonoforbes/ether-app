@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component, Output, EventEmitter, ChangeDetectionStrategy } from "@angular/core";
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from "@angular/core";
 import { Comment } from "../../entities/Comment";
 import { FormBuilder } from "@angular/forms";
 export let CommentFormGroupContainer = class CommentFormGroupContainer {
@@ -23,6 +23,8 @@ export let CommentFormGroupContainer = class CommentFormGroupContainer {
     }
     onSubmit() {
         console.log('comment', this.comment);
+        this.comment.parentId = this.parentId;
+        this.comment.commentType = this.commentType;
         this.comment.recipientId = "no recipient";
         this.save.emit(Object.assign(this.comment, this.commentForm.value));
         var newComment = this.formBuilder.group({
@@ -31,6 +33,14 @@ export let CommentFormGroupContainer = class CommentFormGroupContainer {
         this.commentForm = newComment;
     }
 };
+__decorate([
+    Input(), 
+    __metadata('design:type', String)
+], CommentFormGroupContainer.prototype, "parentId", void 0);
+__decorate([
+    Input(), 
+    __metadata('design:type', String)
+], CommentFormGroupContainer.prototype, "commentType", void 0);
 __decorate([
     Output(), 
     __metadata('design:type', Object)
